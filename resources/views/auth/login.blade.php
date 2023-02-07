@@ -3,9 +3,11 @@
 @section('content')
 <div id="loginbg">
     <div id="loginarea" style="text-align:center;">
+        <!--
         <div class="">
-            <img src="{{ asset('images/3_logo.png') }}" alt="スムーズシステム" width="25%" height="25%">
+            <img src="{{ asset('images/3_logo.png') }}" alt="名刺管理" width="25%" height="25%">
         </div>
+        -->
         
         <div class="inputzone">
         <form method="POST" action="{{ route('login') }}">
@@ -60,12 +62,14 @@
                 </div>
             </div>
             -->
+            <!--
             <div class="col pb-2">
                 <div class="custom-control custom-checkbox">
                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                     <label class="custom-control-label" for="customCheck">ログインの持続</label>
                 </div>
             </div>
+            -->
             <div class="col pb-2">
                 <div class="btn-group d-flex">
                     <button type="submit" class="btn btn-primary btn-lg font-size-rg w-100">ログインする</button>
