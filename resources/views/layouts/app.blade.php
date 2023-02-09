@@ -38,7 +38,7 @@
                 <!-- editable title -->
                 <a class="navbar-brand mr-auto mr-lg-0" href="{{ url('/') }}">
                     <!--<img class="logo_height" src="{{ asset('images/order_logo1.svg') }}" alt="見積システム">-->
-                    スムーズシステム － 見積 －
+                    名刺管理APP － 見積 －
                 </a>
                 <!-- /editable title -->
                 <div id="autharea">

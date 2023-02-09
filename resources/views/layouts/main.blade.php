@@ -56,7 +56,7 @@ $action_msg = ""; //動作メッセージ利用時はコメントアウト
                     <div id="logo">
                         <a class="" href="{{ url('/') }}">
                             <!--<span><img class="logo_h" src="{{ asset('images/home-white.svg') }}"  alt="見積システム"></span>-->
-                            <span>スムーズシステム － 見積 －</span>
+                            <span>名刺管理入稿システム</span>
                         </a>
                     </div>
                 </div>
@@ -100,7 +100,7 @@ $action_msg = ""; //動作メッセージ利用時はコメントアウト
                     <!-- .panel -->
                     <div id="footer">
                         <div class="foot_cnt print-none">
-                            <small>© 2022 M System</small>
+                            <small>© 2023 Card Management System</small>
                         </div>
                     </div>
                     <!-- /.panel -->

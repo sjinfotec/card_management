@@ -47,8 +47,10 @@ class LoginController extends Controller
         if(!empty($user)) {
             $login_user_code = $user->code;
             $login_user_name = $user->name;
+            $login_user_pw = $user->password;
             Log::info("LoginController username login_user_code = ".$login_user_code);
             Log::info("LoginController username login_user_name = ".$login_user_name);
+            Log::info("LoginController username login_user_pw = ".$login_user_pw);
 
         }
 

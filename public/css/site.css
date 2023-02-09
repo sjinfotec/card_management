@@ -161,7 +161,7 @@ header .header_login_info a {
   font-size:1.6rem;
 }
 .side-base {
-  background: #c6c91d;
+  background: #CCC;
 
 }
 #menu_li  {
@@ -183,7 +183,7 @@ header .header_login_info a {
     padding: 2px;
     /*border-bottom: 1px solid #333;*/
     border-right: 1px solid #333;
-    flex-grow: 1;
+    /*flex-grow: 1;*/
 }
 
 #menu_li ul li a  {
@@ -191,7 +191,16 @@ header .header_login_info a {
   align-items: center;
   justify-content: center;
   /*height:30px;*/
+  background:url( "../images/mbtn01.png" ) no-repeat center center;
+  width:180px;
+  height:30px;
+  text-decoration: none;
 }
+#menu_li ul li a:hover {
+  background:url( "../images/mbtn02.png" ) no-repeat center center;
+  text-decoration: underline red;
+}
+
 #menu_li ul li.active {
   background:#ffa600;
 }
@@ -205,8 +214,8 @@ header .header_login_info a {
   max-width:100%;
   margin: 0 auto;
   min-height: 100vh;
-  background:url( "../images/bg002.jpg" ) no-repeat;
-  background-size:100%;
+  background:url( "../images/bg01.jpg" ) no-repeat center center;
+  /*background-size:100%;*/
 
 }
 
@@ -300,6 +309,7 @@ header .header_login_info a {
 .mgl10  {margin-left:10px;}
 .mgl20  {margin-left:20px;}
 .mgl40  {margin-left:40px;}
+.mgt10  {margin-top:10px;}
 .mgt20  {margin-top:20px;}
 .mgt40  {margin-top:40px;}
 
@@ -1252,7 +1262,7 @@ html { scroll-behavior: smooth;}
     visibility: visible;
   }
   #cnt_menu  .side-base {
-    background: #c6c91d;
+    background: #CCC;
   }
   #menu_li  {
     padding-left:20px;

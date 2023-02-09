@@ -70,9 +70,9 @@
                 </div>
             </div>
             -->
-            <div class="col pb-2">
-                <div class="btn-group d-flex">
-                    <button type="submit" class="btn btn-primary btn-lg font-size-rg w-100">ログインする</button>
+            <div class="col pb-2 mgt40">
+                <div class="btn-group d-flex ">
+                    <button type="submit" class="btn btn-primary btn-lg font-size-rg w-100">ログイン</button>
                 </div>
             </div>
             <!--
