@@ -1688,15 +1688,456 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BackupLogs.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/BackupLogs.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Edit.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Edit.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1854,7 +2295,8 @@ __webpack_require__.r(__webpack_exports__);
 //import { checkable } from "../mixins/checkable.js";
 //import { requestable } from "../mixins/requestable.js";
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'BackupLogs',
+  name: 'Edit',
+  template: "\n    <div>\n    </div>\n  ",
   //mixins: [dialogable, checkable, requestable],
   props: {
     /*
@@ -1875,8 +2317,13 @@ __webpack_require__.r(__webpack_exports__);
       dialogVisible: false,
       messageshowsearch: false,
       infomationmessage: [],
-      message: "",
-      showMessage: true
+      message: "aaa",
+      showMessage: true,
+      selectMode: "EDT",
+      s_department: "",
+      s_name: "",
+      s_yomi: "",
+      totals: ""
     };
   },
   // マウント時
@@ -1885,40 +2332,469 @@ __webpack_require__.r(__webpack_exports__);
     //this.login_user_role = this.authusers["role"];
     this.Test();
   },
+  filters: {
+    numberFormat: function numberFormat(num) {
+      return num.toLocaleString();
+    }
+  },
   methods: {
+    searchBtn: function searchBtn() {
+      this.details = [];
+      this.searchItem();
+      this.selectMode = 'COMPLETE';
+    },
+    searchBtn2: function searchBtn2() {
+      this.details = [];
+      this.searchItem2();
+      this.selectMode = 'COMPLETE';
+    },
+    viewBtn: function viewBtn(go) {
+      var amari = this.i % go; //console.log("viewBtn amari = " + amari);
+
+      if (amari == 0) {
+        //console.log("viewBtn amari 0");
+        this.view_switch = 'on';
+      } else {
+        this.view_switch = 'off';
+      }
+
+      this.i = this.i + 1; //console.log("viewBtn i = " + this.i);
+    },
+    backLine: function backLine() {
+      this.selectMode = "LINEACTIVE";
+      var sc = this.selectCnt;
+      this.getItem(sc);
+    },
+    resultLine: function resultLine() {
+      this.details = [];
+      this.searchItem();
+      this.selectMode = "COMPLETE";
+    },
+    ForwardReverse: function ForwardReverse(arraykey, q1) {
+      //console.log("ForwardReverse in  = " + q1);
+      //console.log("ForwardReverse in  = " + arraykey);
+      var sort_target = arraykey; //ソート対象を変数で設定
+      //if(q1 == 1) this.details.sort((a, b) => a[sort_target] - b[sort_target]);
+      //if(q1 == 2) this.details.sort((a, b) => b[sort_target] - a[sort_target]);
+      //this.details = this.details.sort((x, y) => x[sort_target].localeCompare(y[sort_target], 'ja'));
+      //this.details = this.details.sort((x, y) => x[sort_target].lastIndexOf(y[sort_target], 'ja'));
+      //console.log("ForwardReverse in details = " + this.details);
+
+      if (q1 == 1) {
+        this.details = this.details.sort(function (x, y) {
+          if (x[sort_target] === y[sort_target]) {
+            return 0;
+          } else if (x[sort_target] === null) {
+            return 1;
+          } else if (y[sort_target] === null) {
+            return -1;
+          } else {
+            return x[sort_target].localeCompare(y[sort_target], 'ja');
+          }
+        });
+      }
+
+      if (q1 == 2) {
+        this.details = this.details.sort(function (x, y) {
+          if (x[sort_target] === y[sort_target]) {
+            return 0;
+          } else if (x[sort_target] === null) {
+            return 1;
+          } else if (y[sort_target] === null) {
+            return -1;
+          } else {
+            return y[sort_target].localeCompare(x[sort_target], 'ja');
+          }
+        });
+      } //console.log(this.details);
+
+    },
     // ------------------------ サーバー処理 ----------------------------
     Test: function Test() {
       console.log('テストコンソール出力');
+    },
+    // 取得処理
+    getItem: function getItem(sc) {
+      var _this = this;
+
+      this.inputClear();
+      var arrayParams = {
+        charge: this.charge,
+        product_name: this.product_name,
+        mdate: this.mdate,
+        orderfr: this.orderfr,
+        marks: sc,
+        is_deleted: 0
+      }; //console.log("getitem in arrayParams['mdate'] = " + arrayParams['mdate']);
+
+      this.postRequest("/material_management/get", arrayParams).then(function (response) {
+        //console.log(response);
+        _this.getThen(response);
+      })["catch"](function (reason) {
+        //console.log("getitem reason");
+        _this.serverCatch("取得");
+      });
+    },
+    // 取得処理(単)
+    getItemOne: function getItemOne(e, p, pn, md) {
+      var _this2 = this;
+
+      this.inputClear(); //console.log("getitem one in edit_id = " + e);
+      //console.log("getitem one in product_code = " + p);
+      //console.log("getitem one in p_name = " + pn);
+
+      this.edit_id = e;
+      this.product_code = p;
+      this.product_title = pn; //this.smode = md;
+      //console.log("getitem one in product_title = " + this.product_title);
+
+      var arrayParams = {
+        edit_id: e,
+        product_code: p
+      };
+      this.postRequest("/material_management/getone", arrayParams).then(function (response) {
+        _this2.getThen(response, md);
+
+        if (md === 'update') {
+          _this2.details[0].mdate = _this2.itsdate;
+          _this2.details[0].receipt = "";
+          _this2.details[0].delivery = "";
+        }
+      })["catch"](function (reason) {
+        //console.log("getitem reason");
+        _this2.serverCatch("取得");
+      });
+    },
+    // 検索処理
+    searchItem: function searchItem() {
+      var _this3 = this;
+
+      //console.log("searchItem in s_ = " + this.s_order_no);
+      //this.s_order_no = this.s_order_no;
+      this.classObj1 = "";
+      this.acttitle = "検索";
+      var motion_msg = "検索";
+      var messages = [];
+      var arrayParams = {
+        s_department: this.s_department,
+        s_charge: this.s_charge,
+        s_product_name: this.s_product_name,
+        s_product_number: this.s_product_number,
+        marks: this.selectCnt,
+        s_history: this.s_history
+      };
+      this.postRequest("/material_management/search", arrayParams).then(function (response) {
+        _this3.putThenSearch(response, motion_msg); //this.btnMode = "1";
+
+      })["catch"](function (reason) {
+        _this3.serverCatch("検索");
+      });
+    },
+    // 登録インサート処理
+    dataStore: function dataStore() {
+      var _this4 = this;
+
+      if (this.checkFormStore()) {
+        this.product_title = this.form.product_name;
+        this.classObj1 = "bgcolor3";
+        this.acttitle = "新規登録";
+        var messages = [];
+        var arrayParams = {
+          form: this.form,
+          marks: this.selectCnt
+        };
+        this.postRequest("/material_management/insert", arrayParams).then(function (response) {
+          _this4.putThenStore(response, "新規登録");
+        })["catch"](function (reason) {
+          _this4.serverCatch("登録");
+        });
+      }
+    },
+    // ゴミ箱処理
+    dataDel: function dataDel(index, k) {
+      var _this5 = this;
+
+      this.product_title = this.form.product_name;
+      this.classObj1 = "bgcolor4";
+      this.acttitle = "抹消へ移動";
+      var messages = [];
+      var arrayParams = {
+        details: this.details[index],
+        upkind: k
+      };
+      this.postRequest("/material_management/update", arrayParams).then(function (response) {
+        _this5.putThenDel(response, "抹消へ移動");
+      })["catch"](function (reason) {
+        _this5.serverCatch("抹消移動");
+      });
+    },
+    // レコード削除処理
+    recordDel: function recordDel(index, dk) {
+      var _this6 = this;
+
+      var messages = [];
+      messages.push("この登録を削除しますか？");
+      this.htmlMessageSwal(this.details[index].product_name, messages, "info", true, true).then(function (result) {
+        if (result) {
+          //this.storeData();
+          var arrayParams = {
+            details: _this6.details[index],
+            delkind: dk
+          };
+
+          _this6.postRequest("/material_management/delete", arrayParams).then(function (response) {
+            _this6.putThenRecordDel(response, "削除");
+          })["catch"](function (reason) {
+            _this6.serverCatch("削除");
+          });
+        }
+      });
+    },
+    // 編集変更処理
+    dataUpdate: function dataUpdate(index, k) {
+      var _this7 = this;
+
+      var messages = [];
+
+      if (k == 1) {
+        this.details[index].now_inventory = this.details[index].now_inventory + this.details[index].receipt - this.details[index].delivery;
+        this.details[index].total = this.details[index].now_inventory * this.details[index].unit_price;
+      }
+
+      var arrayParams = {
+        details: this.details[index],
+        upkind: k
+      };
+      var motion_msg = "";
+      if (k == 0) motion_msg = '修正';
+      if (k == 1) motion_msg = '在庫を更新';
+      if (k == 2) motion_msg = '新しい商品追加';
+      this.postRequest("/material_management/update", arrayParams).then(function (response) {
+        _this7.putThenHead(response, motion_msg, k);
+      })["catch"](function (reason) {
+        _this7.serverCatch(motion_msg);
+      });
+    },
+    // -------------------- 共通 ----------------------------
+    // 取得正常処理
+    getThen: function getThen(response, md) {
+      var res = response.data; //console.log('getthen in res = ' + res);
+
+      if (res.result) {
+        this.details = res.details;
+        this.details2 = res.details2;
+        this.count = this.details.length; //this.before_count = this.count;
+
+        if (res.totals) {
+          this.totals = res.totals[0].totals;
+        }
+
+        if (this.details.length > 0) {
+          this.form.id = this.details[0].id;
+          this.form.mdate = this.details[0].mdate;
+          this.form.department = this.details[0].department;
+          this.form.charge = this.details[0].charge;
+          this.form.product_name = this.details[0].product_name;
+          this.form.product_code = this.details[0].product_code;
+          this.form.product_number = this.details[0].product_number;
+          this.form.unit = this.details[0].unit;
+          this.form.quantity = this.details[0].quantity;
+          this.form.receipt = this.details[0].receipt;
+          this.form.delivery = this.details[0].delivery;
+          this.form.now_inventory = this.details[0].now_inventory;
+          this.form.nbox = this.details[0].nbox;
+          this.form.order_address = this.details[0].order_address;
+          this.form.unit_price = this.details[0].unit_price;
+          this.form.total = this.details[0].total;
+          this.form.remarks = this.details[0].remarks;
+          this.form.note = this.details[0].note;
+          this.form.status = this.details[0].status;
+          this.form.marks = this.details[0].marks;
+          this.form.created_user = this.details[0].created_user;
+          this.form.updated_user = this.details[0].updated_user;
+          this.form.created_at = this.details[0].created_at;
+          this.form.updated_at = this.details[0].updated_at;
+          this.form.is_deleted = this.details[0].is_deleted;
+        } else {}
+      } else {
+        if (res.messagedata.length > 0) {
+          this.htmlMessageSwal("エラー", res.messagedata, "error", true, false);
+        } else {
+          this.serverCatch("取得");
+        }
+      }
+    },
+    // 検索系正常処理
+    putThenSearch: function putThenSearch(response, eventtext) {
+      var messages = [];
+      var res = response.data; //if (res.result) {
+
+      if (res.details.length > 0) {
+        this.details = res.details; //this.classObj1 = (this.details[0].status == 'newest') ? 'bgcolor3' : '';
+
+        if (res.s_history) {
+          this.str_s_history = ' 履歴含む';
+        } else {
+          this.str_s_history = '';
+        }
+
+        console.log("putThenSearch in res.search_totals = " + res.search_totals[0].total_s);
+
+        if (res.search_totals) {
+          this.search_totals = res.search_totals[0].total_s;
+        }
+
+        this.product_title = res.s_department + ' ' + res.s_charge + ' ' + res.s_product_name + ' ' + res.s_product_number + ' ' + this.str_s_history; //console.log("putThenSearch in res.s_product_name = " + res.s_product_name);
+
+        this.$toasted.show(this.product_title + " " + eventtext + "しました");
+        this.actionmsgArr.push(this.product_title + " を検索しました。");
+      } else {
+        this.actionmsgArr.push(this.s_department + this.s_charge + this.s_product_name + this.s_product_number + " が見つかりませんでした。", "");
+
+        if (res.messagedata.length > 0) {
+          this.htmlMessageSwal("警告", res.messagedata, "warning", true, false);
+        } else {
+          this.serverCatch(eventtext);
+        }
+      }
+    },
+    // 更新系正常処理
+    putThenHead: function putThenHead(response, eventtext, k) {
+      var object_mode = {
+        0: 'fix',
+        1: 'update',
+        2: 'new'
+      };
+      console.log('key: ' + k + 'value: ' + object_mode[k]);
+      var messages = [];
+      var res = response.data;
+
+      if (res.result) {
+        if (res.id) {
+          //this.acttitle = "更新";
+          this.edit_id = res.id; //console.log("putThenHead in res.pid = " + res.product_code);
+
+          this.product_code = res.product_code;
+          this.product_title = res.product_name;
+        }
+
+        this.$toasted.show(this.product_title + "を" + eventtext + "しました");
+        this.getItemOne(this.edit_id, this.product_code, this.product_title, object_mode[k]);
+      } else {
+        if (res.messagedata.length > 0) {
+          this.htmlMessageSwal("警告", res.messagedata, "warning", true, false);
+        } else {
+          this.serverCatch(eventtext);
+        }
+      }
+    },
+    // 新規系正常処理
+    putThenStore: function putThenStore(response, eventtext) {
+      var messages = [];
+      var res = response.data;
+
+      if (res.result) {
+        this.re_id = res.id;
+        this.acttitle = "登録";
+        this.getItemOne(this.re_id, this.product_code, this.product_title);
+        this.$toasted.show(this.product_title + "を" + eventtext + "しました");
+        this.actionmsgArr.push(this.product_title + "を新規登録しました。", "");
+        this.selectMode = 'COMPLETE';
+      } else {
+        if (res.messagedata.length > 0) {
+          this.htmlMessageSwal("警告", res.messagedata, "warning", true, false);
+        } else {
+          this.serverCatch(eventtext);
+        }
+      }
+    },
+    // 削除系正常処理
+    putThenDel: function putThenDel(response, eventtext) {
+      var messages = [];
+      var res = response.data;
+
+      if (res.result) {
+        this.re_id = res.id;
+        this.acttitle = "移動";
+        this.getItemOne(this.re_id, this.product_code, this.product_title);
+        this.$toasted.show(this.product_title + "を" + eventtext + "しました");
+        this.actionmsgArr.push(this.product_title + " を抹消へ移動しました。", "");
+        this.btnMode = 'off';
+        this.selectMode = 'COMPLETE';
+      } else {
+        if (res.messagedata.length > 0) {
+          this.htmlMessageSwal("警告", res.messagedata, "warning", true, false);
+        } else {
+          this.serverCatch(eventtext);
+        }
+      }
+    },
+    // レコード削除正常処理
+    putThenRecordDel: function putThenRecordDel(response, eventtext) {
+      var messages = [];
+      var res = response.data;
+
+      if (res.result) {
+        this.re_id = res.id;
+        this.acttitle = "削除";
+        this.getItemOne(this.re_id, this.product_code, this.product_title);
+        this.$toasted.show(this.product_title + "を" + eventtext + "しました");
+        this.actionmsgArr.push(this.product_title + " を削除しました。");
+        this.selectMode = 'COMPLETE';
+      } else {
+        if (res.messagedata.length > 0) {
+          this.htmlMessageSwal("警告", res.messagedata, "warning", true, false);
+        } else {
+          this.serverCatch(eventtext);
+        }
+      }
+    },
+    // 異常処理
+    serverCatch: function serverCatch(eventtext) {
+      var messages = []; //messages.push("在庫管理" + eventtext + "に失敗しました");
+      //this.htmlMessageSwal("エラー", messages, "error", true, false);
+    },
+    inputClear: function inputClear() {
+      this.details = [];
+      this.form.id = "";
+      this.form.mdate = "";
+      this.form.department = "";
+      this.form.charge = "";
+      this.form.product_name = "";
+      this.form.product_code = "";
+      this.form.product_number = "";
+      this.form.unit = "";
+      this.form.quantity = "";
+      this.form.receipt = "";
+      this.form.delivery = "";
+      this.form.now_inventory = "";
+      this.form.nbox = "";
+      this.form.order_address = "";
+      this.form.unit_price = "";
+      this.form.total = "";
+      this.form.remarks = "";
+      this.form.note = "";
+      this.form.status = "";
+      this.form.marks = "";
+      this.form.created_user = "";
+      this.form.updated_user = "";
+      this.form.created_at = "";
+      this.form.updated_at = "";
+      this.form.is_deleted = "";
+    },
+    dateset: function dateset() {
+      var date_obj = new Date(); //console.log('todayset = ' + date_obj);
+
+      this.today_year = date_obj.getFullYear(); // 西暦年取得
+
+      this.today_month = date_obj.getMonth(); // 月取得
+
+      this.today_day = date_obj.getDate(); // 日取得
+      // 文字列として連結month_format
+
+      this.itsdate = ('0000' + this.today_year).slice(-4) + '-' + ('00' + (this.today_month + 1)).slice(-2) + '-' + ('00' + this.today_day).slice(-2);
     } // -------------------- 共通 ----------------------------
 
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Base.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Base.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Base",
-  data: function data() {
-    return {
-      name: "太郎"
-    };
   }
 });
 
@@ -1987,16 +2863,15 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Mmake.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Mmake.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Search.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Search.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _mixins_requestable_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../mixins/requestable.js */ "./resources/js/mixins/requestable.js");
 //
 //
 //
@@ -2112,1298 +2987,332 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// import mit-parts from "./Parts.vue";
 //import moment from "moment";
 //import { dialogable } from "../mixins/dialogable.js";
 //import { checkable } from "../mixins/checkable.js";
-
+//import { requestable } from "../mixins/requestable.js";
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Mmake",
+  name: 'Search',
+  template: "\n    <div>\n    <p>\u30A8\u30AF\u30B9\u30DD\u30FC\u30C8\u30C7\u30D5\u30A9\u30EB\u30C8</p>\n    </div>\n  ",
   //mixins: [dialogable, checkable, requestable],
-  mixins: [_mixins_requestable_js__WEBPACK_IMPORTED_MODULE_0__["requestable"]],
   props: {
     /*
-      authusers: {
-        type: Array,
-        default: []
-      }
+    authusers: {
+      type: Array,
+      default: []
+    
+    }
     */
   },
-
-  /*
-  components: {
-    mit-parts: mit-parts,
-  },
-  */
   data: function data() {
     return {
       details: [],
+      informations: [],
+      content: "",
       login_user_code: 0,
       login_user_role: 0,
       dialogVisible: false,
       messageshowsearch: false,
-      partsview: false,
-      outsourcingview: false,
-      inputid: "",
-      targetid: "",
-      pagenum: "",
-      pagename: "",
-      inputtextid: ""
-    };
-  },
-  // マウント時
-  mounted: function mounted() {//this.login_user_code = this.authusers["code"];
-    //this.login_user_role = this.authusers["role"];
-  },
-  methods: {
-    // -------------------- イベント処理 --------------------
-    OnButtonClick: function OnButtonClick(t) {
-      var tm = t + '_mark';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
-
-      if (inputvalue == "1") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-      } else if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
-      }
-    },
-    OnButtonClickT: function OnButtonClickT(t) {
-      var tm = t + '_mark';
-      var tb = t + '_btn';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
-      var btnid = document.getElementById(tb);
-
-      if (inputvalue == "1") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-        btnid.innerHTML = "通し無し";
-      } else if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "2";
-        btnid.innerHTML = "通し有り";
-      } else if (inputvalue == "2") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
-        btnid.innerHTML = "印刷有り";
-      }
-    },
-    OnButtonClickD: function OnButtonClickD(t) {
-      var tm = t + '_mark';
-      var tb = t + '_btn';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
-      var btnid = document.getElementById(tb);
-
-      if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
-        btnid.innerHTML = "断裁・一般";
-      } else if (inputvalue == "1") {
-        targetid.style.visibility = "visible";
-        inputid.value = "2";
-        btnid.innerHTML = "断裁・インサータ";
-      } else if (inputvalue == "2") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-        btnid.innerHTML = "断裁";
-      }
-    },
-    OnButtonClick01: function OnButtonClick01(t, arr) {
-      var idname_array = new Object();
-      idname_array[0] = ['inch', 'milli'];
-      idname_array[2] = ['nisu_single', 'nisu_double'];
-      idname_array[3] = ['sei_marble', 'sei_cross'];
-      idname_array[4] = ['sei_mat_maki_cardboard', 'sei_mat_cardboard'];
-      idname_array[5] = ['sei_kurumi', 'sei_musen_tozi', 'sei_naka_tozi'];
-      idname_array[6] = ['sei_bara', 'sei_oneset'];
-      idname_array[7] = ['sei_a_system', 'sei_c_system'];
-
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i];
-        var nm = n + '_mark';
-        var inputid = document.getElementById(n);
-        var inputvalue = inputid.value;
-        var targetid = document.getElementById(nm);
-
-        if (idname_array[arr][i] == t) {
-          if (inputvalue == "1") {
-            targetid.style.visibility = "hidden";
-            inputid.value = "0";
-          } else if (inputvalue == "0") {
-            targetid.style.visibility = "visible";
-            inputid.value = "1";
-          }
-        } else {
-          targetid.style.visibility = "hidden";
-          inputid.value = "0";
-        }
-      }
-    },
-    OnButtonClick02: function OnButtonClick02(t, arr) {
-      var idname_array = new Object();
-      idname_array[1] = ['wkake', 'ana2', 'ana6', 'donko', 'katanuki', 'kasutori'];
-
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i];
-        var nm = n + '_mark';
-        var inputid = document.getElementById(n);
-        var inputvalue = inputid.value;
-        var targetid = document.getElementById(nm);
-        var passmark = false;
-
-        if (n == 'wkake' && t == 'katanuki' || t == 'wkake' && n == 'katanuki') {
-          var passmark = true;
-        } else if (n == 'kasutori' && t == 'katanuki' || t == 'kasutori' && n == 'katanuki') {
-          var passmark = true;
-        }
-
-        if (idname_array[arr][i] == t) {
-          if (inputvalue == "1") {
-            targetid.style.visibility = "hidden";
-            inputid.value = "0";
-          } else if (inputvalue == "0") {
-            targetid.style.visibility = "visible";
-            inputid.value = "1";
-          }
-        } else {
-          if (passmark == false) {
-            targetid.style.visibility = "hidden";
-            inputid.value = "0";
-          }
-        }
-      }
-    },
-    OnButtonClick03: function OnButtonClick03(t, arr, t2) {
-      var idname_array = new Object();
-      idname_array[0] = ['inch', 'milli'];
-
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i];
-        var nm = n + '_mark';
-        var inputid = document.getElementById(t2);
-        var inputvalue = inputid.value;
-        var targetid = document.getElementById(nm);
-
-        if (idname_array[arr][i] == t) {
-          if (t == 'inch') {
-            if (inputvalue == "1") {
-              targetid.style.visibility = "hidden";
-              inputid.value = "0";
-            } else if (inputvalue == "0" || inputvalue == "2") {
-              targetid.style.visibility = "visible";
-              inputid.value = "1";
-            }
-          } else if (t == 'milli') {
-            if (inputvalue == "2") {
-              targetid.style.visibility = "hidden";
-              inputid.value = "0";
-            } else if (inputvalue == "0" || inputvalue == "1") {
-              targetid.style.visibility = "visible";
-              inputid.value = "2";
-            }
-          }
-        } else {
-          targetid.style.visibility = "hidden"; //inputid.value = "0";
-        }
-      }
-    },
-    SetParts: function SetParts(pnum, pname) {
-      var _this = this;
-
-      var tid = "cnt1";
-      var targetid = document.getElementById(tid);
-      targetid.style.visibility = "hidden"; //現在未使用
-
-      var arrayParams = {
-        pagenum: pnum,
-        pagename: pname,
-        partsview: true
-      };
-      this.postRequest("/parts/get", arrayParams).then(function (response) {
-        _this.getThen(response);
-      })["catch"](function (reason) {
-        _this.serverCatch("取得");
-      });
-      this.pagenum = pnum;
-      this.pagename = pname;
-      this.partsview = true;
-      console.log('SetParts コンソール出力 = ' + pname);
-    },
-    Pcancel: function Pcancel() {
-      var tid = "cnt1";
-      var targetid = document.getElementById(tid);
-      targetid.style.visibility = "visible";
-      this.partsview = false;
-      console.log('パーツ画面Parts.vue 終了');
-    },
-    OScancel: function OScancel() {
-      //const tid = "cnt1";
-      //var targetid = document.getElementById(tid);
-      //targetid.style.visibility = "visible";
-      this.outsourcingview = false;
-      console.log('外注先画面Outsourcing.vue 終了');
-    },
-    selectOS: function selectOS(event, param1) {
-      //const tid = "cnt1";
-      //var targetid = document.getElementById(tid);
-      //targetid.style.visibility = "visible";
-      //this.event.value = event;
-      var target_inputid = document.getElementById(event);
-      target_inputid.value = param1;
-      this.outsourcingview = false;
-      console.log('Mmake.vue selectOS event = ' + event);
-    },
-    OutsourcingButton: function OutsourcingButton(t) {
-      //id="product_all_outsou2_btn" @click="OutsourcingButton('product_all_outsou2')
-      //var inputtextid = t;
-      var tbid = t + '_btn';
-      var targetid = document.getElementById(t);
-      var viewtaget = document.getElementById('area1');
-      var textbox = document.getElementById('TextArea1');
-      var elem = document.getElementById(tbid);
-      var rect = elem.getBoundingClientRect();
-      var elemtop = rect.top + window.pageYOffset - 0;
-      var elemleft = rect.left + window.pageXOffset;
-      var elembottom = rect.bottom + window.pageYOffset;
-      var elemright = rect.right + window.pageXOffset; //textbox.value = 'top:' + elemtop+'\r\n'; 
-      //textbox.value += 'left:' + elemleft+'\r\n'; 
-      //textbox.value += 'bottom:' + elembottom+'\r\n'; 
-      //textbox.value += 'right:' + elemright+'\r\n'; 
-
-      console.log('Button y = ' + elemtop);
-      viewtaget.style.position = 'absolute';
-      viewtaget.style.top = elemtop + 'px'; //viewtaget.style.left = pageX + 'px';
-
-      viewtaget.style.left = '0px'; //this.pagenum = pnum;
-      //this.pagename = pname;
-
-      this.inputtextid = t;
-      this.outsourcingview = true;
-      console.log('OutsourcingButton 引数 = ' + t);
-    },
-    // -------------------- サーバー処理 --------------------
-    // -------------------- 共通 --------------------
-    // 取得正常処理
-    getThen: function getThen(response) {
-      console.log('正常');
-    },
-    // 異常処理
-    serverCatch: function serverCatch(eventtext) {
-      console.log('異常処理');
-    }
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Outsourcing.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Outsourcing.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//import { requestable } from "../mixins/requestable.js";
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Outsourcing',
-  //mixins: [dialogable, checkable, requestable],
-  props: {
-    inputTextid: {
-      type: String,
-      "default": ""
-    }
-  },
-  data: function data() {
-    return {
-      details: [],
-      pagename: "",
-      inputtextid: ""
+      infomationmessage: [],
+      message: "aaa",
+      showMessage: true,
+      selectMode: "LINEACTIVE",
+      s_department: "",
+      s_name: "",
+      s_yomi: "",
+      totals: ""
     };
   },
   // マウント時
   mounted: function mounted() {
-    //this.Test();
-    this.getItem();
+    //this.login_user_code = this.authusers["code"];
+    //this.login_user_role = this.authusers["role"];
+    this.Test();
+  },
+  filters: {
+    numberFormat: function numberFormat(num) {
+      return num.toLocaleString();
+    }
   },
   methods: {
-    // -------------------- イベント処理 --------------------
-    OnButtonClick: function OnButtonClick(t) {
-      var tm = t + '_mark';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
+    searchBtn: function searchBtn() {
+      this.details = [];
+      this.searchItem();
+      this.selectMode = 'COMPLETE';
+    },
+    searchBtn2: function searchBtn2() {
+      this.details = [];
+      this.searchItem2();
+      this.selectMode = 'COMPLETE';
+    },
+    viewBtn: function viewBtn(go) {
+      var amari = this.i % go; //console.log("viewBtn amari = " + amari);
 
-      if (inputvalue == "1") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-      } else if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
+      if (amari == 0) {
+        //console.log("viewBtn amari 0");
+        this.view_switch = 'on';
+      } else {
+        this.view_switch = 'off';
       }
+
+      this.i = this.i + 1; //console.log("viewBtn i = " + this.i);
     },
-    cancelClickBtn: function cancelClickBtn() {
-      this.$emit('oscancel-event', event);
-      console.log('cancelClickBtn Outsourcing.vue キャンセルボタン押下');
+    backLine: function backLine() {
+      this.selectMode = "LINEACTIVE";
+      var sc = this.selectCnt;
+      this.getItem(sc);
     },
-    SelectOsBtn: function SelectOsBtn(ival) {
-      var event = this.inputTextid;
-      var param1 = ival;
-      this.$emit('selectos-event', event, param1);
-      console.log('SelectOsBtn inputTextid = ' + this.inputTextid);
+    resultLine: function resultLine() {
+      this.details = [];
+      this.searchItem();
+      this.selectMode = "COMPLETE";
+    },
+    ForwardReverse: function ForwardReverse(arraykey, q1) {
+      //console.log("ForwardReverse in  = " + q1);
+      //console.log("ForwardReverse in  = " + arraykey);
+      var sort_target = arraykey; //ソート対象を変数で設定
+      //if(q1 == 1) this.details.sort((a, b) => a[sort_target] - b[sort_target]);
+      //if(q1 == 2) this.details.sort((a, b) => b[sort_target] - a[sort_target]);
+      //this.details = this.details.sort((x, y) => x[sort_target].localeCompare(y[sort_target], 'ja'));
+      //this.details = this.details.sort((x, y) => x[sort_target].lastIndexOf(y[sort_target], 'ja'));
+      //console.log("ForwardReverse in details = " + this.details);
+
+      if (q1 == 1) {
+        this.details = this.details.sort(function (x, y) {
+          if (x[sort_target] === y[sort_target]) {
+            return 0;
+          } else if (x[sort_target] === null) {
+            return 1;
+          } else if (y[sort_target] === null) {
+            return -1;
+          } else {
+            return x[sort_target].localeCompare(y[sort_target], 'ja');
+          }
+        });
+      }
+
+      if (q1 == 2) {
+        this.details = this.details.sort(function (x, y) {
+          if (x[sort_target] === y[sort_target]) {
+            return 0;
+          } else if (x[sort_target] === null) {
+            return 1;
+          } else if (y[sort_target] === null) {
+            return -1;
+          } else {
+            return y[sort_target].localeCompare(x[sort_target], 'ja');
+          }
+        });
+      } //console.log(this.details);
+
     },
     // ------------------------ サーバー処理 ----------------------------
+    Test: function Test() {
+      console.log('テストコンソール出力');
+    },
     // 取得処理
-    getItem: function getItem() {
+    getItem: function getItem(sc) {
       var _this = this;
 
-      //this.inputClear();
-      //console.log("getitem in");
-      var arrayParams = {};
-      axios.post("/outsourcing/get", arrayParams).then(function (response) {
+      this.inputClear();
+      var arrayParams = {
+        charge: this.charge,
+        product_name: this.product_name,
+        mdate: this.mdate,
+        orderfr: this.orderfr,
+        marks: sc,
+        is_deleted: 0
+      }; //console.log("getitem in arrayParams['mdate'] = " + arrayParams['mdate']);
+
+      this.postRequest("/material_management/get", arrayParams).then(function (response) {
+        //console.log(response);
         _this.getThen(response);
       })["catch"](function (reason) {
+        //console.log("getitem reason");
         _this.serverCatch("取得");
       });
     },
-    Test: function Test() {
-      console.log('Outsourcing.vue 出力');
+    // 取得処理(単)
+    getItemOne: function getItemOne(e, p, pn, md) {
+      var _this2 = this;
+
+      this.inputClear(); //console.log("getitem one in edit_id = " + e);
+      //console.log("getitem one in product_code = " + p);
+      //console.log("getitem one in p_name = " + pn);
+
+      this.edit_id = e;
+      this.product_code = p;
+      this.product_title = pn; //this.smode = md;
+      //console.log("getitem one in product_title = " + this.product_title);
+
+      var arrayParams = {
+        edit_id: e,
+        product_code: p
+      };
+      this.postRequest("/material_management/getone", arrayParams).then(function (response) {
+        _this2.getThen(response, md);
+
+        if (md === 'update') {
+          _this2.details[0].mdate = _this2.itsdate;
+          _this2.details[0].receipt = "";
+          _this2.details[0].delivery = "";
+        }
+      })["catch"](function (reason) {
+        //console.log("getitem reason");
+        _this2.serverCatch("取得");
+      });
+    },
+    // 検索処理
+    searchItem: function searchItem() {
+      var _this3 = this;
+
+      //console.log("searchItem in s_ = " + this.s_order_no);
+      //this.s_order_no = this.s_order_no;
+      this.classObj1 = "";
+      this.acttitle = "検索";
+      var motion_msg = "検索";
+      var messages = [];
+      var arrayParams = {
+        s_department: this.s_department,
+        s_charge: this.s_charge,
+        s_product_name: this.s_product_name,
+        s_product_number: this.s_product_number,
+        marks: this.selectCnt,
+        s_history: this.s_history
+      };
+      this.postRequest("/material_management/search", arrayParams).then(function (response) {
+        _this3.putThenSearch(response, motion_msg); //this.btnMode = "1";
+
+      })["catch"](function (reason) {
+        _this3.serverCatch("検索");
+      });
+    },
+    // 登録インサート処理
+    dataStore: function dataStore() {
+      var _this4 = this;
+
+      if (this.checkFormStore()) {
+        this.product_title = this.form.product_name;
+        this.classObj1 = "bgcolor3";
+        this.acttitle = "新規登録";
+        var messages = [];
+        var arrayParams = {
+          form: this.form,
+          marks: this.selectCnt
+        };
+        this.postRequest("/material_management/insert", arrayParams).then(function (response) {
+          _this4.putThenStore(response, "新規登録");
+        })["catch"](function (reason) {
+          _this4.serverCatch("登録");
+        });
+      }
+    },
+    // ゴミ箱処理
+    dataDel: function dataDel(index, k) {
+      var _this5 = this;
+
+      this.product_title = this.form.product_name;
+      this.classObj1 = "bgcolor4";
+      this.acttitle = "抹消へ移動";
+      var messages = [];
+      var arrayParams = {
+        details: this.details[index],
+        upkind: k
+      };
+      this.postRequest("/material_management/update", arrayParams).then(function (response) {
+        _this5.putThenDel(response, "抹消へ移動");
+      })["catch"](function (reason) {
+        _this5.serverCatch("抹消移動");
+      });
+    },
+    // レコード削除処理
+    recordDel: function recordDel(index, dk) {
+      var _this6 = this;
+
+      var messages = [];
+      messages.push("この登録を削除しますか？");
+      this.htmlMessageSwal(this.details[index].product_name, messages, "info", true, true).then(function (result) {
+        if (result) {
+          //this.storeData();
+          var arrayParams = {
+            details: _this6.details[index],
+            delkind: dk
+          };
+
+          _this6.postRequest("/material_management/delete", arrayParams).then(function (response) {
+            _this6.putThenRecordDel(response, "削除");
+          })["catch"](function (reason) {
+            _this6.serverCatch("削除");
+          });
+        }
+      });
+    },
+    // 編集変更処理
+    dataUpdate: function dataUpdate(index, k) {
+      var _this7 = this;
+
+      var messages = [];
+
+      if (k == 1) {
+        this.details[index].now_inventory = this.details[index].now_inventory + this.details[index].receipt - this.details[index].delivery;
+        this.details[index].total = this.details[index].now_inventory * this.details[index].unit_price;
+      }
+
+      var arrayParams = {
+        details: this.details[index],
+        upkind: k
+      };
+      var motion_msg = "";
+      if (k == 0) motion_msg = '修正';
+      if (k == 1) motion_msg = '在庫を更新';
+      if (k == 2) motion_msg = '新しい商品追加';
+      this.postRequest("/material_management/update", arrayParams).then(function (response) {
+        _this7.putThenHead(response, motion_msg, k);
+      })["catch"](function (reason) {
+        _this7.serverCatch(motion_msg);
+      });
     },
     // -------------------- 共通 ----------------------------
     // 取得正常処理
-    getThen: function getThen(response) {
+    getThen: function getThen(response, md) {
       var res = response.data; //console.log('getthen in res = ' + res);
 
       if (res.result) {
         this.details = res.details;
+        this.details2 = res.details2;
+        this.count = this.details.length; //this.before_count = this.count;
+
+        if (res.totals) {
+          this.totals = res.totals[0].totals;
+        }
+
+        if (this.details.length > 0) {
+          this.form.id = this.details[0].id;
+          this.form.mdate = this.details[0].mdate;
+          this.form.department = this.details[0].department;
+          this.form.charge = this.details[0].charge;
+          this.form.product_name = this.details[0].product_name;
+          this.form.product_code = this.details[0].product_code;
+          this.form.product_number = this.details[0].product_number;
+          this.form.unit = this.details[0].unit;
+          this.form.quantity = this.details[0].quantity;
+          this.form.receipt = this.details[0].receipt;
+          this.form.delivery = this.details[0].delivery;
+          this.form.now_inventory = this.details[0].now_inventory;
+          this.form.nbox = this.details[0].nbox;
+          this.form.order_address = this.details[0].order_address;
+          this.form.unit_price = this.details[0].unit_price;
+          this.form.total = this.details[0].total;
+          this.form.remarks = this.details[0].remarks;
+          this.form.note = this.details[0].note;
+          this.form.status = this.details[0].status;
+          this.form.marks = this.details[0].marks;
+          this.form.created_user = this.details[0].created_user;
+          this.form.updated_user = this.details[0].updated_user;
+          this.form.created_at = this.details[0].created_at;
+          this.form.updated_at = this.details[0].updated_at;
+          this.form.is_deleted = this.details[0].is_deleted;
+        } else {}
       } else {
         if (res.messagedata.length > 0) {
           this.htmlMessageSwal("エラー", res.messagedata, "error", true, false);
@@ -3411,4348 +3320,178 @@ __webpack_require__.r(__webpack_exports__);
           this.serverCatch("取得");
         }
       }
-
-      console.log('取得正常処理');
     },
-    // 異常処理
-    serverCatch: function serverCatch(eventtext) {
-      var messages = []; //messages.push("" + eventtext + "に失敗しました");
-      //this.htmlMessageSwal("エラー", messages, "error", true, false);
+    // 検索系正常処理
+    putThenSearch: function putThenSearch(response, eventtext) {
+      var messages = [];
+      var res = response.data; //if (res.result) {
 
-      console.log('異常処理');
-    }
-  }
-});
+      if (res.details.length > 0) {
+        this.details = res.details; //this.classObj1 = (this.details[0].status == 'newest') ? 'bgcolor3' : '';
 
-/***/ }),
+        if (res.s_history) {
+          this.str_s_history = ' 履歴含む';
+        } else {
+          this.str_s_history = '';
+        }
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Parts.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Parts.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+        console.log("putThenSearch in res.search_totals = " + res.search_totals[0].total_s);
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//import moment from "moment";
-//import { dialogable } from "../mixins/dialogable.js";
-//import { checkable } from "../mixins/checkable.js";
-//import { requestable } from "../mixins/requestable.js";
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Parts',
-  //mixins: [dialogable, checkable, requestable],
-  props: {
-    pageNum: {
-      type: Number,
-      "default": ""
-    },
-    pageName: {
-      type: String,
-      "default": ""
-    }
-  },
-  data: function data() {
-    return {
-      details: [],
-      pagename: "",
-      outsourcingview: false
-    };
-  },
-  // マウント時
-  mounted: function mounted() {
-    this.Test();
-  },
-  methods: {
-    // -------------------- イベント処理 --------------------
-    OnButtonClick: function OnButtonClick(t) {
-      var tm = t + '_mark';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
+        if (res.search_totals) {
+          this.search_totals = res.search_totals[0].total_s;
+        }
 
-      if (inputvalue == "1") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-      } else if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
+        this.product_title = res.s_department + ' ' + res.s_charge + ' ' + res.s_product_name + ' ' + res.s_product_number + ' ' + this.str_s_history; //console.log("putThenSearch in res.s_product_name = " + res.s_product_name);
+
+        this.$toasted.show(this.product_title + " " + eventtext + "しました");
+        this.actionmsgArr.push(this.product_title + " を検索しました。");
+      } else {
+        this.actionmsgArr.push(this.s_department + this.s_charge + this.s_product_name + this.s_product_number + " が見つかりませんでした。", "");
+
+        if (res.messagedata.length > 0) {
+          this.htmlMessageSwal("警告", res.messagedata, "warning", true, false);
+        } else {
+          this.serverCatch(eventtext);
+        }
       }
     },
-    cancelClickBtn: function cancelClickBtn() {
-      this.$emit('pcancel-event', event);
-      console.log('cancelClickBtn Parts.vue キャンセルボタン押下 = ' + this.pageName);
-    },
-    OutsourcingButton: function OutsourcingButton(t) {
-      var tbid = t + '_btn';
-      var targetid = document.getElementById(t);
-      var viewtaget = document.getElementById('area1');
-      var textbox = document.getElementById('TextArea1');
-      var elem = document.getElementById(tbid);
-      var rect = elem.getBoundingClientRect();
-      var elemtop = rect.top + window.pageYOffset - 40;
-      var elemleft = rect.left + window.pageXOffset;
-      var elembottom = rect.bottom + window.pageYOffset;
-      var elemright = rect.right + window.pageXOffset; //textbox.value = 'top:' + elemtop+'\r\n'; 
-      //textbox.value += 'left:' + elemleft+'\r\n'; 
-      //textbox.value += 'bottom:' + elembottom+'\r\n'; 
-      //textbox.value += 'right:' + elemright+'\r\n'; 
-
-      console.log('Button y = ' + elemtop);
-      viewtaget.style.position = 'absolute';
-      viewtaget.style.top = elemtop + 'px'; //viewtaget.style.left = pageX + 'px';
-
-      viewtaget.style.left = '0px';
-      this.inputtextid = t;
-      this.outsourcingview = true;
-      console.log('OutsourcingButton 引数 = ' + t);
-    },
-    selectOS: function selectOS(event, param1) {
-      var target_inputid = document.getElementById(event);
-      target_inputid.value = param1;
-      this.outsourcingview = false;
-      console.log('Parts.vue selectOS event = ' + event);
-    },
-    OScancel: function OScancel() {
-      this.outsourcingview = false;
-      console.log('外注先画面Outsourcing.vue 終了');
-    },
-    // ------------------------ サーバー処理 ----------------------------
-    Test: function Test() {
-      console.log('Parts.vue 出力');
-    } // -------------------- 共通 ----------------------------
-
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/PopupPrint.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/PopupPrint.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Base",
-  props: {
-    mCode: {
-      type: String,
-      "default": ""
-    },
-    printData: {
-      type: String,
-      "default": ""
-    },
-    printTitle: {
-      type: String,
-      "default": ""
-    }
-  },
-  data: function data() {
-    return {
-      details: [],
-      pagename: "",
-      RePrintData: ""
-    };
-  },
-  mounted: function mounted() {
-    //this.getItem();
-    this.ReplacePrintData();
-  },
-  methods: {
-    // -------------------- イベント処理 --------------------
-    cancelClickBtn: function cancelClickBtn() {
-      this.$emit('pricancel-event', event);
-      console.log('cancelClickBtn PopupPrint.vue 閉じるボタン押下 = ' + this.pageName);
-    },
-    // -------------------- サーバー処理 ----------------------------
-    // 見積情報を取得
-    getItem: function getItem() {
-      var _this = this;
-
-      var arrayParams = {
-        m_code: mCode
+    // 更新系正常処理
+    putThenHead: function putThenHead(response, eventtext, k) {
+      var object_mode = {
+        0: 'fix',
+        1: 'update',
+        2: 'new'
       };
-      this.postRequest("/print_q/get", arrayParams).then(function (response) {
-        _this.getThen(response);
-      })["catch"](function (reason) {
-        _this.serverCatch("取得");
-      });
-    },
-    // -------------------- 共通 ----------------------------
-    // 取得正常処理
-    getThen: function getThen(response) {
-      var res = response.data; //console.log('getthen in res = ' + res);
+      console.log('key: ' + k + 'value: ' + object_mode[k]);
+      var messages = [];
+      var res = response.data;
 
       if (res.result) {
-        this.details = res.details;
+        if (res.id) {
+          //this.acttitle = "更新";
+          this.edit_id = res.id; //console.log("putThenHead in res.pid = " + res.product_code);
+
+          this.product_code = res.product_code;
+          this.product_title = res.product_name;
+        }
+
+        this.$toasted.show(this.product_title + "を" + eventtext + "しました");
+        this.getItemOne(this.edit_id, this.product_code, this.product_title, object_mode[k]);
       } else {
         if (res.messagedata.length > 0) {
-          this.htmlMessageSwal("エラー", res.messagedata, "error", true, false);
+          this.htmlMessageSwal("警告", res.messagedata, "warning", true, false);
         } else {
-          this.serverCatch("取得");
+          this.serverCatch(eventtext);
         }
       }
+    },
+    // 新規系正常処理
+    putThenStore: function putThenStore(response, eventtext) {
+      var messages = [];
+      var res = response.data;
 
-      console.log('取得正常処理');
+      if (res.result) {
+        this.re_id = res.id;
+        this.acttitle = "登録";
+        this.getItemOne(this.re_id, this.product_code, this.product_title);
+        this.$toasted.show(this.product_title + "を" + eventtext + "しました");
+        this.actionmsgArr.push(this.product_title + "を新規登録しました。", "");
+        this.selectMode = 'COMPLETE';
+      } else {
+        if (res.messagedata.length > 0) {
+          this.htmlMessageSwal("警告", res.messagedata, "warning", true, false);
+        } else {
+          this.serverCatch(eventtext);
+        }
+      }
+    },
+    // 削除系正常処理
+    putThenDel: function putThenDel(response, eventtext) {
+      var messages = [];
+      var res = response.data;
+
+      if (res.result) {
+        this.re_id = res.id;
+        this.acttitle = "移動";
+        this.getItemOne(this.re_id, this.product_code, this.product_title);
+        this.$toasted.show(this.product_title + "を" + eventtext + "しました");
+        this.actionmsgArr.push(this.product_title + " を抹消へ移動しました。", "");
+        this.btnMode = 'off';
+        this.selectMode = 'COMPLETE';
+      } else {
+        if (res.messagedata.length > 0) {
+          this.htmlMessageSwal("警告", res.messagedata, "warning", true, false);
+        } else {
+          this.serverCatch(eventtext);
+        }
+      }
+    },
+    // レコード削除正常処理
+    putThenRecordDel: function putThenRecordDel(response, eventtext) {
+      var messages = [];
+      var res = response.data;
+
+      if (res.result) {
+        this.re_id = res.id;
+        this.acttitle = "削除";
+        this.getItemOne(this.re_id, this.product_code, this.product_title);
+        this.$toasted.show(this.product_title + "を" + eventtext + "しました");
+        this.actionmsgArr.push(this.product_title + " を削除しました。");
+        this.selectMode = 'COMPLETE';
+      } else {
+        if (res.messagedata.length > 0) {
+          this.htmlMessageSwal("警告", res.messagedata, "warning", true, false);
+        } else {
+          this.serverCatch(eventtext);
+        }
+      }
     },
     // 異常処理
     serverCatch: function serverCatch(eventtext) {
-      var messages = []; //messages.push("" + eventtext + "に失敗しました");
+      var messages = []; //messages.push("在庫管理" + eventtext + "に失敗しました");
       //this.htmlMessageSwal("エラー", messages, "error", true, false);
-
-      console.log('異常処理');
     },
-    // 置換
-    ReplacePrintData: function ReplacePrintData() {
-      var str = this.printData;
-      this.RePrintData = str.replace(/\n/g, '<br>');
-    }
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Quotations.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Quotations.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _mixins_requestable_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../mixins/requestable.js */ "./resources/js/mixins/requestable.js");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// import mit-parts from "./Parts.vue";
-//import moment from "moment";
-//import { dialogable } from "../mixins/dialogable.js";
-//import { checkable } from "../mixins/checkable.js";
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Mmake",
-  //mixins: [dialogable, checkable, requestable],
-  mixins: [_mixins_requestable_js__WEBPACK_IMPORTED_MODULE_0__["requestable"]],
-  props: {
-    /*
-      authusers: {
-        type: Array,
-        default: []
-      }
-    */
-  },
-
-  /*
-  components: {
-    mit-parts: mit-parts,
-  },
-  */
-  data: function data() {
-    return {
-      details: [],
-      login_user_code: 0,
-      login_user_role: 0,
-      dialogVisible: false,
-      messageshowsearch: false,
-      partsview: false,
-      outsourcingview: false,
-      inputid: "",
-      targetid: "",
-      pagenum: "",
-      pagename: "",
-      inputtextid: ""
-    };
-  },
-  // マウント時
-  mounted: function mounted() {//this.login_user_code = this.authusers["code"];
-    //this.login_user_role = this.authusers["role"];
-  },
-  methods: {
-    // -------------------- イベント処理 --------------------
-    OnButtonClick: function OnButtonClick(t) {
-      var tm = t + '_mark';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
-
-      if (inputvalue == "1") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-      } else if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
-      }
+    inputClear: function inputClear() {
+      this.details = [];
+      this.form.id = "";
+      this.form.mdate = "";
+      this.form.department = "";
+      this.form.charge = "";
+      this.form.product_name = "";
+      this.form.product_code = "";
+      this.form.product_number = "";
+      this.form.unit = "";
+      this.form.quantity = "";
+      this.form.receipt = "";
+      this.form.delivery = "";
+      this.form.now_inventory = "";
+      this.form.nbox = "";
+      this.form.order_address = "";
+      this.form.unit_price = "";
+      this.form.total = "";
+      this.form.remarks = "";
+      this.form.note = "";
+      this.form.status = "";
+      this.form.marks = "";
+      this.form.created_user = "";
+      this.form.updated_user = "";
+      this.form.created_at = "";
+      this.form.updated_at = "";
+      this.form.is_deleted = "";
     },
-    OnButtonClickT: function OnButtonClickT(t) {
-      var tm = t + '_mark';
-      var tb = t + '_btn';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
-      var btnid = document.getElementById(tb);
+    dateset: function dateset() {
+      var date_obj = new Date(); //console.log('todayset = ' + date_obj);
 
-      if (inputvalue == "1") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-        btnid.innerHTML = "通し無し";
-      } else if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "2";
-        btnid.innerHTML = "通し有り";
-      } else if (inputvalue == "2") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
-        btnid.innerHTML = "印刷有り";
-      }
-    },
-    OnButtonClickD: function OnButtonClickD(t) {
-      var tm = t + '_mark';
-      var tb = t + '_btn';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
-      var btnid = document.getElementById(tb);
+      this.today_year = date_obj.getFullYear(); // 西暦年取得
 
-      if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
-        btnid.innerHTML = "断裁・一般";
-      } else if (inputvalue == "1") {
-        targetid.style.visibility = "visible";
-        inputid.value = "2";
-        btnid.innerHTML = "断裁・インサータ";
-      } else if (inputvalue == "2") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-        btnid.innerHTML = "断裁";
-      }
-    },
-    OnButtonClick01: function OnButtonClick01(t, arr) {
-      var idname_array = new Object();
-      idname_array[0] = ['inch', 'milli'];
-      idname_array[2] = ['nisu_single', 'nisu_double'];
-      idname_array[3] = ['sei_marble', 'sei_cross'];
-      idname_array[4] = ['sei_mat_maki_cardboard', 'sei_mat_cardboard'];
-      idname_array[5] = ['sei_kurumi', 'sei_musen_tozi', 'sei_naka_tozi'];
-      idname_array[6] = ['sei_bara', 'sei_oneset'];
-      idname_array[7] = ['sei_a_system', 'sei_c_system'];
+      this.today_month = date_obj.getMonth(); // 月取得
 
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i];
-        var nm = n + '_mark';
-        var inputid = document.getElementById(n);
-        var inputvalue = inputid.value;
-        var targetid = document.getElementById(nm);
+      this.today_day = date_obj.getDate(); // 日取得
+      // 文字列として連結month_format
 
-        if (idname_array[arr][i] == t) {
-          if (inputvalue == "1") {
-            targetid.style.visibility = "hidden";
-            inputid.value = "0";
-          } else if (inputvalue == "0") {
-            targetid.style.visibility = "visible";
-            inputid.value = "1";
-          }
-        } else {
-          targetid.style.visibility = "hidden";
-          inputid.value = "0";
-        }
-      }
-    },
-    OnButtonClick02: function OnButtonClick02(t, arr) {
-      var idname_array = new Object();
-      idname_array[1] = ['wkake', 'ana2', 'ana6', 'donko', 'katanuki', 'kasutori'];
-
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i];
-        var nm = n + '_mark';
-        var inputid = document.getElementById(n);
-        var inputvalue = inputid.value;
-        var targetid = document.getElementById(nm);
-        var passmark = false;
-
-        if (n == 'wkake' && t == 'katanuki' || t == 'wkake' && n == 'katanuki') {
-          var passmark = true;
-        } else if (n == 'kasutori' && t == 'katanuki' || t == 'kasutori' && n == 'katanuki') {
-          var passmark = true;
-        }
-
-        if (idname_array[arr][i] == t) {
-          if (inputvalue == "1") {
-            targetid.style.visibility = "hidden";
-            inputid.value = "0";
-          } else if (inputvalue == "0") {
-            targetid.style.visibility = "visible";
-            inputid.value = "1";
-          }
-        } else {
-          if (passmark == false) {
-            targetid.style.visibility = "hidden";
-            inputid.value = "0";
-          }
-        }
-      }
-    },
-    OnButtonClick03: function OnButtonClick03(t, arr, t2) {
-      var idname_array = new Object();
-      idname_array[0] = ['inch', 'milli'];
-
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i];
-        var nm = n + '_mark';
-        var inputid = document.getElementById(t2);
-        var inputvalue = inputid.value;
-        var targetid = document.getElementById(nm);
-
-        if (idname_array[arr][i] == t) {
-          if (t == 'inch') {
-            if (inputvalue == "1") {
-              targetid.style.visibility = "hidden";
-              inputid.value = "0";
-            } else if (inputvalue == "0" || inputvalue == "2") {
-              targetid.style.visibility = "visible";
-              inputid.value = "1";
-            }
-          } else if (t == 'milli') {
-            if (inputvalue == "2") {
-              targetid.style.visibility = "hidden";
-              inputid.value = "0";
-            } else if (inputvalue == "0" || inputvalue == "1") {
-              targetid.style.visibility = "visible";
-              inputid.value = "2";
-            }
-          }
-        } else {
-          targetid.style.visibility = "hidden"; //inputid.value = "0";
-        }
-      }
-    },
-    SetParts: function SetParts(pnum, pname) {
-      var _this = this;
-
-      var tid = "cnt1";
-      var targetid = document.getElementById(tid);
-      targetid.style.visibility = "hidden"; //現在未使用
-
-      var arrayParams = {
-        pagenum: pnum,
-        pagename: pname,
-        partsview: true
-      };
-      this.postRequest("/parts/get", arrayParams).then(function (response) {
-        _this.getThen(response);
-      })["catch"](function (reason) {
-        _this.serverCatch("取得");
-      });
-      this.pagenum = pnum;
-      this.pagename = pname;
-      this.partsview = true;
-      console.log('SetParts コンソール出力 = ' + pname);
-    },
-    Pcancel: function Pcancel() {
-      var tid = "cnt1";
-      var targetid = document.getElementById(tid);
-      targetid.style.visibility = "visible";
-      this.partsview = false;
-      console.log('パーツ画面Parts.vue 終了');
-    },
-    OScancel: function OScancel() {
-      //const tid = "cnt1";
-      //var targetid = document.getElementById(tid);
-      //targetid.style.visibility = "visible";
-      this.outsourcingview = false;
-      console.log('外注先画面Outsourcing.vue 終了');
-    },
-    selectOS: function selectOS(event, param1) {
-      //const tid = "cnt1";
-      //var targetid = document.getElementById(tid);
-      //targetid.style.visibility = "visible";
-      //this.event.value = event;
-      var target_inputid = document.getElementById(event);
-      target_inputid.value = param1;
-      this.outsourcingview = false;
-      console.log('Mmake.vue selectOS event = ' + event);
-    },
-    OutsourcingButton: function OutsourcingButton(t) {
-      //id="product_all_outsou2_btn" @click="OutsourcingButton('product_all_outsou2')
-      //var inputtextid = t;
-      var tbid = t + '_btn';
-      var targetid = document.getElementById(t);
-      var viewtaget = document.getElementById('area1');
-      var textbox = document.getElementById('TextArea1');
-      var elem = document.getElementById(tbid);
-      var rect = elem.getBoundingClientRect();
-      var elemtop = rect.top + window.pageYOffset - 0;
-      var elemleft = rect.left + window.pageXOffset;
-      var elembottom = rect.bottom + window.pageYOffset;
-      var elemright = rect.right + window.pageXOffset; //textbox.value = 'top:' + elemtop+'\r\n'; 
-      //textbox.value += 'left:' + elemleft+'\r\n'; 
-      //textbox.value += 'bottom:' + elembottom+'\r\n'; 
-      //textbox.value += 'right:' + elemright+'\r\n'; 
-
-      console.log('Button y = ' + elemtop);
-      viewtaget.style.position = 'absolute';
-      viewtaget.style.top = elemtop + 'px'; //viewtaget.style.left = pageX + 'px';
-
-      viewtaget.style.left = '0px'; //this.pagenum = pnum;
-      //this.pagename = pname;
-
-      this.inputtextid = t;
-      this.outsourcingview = true;
-      console.log('OutsourcingButton 引数 = ' + t);
-    },
-    viewStrLen: function viewStrLen() {
-      var len = document.getElementById("textarea1").value.length;
-      document.getElementById("strLen").innerText = len + "文字";
-    },
-    // -------------------- サーバー処理 --------------------
-    // -------------------- 共通 --------------------
-    // 取得正常処理
-    getThen: function getThen(response) {
-      console.log('正常');
-    },
-    // 異常処理
-    serverCatch: function serverCatch(eventtext) {
-      console.log('異常処理');
-    }
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsBinding.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/QuotationsBinding.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _mixins_requestable_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../mixins/requestable.js */ "./resources/js/mixins/requestable.js");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// import mit-parts from "./Parts.vue";
-//import moment from "moment";
-//import { dialogable } from "../mixins/dialogable.js";
-//import { checkable } from "../mixins/checkable.js";
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Mmake",
-  //mixins: [dialogable, checkable, requestable],
-  mixins: [_mixins_requestable_js__WEBPACK_IMPORTED_MODULE_0__["requestable"]],
-  props: {
-    /*
-      authusers: {
-        type: Array,
-        default: []
-      }
-    */
-  },
-
-  /*
-  components: {
-    mit-parts: mit-parts,
-  },
-  */
-  data: function data() {
-    return {
-      details: [],
-      login_user_code: 0,
-      login_user_role: 0,
-      dialogVisible: false,
-      messageshowsearch: false,
-      partsview: false,
-      outsourcingview: false,
-      inputid: "",
-      targetid: "",
-      pagenum: "",
-      pagename: "",
-      inputtextid: ""
-    };
-  },
-  // マウント時
-  mounted: function mounted() {//this.login_user_code = this.authusers["code"];
-    //this.login_user_role = this.authusers["role"];
-  },
-  methods: {
-    // -------------------- イベント処理 --------------------
-    OnButtonClick: function OnButtonClick(t) {
-      var tm = t + '_mark';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
-
-      if (inputvalue == "1") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-      } else if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
-      }
-    },
-    OnButtonClickT: function OnButtonClickT(t) {
-      var tm = t + '_mark';
-      var tb = t + '_btn';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
-      var btnid = document.getElementById(tb);
-
-      if (inputvalue == "1") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-        btnid.innerHTML = "通し無し";
-      } else if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "2";
-        btnid.innerHTML = "通し有り";
-      } else if (inputvalue == "2") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
-        btnid.innerHTML = "印刷有り";
-      }
-    },
-    OnButtonClickD: function OnButtonClickD(t) {
-      var tm = t + '_mark';
-      var tb = t + '_btn';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
-      var btnid = document.getElementById(tb);
-
-      if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
-        btnid.innerHTML = "断裁・一般";
-      } else if (inputvalue == "1") {
-        targetid.style.visibility = "visible";
-        inputid.value = "2";
-        btnid.innerHTML = "断裁・インサータ";
-      } else if (inputvalue == "2") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-        btnid.innerHTML = "断裁";
-      }
-    },
-    OnButtonClick01: function OnButtonClick01(t, arr) {
-      var idname_array = new Object();
-      idname_array[0] = ['inch', 'milli'];
-      idname_array[2] = ['nisu_single', 'nisu_double'];
-      idname_array[3] = ['sei_marble', 'sei_cross'];
-      idname_array[4] = ['sei_mat_maki_cardboard', 'sei_mat_cardboard'];
-      idname_array[5] = ['sei_kurumi', 'sei_musen_tozi', 'sei_naka_tozi'];
-      idname_array[6] = ['sei_bara', 'sei_oneset'];
-      idname_array[7] = ['sei_a_system', 'sei_c_system'];
-
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i];
-        var nm = n + '_mark';
-        var inputid = document.getElementById(n);
-        var inputvalue = inputid.value;
-        var targetid = document.getElementById(nm);
-
-        if (idname_array[arr][i] == t) {
-          if (inputvalue == "1") {
-            targetid.style.visibility = "hidden";
-            inputid.value = "0";
-          } else if (inputvalue == "0") {
-            targetid.style.visibility = "visible";
-            inputid.value = "1";
-          }
-        } else {
-          targetid.style.visibility = "hidden";
-          inputid.value = "0";
-        }
-      }
-    },
-    OnButtonClick02: function OnButtonClick02(t, arr) {
-      var idname_array = new Object();
-      idname_array[1] = ['wkake', 'ana2', 'ana6', 'donko', 'katanuki', 'kasutori'];
-
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i];
-        var nm = n + '_mark';
-        var inputid = document.getElementById(n);
-        var inputvalue = inputid.value;
-        var targetid = document.getElementById(nm);
-        var passmark = false;
-
-        if (n == 'wkake' && t == 'katanuki' || t == 'wkake' && n == 'katanuki') {
-          var passmark = true;
-        } else if (n == 'kasutori' && t == 'katanuki' || t == 'kasutori' && n == 'katanuki') {
-          var passmark = true;
-        }
-
-        if (idname_array[arr][i] == t) {
-          if (inputvalue == "1") {
-            targetid.style.visibility = "hidden";
-            inputid.value = "0";
-          } else if (inputvalue == "0") {
-            targetid.style.visibility = "visible";
-            inputid.value = "1";
-          }
-        } else {
-          if (passmark == false) {
-            targetid.style.visibility = "hidden";
-            inputid.value = "0";
-          }
-        }
-      }
-    },
-    OnButtonClick03: function OnButtonClick03(t, arr, t2) {
-      var idname_array = new Object();
-      idname_array[0] = ['inch', 'milli'];
-
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i];
-        var nm = n + '_mark';
-        var inputid = document.getElementById(t2);
-        var inputvalue = inputid.value;
-        var targetid = document.getElementById(nm);
-
-        if (idname_array[arr][i] == t) {
-          if (t == 'inch') {
-            if (inputvalue == "1") {
-              targetid.style.visibility = "hidden";
-              inputid.value = "0";
-            } else if (inputvalue == "0" || inputvalue == "2") {
-              targetid.style.visibility = "visible";
-              inputid.value = "1";
-            }
-          } else if (t == 'milli') {
-            if (inputvalue == "2") {
-              targetid.style.visibility = "hidden";
-              inputid.value = "0";
-            } else if (inputvalue == "0" || inputvalue == "1") {
-              targetid.style.visibility = "visible";
-              inputid.value = "2";
-            }
-          }
-        } else {
-          targetid.style.visibility = "hidden"; //inputid.value = "0";
-        }
-      }
-    },
-    SetParts: function SetParts(pnum, pname) {
-      var _this = this;
-
-      var tid = "cnt1";
-      var targetid = document.getElementById(tid);
-      targetid.style.visibility = "hidden"; //現在未使用
-
-      var arrayParams = {
-        pagenum: pnum,
-        pagename: pname,
-        partsview: true
-      };
-      this.postRequest("/parts/get", arrayParams).then(function (response) {
-        _this.getThen(response);
-      })["catch"](function (reason) {
-        _this.serverCatch("取得");
-      });
-      this.pagenum = pnum;
-      this.pagename = pname;
-      this.partsview = true;
-      console.log('SetParts コンソール出力 = ' + pname);
-    },
-    Pcancel: function Pcancel() {
-      var tid = "cnt1";
-      var targetid = document.getElementById(tid);
-      targetid.style.visibility = "visible";
-      this.partsview = false;
-      console.log('パーツ画面Parts.vue 終了');
-    },
-    OScancel: function OScancel() {
-      //const tid = "cnt1";
-      //var targetid = document.getElementById(tid);
-      //targetid.style.visibility = "visible";
-      this.outsourcingview = false;
-      console.log('外注先画面Outsourcing.vue 終了');
-    },
-    selectOS: function selectOS(event, param1) {
-      //const tid = "cnt1";
-      //var targetid = document.getElementById(tid);
-      //targetid.style.visibility = "visible";
-      //this.event.value = event;
-      var target_inputid = document.getElementById(event);
-      target_inputid.value = param1;
-      this.outsourcingview = false;
-      console.log('Mmake.vue selectOS event = ' + event);
-    },
-    OutsourcingButton: function OutsourcingButton(t) {
-      //id="product_all_outsou2_btn" @click="OutsourcingButton('product_all_outsou2')
-      //var inputtextid = t;
-      var tbid = t + '_btn';
-      var targetid = document.getElementById(t);
-      var viewtaget = document.getElementById('area1');
-      var textbox = document.getElementById('TextArea1');
-      var elem = document.getElementById(tbid);
-      var rect = elem.getBoundingClientRect();
-      var elemtop = rect.top + window.pageYOffset - 0;
-      var elemleft = rect.left + window.pageXOffset;
-      var elembottom = rect.bottom + window.pageYOffset;
-      var elemright = rect.right + window.pageXOffset; //textbox.value = 'top:' + elemtop+'\r\n'; 
-      //textbox.value += 'left:' + elemleft+'\r\n'; 
-      //textbox.value += 'bottom:' + elembottom+'\r\n'; 
-      //textbox.value += 'right:' + elemright+'\r\n'; 
-
-      console.log('Button y = ' + elemtop);
-      viewtaget.style.position = 'absolute';
-      viewtaget.style.top = elemtop + 'px'; //viewtaget.style.left = pageX + 'px';
-
-      viewtaget.style.left = '0px'; //this.pagenum = pnum;
-      //this.pagename = pname;
-
-      this.inputtextid = t;
-      this.outsourcingview = true;
-      console.log('OutsourcingButton 引数 = ' + t);
-    },
-    // -------------------- サーバー処理 --------------------
-    // -------------------- 共通 --------------------
-    // 取得正常処理
-    getThen: function getThen(response) {
-      console.log('正常');
-    },
-    // 異常処理
-    serverCatch: function serverCatch(eventtext) {
-      console.log('異常処理');
-    }
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsCost.vue?vue&type=script&lang=js&":
-/*!*************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/QuotationsCost.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _mixins_requestable_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../mixins/requestable.js */ "./resources/js/mixins/requestable.js");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// import mit-parts from "./Parts.vue";
-//import moment from "moment";
-//import { dialogable } from "../mixins/dialogable.js";
-//import { checkable } from "../mixins/checkable.js";
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Mmake",
-  //mixins: [dialogable, checkable, requestable],
-  mixins: [_mixins_requestable_js__WEBPACK_IMPORTED_MODULE_0__["requestable"]],
-  props: {
-    /*
-      authusers: {
-        type: Array,
-        default: []
-      }
-    */
-  },
-
-  /*
-  components: {
-    mit-parts: mit-parts,
-  },
-  */
-  data: function data() {
-    return {
-      details: [],
-      login_user_code: 0,
-      login_user_role: 0,
-      dialogVisible: false,
-      messageshowsearch: false,
-      partsview: false,
-      outsourcingview: false,
-      inputid: "",
-      targetid: "",
-      pagenum: "",
-      pagename: "",
-      inputtextid: ""
-    };
-  },
-  // マウント時
-  mounted: function mounted() {//this.login_user_code = this.authusers["code"];
-    //this.login_user_role = this.authusers["role"];
-  },
-  methods: {
-    // -------------------- イベント処理 --------------------
-    OnButtonClick: function OnButtonClick(t) {
-      var tm = t + '_mark';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
-
-      if (inputvalue == "1") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-      } else if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
-      }
-    },
-    OnButtonClickT: function OnButtonClickT(t) {
-      var tm = t + '_mark';
-      var tb = t + '_btn';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
-      var btnid = document.getElementById(tb);
-
-      if (inputvalue == "1") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-        btnid.innerHTML = "通し無し";
-      } else if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "2";
-        btnid.innerHTML = "通し有り";
-      } else if (inputvalue == "2") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
-        btnid.innerHTML = "印刷有り";
-      }
-    },
-    OnButtonClickD: function OnButtonClickD(t) {
-      var tm = t + '_mark';
-      var tb = t + '_btn';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
-      var btnid = document.getElementById(tb);
-
-      if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
-        btnid.innerHTML = "断裁・一般";
-      } else if (inputvalue == "1") {
-        targetid.style.visibility = "visible";
-        inputid.value = "2";
-        btnid.innerHTML = "断裁・インサータ";
-      } else if (inputvalue == "2") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-        btnid.innerHTML = "断裁";
-      }
-    },
-    OnButtonClick01: function OnButtonClick01(t, arr) {
-      var idname_array = new Object();
-      idname_array[0] = ['inch', 'milli'];
-      idname_array[2] = ['nisu_single', 'nisu_double'];
-      idname_array[3] = ['sei_marble', 'sei_cross'];
-      idname_array[4] = ['sei_mat_maki_cardboard', 'sei_mat_cardboard'];
-      idname_array[5] = ['sei_kurumi', 'sei_musen_tozi', 'sei_naka_tozi'];
-      idname_array[6] = ['sei_bara', 'sei_oneset'];
-      idname_array[7] = ['sei_a_system', 'sei_c_system'];
-
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i];
-        var nm = n + '_mark';
-        var inputid = document.getElementById(n);
-        var inputvalue = inputid.value;
-        var targetid = document.getElementById(nm);
-
-        if (idname_array[arr][i] == t) {
-          if (inputvalue == "1") {
-            targetid.style.visibility = "hidden";
-            inputid.value = "0";
-          } else if (inputvalue == "0") {
-            targetid.style.visibility = "visible";
-            inputid.value = "1";
-          }
-        } else {
-          targetid.style.visibility = "hidden";
-          inputid.value = "0";
-        }
-      }
-    },
-    OnButtonClick02: function OnButtonClick02(t, arr) {
-      var idname_array = new Object();
-      idname_array[1] = ['wkake', 'ana2', 'ana6', 'donko', 'katanuki', 'kasutori'];
-
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i];
-        var nm = n + '_mark';
-        var inputid = document.getElementById(n);
-        var inputvalue = inputid.value;
-        var targetid = document.getElementById(nm);
-        var passmark = false;
-
-        if (n == 'wkake' && t == 'katanuki' || t == 'wkake' && n == 'katanuki') {
-          var passmark = true;
-        } else if (n == 'kasutori' && t == 'katanuki' || t == 'kasutori' && n == 'katanuki') {
-          var passmark = true;
-        }
-
-        if (idname_array[arr][i] == t) {
-          if (inputvalue == "1") {
-            targetid.style.visibility = "hidden";
-            inputid.value = "0";
-          } else if (inputvalue == "0") {
-            targetid.style.visibility = "visible";
-            inputid.value = "1";
-          }
-        } else {
-          if (passmark == false) {
-            targetid.style.visibility = "hidden";
-            inputid.value = "0";
-          }
-        }
-      }
-    },
-    OnButtonClick03: function OnButtonClick03(t, arr, t2) {
-      var idname_array = new Object();
-      idname_array[0] = ['inch', 'milli'];
-
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i];
-        var nm = n + '_mark';
-        var inputid = document.getElementById(t2);
-        var inputvalue = inputid.value;
-        var targetid = document.getElementById(nm);
-
-        if (idname_array[arr][i] == t) {
-          if (t == 'inch') {
-            if (inputvalue == "1") {
-              targetid.style.visibility = "hidden";
-              inputid.value = "0";
-            } else if (inputvalue == "0" || inputvalue == "2") {
-              targetid.style.visibility = "visible";
-              inputid.value = "1";
-            }
-          } else if (t == 'milli') {
-            if (inputvalue == "2") {
-              targetid.style.visibility = "hidden";
-              inputid.value = "0";
-            } else if (inputvalue == "0" || inputvalue == "1") {
-              targetid.style.visibility = "visible";
-              inputid.value = "2";
-            }
-          }
-        } else {
-          targetid.style.visibility = "hidden"; //inputid.value = "0";
-        }
-      }
-    },
-    SetParts: function SetParts(pnum, pname) {
-      var _this = this;
-
-      var tid = "cnt1";
-      var targetid = document.getElementById(tid);
-      targetid.style.visibility = "hidden"; //現在未使用
-
-      var arrayParams = {
-        pagenum: pnum,
-        pagename: pname,
-        partsview: true
-      };
-      this.postRequest("/parts/get", arrayParams).then(function (response) {
-        _this.getThen(response);
-      })["catch"](function (reason) {
-        _this.serverCatch("取得");
-      });
-      this.pagenum = pnum;
-      this.pagename = pname;
-      this.partsview = true;
-      console.log('SetParts コンソール出力 = ' + pname);
-    },
-    Pcancel: function Pcancel() {
-      var tid = "cnt1";
-      var targetid = document.getElementById(tid);
-      targetid.style.visibility = "visible";
-      this.partsview = false;
-      console.log('パーツ画面Parts.vue 終了');
-    },
-    OScancel: function OScancel() {
-      //const tid = "cnt1";
-      //var targetid = document.getElementById(tid);
-      //targetid.style.visibility = "visible";
-      this.outsourcingview = false;
-      console.log('外注先画面Outsourcing.vue 終了');
-    },
-    selectOS: function selectOS(event, param1) {
-      //const tid = "cnt1";
-      //var targetid = document.getElementById(tid);
-      //targetid.style.visibility = "visible";
-      //this.event.value = event;
-      var target_inputid = document.getElementById(event);
-      target_inputid.value = param1;
-      this.outsourcingview = false;
-      console.log('Mmake.vue selectOS event = ' + event);
-    },
-    OutsourcingButton: function OutsourcingButton(t) {
-      //id="product_all_outsou2_btn" @click="OutsourcingButton('product_all_outsou2')
-      //var inputtextid = t;
-      var tbid = t + '_btn';
-      var targetid = document.getElementById(t);
-      var viewtaget = document.getElementById('area1');
-      var textbox = document.getElementById('TextArea1');
-      var elem = document.getElementById(tbid);
-      var rect = elem.getBoundingClientRect();
-      var elemtop = rect.top + window.pageYOffset - 0;
-      var elemleft = rect.left + window.pageXOffset;
-      var elembottom = rect.bottom + window.pageYOffset;
-      var elemright = rect.right + window.pageXOffset; //textbox.value = 'top:' + elemtop+'\r\n'; 
-      //textbox.value += 'left:' + elemleft+'\r\n'; 
-      //textbox.value += 'bottom:' + elembottom+'\r\n'; 
-      //textbox.value += 'right:' + elemright+'\r\n'; 
-
-      console.log('Button y = ' + elemtop);
-      viewtaget.style.position = 'absolute';
-      viewtaget.style.top = elemtop + 'px'; //viewtaget.style.left = pageX + 'px';
-
-      viewtaget.style.left = '0px'; //this.pagenum = pnum;
-      //this.pagename = pname;
-
-      this.inputtextid = t;
-      this.outsourcingview = true;
-      console.log('OutsourcingButton 引数 = ' + t);
-    },
-    // -------------------- サーバー処理 --------------------
-    // -------------------- 共通 --------------------
-    // 取得正常処理
-    getThen: function getThen(response) {
-      console.log('正常');
-    },
-    // 異常処理
-    serverCatch: function serverCatch(eventtext) {
-      console.log('異常処理');
-    }
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsDepartment.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/QuotationsDepartment.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _mixins_requestable_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../mixins/requestable.js */ "./resources/js/mixins/requestable.js");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// import mit-parts from "./Parts.vue";
-//import moment from "moment";
-//import { dialogable } from "../mixins/dialogable.js";
-//import { checkable } from "../mixins/checkable.js";
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: "QuotationsDepartment",
-  //mixins: [dialogable, checkable, requestable],
-  mixins: [_mixins_requestable_js__WEBPACK_IMPORTED_MODULE_0__["requestable"]],
-  props: {
-    /*
-      authusers: {
-        type: Array,
-        default: []
-      }
-    */
-  },
-
-  /*
-  components: {
-    mit-parts: mit-parts,
-  },
-  */
-  data: function data() {
-    return {
-      details: [],
-      login_user_code: 0,
-      login_user_role: 0,
-      dialogVisible: false,
-      messageshowsearch: false,
-      partsview: false,
-      outsourcingview: false,
-      inputid: "",
-      targetid: "",
-      pagenum: "",
-      pagename: "",
-      inputtextid: ""
-    };
-  },
-  // マウント時
-  mounted: function mounted() {//this.login_user_code = this.authusers["code"];
-    //this.login_user_role = this.authusers["role"];
-  },
-  methods: {
-    // -------------------- イベント処理 --------------------
-    OnButtonClick: function OnButtonClick(t) {
-      var tm = t + '_mark';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
-
-      if (inputvalue == "1") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-      } else if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
-      }
-    },
-    OnButtonClickT: function OnButtonClickT(t) {
-      var tm = t + '_mark';
-      var tb = t + '_btn';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
-      var btnid = document.getElementById(tb);
-
-      if (inputvalue == "1") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-        btnid.innerHTML = "通し無し";
-      } else if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "2";
-        btnid.innerHTML = "通し有り";
-      } else if (inputvalue == "2") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
-        btnid.innerHTML = "印刷有り";
-      }
-    },
-    OnButtonClickD: function OnButtonClickD(t) {
-      var tm = t + '_mark';
-      var tb = t + '_btn';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
-      var btnid = document.getElementById(tb);
-
-      if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
-        btnid.innerHTML = "断裁・一般";
-      } else if (inputvalue == "1") {
-        targetid.style.visibility = "visible";
-        inputid.value = "2";
-        btnid.innerHTML = "断裁・インサータ";
-      } else if (inputvalue == "2") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-        btnid.innerHTML = "断裁";
-      }
-    },
-    OnButtonClick01: function OnButtonClick01(t, arr) {
-      var idname_array = new Object();
-      idname_array[0] = ['inch', 'milli'];
-      idname_array[2] = ['nisu_single', 'nisu_double'];
-      idname_array[3] = ['sei_marble', 'sei_cross'];
-      idname_array[4] = ['sei_mat_maki_cardboard', 'sei_mat_cardboard'];
-      idname_array[5] = ['sei_kurumi', 'sei_musen_tozi', 'sei_naka_tozi'];
-      idname_array[6] = ['sei_bara', 'sei_oneset'];
-      idname_array[7] = ['sei_a_system', 'sei_c_system'];
-
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i];
-        var nm = n + '_mark';
-        var inputid = document.getElementById(n);
-        var inputvalue = inputid.value;
-        var targetid = document.getElementById(nm);
-
-        if (idname_array[arr][i] == t) {
-          if (inputvalue == "1") {
-            targetid.style.visibility = "hidden";
-            inputid.value = "0";
-          } else if (inputvalue == "0") {
-            targetid.style.visibility = "visible";
-            inputid.value = "1";
-          }
-        } else {
-          targetid.style.visibility = "hidden";
-          inputid.value = "0";
-        }
-      }
-    },
-    OnButtonClick02: function OnButtonClick02(t, arr) {
-      var idname_array = new Object();
-      idname_array[1] = ['wkake', 'ana2', 'ana6', 'donko', 'katanuki', 'kasutori'];
-
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i];
-        var nm = n + '_mark';
-        var inputid = document.getElementById(n);
-        var inputvalue = inputid.value;
-        var targetid = document.getElementById(nm);
-        var passmark = false;
-
-        if (n == 'wkake' && t == 'katanuki' || t == 'wkake' && n == 'katanuki') {
-          var passmark = true;
-        } else if (n == 'kasutori' && t == 'katanuki' || t == 'kasutori' && n == 'katanuki') {
-          var passmark = true;
-        }
-
-        if (idname_array[arr][i] == t) {
-          if (inputvalue == "1") {
-            targetid.style.visibility = "hidden";
-            inputid.value = "0";
-          } else if (inputvalue == "0") {
-            targetid.style.visibility = "visible";
-            inputid.value = "1";
-          }
-        } else {
-          if (passmark == false) {
-            targetid.style.visibility = "hidden";
-            inputid.value = "0";
-          }
-        }
-      }
-    },
-    OnButtonClick03: function OnButtonClick03(t, arr, t2) {
-      var idname_array = new Object();
-      idname_array[0] = ['inch', 'milli'];
-
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i];
-        var nm = n + '_mark';
-        var inputid = document.getElementById(t2);
-        var inputvalue = inputid.value;
-        var targetid = document.getElementById(nm);
-
-        if (idname_array[arr][i] == t) {
-          if (t == 'inch') {
-            if (inputvalue == "1") {
-              targetid.style.visibility = "hidden";
-              inputid.value = "0";
-            } else if (inputvalue == "0" || inputvalue == "2") {
-              targetid.style.visibility = "visible";
-              inputid.value = "1";
-            }
-          } else if (t == 'milli') {
-            if (inputvalue == "2") {
-              targetid.style.visibility = "hidden";
-              inputid.value = "0";
-            } else if (inputvalue == "0" || inputvalue == "1") {
-              targetid.style.visibility = "visible";
-              inputid.value = "2";
-            }
-          }
-        } else {
-          targetid.style.visibility = "hidden"; //inputid.value = "0";
-        }
-      }
-    },
-    SetParts: function SetParts(pnum, pname) {
-      var _this = this;
-
-      var tid = "cnt1";
-      var targetid = document.getElementById(tid);
-      targetid.style.visibility = "hidden"; //現在未使用
-
-      var arrayParams = {
-        pagenum: pnum,
-        pagename: pname,
-        partsview: true
-      };
-      this.postRequest("/parts/get", arrayParams).then(function (response) {
-        _this.getThen(response);
-      })["catch"](function (reason) {
-        _this.serverCatch("取得");
-      });
-      this.pagenum = pnum;
-      this.pagename = pname;
-      this.partsview = true;
-      console.log('SetParts コンソール出力 = ' + pname);
-    },
-    Pcancel: function Pcancel() {
-      var tid = "cnt1";
-      var targetid = document.getElementById(tid);
-      targetid.style.visibility = "visible";
-      this.partsview = false;
-      console.log('パーツ画面Parts.vue 終了');
-    },
-    OScancel: function OScancel() {
-      //const tid = "cnt1";
-      //var targetid = document.getElementById(tid);
-      //targetid.style.visibility = "visible";
-      this.outsourcingview = false;
-      console.log('外注先画面Outsourcing.vue 終了');
-    },
-    selectOS: function selectOS(event, param1) {
-      //const tid = "cnt1";
-      //var targetid = document.getElementById(tid);
-      //targetid.style.visibility = "visible";
-      //this.event.value = event;
-      var target_inputid = document.getElementById(event);
-      target_inputid.value = param1;
-      this.outsourcingview = false;
-      console.log('Mmake.vue selectOS event = ' + event);
-    },
-    OutsourcingButton: function OutsourcingButton(t) {
-      //id="product_all_outsou2_btn" @click="OutsourcingButton('product_all_outsou2')
-      //var inputtextid = t;
-      var tbid = t + '_btn';
-      var targetid = document.getElementById(t);
-      var viewtaget = document.getElementById('area1');
-      var textbox = document.getElementById('TextArea1');
-      var elem = document.getElementById(tbid);
-      var rect = elem.getBoundingClientRect();
-      var elemtop = rect.top + window.pageYOffset - 0;
-      var elemleft = rect.left + window.pageXOffset;
-      var elembottom = rect.bottom + window.pageYOffset;
-      var elemright = rect.right + window.pageXOffset; //textbox.value = 'top:' + elemtop+'\r\n'; 
-      //textbox.value += 'left:' + elemleft+'\r\n'; 
-      //textbox.value += 'bottom:' + elembottom+'\r\n'; 
-      //textbox.value += 'right:' + elemright+'\r\n'; 
-
-      console.log('Button y = ' + elemtop);
-      viewtaget.style.position = 'absolute';
-      viewtaget.style.top = elemtop + 'px'; //viewtaget.style.left = pageX + 'px';
-
-      viewtaget.style.left = '0px'; //this.pagenum = pnum;
-      //this.pagename = pname;
-
-      this.inputtextid = t;
-      this.outsourcingview = true;
-      console.log('OutsourcingButton 引数 = ' + t);
-    },
-    // -------------------- サーバー処理 --------------------
-    // -------------------- 共通 --------------------
-    // 取得正常処理
-    getThen: function getThen(response) {
-      console.log('正常');
-    },
-    // 異常処理
-    serverCatch: function serverCatch(eventtext) {
-      console.log('異常処理');
-    }
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsDoc.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/QuotationsDoc.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _mixins_requestable_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../mixins/requestable.js */ "./resources/js/mixins/requestable.js");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// import mit-parts from "./Parts.vue";
-//import moment from "moment";
-//import { dialogable } from "../mixins/dialogable.js";
-//import { checkable } from "../mixins/checkable.js";
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: "QuotationsSearch",
-  //mixins: [dialogable, checkable, requestable],
-  mixins: [_mixins_requestable_js__WEBPACK_IMPORTED_MODULE_0__["requestable"]],
-  props: {
-    /*
-      authusers: {
-        type: Array,
-        default: []
-      }
-    */
-  },
-  data: function data() {
-    return {
-      details: [],
-      login_user_code: 0,
-      login_user_role: 0,
-      dialogVisible: false,
-      messageshowsearch: false,
-      searchview: "",
-      printview: "",
-      sr_title: "",
-      mcradio: "",
-      printdata: "",
-      m_code: "",
-      printtitle: ""
-    };
-  },
-  // マウント時
-  mounted: function mounted() {//this.login_user_code = this.authusers["code"];
-    //this.login_user_role = this.authusers["role"];
-  },
-  methods: {
-    // -------------------- イベント処理 --------------------
-    SearchClick: function SearchClick(k, arr, str) {
-      var idname_array = new Object();
-      idname_array[0] = ['doc', 'mit'];
-
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i]; //const tid = "search_" + n + "_btn";
-
-        var tid = n + '_mark';
-        var sc = 'search_com';
-        var targetid = document.getElementById(tid);
-        var searchcom = document.getElementById(sc);
-
-        if (idname_array[arr][i] == k) {
-          targetid.style.visibility = "visible";
-          searchcom.style.visibility = "visible";
-          searchcom.innerHTML = str;
-        } else {
-          targetid.style.visibility = "hidden";
-        }
-      }
-
-      var arrayParams = {
-        kind: k
-      };
-      /*
-      this.postRequest("/search/get", arrayParams)
-        .then(response  => {
-          this.getThen(response);
-        })
-        .catch(reason => {
-          this.serverCatch("取得");
-        });
-      */
-
-      this.sr_title = "検索結果";
-      this.searchview = k;
-      console.log('SearchClick  = ' + k);
-    },
-    MitGoBtn: function MitGoBtn(i, mcode) {},
-    ContentsClick: function ContentsClick() {
-      var element = document.getElementById("searchform");
-      var radioNodeList = element.m_codes; //console.log( 'radioNodeList = ' + radioNodeList ) ;
-      //if (typeof a === "undefined") {
-
-      if (radioNodeList == null) {
-        alert('見積の検索をして下さい。');
-      } else {
-        var vvmc = radioNodeList.value;
-
-        if (vvmc === "") {
-          alert('検索結果一覧より見積を選択して下さい。');
-        } else {
-          this.printtitle = "見積内容 ― 製品名 ―";
-          this.printdata = "【見積番号】D15689 【作成日】20120221 【担当者】011 萬谷朋子 【OPRT】萬谷 【素見積】D15520\n";
-          this.printdata += "【得意先】 119  萬  谷（一 般）\n";
-          this.printdata += "【エンドユーザー】 すずらん商事\n";
-          this.printdata += "【製品名】 納品書（タイトルなし）\n";
-          this.printdata += "【数量】1Ｐ 100,000枚 【総数量】100,000 【総通し数】50,000\n";
-          this.printdata += "【規格】ミリ 【シリンダー】10.5インチ 3本 10.5インチ折\n";
-          this.printdata += "<hr>";
-          this.printdata += "【シリンダー】3 X 5000 = 15,000\n";
-          this.printdata += "【フォーム部】\n";
-          this.printdata += "【フォーム部合計】11,500 \n";
-          this.printdata += "【版下設定】範疇：新版, 種別：フォーム, 難度：Ａ, 面積:72インチ平方, 料金:3000 \n";
-          this.printdata += "       ＣＴＰ 3版 \n";
-          this.printdata += "【組版・製版合計】12,000 \n";
-          this.printdata += "【製　本】\n";
-          this.printdata += "      [断裁・イン] [バースター] \n";
-          this.printdata += "      [バラ] \n";
-          this.printdata += "【梱包等】 [Ａ式] 2,500入り  40箱 X @250 = 10,000, \n";
-          this.printdata += "【製本合計】66,000 \n";
-          this.printdata += "【発　送】市内 40個 X 150 = 6,000, 【送料合計】 6,000 \n";
-          this.printdata += "<hr>";
-          this.printdata += "【用紙代総額】146,926【工賃～送料総額】170,500【実質原価総額】317,426 単価 3.17-\n";
-          this.printdata += "【提示額】245,000 単価 2.45-\n";
-          this.m_code = "D11999";
-          var nopri = 'cnt1';
-          var nopriid = document.getElementById(nopri); //nopriid.style.visibility = "visible";
-
-          nopriid.style.display = "none";
-          this.printview = true; //console.log( vvmc ) ;
-        }
-      }
-    },
-    OverviewClick: function OverviewClick() {
-      var element = document.getElementById("searchform");
-      var radioNodeList = element.m_codes; //console.log( 'radioNodeList = ' + radioNodeList ) ;
-      //if (typeof a === "undefined") {
-
-      if (radioNodeList == null) {
-        alert('見積の検索をして下さい。');
-      } else {
-        var vvmc = radioNodeList.value;
-
-        if (vvmc === "") {
-          // 未選択状態
-          alert('検索結果一覧より見積を選択して下さい。');
-        } else {
-          var myWindow = window.open("", "myWindow", "width=900, height=600, top=0, left=0");
-          myWindow.document.write("<div id='popup_cnt'><div>見積内容</div><button id='popup_printbtn' type='button' onclick='window.print(); return false;'>印刷</button></div>" + vvmc); //console.log( vvmc ) ;
-        }
-      }
-    },
-    Pricancel: function Pricancel() {
-      var tid = "cnt1";
-      var targetid = document.getElementById(tid); //targetid.style.visibility = "visible";
-
-      targetid.style.display = "block";
-      this.printview = false;
-      console.log('プリント画面 終了');
-    },
-    // -------------------- サーバー処理 --------------------
-    // -------------------- 共通 --------------------
-    // 取得正常処理
-    getThen: function getThen(response) {
-      console.log('正常');
-    },
-    // 異常処理
-    serverCatch: function serverCatch(eventtext) {
-      console.log('異常処理');
-    }
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsParts.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/QuotationsParts.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//import moment from "moment";
-//import { dialogable } from "../mixins/dialogable.js";
-//import { checkable } from "../mixins/checkable.js";
-//import { requestable } from "../mixins/requestable.js";
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Parts',
-  //mixins: [dialogable, checkable, requestable],
-  props: {
-    pageNum: {
-      type: Number,
-      "default": ""
-    },
-    pageName: {
-      type: String,
-      "default": ""
-    }
-  },
-  data: function data() {
-    return {
-      details: [],
-      pagename: "",
-      outsourcingview: false
-    };
-  },
-  // マウント時
-  mounted: function mounted() {
-    this.Test();
-  },
-  methods: {
-    // -------------------- イベント処理 --------------------
-    OnButtonClick: function OnButtonClick(t) {
-      var tm = t + '_mark';
-      var inputid = document.getElementById(t);
-      var inputvalue = inputid.value;
-      var targetid = document.getElementById(tm);
-
-      if (inputvalue == "1") {
-        targetid.style.visibility = "hidden";
-        inputid.value = "0";
-      } else if (inputvalue == "0") {
-        targetid.style.visibility = "visible";
-        inputid.value = "1";
-      }
-    },
-    cancelClickBtn: function cancelClickBtn() {
-      this.$emit('pcancel-event', event);
-      console.log('cancelClickBtn Parts.vue キャンセルボタン押下 = ' + this.pageName);
-    },
-    OutsourcingButton: function OutsourcingButton(t) {
-      var tbid = t + '_btn';
-      var targetid = document.getElementById(t);
-      var viewtaget = document.getElementById('area1');
-      var textbox = document.getElementById('TextArea1');
-      var elem = document.getElementById(tbid);
-      var rect = elem.getBoundingClientRect();
-      var elemtop = rect.top + window.pageYOffset - 40;
-      var elemleft = rect.left + window.pageXOffset;
-      var elembottom = rect.bottom + window.pageYOffset;
-      var elemright = rect.right + window.pageXOffset; //textbox.value = 'top:' + elemtop+'\r\n'; 
-      //textbox.value += 'left:' + elemleft+'\r\n'; 
-      //textbox.value += 'bottom:' + elembottom+'\r\n'; 
-      //textbox.value += 'right:' + elemright+'\r\n'; 
-
-      console.log('Button y = ' + elemtop);
-      viewtaget.style.position = 'absolute';
-      viewtaget.style.top = elemtop + 'px'; //viewtaget.style.left = pageX + 'px';
-
-      viewtaget.style.left = '0px';
-      this.inputtextid = t;
-      this.outsourcingview = true;
-      console.log('OutsourcingButton 引数 = ' + t);
-    },
-    selectOS: function selectOS(event, param1) {
-      var target_inputid = document.getElementById(event);
-      target_inputid.value = param1;
-      this.outsourcingview = false;
-      console.log('Parts.vue selectOS event = ' + event);
-    },
-    OScancel: function OScancel() {
-      this.outsourcingview = false;
-      console.log('外注先画面Outsourcing.vue 終了');
-    },
-    // ------------------------ サーバー処理 ----------------------------
-    Test: function Test() {
-      console.log('Parts.vue 出力');
+      this.itsdate = ('0000' + this.today_year).slice(-4) + '-' + ('00' + (this.today_month + 1)).slice(-2) + '-' + ('00' + this.today_day).slice(-2);
     } // -------------------- 共通 ----------------------------
 
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsSearch.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/QuotationsSearch.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _mixins_requestable_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../mixins/requestable.js */ "./resources/js/mixins/requestable.js");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// import mit-parts from "./Parts.vue";
-//import moment from "moment";
-//import { dialogable } from "../mixins/dialogable.js";
-//import { checkable } from "../mixins/checkable.js";
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: "QuotationsSearch",
-  //mixins: [dialogable, checkable, requestable],
-  mixins: [_mixins_requestable_js__WEBPACK_IMPORTED_MODULE_0__["requestable"]],
-  props: {
-    /*
-      authusers: {
-        type: Array,
-        default: []
-      }
-    */
-  },
-  data: function data() {
-    return {
-      details: [],
-      login_user_code: 0,
-      login_user_role: 0,
-      dialogVisible: false,
-      messageshowsearch: false,
-      searchview: "",
-      printview: "",
-      sr_title: "",
-      mcradio: "",
-      printdata: "",
-      m_code: "",
-      printtitle: ""
-    };
-  },
-  // マウント時
-  mounted: function mounted() {//this.login_user_code = this.authusers["code"];
-    //this.login_user_role = this.authusers["role"];
-  },
-  methods: {
-    // -------------------- イベント処理 --------------------
-    SearchClick: function SearchClick(k, arr, str) {
-      var idname_array = new Object();
-      idname_array[0] = ['doc', 'mit'];
-
-      for (var i = 0; i < idname_array[arr].length; i++) {
-        var n = idname_array[arr][i]; //const tid = "search_" + n + "_btn";
-
-        var tid = n + '_mark';
-        var sc = 'search_com';
-        var targetid = document.getElementById(tid);
-        var searchcom = document.getElementById(sc);
-
-        if (idname_array[arr][i] == k) {
-          targetid.style.visibility = "visible";
-          searchcom.style.visibility = "visible";
-          searchcom.innerHTML = str;
-        } else {
-          targetid.style.visibility = "hidden";
-        }
-      }
-
-      var arrayParams = {
-        kind: k
-      };
-      /*
-      this.postRequest("/search/get", arrayParams)
-        .then(response  => {
-          this.getThen(response);
-        })
-        .catch(reason => {
-          this.serverCatch("取得");
-        });
-      */
-
-      this.sr_title = "検索結果";
-      this.searchview = k;
-      console.log('SearchClick  = ' + k);
-    },
-    MitGoBtn: function MitGoBtn(i, mcode) {},
-    ContentsClick: function ContentsClick() {
-      var element = document.getElementById("searchform");
-      var radioNodeList = element.m_codes; //console.log( 'radioNodeList = ' + radioNodeList ) ;
-      //if (typeof a === "undefined") {
-
-      if (radioNodeList == null) {
-        alert('見積の検索をして下さい。');
-      } else {
-        var vvmc = radioNodeList.value;
-
-        if (vvmc === "") {
-          alert('検索結果一覧より見積を選択して下さい。');
-        } else {
-          this.printtitle = "見積内容 ― 製品名 ―";
-          this.printdata = "【見積番号】D15689 【作成日】20120221 【担当者】011 萬谷朋子 【OPRT】萬谷 【素見積】D15520\n";
-          this.printdata += "【得意先】 119  萬  谷（一 般）\n";
-          this.printdata += "【エンドユーザー】 すずらん商事\n";
-          this.printdata += "【製品名】 納品書（タイトルなし）\n";
-          this.printdata += "【数量】1Ｐ 100,000枚 【総数量】100,000 【総通し数】50,000\n";
-          this.printdata += "【規格】ミリ 【シリンダー】10.5インチ 3本 10.5インチ折\n";
-          this.printdata += "<hr>";
-          this.printdata += "【シリンダー】3 X 5000 = 15,000\n";
-          this.printdata += "【フォーム部】\n";
-          this.printdata += "【フォーム部合計】11,500 \n";
-          this.printdata += "【版下設定】範疇：新版, 種別：フォーム, 難度：Ａ, 面積:72インチ平方, 料金:3000 \n";
-          this.printdata += "       ＣＴＰ 3版 \n";
-          this.printdata += "【組版・製版合計】12,000 \n";
-          this.printdata += "【製　本】\n";
-          this.printdata += "      [断裁・イン] [バースター] \n";
-          this.printdata += "      [バラ] \n";
-          this.printdata += "【梱包等】 [Ａ式] 2,500入り  40箱 X @250 = 10,000, \n";
-          this.printdata += "【製本合計】66,000 \n";
-          this.printdata += "【発　送】市内 40個 X 150 = 6,000, 【送料合計】 6,000 \n";
-          this.printdata += "<hr>";
-          this.printdata += "【用紙代総額】146,926【工賃～送料総額】170,500【実質原価総額】317,426 単価 3.17-\n";
-          this.printdata += "【提示額】245,000 単価 2.45-\n";
-          this.m_code = "D11999";
-          var nopri = 'cnt1';
-          var nopriid = document.getElementById(nopri); //nopriid.style.visibility = "visible";
-
-          nopriid.style.display = "none";
-          this.printview = true; //console.log( vvmc ) ;
-        }
-      }
-    },
-    OverviewClick: function OverviewClick() {
-      var element = document.getElementById("searchform");
-      var radioNodeList = element.m_codes; //console.log( 'radioNodeList = ' + radioNodeList ) ;
-      //if (typeof a === "undefined") {
-
-      if (radioNodeList == null) {
-        alert('見積の検索をして下さい。');
-      } else {
-        var vvmc = radioNodeList.value;
-
-        if (vvmc === "") {
-          // 未選択状態
-          alert('検索結果一覧より見積を選択して下さい。');
-        } else {
-          var myWindow = window.open("", "myWindow", "width=900, height=600, top=0, left=0");
-          myWindow.document.write("<div id='popup_cnt'><div>見積内容</div><button id='popup_printbtn' type='button' onclick='window.print(); return false;'>印刷</button></div>" + vvmc); //console.log( vvmc ) ;
-        }
-      }
-    },
-    Pricancel: function Pricancel() {
-      var tid = "cnt1";
-      var targetid = document.getElementById(tid); //targetid.style.visibility = "visible";
-
-      targetid.style.display = "block";
-      this.printview = false;
-      console.log('プリント画面 終了');
-    },
-    // -------------------- サーバー処理 --------------------
-    // -------------------- 共通 --------------------
-    // 取得正常処理
-    getThen: function getThen(response) {
-      console.log('正常');
-    },
-    // 異常処理
-    serverCatch: function serverCatch(eventtext) {
-      console.log('異常処理');
-    }
   }
 });
 
@@ -7771,44 +3510,6 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 // module
 exports.push([module.i, ".swal2-popup.swal2-toast{flex-direction:row;align-items:center;width:auto;padding:.625em;overflow-y:hidden;background:#fff;box-shadow:0 0 .625em #d9d9d9}.swal2-popup.swal2-toast .swal2-header{flex-direction:row;padding:0}.swal2-popup.swal2-toast .swal2-title{flex-grow:1;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:static;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{justify-content:flex-start;padding:0;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:1.8em;font-weight:700}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{font-size:.25em}}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{flex-basis:auto!important;width:auto;height:auto;margin:0 .3125em}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(50,100,150,.4)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.8em;left:-.5em;transform:rotate(-45deg);transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-toast-animate-success-line-tip .75s;animation:swal2-toast-animate-success-line-tip .75s}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-toast-animate-success-line-long .75s;animation:swal2-toast-animate-success-line-long .75s}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:swal2-toast-show .5s;animation:swal2-toast-show .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:swal2-toast-hide .1s forwards;animation:swal2-toast-hide .1s forwards}.swal2-container{display:flex;position:fixed;z-index:1060;top:0;right:0;bottom:0;left:0;flex-direction:row;align-items:center;justify-content:center;padding:.625em;overflow-x:hidden;transition:background-color .1s;-webkit-overflow-scrolling:touch}.swal2-container.swal2-backdrop-show,.swal2-container.swal2-noanimation{background:rgba(0,0,0,.4)}.swal2-container.swal2-backdrop-hide{background:0 0!important}.swal2-container.swal2-top{align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{align-items:flex-start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{align-items:flex-start;justify-content:flex-end}.swal2-container.swal2-center{align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{align-items:center;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{align-items:center;justify-content:flex-end}.swal2-container.swal2-bottom{align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{align-items:flex-end;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{align-items:flex-end;justify-content:flex-end}.swal2-container.swal2-bottom-end>:first-child,.swal2-container.swal2-bottom-left>:first-child,.swal2-container.swal2-bottom-right>:first-child,.swal2-container.swal2-bottom-start>:first-child,.swal2-container.swal2-bottom>:first-child{margin-top:auto}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:flex!important;flex:1;align-self:stretch;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-grow-column{flex:1;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-no-transition{transition:none!important}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-popup{display:none;position:relative;box-sizing:border-box;flex-direction:column;justify-content:center;width:32em;max-width:100%;padding:1.25em;border:none;border-radius:.3125em;background:#fff;font-family:inherit;font-size:1rem}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-header{display:flex;flex-direction:column;align-items:center;padding:0 1.8em}.swal2-title{position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-actions{display:flex;z-index:1;flex-wrap:wrap;align-items:center;justify-content:center;width:100%;margin:1.25em auto 0}.swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-actions.swal2-loading .swal2-styled.swal2-confirm{box-sizing:border-box;width:2.5em;height:2.5em;margin:.46875em;padding:0;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border:.25em solid transparent;border-radius:100%;border-color:transparent;background-color:transparent!important;color:transparent!important;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-actions.swal2-loading .swal2-styled.swal2-cancel{margin-right:30px;margin-left:30px}.swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after{content:\"\";display:inline-block;width:15px;height:15px;margin-left:5px;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border:3px solid #999;border-radius:50%;border-right-color:transparent;box-shadow:1px 1px 1px #fff}.swal2-styled{margin:.3125em;padding:.625em 2em;box-shadow:none;font-weight:500}.swal2-styled:not([disabled]){cursor:pointer}.swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#3085d6;color:#fff;font-size:1.0625em}.swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#aaa;color:#fff;font-size:1.0625em}.swal2-styled:focus{outline:0;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(50,100,150,.4)}.swal2-styled::-moz-focus-inner{border:0}.swal2-footer{justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;height:.25em;overflow:hidden;border-bottom-right-radius:.3125em;border-bottom-left-radius:.3125em}.swal2-timer-progress-bar{width:100%;height:.25em;background:rgba(0,0,0,.2)}.swal2-image{max-width:100%;margin:1.25em auto}.swal2-close{position:absolute;z-index:2;top:0;right:0;align-items:center;justify-content:center;width:1.2em;height:1.2em;padding:0;overflow:hidden;transition:color .1s ease-out;border:none;border-radius:0;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer}.swal2-close:hover{transform:none;background:0 0;color:#f27474}.swal2-close::-moz-focus-inner{border:0}.swal2-content{z-index:1;justify-content:center;margin:0;padding:0 1.6em;color:#545454;font-size:1.125em;font-weight:400;line-height:normal;text-align:center;word-wrap:break-word}.swal2-checkbox,.swal2-file,.swal2-input,.swal2-radio,.swal2-select,.swal2-textarea{margin:1em auto}.swal2-file,.swal2-input,.swal2-textarea{box-sizing:border-box;width:100%;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;background:inherit;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);color:inherit;font-size:1.125em}.swal2-file.swal2-inputerror,.swal2-input.swal2-inputerror,.swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-file:focus,.swal2-input:focus,.swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 3px #c4e6f5}.swal2-file::-moz-placeholder,.swal2-input::-moz-placeholder,.swal2-textarea::-moz-placeholder{color:#ccc}.swal2-file:-ms-input-placeholder,.swal2-input:-ms-input-placeholder,.swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-file::-moz-placeholder, .swal2-input::-moz-placeholder, .swal2-textarea::-moz-placeholder{color:#ccc}.swal2-file:-ms-input-placeholder, .swal2-input:-ms-input-placeholder, .swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-file::placeholder,.swal2-input::placeholder,.swal2-textarea::placeholder{color:#ccc}.swal2-range{margin:1em auto;background:#fff}.swal2-range input{width:80%}.swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}.swal2-range input,.swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}.swal2-input{height:2.625em;padding:0 .75em}.swal2-input[type=number]{max-width:10em}.swal2-file{background:inherit;font-size:1.125em}.swal2-textarea{height:6.75em;padding:.75em}.swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:inherit;color:inherit;font-size:1.125em}.swal2-checkbox,.swal2-radio{align-items:center;justify-content:center;background:#fff;color:inherit}.swal2-checkbox label,.swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-checkbox input,.swal2-radio input{margin:0 .4em}.swal2-validation-message{display:none;align-items:center;justify-content:center;padding:.625em;overflow:hidden;background:#f0f0f0;color:#666;font-size:1em;font-weight:300}.swal2-validation-message::before{content:\"!\";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}.swal2-icon{position:relative;box-sizing:content-box;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;font-family:inherit;line-height:5em;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474;color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;transform:rotate(-45deg)}.swal2-icon.swal2-error.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-error.swal2-icon-show .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86;color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;transform:rotate(-45deg);transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;transform:rotate(-45deg);transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-.25em;left:-.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;transform:rotate(-45deg)}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.8125em;width:1.5625em;transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;transform:rotate(-45deg)}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-progress-steps{align-items:center;margin:0 0 1.25em;padding:0;background:inherit;font-weight:600}.swal2-progress-steps li{display:inline-block;position:relative}.swal2-progress-steps .swal2-progress-step{z-index:20;width:2em;height:2em;border-radius:2em;background:#3085d6;color:#fff;line-height:2em;text-align:center}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#3085d6}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}.swal2-progress-steps .swal2-progress-step-line{z-index:10;width:2.5em;height:.4em;margin:0 -1px;background:#3085d6}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-noanimation{transition:none}.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.swal2-rtl .swal2-close{right:auto;left:0}.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-moz-document url-prefix(){.swal2-close:focus{outline:2px solid rgba(50,100,150,.4)}}@-webkit-keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@-webkit-keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@-webkit-keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@-webkit-keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-container{top:auto;right:auto;bottom:auto;left:auto;max-width:calc(100% - .625em * 2);background-color:transparent!important}body.swal2-no-backdrop .swal2-container>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-container.swal2-top{top:0;left:50%;transform:translateX(-50%)}body.swal2-no-backdrop .swal2-container.swal2-top-left,body.swal2-no-backdrop .swal2-container.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-container.swal2-top-end,body.swal2-no-backdrop .swal2-container.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-container.swal2-center{top:50%;left:50%;transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-container.swal2-center-left,body.swal2-no-backdrop .swal2-container.swal2-center-start{top:50%;left:0;transform:translateY(-50%)}body.swal2-no-backdrop .swal2-container.swal2-center-end,body.swal2-no-backdrop .swal2-container.swal2-center-right{top:50%;right:0;transform:translateY(-50%)}body.swal2-no-backdrop .swal2-container.swal2-bottom{bottom:0;left:50%;transform:translateX(-50%)}body.swal2-no-backdrop .swal2-container.swal2-bottom-left,body.swal2-no-backdrop .swal2-container.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-container.swal2-bottom-end,body.swal2-no-backdrop .swal2-container.swal2-bottom-right{right:0;bottom:0}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:static!important}}body.swal2-toast-shown .swal2-container{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{flex-direction:column;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Base.vue?vue&type=style&index=0&lang=css&":
-/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Base.vue?vue&type=style&index=0&lang=css& ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.app  {color:red;}\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/PopupPrint.vue?vue&type=style&index=0&lang=css&":
-/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/PopupPrint.vue?vue&type=style&index=0&lang=css& ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.app  {color:red;}\r\n", ""]);
 
 // exports
 
@@ -25530,66 +21231,6 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Base.vue?vue&type=style&index=0&lang=css&":
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Base.vue?vue&type=style&index=0&lang=css& ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Base.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Base.vue?vue&type=style&index=0&lang=css&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/PopupPrint.vue?vue&type=style&index=0&lang=css&":
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/PopupPrint.vue?vue&type=style&index=0&lang=css& ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./PopupPrint.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/PopupPrint.vue?vue&type=style&index=0&lang=css&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
 /***/ "./node_modules/style-loader/lib/addStyles.js":
 /*!****************************************************!*\
   !*** ./node_modules/style-loader/lib/addStyles.js ***!
@@ -29405,349 +25046,9 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BackupLogs.vue?vue&type=template&id=d0340a88&":
-/*!*************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/BackupLogs.vue?vue&type=template&id=d0340a88& ***!
-  \*************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "backup_btnzone" } }, [
-      _c("div", { staticClass: "btnitem" }, [
-        _c(
-          "button",
-          {
-            attrs: { type: "button", id: "act_imp_btn" },
-            on: {
-              click: function ($event) {
-                return _vm.ImportButton("product_all_outsou3")
-              },
-            },
-          },
-          [_vm._v("インポート"), _vm._m(1)]
-        ),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "btnitem" }, [
-        _c(
-          "button",
-          {
-            attrs: { type: "button", id: "act_exp_btn" },
-            on: {
-              click: function ($event) {
-                return _vm.ExportButton("product_all_outsou3")
-              },
-            },
-          },
-          [_vm._v("エクスポート"), _vm._m(2)]
-        ),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "btnitem" }, [
-        _c(
-          "button",
-          {
-            attrs: { type: "button", id: "act_bak_btn" },
-            on: {
-              click: function ($event) {
-                return _vm.BackupButton("product_all_outsou3")
-              },
-            },
-          },
-          [_vm._v("バックアップ"), _vm._m(3)]
-        ),
-      ]),
-    ]),
-    _vm._v(" "),
-    _vm._m(4),
-  ])
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "mainte_cnt_title" } }, [
-      _c("h1", [
-        _vm._v("Import"),
-        _c("br"),
-        _vm._v("　　Export"),
-        _c("br"),
-        _vm._v("　　　　Backup"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", [_c("img", { attrs: { src: "/images/bak_im.png" } })])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", [_c("img", { attrs: { src: "/images/bak_ex.png" } })])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", [_c("img", { attrs: { src: "/images/bak_back.png" } })])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "backup_infozone" } }, [
-      _c("h3"),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "tbl_1" } }, [
-        _c("table", [
-          _c("thead", [
-            _c("tr", [
-              _c("th", { staticClass: "nrap" }, [_vm._v("日時")]),
-              _vm._v(" "),
-              _c("th", { staticClass: "w2 nrap" }, [_vm._v("種類")]),
-              _vm._v(" "),
-              _c("th", { staticClass: "nrap" }, [_vm._v("作業テーブル")]),
-              _vm._v(" "),
-              _c("th", { staticClass: "nrap" }, [_vm._v("対象テーブル")]),
-              _vm._v(" "),
-              _c("th", { staticClass: "nrap" }, [_vm._v("ステータス")]),
-              _vm._v(" "),
-              _c("th", { staticClass: "nrap" }, [_vm._v("開始時間")]),
-              _vm._v(" "),
-              _c("th", { staticClass: "nrap" }, [_vm._v("終了時間")]),
-              _vm._v(" "),
-              _c("th", { staticClass: "nrap" }, [_vm._v("所要時間")]),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("tbody", [
-            _c("tr", [
-              _c("td", { staticClass: "nrap" }, [_vm._v("2022年7月22日")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "nrap" }, [_vm._v("バックアップ")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "nrap" }, [_vm._v("quotations")]),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td", [_c("span", { staticClass: "err" }, [_vm._v("失敗")])]),
-              _vm._v(" "),
-              _c("td", [_vm._v("14時30分")]),
-              _vm._v(" "),
-              _c("td"),
-              _vm._v(" "),
-              _c("td"),
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", { staticClass: "nrap" }, [_vm._v("2022年7月21日")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "nrap" }, [_vm._v("エクスポート")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("quotations")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("Mitumori.DAT")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("成功")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "nrap" }, [_vm._v("10時03分")]),
-              _vm._v(" "),
-              _c("td", { staticClass: "nrap" }, [_vm._v("10時05分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("2分")]),
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", [_vm._v("2022年7月21日")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("エクスポート")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("quotations_binding")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("Mitumori.DAT")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("成功")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("10時05分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("10時06分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("1分")]),
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", [_vm._v("2022年7月21日")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("エクスポート")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("quotations_cost")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("Mitumori.DAT")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("成功")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("10時06分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("10時07分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("1分")]),
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", [_vm._v("2022年7月21日")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("エクスポート")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("quotations_department")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("Mitumori.DAT")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("成功")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("10時07分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("10時08分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("1分")]),
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", [_vm._v("2022年7月21日")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("エクスポート")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("quotations_parts")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("Mitumori.DAT")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("成功")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("10時08分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("10時11分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("3分")]),
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", [_vm._v("2022年7月20日")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("インポート")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("quotations")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("Mitumori.DAT")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("成功")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("14時30分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("14時31分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("1分")]),
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", [_vm._v("2022年7月20日")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("インポート")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("quotations_binding")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("Mitumori.DAT")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("成功")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("14時31分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("14時32分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("1分")]),
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", [_vm._v("2022年7月20日")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("インポート")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("quotations_cost")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("Mitumori.DAT")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("成功")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("14時32分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("14時33分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("1分")]),
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", [_vm._v("2022年7月20日")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("インポート")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("quotations_department")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("Mitumori.DAT")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("成功")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("14時33分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("14時34分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("1分")]),
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", [_vm._v("2022年7月20日")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("インポート")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("quotations_parts")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("Mitumori.DAT")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("成功")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("14時34分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("14時37分")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("3分")]),
-            ]),
-          ]),
-        ]),
-      ]),
-    ])
-  },
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Base.vue?vue&type=template&id=3d03ad3c&":
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Edit.vue?vue&type=template&id=031ccff5&":
 /*!*******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Base.vue?vue&type=template&id=3d03ad3c& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Edit.vue?vue&type=template&id=031ccff5& ***!
   \*******************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -29760,19 +25061,1685 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _vm.selectMode == "COMPLETE"
+      ? _c("div", { attrs: { id: "input_area_1" } }, [
+          _c("div", { attrs: { id: "top_cnt" } }, [
+            _c("h2", { staticClass: "title mgt20" }, [
+              _vm._v("結果 / " + _vm._s(_vm.acttitle) + " 完了"),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "btn_cnt2" } }, [
+            _c(
+              "button",
+              {
+                attrs: { type: "button" },
+                on: {
+                  click: function ($event) {
+                    return _vm.backLine()
+                  },
+                },
+              },
+              [_vm._v("一覧へ")]
+            ),
+          ]),
+          _vm._v(" "),
+          _vm.actionmsgArr.length
+            ? _c("div", { staticClass: "print-none" }, [
+                _c(
+                  "ul",
+                  { staticClass: "error-red color_red" },
+                  _vm._l(_vm.actionmsgArr, function (actionmsg, index) {
+                    return _c("li", { key: index }, [_vm._v(_vm._s(actionmsg))])
+                  }),
+                  0
+                ),
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "tbl_1" } }, [
+            _c("table", [
+              _c("thead", [
+                _c("tr", [
+                  _c("th", { staticClass: "gc2" }, [_vm._v("日付")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("部署")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("担当")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [
+                    _vm._v("商品名 "),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("product_name", 1)
+                          },
+                        },
+                      },
+                      [_vm._v("▲")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("product_name", 2)
+                          },
+                        },
+                      },
+                      [_vm._v("▼")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("分類")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("発注先")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("単位")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("入庫数")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("出庫数")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("現在在庫")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("単価")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("合計金額")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("備考")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v(" ")]),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.details, function (item, rowIndex) {
+                  return _c("tr", { key: rowIndex, class: _vm.classObj1 }, [
+                    _c("td", { staticClass: "nbr" }, [
+                      _vm._v(_vm._s(item["mdate"])),
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "w4e" }, [
+                      _vm._v(_vm._s(item["department"])),
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "w3e" }, [
+                      _vm._v(_vm._s(item["charge"])),
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "td",
+                      { class: item["status"] == "newest" ? "bgcolor5" : "" },
+                      [_vm._v(_vm._s(item["product_name"]))]
+                    ),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(item["product_number"]))]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(item["order_address"]))]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "nbr" }, [
+                      _vm._v(_vm._s(item["unit"])),
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "td",
+                      {
+                        staticClass: "style1",
+                        class: item["receipt"] === 0 ? "color3" : "",
+                      },
+                      [_vm._v(_vm._s(item["receipt"]))]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "td",
+                      {
+                        staticClass: "style1",
+                        class: item["delivery"] === 0 ? "color3" : "",
+                      },
+                      [_vm._v(_vm._s(item["delivery"]))]
+                    ),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(item["remarks"]))]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "nbr w2e" }, [
+                      _vm.btnMode === "off" ? _c("div") : _c("div"),
+                      _vm._v(" "),
+                      item["status"] == "newest"
+                        ? _c("div", [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "style1",
+                                attrs: { type: "button" },
+                                on: {
+                                  click: function ($event) {
+                                    return _vm.EditBtn(
+                                      item["id"],
+                                      item["product_code"],
+                                      _vm.details[rowIndex].product_name,
+                                      "update",
+                                      rowIndex
+                                    )
+                                  },
+                                },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                更新\n                "
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "button",
+                              {
+                                staticClass: "style2",
+                                attrs: { type: "button" },
+                                on: {
+                                  click: function ($event) {
+                                    return _vm.EditBtn(
+                                      item["id"],
+                                      item["product_code"],
+                                      _vm.details[rowIndex].product_name,
+                                      "fix",
+                                      rowIndex
+                                    )
+                                  },
+                                },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                修正\n                "
+                                ),
+                              ]
+                            ),
+                          ])
+                        : _c("div", [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "style2",
+                                attrs: { type: "button" },
+                                on: {
+                                  click: function ($event) {
+                                    return _vm.EditBtn(
+                                      item["id"],
+                                      item["product_code"],
+                                      _vm.details[rowIndex].product_name,
+                                      "fix",
+                                      rowIndex
+                                    )
+                                  },
+                                },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                修正\n                "
+                                ),
+                              ]
+                            ),
+                          ]),
+                    ]),
+                  ])
+                }),
+                0
+              ),
+            ]),
+          ]),
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.selectMode == "EDT"
+      ? _c(
+          "div",
+          { attrs: { id: "input_area_1" } },
+          [
+            _c("div", { attrs: { id: "top_cnt" } }, [
+              _vm.btnMode === "update"
+                ? _c("h2", [_vm._v("在庫 / 更新")])
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.btnMode === "fix"
+                ? _c("h2", [_vm._v("在庫 / 修正")])
+                : _vm._e(),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "customize",
+                  attrs: { type: "button" },
+                  on: {
+                    click: function ($event) {
+                      return _vm.viewBtn(2)
+                    },
+                  },
+                },
+                [_vm._v("\n        追加情報\n      ")]
+              ),
+            ]),
+            _vm._v(" "),
+            _vm._l(_vm.details, function (item, index) {
+              return _c("div", { key: item.id }, [
+                _vm.messagevalidatesNew.length
+                  ? _c("div", {}, [
+                      _c(
+                        "ul",
+                        { staticClass: "error-red color_red" },
+                        _vm._l(
+                          _vm.messagevalidatesNew,
+                          function (messagevalidate, index) {
+                            return _c("li", { key: index }, [
+                              _vm._v(_vm._s(messagevalidate)),
+                            ])
+                          }
+                        ),
+                        0
+                      ),
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.details[index].id,
+                      expression: "details[index].id",
+                    },
+                  ],
+                  attrs: { type: "hidden", name: "id" },
+                  domProps: { value: _vm.details[index].id },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.details[index], "id", $event.target.value)
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "cnt1" } }, [
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc2" }, [_vm._v("日付")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].mdate,
+                            expression: "details[index].mdate",
+                          },
+                        ],
+                        staticClass: "form_style bc2",
+                        attrs: { type: "date", maxlength: "12", name: "mdate" },
+                        domProps: { value: _vm.details[index].mdate },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "mdate",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc2" }, [_vm._v("部署")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].department,
+                            expression: "details[index].department",
+                          },
+                        ],
+                        staticClass: "form_style bc2",
+                        attrs: {
+                          type: "text",
+                          maxlength: "40",
+                          name: "department",
+                        },
+                        domProps: { value: _vm.details[index].department },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "department",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w2" }, [
+                    _c("div", { staticClass: "cate gc2" }, [_vm._v("担当")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].charge,
+                            expression: "details[index].charge",
+                          },
+                        ],
+                        staticClass: "form_style bc2",
+                        attrs: {
+                          type: "text",
+                          maxlength: "20",
+                          name: "charge",
+                        },
+                        domProps: { value: _vm.details[index].charge },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "charge",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "cnt1" } }, [
+                  _c("div", { staticClass: "inputgroup w3" }, [
+                    _c("div", { staticClass: "cate gc2" }, [_vm._v("商品名")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].product_name,
+                            expression: "details[index].product_name",
+                          },
+                        ],
+                        staticClass: "form_style bc2",
+                        attrs: {
+                          type: "text",
+                          maxlength: "100",
+                          name: "product_name",
+                          disabled: _vm.isDisabled,
+                        },
+                        domProps: { value: _vm.details[index].product_name },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "product_name",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc2" }, [_vm._v("分類")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].product_number,
+                            expression: "details[index].product_number",
+                          },
+                        ],
+                        staticClass: "form_style bc2",
+                        attrs: {
+                          type: "text",
+                          maxlength: "100",
+                          name: "product_number",
+                          disabled: _vm.isDisabled,
+                        },
+                        domProps: { value: _vm.details[index].product_number },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "product_number",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "cnt1" } }, [
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc2" }, [_vm._v("単位")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].unit,
+                            expression: "details[index].unit",
+                          },
+                        ],
+                        staticClass: "form_style bc2",
+                        attrs: {
+                          type: "text",
+                          maxlength: "10",
+                          name: "unit",
+                          disabled: _vm.isDisabled,
+                        },
+                        domProps: { value: _vm.details[index].unit },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "unit",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc2" }, [_vm._v("入庫数")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model.number",
+                            value: _vm.details[index].receipt,
+                            expression: "details[index].receipt",
+                            modifiers: { number: true },
+                          },
+                        ],
+                        staticClass: "form_style bc2",
+                        attrs: {
+                          type: "number",
+                          min: "0",
+                          maxlength: "11",
+                          name: "receipt",
+                        },
+                        domProps: { value: _vm.details[index].receipt },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "receipt",
+                              _vm._n($event.target.value)
+                            )
+                          },
+                          blur: function ($event) {
+                            return _vm.$forceUpdate()
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc2" }, [_vm._v("出庫数")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model.number",
+                            value: _vm.details[index].delivery,
+                            expression: "details[index].delivery",
+                            modifiers: { number: true },
+                          },
+                        ],
+                        staticClass: "form_style bc2",
+                        attrs: {
+                          type: "number",
+                          min: "0",
+                          maxlength: "11",
+                          name: "delivery",
+                        },
+                        domProps: { value: _vm.details[index].delivery },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "delivery",
+                              _vm._n($event.target.value)
+                            )
+                          },
+                          blur: function ($event) {
+                            return _vm.$forceUpdate()
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "cnt1" } }, [
+                  _c("div", { staticClass: "inputgroup w2" }, [
+                    _c("div", { staticClass: "cate gc2" }, [_vm._v("発注先")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].order_address,
+                            expression: "details[index].order_address",
+                          },
+                        ],
+                        staticClass: "form_style bc2",
+                        attrs: {
+                          type: "text",
+                          maxlength: "40",
+                          name: "order_address",
+                          disabled: _vm.isDisabled,
+                        },
+                        domProps: { value: _vm.details[index].order_address },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "order_address",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc2" }, [_vm._v("単価")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].unit_price,
+                            expression: "details[index].unit_price",
+                          },
+                        ],
+                        staticClass: "form_style bc2",
+                        attrs: {
+                          type: "text",
+                          maxlength: "40",
+                          name: "unit_price",
+                          disabled: _vm.isDisabled,
+                        },
+                        domProps: { value: _vm.details[index].unit_price },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "unit_price",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "cnt1" } }, [
+                  _c("div", { staticClass: "inputgroup w4" }, [
+                    _c("div", { staticClass: "cate gc2" }, [_vm._v("備考")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("textarea", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].remarks,
+                            expression: "details[index].remarks",
+                          },
+                        ],
+                        staticClass: "form_style_t bc2",
+                        attrs: { maxlength: "191", name: "remarks", rows: "3" },
+                        domProps: { value: _vm.details[index].remarks },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "remarks",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _vm.view_switch == "on"
+                  ? _c("div", { attrs: { id: "cnt1" } }, [
+                      _c("div", { staticClass: "inputgroup" }, [
+                        _c("div", { staticClass: "cate" }, [
+                          _vm._v("グループ"),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "inputzone" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.details[index].marks,
+                                expression: "details[index].marks",
+                              },
+                            ],
+                            staticClass: "form_style",
+                            attrs: {
+                              type: "text",
+                              maxlength: "10",
+                              name: "marks",
+                            },
+                            domProps: { value: _vm.details[index].marks },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.details[index],
+                                  "marks",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "inputgroup" }, [
+                        _c("div", { staticClass: "cate" }, [
+                          _vm._v("作成ユーザー"),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "inputzone" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.details[index].created_user,
+                                expression: "details[index].created_user",
+                              },
+                            ],
+                            staticClass: "form_style",
+                            attrs: {
+                              type: "hidden",
+                              maxlength: "20",
+                              name: "created_user",
+                            },
+                            domProps: {
+                              value: _vm.details[index].created_user,
+                            },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.details[index],
+                                  "created_user",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("span", [
+                            _vm._v(_vm._s(_vm.details[index].created_user)),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "inputgroup" }, [
+                        _c("div", { staticClass: "cate" }, [
+                          _vm._v("修正ユーザー"),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "inputzone" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.details[index].updated_user,
+                                expression: "details[index].updated_user",
+                              },
+                            ],
+                            staticClass: "form_style",
+                            attrs: {
+                              type: "hidden",
+                              maxlength: "20",
+                              name: "updated_user",
+                            },
+                            domProps: {
+                              value: _vm.details[index].updated_user,
+                            },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.details[index],
+                                  "updated_user",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("span", [
+                            _vm._v(_vm._s(_vm.details[index].updated_user)),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "inputgroup" }, [
+                        _c("div", { staticClass: "cate" }, [
+                          _vm._v("作成日時"),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "inputzone" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.details[index].created_at,
+                                expression: "details[index].created_at",
+                              },
+                            ],
+                            staticClass: "form_style",
+                            attrs: {
+                              type: "hidden",
+                              maxlength: "16",
+                              name: "created_at",
+                            },
+                            domProps: { value: _vm.details[index].created_at },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.details[index],
+                                  "created_at",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("span", [
+                            _vm._v(_vm._s(_vm.details[index].created_at)),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "inputgroup" }, [
+                        _c("div", { staticClass: "cate" }, [
+                          _vm._v("修正日時"),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "inputzone" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.details[index].updated_at,
+                                expression: "details[index].updated_at",
+                              },
+                            ],
+                            staticClass: "form_style",
+                            attrs: {
+                              type: "hidden",
+                              maxlength: "16",
+                              name: "updated_at",
+                            },
+                            domProps: { value: _vm.details[index].updated_at },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.details[index],
+                                  "updated_at",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("span", [
+                            _vm._v(_vm._s(_vm.details[index].updated_at)),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "inputgroup" }, [
+                        _c("div", { staticClass: "cate" }, [
+                          _vm._v("商品CODE"),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "inputzone" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.details[index].product_code,
+                                expression: "details[index].product_code",
+                              },
+                            ],
+                            staticClass: "form_style",
+                            attrs: {
+                              type: "hidden",
+                              maxlength: "11",
+                              name: "product_code",
+                            },
+                            domProps: {
+                              value: _vm.details[index].product_code,
+                            },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.details[index],
+                                  "product_code",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("span", [
+                            _vm._v(_vm._s(_vm.details[index].product_code)),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "inputgroup" }, [
+                        _c("div", { staticClass: "cate" }, [
+                          _vm._v("ステータス"),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "inputzone" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.details[index].status,
+                                expression: "details[index].status",
+                              },
+                            ],
+                            staticClass: "form_style",
+                            attrs: {
+                              type: "text",
+                              maxlength: "20",
+                              name: "status",
+                            },
+                            domProps: { value: _vm.details[index].status },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.details[index],
+                                  "status",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "inputgroup" }, [
+                        _c("div", { staticClass: "cate" }, [
+                          _vm._v("削除フラグ"),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "inputzone" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.details[index].is_deleted,
+                                expression: "details[index].is_deleted",
+                              },
+                            ],
+                            staticClass: "form_style",
+                            attrs: {
+                              type: "hidden",
+                              maxlength: "20",
+                              name: "is_deleted",
+                            },
+                            domProps: { value: _vm.details[index].is_deleted },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.details[index],
+                                  "is_deleted",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                          _vm._v(" "),
+                          _c("span", [
+                            _vm._v(_vm._s(_vm.details[index].is_deleted)),
+                          ]),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { attrs: { id: "button1" } }, [
+                        _c(
+                          "button",
+                          {
+                            attrs: { type: "button" },
+                            on: {
+                              click: function ($event) {
+                                return _vm.recordDel(index, "all")
+                              },
+                            },
+                          },
+                          [_vm._v("この商品（履歴含む）を削除")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            attrs: { type: "button" },
+                            on: {
+                              click: function ($event) {
+                                return _vm.recordDel(index, "one")
+                              },
+                            },
+                          },
+                          [_vm._v("この登録（レコード）を削除")]
+                        ),
+                      ]),
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.view_switch == "on"
+                  ? _c("div", { attrs: { id: "cnt1" } })
+                  : _vm._e(),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "button1" } }, [
+                  _c("div", [
+                    _vm.btnMode === "update"
+                      ? _c("div", { staticClass: "btnstyle" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "style1",
+                              attrs: { type: "button" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.dataUpdate(index, 1)
+                                },
+                              },
+                            },
+                            [_vm._v("在庫の更新")]
+                          ),
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.btnMode === "fix"
+                      ? _c("div", { staticClass: "btnstyle" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "style2",
+                              attrs: { type: "button" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.dataUpdate(index, 0)
+                                },
+                              },
+                            },
+                            [_vm._v("在庫の修正")]
+                          ),
+                        ])
+                      : _vm._e(),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [
+                    _c("div", { staticClass: "btnstyle" }, [
+                      _c(
+                        "button",
+                        {
+                          attrs: { type: "button" },
+                          on: {
+                            click: function ($event) {
+                              return _vm.backLine()
+                            },
+                          },
+                        },
+                        [_vm._v("一覧へ")]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "btnstyle" }, [
+                      _c(
+                        "button",
+                        {
+                          attrs: { type: "button" },
+                          on: {
+                            click: function ($event) {
+                              return _vm.resultLine()
+                            },
+                          },
+                        },
+                        [_vm._v("検索一覧へ")]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _vm.btnMode === "fix"
+                      ? _c("div", { staticClass: "btnstyle" }, [
+                          _c(
+                            "button",
+                            {
+                              attrs: { type: "button" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.dataDel(index, 4)
+                                },
+                              },
+                            },
+                            [_vm._v("抹消")]
+                          ),
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.btnMode === "great"
+                      ? _c("div", { staticClass: "btnstyle" }, [
+                          _c(
+                            "button",
+                            {
+                              attrs: { type: "button" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.recordDel(index, "one")
+                                },
+                              },
+                            },
+                            [_vm._v("この登録を削除")]
+                          ),
+                        ])
+                      : _vm._e(),
+                  ]),
+                ]),
+              ])
+            }),
+            _vm._v(" "),
+            _vm._l(_vm.details, function (item2, index2) {
+              return _c("div", { key: index2, attrs: { id: "cnt2" } }, [
+                _c("div", [
+                  _c("h4", [
+                    _vm._v(_vm._s(_vm.product_title)),
+                    _c("span", { staticStyle: { "margin-left": "20px" } }, [
+                      _vm._v("履歴一覧"),
+                    ]),
+                  ]),
+                ]),
+              ])
+            }),
+            _vm._v(" "),
+            _c("div", { attrs: { id: "tbl_1" } }, [
+              _c("table", [
+                _vm._m(0),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.details2, function (item, rowIndex) {
+                    return _c(
+                      "tr",
+                      {
+                        key: rowIndex,
+                        class: item["id"] == _vm.edit_id ? "bgcolor3" : "",
+                      },
+                      [
+                        _c("td", [_vm._v(_vm._s(item["mdate"]))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(item["department"]))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(item["charge"]))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(item["product_name"]))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(item["product_number"]))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(item["order_address"]))]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "nbr" }, [
+                          _vm._v(_vm._s(item["unit"])),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass: "style1",
+                            class: item["receipt"] === 0 ? "color3" : "",
+                          },
+                          [_vm._v(_vm._s(item["receipt"]))]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass: "style1",
+                            class: item["delivery"] === 0 ? "color3" : "",
+                          },
+                          [_vm._v(_vm._s(item["delivery"]))]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass: "style1",
+                            style:
+                              item["now_inventory"] === 0 ? "color:red" : "",
+                          },
+                          [
+                            _vm._v(
+                              _vm._s(
+                                _vm._f("numberFormat")(
+                                  Number(item.now_inventory)
+                                )
+                              )
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "style1" }, [
+                          _vm._v(
+                            _vm._s(
+                              _vm._f("numberFormat")(Number(item.unit_price))
+                            )
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "style1" }, [
+                          item["total"] !== null
+                            ? _c("div", [
+                                _vm._v(
+                                  _vm._s(
+                                    _vm._f("numberFormat")(
+                                      Number(item["total"])
+                                    )
+                                  )
+                                ),
+                              ])
+                            : _vm._e(),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(item["remarks"]))]),
+                      ]
+                    )
+                  }),
+                  0
+                ),
+              ]),
+            ]),
+          ],
+          2
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.selectMode == "LINEACTIVE"
+      ? _c("div", [
+          _vm._m(1),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "print-none", attrs: { id: "topform_cnt" } },
+            [
+              _c("form", { attrs: { id: "form1", name: "form3" } }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.s_department,
+                      expression: "s_department",
+                    },
+                  ],
+                  staticClass: "form_style bc1 w10e",
+                  attrs: {
+                    type: "text",
+                    maxlength: "30",
+                    name: "s_department",
+                  },
+                  domProps: { value: _vm.s_department },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.s_department = $event.target.value
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    attrs: { type: "button" },
+                    on: {
+                      click: function ($event) {
+                        return _vm.searchBtn()
+                      },
+                    },
+                  },
+                  [_vm._v("\n          部署 検索\n        ")]
+                ),
+              ]),
+              _vm._v(" "),
+              _c("form", { attrs: { id: "form1", name: "form2" } }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.s_name,
+                      expression: "s_name",
+                    },
+                  ],
+                  staticClass: "form_style bc1 w10e",
+                  attrs: { type: "text", maxlength: "30", name: "s_name" },
+                  domProps: { value: _vm.s_name },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.s_name = $event.target.value
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    attrs: { type: "button" },
+                    on: {
+                      click: function ($event) {
+                        return _vm.searchBtn()
+                      },
+                    },
+                  },
+                  [_vm._v("\n          名前 検索\n        ")]
+                ),
+              ]),
+              _vm._v(" "),
+              _c("form", { attrs: { id: "form1", name: "form1" } }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.s_yomi,
+                      expression: "s_yomi",
+                    },
+                  ],
+                  staticClass: "form_style bc1 w10e",
+                  attrs: { type: "text", maxlength: "30", name: "s_yomi" },
+                  domProps: { value: _vm.s_yomi },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.s_yomi = $event.target.value
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    attrs: { type: "button" },
+                    on: {
+                      click: function ($event) {
+                        return _vm.searchBtn()
+                      },
+                    },
+                  },
+                  [_vm._v("\n          読み 検索\n        ")]
+                ),
+              ]),
+            ]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "mgt20", attrs: { id: "tbl_1" } }, [
+            _c("table", [
+              _c("thead", [
+                _c("tr", [
+                  _c("th", {}, [_vm._v(" ")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("No")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("営業所")]),
+                  _vm._v(" "),
+                  _c("th", {}, [
+                    _vm._v("部署 "),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("department", 1)
+                          },
+                        },
+                      },
+                      [_vm._v("▲")]
+                    ),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("department", 2)
+                          },
+                        },
+                      },
+                      [_vm._v("▼")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("th", {}, [
+                    _vm._v("課 "),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("division", 1)
+                          },
+                        },
+                      },
+                      [_vm._v("▲")]
+                    ),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("division", 2)
+                          },
+                        },
+                      },
+                      [_vm._v("▼")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("役職")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("氏名")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("ローマ字")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("ふりがな")]),
+                  _vm._v(" "),
+                  _c("th", {}, [
+                    _vm._v("読み "),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("yomi", 1)
+                          },
+                        },
+                      },
+                      [_vm._v("▲")]
+                    ),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("yomi", 2)
+                          },
+                        },
+                      },
+                      [_vm._v("▼")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("携帯電話")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("メールアドレス")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("資格")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("画像ファイル")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("備考")]),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                [
+                  _vm._l(_vm.details, function (item, rowIndex) {
+                    return _c("tr", { key: rowIndex }, [
+                      _c("td", { staticClass: "nbr w2e" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "style2",
+                            attrs: { type: "button" },
+                            on: {
+                              click: function ($event) {
+                                return _vm.EditBtn(
+                                  item["id"],
+                                  item["product_code"],
+                                  _vm.details[rowIndex].product_name,
+                                  "fix",
+                                  rowIndex
+                                )
+                              },
+                            },
+                          },
+                          [_vm._v("\n              編集\n              ")]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "nbr" }, [
+                        _vm._v(_vm._s(item["id"])),
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "w4e" }, [
+                        _vm._v(_vm._s(item["office"])),
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "w3e" }, [
+                        _vm._v(_vm._s(item["department"])),
+                      ]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["division"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["aaa"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["name"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["roma"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(item["remarks"]))]),
+                    ])
+                  }),
+                  _vm._v(" "),
+                  _c("tr", { staticClass: "border1" }, [
+                    _c(
+                      "td",
+                      { staticClass: "style1", attrs: { colspan: "2" } },
+                      [_vm._v(_vm._s(this.details.length) + " 件")]
+                    ),
+                    _vm._v(" "),
+                    _c("td", {
+                      staticClass: "style1",
+                      attrs: { colspan: "19" },
+                    }),
+                  ]),
+                ],
+                2
+              ),
+            ]),
+            _vm._v(" "),
+            _vm.details == ""
+              ? _c("div", {}, [_vm._v("該当するデータがありません")])
+              : _vm._e(),
+          ]),
+        ])
+      : _vm._e(),
+  ])
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("div", { attrs: { id: "tips_cnt" } }, [
-        _c("h3", {}, [_vm._v("見積作成")]),
+    return _c("thead", [
+      _c("tr", [
+        _c("th", { staticClass: "gc2" }, [_vm._v("日付")]),
         _vm._v(" "),
-        _c("div", [_vm._v("これはbasevue")]),
+        _c("th", { staticClass: "gc2" }, [_vm._v("部署")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("担当")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("商品名")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("分類")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("発注先")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("単位")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("入庫数")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("出庫数")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("現在在庫")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("単価")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("合計金額")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("備考")]),
       ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "top_cnt" } }, [
+      _c("h2", { staticClass: "title mgt20" }, [_vm._v("検索結果一覧")]),
     ])
   },
 ]
@@ -29813,10 +26780,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Mmake.vue?vue&type=template&id=1437ca00&":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Mmake.vue?vue&type=template&id=1437ca00& ***!
-  \********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Search.vue?vue&type=template&id=5026ffd3&":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Search.vue?vue&type=template&id=5026ffd3& ***!
+  \*********************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -29829,10391 +26796,330 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "cnt1" } }, [
-      _vm._m(1),
-      _vm._v(" "),
-      _vm._m(2),
-      _vm._v(" "),
-      _vm._m(3),
-      _vm._v(" "),
-      _vm._m(4),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _vm._m(5),
-        _vm._v(" "),
-        _vm._m(6),
-        _vm._v(" "),
-        _vm._m(7),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1",
-            attrs: { id: "printing_mark" },
-          }),
+    _vm.selectMode == "LINEACTIVE"
+      ? _c("div", [
+          _vm._m(0),
           _vm._v(" "),
           _c(
-            "button",
-            {
-              attrs: { type: "button", id: "printing_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClickT("printing")
-                },
-              },
-            },
-            [_vm._v("印刷有り")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "input_w1",
-            attrs: {
-              type: "text",
-              value: "1",
-              name: "printing",
-              id: "printing",
-            },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1 v_hidden",
-            attrs: { id: "inch_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "inch_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClick03("inch", 0, "unit")
-                },
-              },
-            },
-            [_vm._v("インチ")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1 v_hidden",
-            attrs: { id: "milli_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "milli_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClick03("milli", 0, "unit")
-                },
-              },
-            },
-            [_vm._v("ミリ")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "input_w1",
-            attrs: { type: "text", value: "0", name: "unit", id: "unit" },
-          }),
-        ]),
-        _vm._v(" "),
-        _vm._m(8),
-        _vm._v(" "),
-        _vm._m(9),
-      ]),
-      _vm._v(" "),
-      _vm._m(10),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts1_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts1_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(1, "1P目")
-                },
-              },
-            },
-            [_vm._v("1P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts2_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts2_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(2, "2P目")
-                },
-              },
-            },
-            [_vm._v("2P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts3_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts3_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(3, "3P目")
-                },
-              },
-            },
-            [_vm._v("3P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts4_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts4_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(4, "4P目")
-                },
-              },
-            },
-            [_vm._v("4P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts5_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts5_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(5, "5P目")
-                },
-              },
-            },
-            [_vm._v("5P目")]
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts6_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts6_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(6, "6P目")
-                },
-              },
-            },
-            [_vm._v("6P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts7_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts7_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(7, "7P目")
-                },
-              },
-            },
-            [_vm._v("7P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts8_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts8_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(8, "8P目")
-                },
-              },
-            },
-            [_vm._v("8P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts9_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts9_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(9, "9P目")
-                },
-              },
-            },
-            [_vm._v("9P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts10_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts10_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(10, "10P目")
-                },
-              },
-            },
-            [_vm._v("10P目")]
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts11_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts11_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(11, "11P目")
-                },
-              },
-            },
-            [_vm._v("11P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts12_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts12_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(12, "12P目")
-                },
-              },
-            },
-            [_vm._v("12P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts_omote_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts13_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(13, "表紙")
-                },
-              },
-            },
-            [_vm._v("表紙")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts_ura_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts14_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(14, "裏表紙")
-                },
-              },
-            },
-            [_vm._v("裏表紙")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts_mat_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts15_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(15, "下敷き")
-                },
-              },
-            },
-            [_vm._v("下敷き")]
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(11),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "wkake_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "wkake_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick02("wkake", 1)
-                    },
-                  },
-                },
-                [_vm._v("Ｗ掛け")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: { type: "text", value: "0", name: "wkake", id: "wkake" },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "daenpin_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "daenpin_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("daenpin")
-                    },
-                  },
-                },
-                [_vm._v("楕円ピン")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "daenpin",
-                  id: "daenpin",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "ana2_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "ana2_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick02("ana2", 1)
-                    },
-                  },
-                },
-                [_vm._v("２穴")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: { type: "text", value: "0", name: "ana2", id: "ana2" },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "ana6_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "ana6_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick02("ana6", 1)
-                    },
-                  },
-                },
-                [_vm._v("６穴")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: { type: "text", value: "0", name: "ana6", id: "ana6" },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "donko_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "donko_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick02("donko", 1)
-                    },
-                  },
-                },
-                [_vm._v("ドンコ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: { type: "text", value: "0", name: "donko", id: "donko" },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "katanuki_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "katanuki_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick02("katanuki", 1)
-                    },
-                  },
-                },
-                [_vm._v("型ヌキ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "katanuki",
-                  id: "katanuki",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "katanuki_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("katanuki_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "katanuki_outsou",
-                  id: "katanuki_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(12),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "kasutori_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "kasutori_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick02("kasutori", 1)
-                    },
-                  },
-                },
-                [_vm._v("カス取")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "kasutori",
-                  id: "kasutori",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "kasutori_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("kasutori_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "kasutori_outsou",
-                  id: "kasutori_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(13),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "nisu_single_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "nisu_single_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("nisu_single", 2)
-                    },
-                  },
-                },
-                [_vm._v("ニス片面")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "nisu_single",
-                  id: "nisu_single",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "nisu_double_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "nisu_double_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("nisu_double", 2)
-                    },
-                  },
-                },
-                [_vm._v("ニス両面")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "nisu_double",
-                  id: "nisu_double",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(14),
-          ]),
-          _vm._v(" "),
-          _vm._m(15),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(16),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "form_all_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("form_all_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "form_all_outsou",
-                  id: "form_all_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(17),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _vm._m(18),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(19),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _vm._m(20),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "plate_making_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("plate_making_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "plate_making_outsou",
-                  id: "plate_making_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(21),
-          ]),
-          _vm._v(" "),
-          _vm._m(22),
-          _vm._v(" "),
-          _vm._m(23),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(24),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _vm._m(25),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "envelope_process_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "envelope_process_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("envelope_process")
-                    },
-                  },
-                },
-                [_vm._v("封筒加工")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "envelope_process",
-                  id: "envelope_process",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "tape_process_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "tape_process_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("tape_process")
-                    },
-                  },
-                },
-                [_vm._v("テープ加工")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "tape_process",
-                  id: "tape_process",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "peel_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "peel_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("peel")
-                    },
-                  },
-                },
-                [_vm._v("剥離糊")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: { type: "text", value: "0", name: "peel", id: "peel" },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "press_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "press_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("press")
-                    },
-                  },
-                },
-                [_vm._v("プレス")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: { type: "text", value: "0", name: "press", id: "press" },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sheetcut_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sheetcut_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("sheetcut")
-                    },
-                  },
-                },
-                [_vm._v("シートカット")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sheetcut",
-                  id: "sheetcut",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _vm._m(26),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(27),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "collator_all_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("collator_all_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "collator_all_outsou",
-                  id: "collator_all_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(28),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _vm._m(29),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(30),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_chouai_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_chouai_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("sei_chouai")
-                    },
-                  },
-                },
-                [_vm._v("丁合")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_chouai",
-                  id: "sei_chouai",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_chouai_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("sei_chouai_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "sei_chouai_outsou",
-                  id: "sei_chouai_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(31),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_dansai_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_dansai_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClickD("sei_dansai")
-                    },
-                  },
-                },
-                [_vm._v("断裁")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_dansai",
-                  id: "sei_dansai",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_dansai_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("sei_dansai_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "sei_dansai_outsou",
-                  id: "sei_dansai_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(32),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_marble_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_marble_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_marble", 3)
-                    },
-                  },
-                },
-                [_vm._v("マーブル")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_marble",
-                  id: "sei_marble",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_cross_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_cross_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_cross", 3)
-                    },
-                  },
-                },
-                [_vm._v("クロス")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_cross",
-                  id: "sei_cross",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c3 v_hidden",
-                attrs: { id: "sei_mat_maki_cardboard_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_mat_maki_cardboard_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_mat_maki_cardboard", 4)
-                    },
-                  },
-                },
-                [_vm._v("下敷巻ボール")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_mat_maki_cardboard",
-                  id: "sei_mat_maki_cardboard",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c3 v_hidden",
-                attrs: { id: "sei_mat_cardboard_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_mat_cardboard_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_mat_cardboard", 4)
-                    },
-                  },
-                },
-                [_vm._v("下敷ボール")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_mat_cardboard",
-                  id: "sei_mat_cardboard",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(33),
-            _vm._v(" "),
-            _vm._m(34),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c2 v_hidden",
-                attrs: { id: "sei_kurumi_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_kurumi_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_kurumi", 5)
-                    },
-                  },
-                },
-                [_vm._v("くるみ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_kurumi",
-                  id: "sei_kurumi",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(35),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_buster_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_buster_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("sei_buster")
-                    },
-                  },
-                },
-                [_vm._v("バスター")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_buster",
-                  id: "sei_buster",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_crimping_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_crimping_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("sei_crimping")
-                    },
-                  },
-                },
-                [_vm._v("圧着")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_crimping",
-                  id: "sei_crimping",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _vm._m(36),
-          _vm._v(" "),
-          _vm._m(37),
-          _vm._v(" "),
-          _vm._m(38),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c2 v_hidden",
-                attrs: { id: "sei_musen_tozi_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_musen_tozi_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_musen_tozi", 5)
-                    },
-                  },
-                },
-                [_vm._v("無線トジ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_musen_tozi",
-                  id: "sei_musen_tozi",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_musen_tozi_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("sei_musen_tozi_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "sei_musen_tozi_outsou",
-                  id: "sei_musen_tozi_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(39),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c2 v_hidden",
-                attrs: { id: "sei_naka_tozi_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_naka_tozi_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_naka_tozi", 5)
-                    },
-                  },
-                },
-                [_vm._v("中トジ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_naka_tozi",
-                  id: "sei_naka_tozi",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_naka_tozi_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("sei_naka_tozi_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "sei_naka_tozi_outsou",
-                  id: "sei_naka_tozi_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(40),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c2 v_hidden",
-                attrs: { id: "sei_sashikomi_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_sashikomi_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("sei_sashikomi")
-                    },
-                  },
-                },
-                [_vm._v("差込")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_sashikomi",
-                  id: "sei_sashikomi",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_sashikomi_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("sei_sashikomi_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "sei_sashikomi_outsou",
-                  id: "sei_sashikomi_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(41),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _vm._m(42),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_donko_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_donko_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("sei_donko")
-                    },
-                  },
-                },
-                [_vm._v("ドンコ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_donko",
-                  id: "sei_donko",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(43),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _vm._m(44),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c4 v_hidden",
-                attrs: { id: "sei_bara_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_bara_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_bara", 6)
-                    },
-                  },
-                },
-                [_vm._v("バラ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_bara",
-                  id: "sei_bara",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c4 v_hidden",
-                attrs: { id: "sei_oneset_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_oneset_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_oneset", 6)
-                    },
-                  },
-                },
-                [_vm._v("ワンセット")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_oneset",
-                  id: "sei_oneset",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_obake_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_obake_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("sei_obake")
-                    },
-                  },
-                },
-                [_vm._v("オバケ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_obake",
-                  id: "sei_obake",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(45),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(46),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _vm._m(47),
-            _vm._v(" "),
-            _vm._m(48),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c5 v_hidden",
-                attrs: { id: "sei_a_system_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_a_system_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_a_system", 7)
-                    },
-                  },
-                },
-                [_vm._v("A式")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_a_system",
-                  id: "sei_a_system",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c5 v_hidden",
-                attrs: { id: "sei_c_system_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_c_system_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_c_system", 7)
-                    },
-                  },
-                },
-                [_vm._v("C式")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_c_system",
-                  id: "sei_c_system",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_vinyl_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_vinyl_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("sei_vinyl")
-                    },
-                  },
-                },
-                [_vm._v("ビニール")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_vinyl",
-                  id: "sei_vinyl",
-                },
-              }),
-            ]),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(49),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_all_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("sei_all_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "sei_all_outsou",
-                  id: "sei_all_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(50),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _vm._m(51),
-      _vm._v(" "),
-      _vm._m(52),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(53),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "product_all_outsou1_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("product_all_outsou1")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "product_all_outsou1",
-                  id: "product_all_outsou1",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(54),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "product_all_outsou2_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("product_all_outsou2")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "product_all_outsou2",
-                  id: "product_all_outsou2",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(55),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "product_all_outsou3_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("product_all_outsou3")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "product_all_outsou3",
-                  id: "product_all_outsou3",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(56),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _vm._m(57),
-      _vm._v(" "),
-      _vm._m(58),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "mglrauto" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "setcal_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetcalBtn()
-                },
-              },
-            },
-            [_vm._v("設定・計算")]
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _c("div", { staticClass: "cate" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _vm._m(59),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "cost_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.CostBtn()
-                    },
-                  },
-                },
-                [_vm._v("原価一覧")]
-              ),
-            ]),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _vm._m(60),
-    ]),
-    _vm._v(" "),
-    _vm.partsview == true
-      ? _c(
-          "div",
-          { attrs: { id: "partszone" } },
-          [
-            _c("mit-parts", {
-              attrs: { "page-num": _vm.pagenum, "page-name": _vm.pagename },
-              on: { "pcancel-event": _vm.Pcancel },
-            }),
-          ],
-          1
-        )
-      : _vm._e(),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "area1" } }, [
-      _vm.outsourcingview == true
-        ? _c(
             "div",
+            { staticClass: "print-none", attrs: { id: "topform2_cnt" } },
             [
-              _c("out-sourcing", {
-                attrs: { "input-textid": _vm.inputtextid },
-                on: {
-                  "oscancel-event": _vm.OScancel,
-                  "selectos-event": _vm.selectOS,
-                },
-              }),
-            ],
-            1
-          )
-        : _vm._e(),
-    ]),
-  ])
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [_c("h3", [_vm._v("見積作成")])])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("button", [_vm._v("新規")]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("button", [_vm._v("見積書")]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("参照見積番号"),
-          _c("input", {
-            staticClass: "form_style input_w5",
-            attrs: { type: "text" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("button", [_vm._v("登録")]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("button", [_vm._v("受注")]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("button", [_vm._v("原価閲覧")]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("button", [_vm._v("終了")]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("担当者"),
-          _c("input", {
-            staticClass: "form_style",
-            attrs: { type: "text", name: "manager" },
-          }),
-          _c("span"),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("得意先"),
-          _c("input", {
-            staticClass: "form_style",
-            attrs: { type: "text", name: "customer_code" },
-          }),
-          _c("input", {
-            staticClass: "form_style",
-            attrs: { type: "text", name: "customer" },
-          }),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("エンドユーザー"),
-          _c("input", {
-            staticClass: "form_style input_w30",
-            attrs: { type: "text", name: "enduser" },
-          }),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("製品名"),
-          _c("input", {
-            staticClass: "form_style input_w30",
-            attrs: { type: "text", name: "product" },
-          }),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "page_num" },
-        }),
-        _vm._v("P"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("制作組数"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "production_setnum" },
-        }),
-        _vm._v(" "),
-        _c(
-          "select",
-          {
-            staticClass: "form_style",
-            attrs: { name: "production_setnum_unit" },
-          },
-          [
-            _c("option", { attrs: { value: "" } }),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "組" } }, [_vm._v("組")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "帯" } }, [_vm._v("帯")]),
-          ]
-        ),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("制作冊数"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "production_volnum" },
-        }),
-        _vm._v(" "),
-        _c(
-          "select",
-          {
-            staticClass: "form_style",
-            attrs: { name: "production_volnum_unit" },
-          },
-          [
-            _c("option", { attrs: { value: "" } }),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "S" } }, [_vm._v("S")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "冊" } }, [_vm._v("冊")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "束" } }, [_vm._v("束")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "箱" } }, [_vm._v("箱")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "枚" } }, [_vm._v("枚")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "部" } }, [_vm._v("部")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "個" } }, [_vm._v("個")]),
-          ]
-        ),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("紙取"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "papertray" },
-        }),
-        _vm._v("切"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _vm._v("\n        面付け...\n        "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "imposition_w" },
-        }),
-      ]),
-      _vm._v("\n        ×\n        "),
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "imposition_h" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("シリンダー\n        "),
-          _c(
-            "select",
-            { staticClass: "form_style", attrs: { name: "cylinder" } },
-            [
-              _c("option", { attrs: { value: "" } }),
+              _c("form", { attrs: { id: "form1", name: "form3" } }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.s_department,
+                      expression: "s_department",
+                    },
+                  ],
+                  staticClass: "form_style bc1 w10e",
+                  attrs: {
+                    type: "text",
+                    maxlength: "30",
+                    name: "s_department",
+                  },
+                  domProps: { value: _vm.s_department },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.s_department = $event.target.value
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    attrs: { type: "button" },
+                    on: {
+                      click: function ($event) {
+                        return _vm.searchBtn()
+                      },
+                    },
+                  },
+                  [_vm._v("\n          部署 検索\n        ")]
+                ),
+              ]),
               _vm._v(" "),
-              _c("option", { attrs: { value: "10" } }, [_vm._v("10")]),
+              _c("form", { attrs: { id: "form1", name: "form2" } }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.s_name,
+                      expression: "s_name",
+                    },
+                  ],
+                  staticClass: "form_style bc1 w10e",
+                  attrs: { type: "text", maxlength: "30", name: "s_name" },
+                  domProps: { value: _vm.s_name },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.s_name = $event.target.value
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    attrs: { type: "button" },
+                    on: {
+                      click: function ($event) {
+                        return _vm.searchBtn()
+                      },
+                    },
+                  },
+                  [_vm._v("\n          名前 検索\n        ")]
+                ),
+              ]),
               _vm._v(" "),
-              _c("option", { attrs: { value: "10.5" } }, [_vm._v("10.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "11" } }, [_vm._v("11")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "11.5" } }, [_vm._v("11.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "12" } }, [_vm._v("12")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "13" } }, [_vm._v("13")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "13.5" } }, [_vm._v("13.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "14" } }, [_vm._v("14")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "15" } }, [_vm._v("15")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "16" } }, [_vm._v("16")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "17" } }, [_vm._v("17")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "18" } }, [_vm._v("18")]),
+              _c("form", { attrs: { id: "form1", name: "form1" } }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.s_yomi,
+                      expression: "s_yomi",
+                    },
+                  ],
+                  staticClass: "form_style bc1 w10e",
+                  attrs: { type: "text", maxlength: "30", name: "s_yomi" },
+                  domProps: { value: _vm.s_yomi },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.s_yomi = $event.target.value
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    attrs: { type: "button" },
+                    on: {
+                      click: function ($event) {
+                        return _vm.searchBtn()
+                      },
+                    },
+                  },
+                  [_vm._v("\n          読み 検索\n        ")]
+                ),
+              ]),
             ]
           ),
-        ]),
-        _vm._v(" "),
-        _c("label", [
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "cylinder_num" },
-          }),
-          _vm._v("本"),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _vm._v("\n        サイズ...\n        "),
-        _c("label", [
-          _vm._v("横"),
-          _c("input", {
-            staticClass: "form_style input_w3",
-            attrs: { type: "text", name: "size_w" },
-          }),
-        ]),
-        _vm._v("\n        ×\n        "),
-        _c("label", [
-          _vm._v("縦"),
-          _c("input", {
-            staticClass: "form_style input_w3",
-            attrs: { type: "text", name: "size_h" },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "size_top" },
-        }),
-        _vm._v("/"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "size_bottom" },
-        }),
-        _vm._v(" "),
-        _c("label", [
-          _c(
-            "select",
-            { staticClass: "form_style", attrs: { name: "inch_fold" } },
-            [
-              _c("option", { attrs: { value: "" } }),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "4" } }, [_vm._v("4")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "4.5" } }, [_vm._v("4.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "5" } }, [_vm._v("5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "5.5" } }, [_vm._v("5.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "6" } }, [_vm._v("6")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "6.5" } }, [_vm._v("6.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "7" } }, [_vm._v("7")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "7.5" } }, [_vm._v("7.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "8" } }, [_vm._v("8")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "8.5" } }, [_vm._v("8.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "9" } }, [_vm._v("9")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "10" } }, [_vm._v("10")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "10.5" } }, [_vm._v("10.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "11" } }, [_vm._v("11")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "11.5" } }, [_vm._v("11.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "12" } }, [_vm._v("12")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "13" } }, [_vm._v("13")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "13.5" } }, [_vm._v("13.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "14" } }, [_vm._v("14")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "15" } }, [_vm._v("15")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "16" } }, [_vm._v("16")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "17" } }, [_vm._v("17")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "18" } }, [_vm._v("18")]),
-            ]
-          ),
-          _vm._v("\n        インチ折\n        "),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", [_vm._v("フォーム部")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "katanuki_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "kasutori_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _vm._v("\n            ＴＳＲスキップ\n            "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "tsr_times" },
-        }),
-        _vm._v("回"),
-      ]),
-      _vm._v("\n            ×\n            "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "tsr_through" },
-        }),
-        _vm._v("通"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("色替"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "form_color_change" },
-          }),
-          _vm._v("回"),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("カーボン型"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "form_carbon_mold" },
-          }),
-          _vm._v("版"),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate2" }, [
-      _c("h4", [_vm._v("フォーム部の全部")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "form_all_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "department01" } }, [
-      _c("div", { staticClass: "cate" }, [_c("h4", [_vm._v("オフセット部")])]),
-      _vm._v(" "),
-      _c("div", { staticClass: "area" }, [
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("色替"),
-              _c("input", {
-                staticClass: "form_style input_w2",
-                attrs: { type: "text", name: "offset_color_change" },
-              }),
-              _vm._v("回"),
-            ]),
-          ]),
           _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("カーボン型"),
-              _c("input", {
-                staticClass: "form_style input_w2",
-                attrs: { type: "text", name: "offset_carbon_mold" },
-              }),
-              _vm._v("版"),
-            ]),
-          ]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", [_vm._v("組版・製版")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("版下\n            "),
-          _c(
-            "select",
-            { staticClass: "form_style", attrs: { name: "block_copy" } },
-            [
-              _c("option", { attrs: { value: "" } }),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "新版" } }, [_vm._v("新版")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "修正" } }, [_vm._v("修正")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "在版" } }, [_vm._v("在版")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "インコー" } }, [
-                _vm._v("インコー"),
+          _c("div", { staticClass: "mgt20", attrs: { id: "tbl_1" } }, [
+            _c("table", [
+              _c("thead", [
+                _c("tr", [
+                  _c("th", {}, [_vm._v(" ")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("No")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("営業所")]),
+                  _vm._v(" "),
+                  _c("th", {}, [
+                    _vm._v("部署 "),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("department", 1)
+                          },
+                        },
+                      },
+                      [_vm._v("▲")]
+                    ),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("department", 2)
+                          },
+                        },
+                      },
+                      [_vm._v("▼")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("th", {}, [
+                    _vm._v("課 "),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("division", 1)
+                          },
+                        },
+                      },
+                      [_vm._v("▲")]
+                    ),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("division", 2)
+                          },
+                        },
+                      },
+                      [_vm._v("▼")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("役職")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("氏名")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("ローマ字")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("ふりがな")]),
+                  _vm._v(" "),
+                  _c("th", {}, [
+                    _vm._v("読み "),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("yomi", 1)
+                          },
+                        },
+                      },
+                      [_vm._v("▲")]
+                    ),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("yomi", 2)
+                          },
+                        },
+                      },
+                      [_vm._v("▼")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("携帯電話")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("メールアドレス")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("資格")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("画像ファイル")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("備考")]),
+                ]),
               ]),
               _vm._v(" "),
-              _c("option", { attrs: { value: "編集（支給）" } }, [
-                _vm._v("編集（支給）"),
-              ]),
-            ]
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("種別\n            "),
-          _c(
-            "select",
-            { staticClass: "form_style", attrs: { name: "kinds" } },
-            [
-              _c("option", { attrs: { value: "" } }),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "一般" } }, [_vm._v("一般")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "フォーム" } }, [
-                _vm._v("フォーム"),
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "偽造防止" } }, [
-                _vm._v("偽造防止"),
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "名刺" } }, [_vm._v("名刺")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "封筒" } }, [_vm._v("封筒")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "デザイン" } }, [
-                _vm._v("デザイン"),
-              ]),
-            ]
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("難度\n            "),
-          _c(
-            "select",
-            { staticClass: "form_style", attrs: { name: "difficulty" } },
-            [
-              _c("option", { attrs: { value: "" } }),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "A" } }, [_vm._v("A")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "B" } }, [_vm._v("B")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "C" } }, [_vm._v("C")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "D" } }, [_vm._v("D")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "インコー" } }, [
-                _vm._v("インコー"),
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "修正無し" } }, [
-                _vm._v("修正無し"),
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "在版" } }, [_vm._v("在版")]),
-            ]
-          ),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "plate_making_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("ＣＴＰ"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "ctp" },
-          }),
-          _vm._v("版"),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", { staticClass: "mgl20" }, [
-          _vm._v("インクジェット\n            "),
-          _c(
-            "select",
-            { staticClass: "form_style", attrs: { name: "inkjet" } },
-            [
-              _c("option", { attrs: { value: "" } }),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "A1" } }, [_vm._v("A1")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "A2" } }, [_vm._v("A2")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "A3" } }, [_vm._v("A3")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "A4以下" } }, [_vm._v("A4以下")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "B3" } }, [_vm._v("B3")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "B4" } }, [_vm._v("B4")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "B5以下" } }, [_vm._v("B5以下")]),
-            ]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("label", [
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "inkjet_sheet" },
-          }),
-          _vm._v("枚"),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _vm._v("\n            オンデマンド\n            "),
-        _c("span", { staticClass: "mgl20" }, [_vm._v("色数...")]),
-        _vm._v(" "),
-        _c("label", [
-          _vm._v("表"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "ondemand_color_front" },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("label", [
-          _vm._v("裏"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "ondemand_color_back" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("span", { staticClass: "mgl20" }, [_vm._v("通し...")]),
-        _vm._v(" "),
-        _c("label", [
-          _vm._v("表"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "ondemand_through_front" },
-          }),
-          _vm._v("×10"),
-        ]),
-        _vm._v(" "),
-        _c("label", { staticClass: "mgl10" }, [
-          _vm._v("裏"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "ondemand_through_back" },
-          }),
-          _vm._v("×10"),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", [_vm._v("コレーター部")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("コレーター"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "collator" },
-          }),
-          _vm._v("台"),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", { staticClass: "mgl20" }, [
-          _vm._v("ベーベ"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "bebe" },
-          }),
-          _vm._v("台"),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("クラッシュNo."),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "collator_cno" },
-          }),
-          _vm._v("ヶ所"),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", { staticClass: "mgl20" }, [
-          _vm._v("穴"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "collator_ana" },
-          }),
-          _vm._v("ヶ所"),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate2" }, [
-      _c("h4", [_vm._v("コレーター部の全部")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "collator_all_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "department01" } }, [
-      _c("div", { staticClass: "cate" }, [
-        _c("h4", [_vm._v("ネームライナー")]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "area" }, [
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("名刺"),
-              _c("input", {
-                staticClass: "form_style input_w2",
-                attrs: { type: "text", name: "nl_color" },
-              }),
-              _vm._v("色"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", { staticClass: "mgl20" }, [
               _c(
-                "select",
-                { staticClass: "form_style", attrs: { name: "nl_hagaki" } },
+                "tbody",
                 [
-                  _c("option", { attrs: { value: "" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "ハガキ単" } }, [
-                    _vm._v("ハガキ単"),
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "ハガキ単両" } }, [
-                    _vm._v("ハガキ単両"),
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "２つ折ハガキ" } }, [
-                    _vm._v("２つ折ハガキ"),
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "３つ折ハガキ" } }, [
-                    _vm._v("３つ折ハガキ"),
-                  ]),
-                ]
-              ),
-            ]),
-            _vm._v(" "),
-            _c("label", [
-              _c("input", {
-                staticClass: "form_style input_w2",
-                attrs: { type: "text", name: "nl_hagaki_color" },
-              }),
-              _vm._v("色"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", { staticClass: "mgl20" }, [
-              _vm._v("封筒"),
-              _c("input", {
-                staticClass: "form_style input_w2",
-                attrs: { type: "text", name: "nl_envelope_color" },
-              }),
-              _vm._v("色"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", { staticClass: "mgl20" }, [
-              _vm._v("No."),
-              _c("input", {
-                staticClass: "form_style input_w2",
-                attrs: { type: "text", name: "nl_number_part" },
-              }),
-              _vm._v("ヶ所"),
-            ]),
-          ]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", { staticClass: "lspacing1" }, [_vm._v("製本")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "sei_chouai_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "sei_dansai_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", { staticClass: "mgl20" }, [
-        _c(
-          "select",
-          { staticClass: "form_style", attrs: { name: "sei_nori" } },
-          [
-            _c("option", { attrs: { value: "" } }),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "天" } }, [_vm._v("天")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "左" } }, [_vm._v("左")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "右" } }, [_vm._v("右")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "地" } }, [_vm._v("地")]),
-          ]
-        ),
-        _vm._v("\n            糊\n            "),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", { staticClass: "mgl20" }, [
-        _c(
-          "select",
-          { staticClass: "form_style", attrs: { name: "sei_tsuduri" } },
-          [
-            _c("option", { attrs: { value: "" } }),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "天" } }, [_vm._v("天")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "左" } }, [_vm._v("左")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "右" } }, [_vm._v("右")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "地" } }, [_vm._v("地")]),
-          ]
-        ),
-        _vm._v("\n            綴\n            "),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", { staticClass: "mgl20" }, [
-        _vm._v("ラミネート\n            "),
-        _c(
-          "select",
-          { staticClass: "form_style", attrs: { name: "sei_laminate" } },
-          [
-            _c("option", { attrs: { value: "" } }),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "A3" } }, [_vm._v("A3")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "A4" } }, [_vm._v("A4")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "A5" } }, [_vm._v("A5")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "B4" } }, [_vm._v("B4")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "B5" } }, [_vm._v("B5")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "B6" } }, [_vm._v("B6")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "カード用" } }, [
-              _vm._v("カード用"),
-            ]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "ハガキ圧着" } }, [
-              _vm._v("ハガキ圧着"),
-            ]),
-          ]
-        ),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "sei_laminate_through" },
-        }),
-        _vm._v("通し"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_1" }, [_vm._v("手作業")]),
-          _c("input", {
-            staticClass: "form_style input_w30",
-            attrs: { type: "text", name: "inside_hand_work" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("内製費"),
-          _c("input", {
-            staticClass: "form_style input_w5",
-            attrs: { type: "text", name: "inside_insourcing_cost" },
-          }),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_1" }, [_vm._v("社外内職")]),
-          _c("input", {
-            staticClass: "form_style input_w10",
-            attrs: { type: "text", name: "outside_job1" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("外注先"),
-          _c("input", {
-            staticClass: "form_style input_w10",
-            attrs: { type: "text", name: "outside_job1_outsou" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("外注費"),
-          _c("input", {
-            staticClass: "form_style input_w5",
-            attrs: { type: "text", name: "outside_job1_outsou_cost" },
-          }),
-          _c("span", { staticClass: "txtcolor1" }, [_vm._v("加算")]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_1" }, [_vm._v("社外内職")]),
-          _c("input", {
-            staticClass: "form_style input_w10",
-            attrs: { type: "text", name: "outside_job2" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("外注先"),
-          _c("input", {
-            staticClass: "form_style input_w10",
-            attrs: { type: "text", name: "outside_job2_outsou" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("外注費"),
-          _c("input", {
-            staticClass: "form_style input_w5",
-            attrs: { type: "text", name: "outside_job2_outsou_cost" },
-          }),
-          _c("span", { staticClass: "txtcolor1" }, [_vm._v("加算")]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "musen_tozi_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "sei_naka_tozi_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "sei_sashikomi_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "sei_ana" },
-        }),
-        _vm._v("穴×"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "sei_part" },
-        }),
-        _vm._v("ヶ所"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "mgl20" }, [_vm._v("折回数...")]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "sei_ori_w" },
-        }),
-        _vm._v("回"),
-      ]),
-      _vm._v(" "),
-      _c("label", { staticClass: "mgl10" }, [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "sei_ori_h" },
-        }),
-        _vm._v("回"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "sei_obi" },
-        }),
-        _vm._v("帯"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", { staticClass: "mgl20" }, [
-        _vm._v("落とし\n            "),
-        _c(
-          "select",
-          { staticClass: "form_style", attrs: { name: "sei_otoshi" } },
-          [
-            _c("option", { attrs: { value: "" } }),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "コーナー" } }, [
-              _vm._v("コーナー"),
-            ]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "角落とし" } }, [
-              _vm._v("角落とし"),
-            ]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "角丸落とし" } }, [
-              _vm._v("角丸落とし"),
-            ]),
-          ]
-        ),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "sei_otoshi_part" },
-        }),
-        _vm._v("ヶ所"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate3" }, [_c("h4", [_vm._v("標準")])])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("梱装"),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "sei_package" },
-        }),
-        _vm._v("×"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "sei_package_num" },
-        }),
-        _vm._v("個、"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("箱"),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "sei_box" },
-        }),
-        _vm._v("×"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "sei_box_num" },
-        }),
-        _vm._v("個"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate2" }, [
-      _c("h4", [_vm._v("製本の全部")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "sei_all_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "department01" } }, [
-      _c("div", { staticClass: "cate" }, [
-        _c("h4", { staticClass: "lspacing1" }, [_vm._v("発送")]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "area" }, [
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("市内"),
-              _c("input", {
-                staticClass: "form_style input_w3",
-                attrs: { type: "text", name: "send_city" },
-              }),
-              _vm._v("個口"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", { staticClass: "mgl20" }, [
-              _vm._v("道内"),
-              _c("input", {
-                staticClass: "form_style input_w3",
-                attrs: { type: "text", name: "send_in_dou" },
-              }),
-              _vm._v("個口"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", { staticClass: "mgl20" }, [
-              _vm._v("道外"),
-              _c("input", {
-                staticClass: "form_style input_w3",
-                attrs: { type: "text", name: "send_out_dou" },
-              }),
-              _vm._v("個×"),
-            ]),
-            _vm._v(" "),
-            _c("label", [
-              _vm._v("￥"),
-              _c("input", {
-                staticClass: "form_style input_w5",
-                attrs: { type: "text", name: "send_out_dou_yen" },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", { staticClass: "mgl20" }, [
-              _vm._v("一括配送"),
-              _c("input", {
-                staticClass: "form_style input_w5",
-                attrs: { type: "text", name: "send_all" },
-              }),
-            ]),
-          ]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "department01" } }, [
-      _c("div", { staticClass: "cate" }, [_c("h4", [_vm._v("付加費用")])]),
-      _vm._v(" "),
-      _c("div", { staticClass: "area" }, [
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _vm._v("購入先・バテント・部材・数量など"),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _c("input", {
-                staticClass: "form_style input_w40",
-                attrs: { type: "text", name: "addition_cost1" },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("購入費"),
-              _c("input", {
-                staticClass: "form_style input_w5",
-                attrs: { type: "text", name: "addition_cost1_buy" },
-              }),
-              _c("span", { staticClass: "txtcolor1" }, [_vm._v("加算")]),
-            ]),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _c("input", {
-                staticClass: "form_style input_w40",
-                attrs: { type: "text", name: "addition_cost2" },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("購入費"),
-              _c("input", {
-                staticClass: "form_style input_w5",
-                attrs: { type: "text", name: "addition_cost2_buy" },
-              }),
-              _c("span", { staticClass: "txtcolor1" }, [_vm._v("加算")]),
-            ]),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _c("input", {
-                staticClass: "form_style input_w40",
-                attrs: { type: "text", name: "addition_cost3" },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("購入費"),
-              _c("input", {
-                staticClass: "form_style input_w5",
-                attrs: { type: "text", name: "addition_cost3_buy" },
-              }),
-              _c("span", { staticClass: "txtcolor1" }, [_vm._v("加算")]),
-            ]),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _c("input", {
-                staticClass: "form_style input_w40",
-                attrs: { type: "text", name: "addition_cost4" },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("購入費"),
-              _c("input", {
-                staticClass: "form_style input_w5",
-                attrs: { type: "text", name: "addition_cost4_buy" },
-              }),
-              _c("span", { staticClass: "txtcolor1" }, [_vm._v("加算")]),
-            ]),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _c("input", {
-                staticClass: "form_style input_w40",
-                attrs: { type: "text", name: "addition_cost5" },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("購入費"),
-              _c("input", {
-                staticClass: "form_style input_w5",
-                attrs: { type: "text", name: "addition_cost5_buy" },
-              }),
-              _c("span", { staticClass: "txtcolor1" }, [_vm._v("加算")]),
-            ]),
-          ]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate2" }, [
-      _c("h4", [_vm._v("製品全体の外注")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "product_all_outsou1_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "product_all_outsou2_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "product_all_outsou3_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "department01" } }, [
-      _c("div", { staticClass: "cate" }),
-      _vm._v(" "),
-      _c("div", { staticClass: "area" }, [
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _c("span", { staticClass: "spanwidth_1" }, [_vm._v("コメント")]),
-              _c("input", {
-                staticClass: "form_style input_w40",
-                attrs: { type: "text", name: "comment" },
-              }),
-            ]),
-          ]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "mglrauto", attrs: { id: "zukei" } }, [
-        _c("div", { staticClass: "yajirushi_1" }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("span", { staticClass: "spanwidth_1" }, [_vm._v("提示額")]),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "offered_price" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "calculation" } }, [
-      _c("h3", [_vm._v("計算結果")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }),
-    ])
-  },
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Outsourcing.vue?vue&type=template&id=7e86434b&":
-/*!**************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Outsourcing.vue?vue&type=template&id=7e86434b& ***!
-  \**************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { attrs: { id: "cnt_os" } }, [
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_cancel_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.cancelClickBtn()
-                },
-              },
-            },
-            [_vm._v("キャンセル")]
-          ),
-        ]),
-      ]),
-    ]),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "cnt_os" } }, [
-      _c(
-        "div",
-        { staticClass: "outsourcing_block flex_jc_sb" },
-        _vm._l(_vm.details, function (item, rowIndex) {
-          return _c("div", { key: rowIndex }, [
-            _c(
-              "button",
-              {
-                attrs: { type: "button", id: "" },
-                on: {
-                  click: function ($event) {
-                    return _vm.SelectOsBtn(item["name"])
-                  },
-                },
-              },
-              [_vm._v(_vm._s(item["name"]))]
-            ),
-          ])
-        }),
-        0
-      ),
-    ]),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "cnt_os" } }, [
-      _c("div", { staticClass: "line flex_jc_r" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_cancel_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.cancelClickBtn()
-                },
-              },
-            },
-            [_vm._v("キャンセル")]
-          ),
-        ]),
-      ]),
-    ]),
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Parts.vue?vue&type=template&id=678e2385&":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Parts.vue?vue&type=template&id=678e2385& ***!
-  \********************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", [
-      _c("h3", [_vm._v("パーツ設定 － " + _vm._s(_vm.pageNum) + "P目 －")]),
-    ]),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "cnt1" } }, [
-      _c("div", { staticClass: "line" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _vm._m(2),
-        _vm._v(" "),
-        _vm._m(3),
-        _vm._v(" "),
-        _vm._m(4),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1 v_hidden",
-            attrs: { id: "p_envelope_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "input_w5",
-              attrs: { type: "button", id: "p_envelope_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClick("p_envelope")
-                },
-              },
-            },
-            [_vm._v("封筒")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "input_w1",
-            attrs: {
-              type: "text",
-              value: "0",
-              name: "p_envelope",
-              id: "p_envelope",
-            },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1 v_hidden",
-            attrs: { id: "p_supply_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_supply_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClick("p_supply")
-                },
-              },
-            },
-            [_vm._v("支給受")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "input_w1",
-            attrs: {
-              type: "text",
-              value: "0",
-              name: "p_supply",
-              id: "p_supply",
-            },
-          }),
-        ]),
-        _vm._v(" "),
-        _vm._m(5),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1 v_hidden",
-            attrs: { id: "p_desensitization_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_desensitization_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClick("p_desensitization")
-                },
-              },
-            },
-            [_vm._v("減感")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "input_w1",
-            attrs: {
-              type: "text",
-              value: "0",
-              name: "p_desensitization",
-              id: "p_desensitization",
-            },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1 v_hidden",
-            attrs: { id: "p_carbon_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_carbon_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClick("p_carbon")
-                },
-              },
-            },
-            [_vm._v("カーボン")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "input_w1",
-            attrs: {
-              type: "text",
-              value: "0",
-              name: "p_carbon",
-              id: "p_carbon",
-            },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1 v_hidden",
-            attrs: { id: "p_white_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_white_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClick("p_white")
-                },
-              },
-            },
-            [_vm._v("ホワイト")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "input_w1",
-            attrs: { type: "text", value: "0", name: "p_white", id: "p_white" },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1 v_hidden",
-            attrs: { id: "p_separate_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_separate_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClick("p_separate")
-                },
-              },
-            },
-            [_vm._v("セパレート")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "input_w1",
-            attrs: {
-              type: "text",
-              value: "0",
-              name: "p_separate",
-              id: "p_separate",
-            },
-          }),
-        ]),
-        _vm._v(" "),
-        _vm._m(6),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(7),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _vm._m(8),
-            _vm._v(" "),
-            _vm._m(9),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_form_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_form_sewingmachine_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_form_sewingmachine_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_form_sewingmachine_ks",
-                  id: "p_form_sewingmachine_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(10),
-            _vm._v(" "),
-            _vm._m(11),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_form_jump_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_form_jump_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_form_jump_sewingmachine_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_form_jump_sewingmachine_ks",
-                  id: "p_form_jump_sewingmachine_ks",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _vm._m(12),
-            _vm._v(" "),
-            _vm._m(13),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_form_micro_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_form_micro_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_form_micro_sewingmachine_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_form_micro_sewingmachine_ks",
-                  id: "p_form_micro_sewingmachine_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(14),
-            _vm._v(" "),
-            _vm._m(15),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_form_jump_micro_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_form_jump_micro_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick(
-                        "p_form_jump_micro_sewingmachine_ks"
-                      )
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_form_jump_micro_sewingmachine_ks",
-                  id: "p_form_jump_micro_sewingmachine_ks",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _vm._m(16),
-            _vm._v(" "),
-            _vm._m(17),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_form_linein_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_form_linein_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_form_linein_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_form_linein_ks",
-                  id: "p_form_linein_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(18),
-            _vm._v(" "),
-            _vm._m(19),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_form_slitter_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_form_slitter_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_form_slitter_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_form_slitter_ks",
-                  id: "p_form_slitter_ks",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group flex_jc_sb" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _vm._m(20),
-              _vm._v(" "),
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_form_no_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_form_no_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_form_no_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_form_no_ks",
-                  id: "p_form_no_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(21),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _vm._m(22),
-              _vm._v(" "),
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "p_form_replace_color_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_form_replace_color_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_form_replace_color")
-                    },
-                  },
-                },
-                [_vm._v("カラー")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_form_replace_color",
-                  id: "p_form_replace_color",
-                },
-              }),
-            ]),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(23),
-        _vm._v(" "),
-        _c("div", { staticClass: "area flex_auto" }, [
-          _c("div", { staticClass: "group" }, [
-            _vm._m(24),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_offset_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_offset_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_offset_sewingmachine_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_offset_sewingmachine_ks",
-                  id: "p_offset_sewingmachine_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _vm._m(25),
-              _vm._v(" "),
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_offset_no_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_offset_no_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_offset_no_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_offset_no_ks",
-                  id: "p_offset_no_ks",
-                },
-              }),
-            ]),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(26),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _vm._m(27),
-            _vm._v(" "),
-            _vm._m(28),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_letterpress_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_letterpress_sewingmachine_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_sewingmachine_ks",
-                  id: "p_letterpress_sewingmachine_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(29),
-            _vm._v(" "),
-            _vm._m(30),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_jump_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_letterpress_jump_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick(
-                        "p_letterpress_jump_sewingmachine_ks"
-                      )
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_jump_sewingmachine_ks",
-                  id: "p_letterpress_jump_sewingmachine_ks",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _vm._m(31),
-            _vm._v(" "),
-            _vm._m(32),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_micro_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_letterpress_micro_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick(
-                        "p_letterpress_micro_sewingmachine_ks"
-                      )
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_micro_sewingmachine_ks",
-                  id: "p_letterpress_micro_sewingmachine_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(33),
-            _vm._v(" "),
-            _vm._m(34),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_jump_micro_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_letterpress_jump_micro_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick(
-                        "p_letterpress_jump_micro_sewingmachine_ks"
-                      )
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_jump_micro_sewingmachine_ks",
-                  id: "p_letterpress_jump_micro_sewingmachine_ks",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _vm._m(35),
-            _vm._v(" "),
-            _vm._m(36),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_linein_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_letterpress_linein_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_letterpress_linein_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_linein_ks",
-                  id: "p_letterpress_linein_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(37),
-            _vm._v(" "),
-            _vm._m(38),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_slitter_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_letterpress_slitter_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_letterpress_slitter_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_slitter_ks",
-                  id: "p_letterpress_slitter_ks",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group flex_jc_sb" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "p_letterpress_diecut_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_letterpress_diecut_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_letterpress_diecut")
-                    },
-                  },
-                },
-                [_vm._v("型ヌキ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_diecut",
-                  id: "p_letterpress_diecut",
-                },
-              }),
-              _vm._v(" "),
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_diecut_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_letterpress_diecut_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_letterpress_diecut_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_diecut_ks",
-                  id: "p_letterpress_diecut_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _vm._m(39),
-              _vm._v(" "),
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_pcno_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_letterpress_pcno_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_letterpress_pcno_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_pcno_ks",
-                  id: "p_letterpress_pcno_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _vm._m(40),
-              _vm._v(" "),
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_no_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_letterpress_no_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_letterpress_no_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_no_ks",
-                  id: "p_letterpress_no_ks",
-                },
-              }),
-            ]),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(41),
-        _vm._v(" "),
-        _c("div", { staticClass: "area flex_auto" }, [
-          _c("div", { staticClass: "group flex_jc_sb" }, [
-            _vm._m(42),
-            _vm._v(" "),
-            _vm._m(43),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_info_ijp_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "p_info_ijp_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_info_ijp")
-                    },
-                  },
-                },
-                [_vm._v("フォーム ＩＪＰ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_info_ijp",
-                  id: "p_info_ijp",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(44),
-          ]),
-          _vm._v(" "),
-          _vm._m(45),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(46),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _vm._m(47),
-            _vm._v(" "),
-            _vm._m(48),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_diecutter_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_diecutter_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_diecutter_sewingmachine_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_diecutter_sewingmachine_ks",
-                  id: "p_diecutter_sewingmachine_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(49),
-            _vm._v(" "),
-            _vm._m(50),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_diecutter_jump_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_diecutter_jump_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick(
-                        "p_diecutter_jump_sewingmachine_ks"
-                      )
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_diecutter_jump_sewingmachine_ks",
-                  id: "p_diecutter_jump_sewingmachine_ks",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _vm._m(51),
-            _vm._v(" "),
-            _vm._m(52),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_diecutter_micro_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_diecutter_micro_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick(
-                        "p_diecutter_micro_sewingmachine_ks"
-                      )
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_diecutter_micro_sewingmachine_ks",
-                  id: "p_diecutter_micro_sewingmachine_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(53),
-            _vm._v(" "),
-            _vm._m(54),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_diecutter_jump_micro_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_diecutter_jump_micro_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick(
-                        "p_diecutter_jump_micro_sewingmachine_ks"
-                      )
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_diecutter_jump_micro_sewingmachine_ks",
-                  id: "p_diecutter_jump_micro_sewingmachine_ks",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _vm._m(55),
-            _vm._v(" "),
-            _vm._m(56),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_diecutter_ana_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_ana_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_diecutter_ana_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_diecutter_ana_ks",
-                  id: "p_diecutter_ana_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(57),
-            _vm._v(" "),
-            _vm._m(58),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_diecutter_cornercut_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_diecutter_cornercut_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_diecutter_cornercut_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_diecutter_cornercut_ks",
-                  id: "p_diecutter_cornercut_ks",
-                },
-              }),
-            ]),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(59),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "outsource_paper_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("outsource_paper")
-                    },
-                  },
-                },
-                [_vm._v("紙だけの外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "outsource_paper",
-                  id: "outsource_paper",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(60),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "outsource_paper_all_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("outsource_paper_all")
-                    },
-                  },
-                },
-                [_vm._v("このP全部の外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "outsource_paper_all",
-                  id: "outsource_paper_all",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(61),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "line flex_jc_c" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_cancel_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.cancelClickBtn()
-                },
-              },
-            },
-            [_vm._v("キャンセル")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_del_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.Pdel("p_num")
-                },
-              },
-            },
-            [_vm._v("このPを削除")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", { staticClass: "mz_tc1" }),
-          _c("input", {
-            staticClass: "form_style input_w5",
-            attrs: { type: "text", disabled: "" },
-            domProps: { value: _vm.pageNum + "P目" },
-          }),
-          _c("input", {
-            attrs: { type: "hidden", name: "pagenum" },
-            domProps: { value: _vm.pageNum },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", { staticClass: "mz_tc1" }),
-          _c("input", {
-            staticClass: "form_style input_w5",
-            attrs: { type: "text", name: "pagename", disabled: "" },
-            domProps: { value: _vm.pageName },
-          }),
-          _c("input", {
-            attrs: { type: "hidden", name: "pagename" },
-            domProps: { value: _vm.pageName },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_set_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.Pset("p_num")
-                },
-              },
-            },
-            [_vm._v("このPを設定")]
-          ),
-        ]),
-      ]),
-    ]),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "area1" } }, [
-      _vm.outsourcingview == true
-        ? _c(
-            "div",
-            [
-              _c("out-sourcing", {
-                attrs: { "input-textid": _vm.inputtextid },
-                on: {
-                  "oscancel-event": _vm.OScancel,
-                  "selectos-event": _vm.selectOS,
-                },
-              }),
-            ],
-            1
-          )
-        : _vm._e(),
-    ]),
-  ])
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("span", { staticClass: "mz_tc1" }, [_vm._v("用紙コード")]),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "paper_code" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("span", { staticClass: "mz_tc1" }, [_vm._v("用紙名")]),
-        _c("input", {
-          staticClass: "form_style input_w10",
-          attrs: { type: "text", name: "paper_name", disabled: "" },
-        }),
-        _c("input", { attrs: { type: "hidden", name: "paper_name" } }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "mz_tc1" }, [_vm._v("サイズ")]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "size_w" },
-        }),
-      ]),
-      _vm._v("\n        ×\n        "),
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "size_h" },
-        }),
-      ]),
-      _vm._v(" "),
-      _c("input", {
-        staticClass: "form_style input_w2",
-        attrs: { type: "text", name: "size_top" },
-      }),
-      _vm._v("/"),
-      _c("input", {
-        staticClass: "form_style input_w2",
-        attrs: { type: "text", name: "size_bottom" },
-      }),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("span", { staticClass: "mz_tc1" }, [_vm._v("紙取")]),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "papertray" },
-        }),
-        _vm._v("切"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "mz_tc1" }, [_vm._v("面付け")]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "imposition_w" },
-        }),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "imposition_h" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "mz_tc1" }, [_vm._v("用紙代金")]),
-      _c("input", {
-        staticClass: "form_style input_w5",
-        attrs: { type: "text", name: "paper_price", disabled: "" },
-      }),
-      _c("input", { attrs: { type: "hidden", name: "paper_price" } }),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "mz_tc1" }, [_vm._v("色数")]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("表"),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "p_color_front" },
-        }),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("裏"),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "p_color_back" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", [_vm._v("フォーム部")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("ミシン")]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_sewingmachine_w" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_sewingmachine_h" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [
-        _vm._v("ジャンプミシン"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_jump_sewingmachine_w" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_jump_sewingmachine_h" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("マイクロミシン")]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_micro_sewingmachine_w" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_micro_sewingmachine_h" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [
-        _vm._v("ジャンプマイクロミシン"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_jump_micro_sewingmachine_w" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_jump_micro_sewingmachine_h" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("スジ入れ")]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_linein_w" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_linein_h" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [_vm._v("スリッター")]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_slitter_w" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_slitter_h" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", [
-      _vm._v("No."),
-      _c("input", {
-        staticClass: "form_style input_w2",
-        attrs: { type: "text", name: "p_form_no" },
-      }),
-      _vm._v("ヶ所"),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("コーナーカット"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_cornercut" },
-        }),
-        _vm._v("ヶ所"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", [
-      _vm._v("差替"),
-      _c("input", {
-        staticClass: "form_style input_w2",
-        attrs: { type: "text", name: "p_form_replace" },
-      }),
-      _vm._v("種"),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", [_vm._v("オフセット部")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("ミシン")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_offset_sewingmachine_w" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", { staticClass: "mgl40" }, [
-      _vm._v("No."),
-      _c("input", {
-        staticClass: "form_style input_w2",
-        attrs: { type: "text", name: "p_offset_no" },
-      }),
-      _vm._v("ヶ所"),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", { staticClass: "lspacing1" }, [_vm._v("活版")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("ミシン")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_letterpress_sewingmachine_hon" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_letterpress_sewingmachine_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [
-        _vm._v("ジャンプミシン"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_letterpress_jump_sewingmachine_hon" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_letterpress_jump_sewingmachine_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("マイクロミシン")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: {
-            type: "text",
-            name: "p_letterpress_micro_sewingmachine_hon",
-          },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: {
-            type: "text",
-            name: "p_letterpress_micro_sewingmachine_dai",
-          },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [
-        _vm._v("ジャンプマイクロミシン"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: {
-            type: "text",
-            name: "p_letterpress_jump_micro_sewingmachine_hon",
-          },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: {
-            type: "text",
-            name: "p_letterpress_jump_micro_sewingmachine_dai",
-          },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("スジ入れ")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_letterpress_linein_hon" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_letterpress_linein_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [_vm._v("スリッター")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_letterpress_slitter_hon" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_letterpress_slitter_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", [
-      _vm._v("親子No."),
-      _c("input", {
-        staticClass: "form_style input_w2",
-        attrs: { type: "text", name: "p_letterpress_pcno" },
-      }),
-      _vm._v("ヶ所"),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", [
-      _vm._v("No."),
-      _c("input", {
-        staticClass: "form_style input_w2",
-        attrs: { type: "text", name: "p_letterpress_no" },
-      }),
-      _vm._v("ヶ所"),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [_c("h4", [_vm._v("情報処理")])])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("東レ"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_info_toray" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", [_vm._v("ドット")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_info_dot_line" },
-        }),
-        _vm._v("ライン"),
-      ]),
-      _vm._v("\n            ×\n            "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_info_dot_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("基本料金\n            "),
-        _c(
-          "select",
-          { staticClass: "form_style", attrs: { name: "p_info_basic_fee" } },
-          [
-            _c("option", { attrs: { value: "" } }),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "10000" } }, [_vm._v("10000")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "15000" } }, [_vm._v("15000")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "20000" } }, [_vm._v("20000")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "25000" } }, [_vm._v("25000")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "30000" } }, [_vm._v("30000")]),
-          ]
-        ),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("宛名等出力件数"),
-          _c("input", {
-            staticClass: "form_style input_w5",
-            attrs: { type: "text", name: "p_info_output" },
-          }),
-          _vm._v("件"),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("パンチング"),
-          _c("input", {
-            staticClass: "form_style input_w5",
-            attrs: { type: "text", name: "p_info_punching" },
-          }),
-          _vm._v("件"),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", [_vm._v("ダイカッタ")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("ミシン")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_sewingmachine_hon" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_sewingmachine_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [
-        _vm._v("ジャンプミシン"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_jump_sewingmachine_hon" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_jump_sewingmachine_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("マイクロミシン")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_micro_sewingmachine_hon" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_micro_sewingmachine_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [
-        _vm._v("ジャンプマイクロミシン"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: {
-            type: "text",
-            name: "p_diecutter_jump_micro_sewingmachine_hon",
-          },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: {
-            type: "text",
-            name: "p_diecutter_jump_micro_sewingmachine_dai",
-          },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("穴")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_ana_hon" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_ana_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [
-        _vm._v("コーナーカット"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_cornercut" },
-        }),
-        _vm._v("ヶ所"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_cornercut_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", { staticClass: "lspacing1" }, [_vm._v("外注")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "outsource_paper_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "outsource_paper_all_cost" },
-        }),
-      ]),
-    ])
-  },
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/PopupPrint.vue?vue&type=template&id=1e2ff18c&":
-/*!*************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/PopupPrint.vue?vue&type=template&id=1e2ff18c& ***!
-  \*************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { attrs: { id: "cnt2" } }, [
-      _c("h3", {}, [_vm._v(_vm._s(_vm.printTitle))]),
-      _vm._v(" "),
-      _c("div", {
-        attrs: { id: "pdatazone" },
-        domProps: { innerHTML: _vm._s(_vm.RePrintData) },
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "print-none", attrs: { id: "print_btnzone" } }, [
-        _c(
-          "button",
-          {
-            attrs: { type: "button", onclick: "window.print(); return false;" },
-          },
-          [_vm._v("印刷")]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            attrs: { type: "button" },
-            on: {
-              click: function ($event) {
-                return _vm.cancelClickBtn()
-              },
-            },
-          },
-          [_vm._v("閉じる")]
-        ),
-      ]),
-    ]),
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Quotations.vue?vue&type=template&id=1a483d92&":
-/*!*************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Quotations.vue?vue&type=template&id=1a483d92& ***!
-  \*************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "cnt1" } }, [
-      _vm._m(1),
-      _vm._v(" "),
-      _vm._m(2),
-      _vm._v(" "),
-      _vm._m(3),
-      _vm._v(" "),
-      _vm._m(4),
-      _vm._v(" "),
-      _vm._m(5),
-      _vm._v(" "),
-      _vm._m(6),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _vm._m(7),
-        _vm._v(" "),
-        _vm._m(8),
-        _vm._v(" "),
-        _vm._m(9),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1",
-            attrs: { id: "printing_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "printing_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClickT("printing")
-                },
-              },
-            },
-            [_vm._v("印刷有り")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "input_w1",
-            attrs: {
-              type: "text",
-              value: "1",
-              name: "printing",
-              id: "printing",
-            },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1 v_hidden",
-            attrs: { id: "inch_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "inch_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClick03("inch", 0, "unit")
-                },
-              },
-            },
-            [_vm._v("インチ")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1 v_hidden",
-            attrs: { id: "milli_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "milli_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClick03("milli", 0, "unit")
-                },
-              },
-            },
-            [_vm._v("ミリ")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "input_w1",
-            attrs: { type: "text", value: "0", name: "unit", id: "unit" },
-          }),
-        ]),
-        _vm._v(" "),
-        _vm._m(10),
-        _vm._v(" "),
-        _vm._m(11),
-      ]),
-      _vm._v(" "),
-      _vm._m(12),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts1_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts1_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(1, "1P目")
-                },
-              },
-            },
-            [_vm._v("1P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts2_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts2_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(2, "2P目")
-                },
-              },
-            },
-            [_vm._v("2P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts3_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts3_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(3, "3P目")
-                },
-              },
-            },
-            [_vm._v("3P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts4_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts4_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(4, "4P目")
-                },
-              },
-            },
-            [_vm._v("4P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts5_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts5_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(5, "5P目")
-                },
-              },
-            },
-            [_vm._v("5P目")]
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts6_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts6_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(6, "6P目")
-                },
-              },
-            },
-            [_vm._v("6P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts7_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts7_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(7, "7P目")
-                },
-              },
-            },
-            [_vm._v("7P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts8_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts8_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(8, "8P目")
-                },
-              },
-            },
-            [_vm._v("8P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts9_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts9_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(9, "9P目")
-                },
-              },
-            },
-            [_vm._v("9P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts10_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts10_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(10, "10P目")
-                },
-              },
-            },
-            [_vm._v("10P目")]
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts11_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts11_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(11, "11P目")
-                },
-              },
-            },
-            [_vm._v("11P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts12_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts12_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(12, "12P目")
-                },
-              },
-            },
-            [_vm._v("12P目")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts_omote_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts13_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(13, "表紙")
-                },
-              },
-            },
-            [_vm._v("表紙")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts_ura_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts14_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(14, "裏表紙")
-                },
-              },
-            },
-            [_vm._v("裏表紙")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone2 mz_tc1 v_hidden",
-            attrs: { id: "parts_mat_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "parts15_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetParts(15, "下敷き")
-                },
-              },
-            },
-            [_vm._v("下敷き")]
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mgt40", attrs: { id: "department01" } }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("label", [
-            _c("span", { staticClass: "spanwidth_1" }, [_vm._v("コメント")]),
-            _vm._v(" "),
-            _c("span", { attrs: { id: "strLen" } }, [_vm._v("0文字")]),
-            _vm._v(" "),
-            _c("textarea", {
-              staticClass: "form_style_textarea",
-              attrs: { name: "comment", rows: "4", id: "textarea1" },
-              on: {
-                keyup: function ($event) {
-                  return _vm.viewStrLen()
-                },
-              },
-            }),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _vm._m(13),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "mglrauto" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "setcal_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SetcalBtn()
-                },
-              },
-            },
-            [_vm._v("設定・計算")]
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mgt40", attrs: { id: "department01" } }, [
-        _c("div", { staticClass: "group" }, [
-          _vm._m(14),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c(
-              "button",
-              {
-                attrs: { type: "button", id: "cost_btn" },
-                on: {
-                  click: function ($event) {
-                    return _vm.CostBtn()
-                  },
-                },
-              },
-              [_vm._v("原価一覧")]
-            ),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _vm._m(15),
-    ]),
-    _vm._v(" "),
-    _vm.partsview == true
-      ? _c(
-          "div",
-          { attrs: { id: "partszone" } },
-          [
-            _c("quotations-parts", {
-              attrs: { "page-num": _vm.pagenum, "page-name": _vm.pagename },
-              on: { "pcancel-event": _vm.Pcancel },
-            }),
-          ],
-          1
-        )
-      : _vm._e(),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "area1" } }, [
-      _vm.outsourcingview == true
-        ? _c(
-            "div",
-            [
-              _c("out-sourcing", {
-                attrs: { "input-textid": _vm.inputtextid },
-                on: {
-                  "oscancel-event": _vm.OScancel,
-                  "selectos-event": _vm.selectOS,
-                },
-              }),
-            ],
-            1
-          )
-        : _vm._e(),
-    ]),
-  ])
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "cnt_title1" } }, [
-      _c("h3", [_vm._v("見積作成")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "department01" } }, [
-      _c("div", { staticClass: "cate" }, [_c("h4", [_vm._v("基本項目")])]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("button", [_vm._v("新規")]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("button", [_vm._v("見積書")]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("参照見積番号"),
-          _c("input", {
-            staticClass: "form_style input_w5",
-            attrs: { type: "text" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("button", [_vm._v("登録")]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("button", [_vm._v("受注")]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("button", [_vm._v("原価閲覧")]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("button", [_vm._v("終了")]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [_vm._v("担当者")]),
-          _c("input", {
-            staticClass: "form_style",
-            attrs: { type: "text", name: "manager" },
-          }),
-          _c("span"),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [_vm._v("得意先")]),
-          _c("input", {
-            staticClass: "form_style",
-            attrs: { type: "text", name: "customer_code" },
-          }),
-          _c("input", {
-            staticClass: "form_style",
-            attrs: { type: "text", name: "customer" },
-          }),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [
-            _vm._v("エンドユーザー"),
-          ]),
-          _c("input", {
-            staticClass: "form_style input_w30",
-            attrs: { type: "text", name: "enduser" },
-          }),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [_vm._v("製品名")]),
-          _c("input", {
-            staticClass: "form_style input_w30",
-            attrs: { type: "text", name: "product" },
-          }),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "page_num" },
-        }),
-        _vm._v("P"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("制作組数"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "production_setnum" },
-        }),
-        _vm._v(" "),
-        _c(
-          "select",
-          {
-            staticClass: "form_style",
-            attrs: { name: "production_setnum_unit" },
-          },
-          [
-            _c("option", { attrs: { value: "" } }),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "組" } }, [_vm._v("組")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "帯" } }, [_vm._v("帯")]),
-          ]
-        ),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("制作冊数"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "production_volnum" },
-        }),
-        _vm._v(" "),
-        _c(
-          "select",
-          {
-            staticClass: "form_style",
-            attrs: { name: "production_volnum_unit" },
-          },
-          [
-            _c("option", { attrs: { value: "" } }),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "S" } }, [_vm._v("S")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "冊" } }, [_vm._v("冊")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "束" } }, [_vm._v("束")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "箱" } }, [_vm._v("箱")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "枚" } }, [_vm._v("枚")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "部" } }, [_vm._v("部")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "個" } }, [_vm._v("個")]),
-          ]
-        ),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("紙取"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "papertray" },
-        }),
-        _vm._v("切"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _vm._v("\n        面付け...\n        "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "imposition_w" },
-        }),
-      ]),
-      _vm._v("\n        ×\n        "),
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "imposition_h" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("シリンダー\n        "),
-          _c(
-            "select",
-            { staticClass: "form_style", attrs: { name: "cylinder" } },
-            [
-              _c("option", { attrs: { value: "" } }),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "10" } }, [_vm._v("10")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "10.5" } }, [_vm._v("10.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "11" } }, [_vm._v("11")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "11.5" } }, [_vm._v("11.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "12" } }, [_vm._v("12")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "13" } }, [_vm._v("13")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "13.5" } }, [_vm._v("13.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "14" } }, [_vm._v("14")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "15" } }, [_vm._v("15")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "16" } }, [_vm._v("16")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "17" } }, [_vm._v("17")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "18" } }, [_vm._v("18")]),
-            ]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("label", [
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "cylinder_num" },
-          }),
-          _vm._v("本"),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _vm._v("\n        サイズ...\n        "),
-        _c("label", [
-          _vm._v("横"),
-          _c("input", {
-            staticClass: "form_style input_w3",
-            attrs: { type: "text", name: "size_w" },
-          }),
-        ]),
-        _vm._v("\n        ×\n        "),
-        _c("label", [
-          _vm._v("縦"),
-          _c("input", {
-            staticClass: "form_style input_w3",
-            attrs: { type: "text", name: "size_h" },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "size_top" },
-        }),
-        _vm._v("/"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "size_bottom" },
-        }),
-        _vm._v(" "),
-        _c("label", [
-          _c(
-            "select",
-            { staticClass: "form_style", attrs: { name: "inch_fold" } },
-            [
-              _c("option", { attrs: { value: "" } }),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "4" } }, [_vm._v("4")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "4.5" } }, [_vm._v("4.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "5" } }, [_vm._v("5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "5.5" } }, [_vm._v("5.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "6" } }, [_vm._v("6")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "6.5" } }, [_vm._v("6.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "7" } }, [_vm._v("7")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "7.5" } }, [_vm._v("7.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "8" } }, [_vm._v("8")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "8.5" } }, [_vm._v("8.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "9" } }, [_vm._v("9")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "10" } }, [_vm._v("10")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "10.5" } }, [_vm._v("10.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "11" } }, [_vm._v("11")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "11.5" } }, [_vm._v("11.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "12" } }, [_vm._v("12")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "13" } }, [_vm._v("13")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "13.5" } }, [_vm._v("13.5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "14" } }, [_vm._v("14")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "15" } }, [_vm._v("15")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "16" } }, [_vm._v("16")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "17" } }, [_vm._v("17")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "18" } }, [_vm._v("18")]),
-            ]
-          ),
-          _vm._v("\n        インチ折\n        "),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line mgt40" }, [
-      _c("div", { staticClass: "mglrauto", attrs: { id: "zukei" } }, [
-        _c("div", { staticClass: "yajirushi_1" }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("span", { staticClass: "spanwidth_1" }, [_vm._v("提示額")]),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "offered_price" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "calculation" } }, [
-      _c("h3", [_vm._v("計算結果")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }),
-    ])
-  },
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsBinding.vue?vue&type=template&id=631d4643&":
-/*!********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/QuotationsBinding.vue?vue&type=template&id=631d4643& ***!
-  \********************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "cnt1" } }, [
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(1),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_chouai_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_chouai_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("sei_chouai")
-                    },
-                  },
-                },
-                [_vm._v("丁合")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_chouai",
-                  id: "sei_chouai",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_chouai_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("sei_chouai_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "sei_chouai_outsou",
-                  id: "sei_chouai_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(2),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_dansai_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_dansai_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClickD("sei_dansai")
-                    },
-                  },
-                },
-                [_vm._v("断裁")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_dansai",
-                  id: "sei_dansai",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_dansai_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("sei_dansai_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "sei_dansai_outsou",
-                  id: "sei_dansai_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(3),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_marble_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_marble_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_marble", 3)
-                    },
-                  },
-                },
-                [_vm._v("マーブル")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_marble",
-                  id: "sei_marble",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_cross_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_cross_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_cross", 3)
-                    },
-                  },
-                },
-                [_vm._v("クロス")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_cross",
-                  id: "sei_cross",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c3 v_hidden",
-                attrs: { id: "sei_mat_maki_cardboard_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_mat_maki_cardboard_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_mat_maki_cardboard", 4)
-                    },
-                  },
-                },
-                [_vm._v("下敷巻ボール")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_mat_maki_cardboard",
-                  id: "sei_mat_maki_cardboard",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c3 v_hidden",
-                attrs: { id: "sei_mat_cardboard_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_mat_cardboard_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_mat_cardboard", 4)
-                    },
-                  },
-                },
-                [_vm._v("下敷ボール")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_mat_cardboard",
-                  id: "sei_mat_cardboard",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(4),
-            _vm._v(" "),
-            _vm._m(5),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c2 v_hidden",
-                attrs: { id: "sei_kurumi_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_kurumi_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_kurumi", 5)
-                    },
-                  },
-                },
-                [_vm._v("くるみ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_kurumi",
-                  id: "sei_kurumi",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(6),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_buster_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_buster_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("sei_buster")
-                    },
-                  },
-                },
-                [_vm._v("バスター")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_buster",
-                  id: "sei_buster",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_crimping_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_crimping_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("sei_crimping")
-                    },
-                  },
-                },
-                [_vm._v("圧着")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_crimping",
-                  id: "sei_crimping",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _vm._m(7),
-          _vm._v(" "),
-          _vm._m(8),
-          _vm._v(" "),
-          _vm._m(9),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c2 v_hidden",
-                attrs: { id: "sei_musen_tozi_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_musen_tozi_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_musen_tozi", 5)
-                    },
-                  },
-                },
-                [_vm._v("無線トジ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_musen_tozi",
-                  id: "sei_musen_tozi",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_musen_tozi_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("sei_musen_tozi_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "sei_musen_tozi_outsou",
-                  id: "sei_musen_tozi_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(10),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c2 v_hidden",
-                attrs: { id: "sei_naka_tozi_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_naka_tozi_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_naka_tozi", 5)
-                    },
-                  },
-                },
-                [_vm._v("中トジ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_naka_tozi",
-                  id: "sei_naka_tozi",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_naka_tozi_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("sei_naka_tozi_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "sei_naka_tozi_outsou",
-                  id: "sei_naka_tozi_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(11),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c2 v_hidden",
-                attrs: { id: "sei_sashikomi_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_sashikomi_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("sei_sashikomi")
-                    },
-                  },
-                },
-                [_vm._v("差込")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_sashikomi",
-                  id: "sei_sashikomi",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_sashikomi_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("sei_sashikomi_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "sei_sashikomi_outsou",
-                  id: "sei_sashikomi_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(12),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _vm._m(13),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_donko_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_donko_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("sei_donko")
-                    },
-                  },
-                },
-                [_vm._v("ドンコ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_donko",
-                  id: "sei_donko",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(14),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _vm._m(15),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c4 v_hidden",
-                attrs: { id: "sei_bara_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_bara_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_bara", 6)
-                    },
-                  },
-                },
-                [_vm._v("バラ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_bara",
-                  id: "sei_bara",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c4 v_hidden",
-                attrs: { id: "sei_oneset_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_oneset_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_oneset", 6)
-                    },
-                  },
-                },
-                [_vm._v("ワンセット")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_oneset",
-                  id: "sei_oneset",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_obake_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_obake_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("sei_obake")
-                    },
-                  },
-                },
-                [_vm._v("オバケ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_obake",
-                  id: "sei_obake",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(16),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(17),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _vm._m(18),
-            _vm._v(" "),
-            _vm._m(19),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup2" }, [
-              _c("span", {
-                staticClass: "markzone mz_c5 v_hidden",
-                attrs: { id: "sei_a_system_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_a_system_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_a_system", 7)
-                    },
-                  },
-                },
-                [_vm._v("A式")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_a_system",
-                  id: "sei_a_system",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup2" }, [
-              _c("span", {
-                staticClass: "markzone mz_c5 v_hidden",
-                attrs: { id: "sei_c_system_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_c_system_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("sei_c_system", 7)
-                    },
-                  },
-                },
-                [_vm._v("C式")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_c_system",
-                  id: "sei_c_system",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup2" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sei_vinyl_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_vinyl_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("sei_vinyl")
-                    },
-                  },
-                },
-                [_vm._v("ビニール")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sei_vinyl",
-                  id: "sei_vinyl",
-                },
-              }),
-            ]),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(20),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup2" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sei_all_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("sei_all_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "sei_all_outsou",
-                  id: "sei_all_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(21),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _vm._m(22),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "mglrauto" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "setcal_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SettingBtn()
-                },
-              },
-            },
-            [_vm._v("設定")]
-          ),
-        ]),
-      ]),
-    ]),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "area1" } }, [
-      _vm.outsourcingview == true
-        ? _c(
-            "div",
-            [
-              _c("out-sourcing", {
-                attrs: { "input-textid": _vm.inputtextid },
-                on: {
-                  "oscancel-event": _vm.OScancel,
-                  "selectos-event": _vm.selectOS,
-                },
-              }),
-            ],
-            1
-          )
-        : _vm._e(),
-    ]),
-  ])
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "cnt_title1" } }, [
-      _c("h3", [_vm._v("見積作成")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", { staticClass: "lspacing1" }, [_vm._v("製本")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "sei_chouai_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "sei_dansai_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", { staticClass: "mgl20" }, [
-        _c(
-          "select",
-          { staticClass: "form_style", attrs: { name: "sei_nori" } },
-          [
-            _c("option", { attrs: { value: "" } }),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "天" } }, [_vm._v("天")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "左" } }, [_vm._v("左")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "右" } }, [_vm._v("右")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "地" } }, [_vm._v("地")]),
-          ]
-        ),
-        _vm._v("\n            糊\n            "),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", { staticClass: "mgl20" }, [
-        _c(
-          "select",
-          { staticClass: "form_style", attrs: { name: "sei_tsuduri" } },
-          [
-            _c("option", { attrs: { value: "" } }),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "天" } }, [_vm._v("天")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "左" } }, [_vm._v("左")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "右" } }, [_vm._v("右")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "地" } }, [_vm._v("地")]),
-          ]
-        ),
-        _vm._v("\n            綴\n            "),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", { staticClass: "mgl20" }, [
-        _vm._v("ラミネート\n            "),
-        _c(
-          "select",
-          { staticClass: "form_style", attrs: { name: "sei_laminate" } },
-          [
-            _c("option", { attrs: { value: "" } }),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "A3" } }, [_vm._v("A3")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "A4" } }, [_vm._v("A4")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "A5" } }, [_vm._v("A5")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "B4" } }, [_vm._v("B4")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "B5" } }, [_vm._v("B5")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "B6" } }, [_vm._v("B6")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "カード用" } }, [
-              _vm._v("カード用"),
-            ]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "ハガキ圧着" } }, [
-              _vm._v("ハガキ圧着"),
-            ]),
-          ]
-        ),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "sei_laminate_through" },
-        }),
-        _vm._v("通し"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_1" }, [_vm._v("手作業")]),
-          _c("input", {
-            staticClass: "form_style input_w30",
-            attrs: { type: "text", name: "inside_hand_work" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("内製費"),
-          _c("input", {
-            staticClass: "form_style input_w5",
-            attrs: { type: "text", name: "inside_insourcing_cost" },
-          }),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_1" }, [_vm._v("社外内職")]),
-          _c("input", {
-            staticClass: "form_style input_w10",
-            attrs: { type: "text", name: "outside_job1" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("外注先"),
-          _c("input", {
-            staticClass: "form_style input_w10",
-            attrs: { type: "text", name: "outside_job1_outsou" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("外注費"),
-          _c("input", {
-            staticClass: "form_style input_w5",
-            attrs: { type: "text", name: "outside_job1_outsou_cost" },
-          }),
-          _c("span", { staticClass: "txtcolor1" }, [_vm._v("加算")]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_1" }, [_vm._v("社外内職")]),
-          _c("input", {
-            staticClass: "form_style input_w10",
-            attrs: { type: "text", name: "outside_job2" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("外注先"),
-          _c("input", {
-            staticClass: "form_style input_w10",
-            attrs: { type: "text", name: "outside_job2_outsou" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("外注費"),
-          _c("input", {
-            staticClass: "form_style input_w5",
-            attrs: { type: "text", name: "outside_job2_outsou_cost" },
-          }),
-          _c("span", { staticClass: "txtcolor1" }, [_vm._v("加算")]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "musen_tozi_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "sei_naka_tozi_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "sei_sashikomi_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "sei_ana" },
-        }),
-        _vm._v("穴×"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "sei_part" },
-        }),
-        _vm._v("ヶ所"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "mgl20" }, [_vm._v("折回数...")]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "sei_ori_w" },
-        }),
-        _vm._v("回"),
-      ]),
-      _vm._v(" "),
-      _c("label", { staticClass: "mgl10" }, [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "sei_ori_h" },
-        }),
-        _vm._v("回"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "sei_obi" },
-        }),
-        _vm._v("帯"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", { staticClass: "mgl20" }, [
-        _vm._v("落とし\n            "),
-        _c(
-          "select",
-          { staticClass: "form_style", attrs: { name: "sei_otoshi" } },
-          [
-            _c("option", { attrs: { value: "" } }),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "コーナー" } }, [
-              _vm._v("コーナー"),
-            ]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "角落とし" } }, [
-              _vm._v("角落とし"),
-            ]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "角丸落とし" } }, [
-              _vm._v("角丸落とし"),
-            ]),
-          ]
-        ),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "sei_otoshi_part" },
-        }),
-        _vm._v("ヶ所"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate2" }, [_c("h4", [_vm._v("標準")])])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup2" }, [
-      _c("label", [
-        _vm._v("梱装"),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "sei_package" },
-        }),
-        _vm._v("×"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "sei_package_num" },
-        }),
-        _vm._v("個、"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup2" }, [
-      _c("label", [
-        _vm._v("箱"),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "sei_box" },
-        }),
-        _vm._v("×"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "sei_box_num" },
-        }),
-        _vm._v("個"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate2" }, [
-      _c("h4", [_vm._v("製本の全部")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup2" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "sei_all_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line mgt40" }, [
-      _c("div", { staticClass: "mglrauto", attrs: { id: "zukei" } }, [
-        _c("div", { staticClass: "yajirushi_1" }),
-      ]),
-    ])
-  },
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsCost.vue?vue&type=template&id=2a9895ff&":
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/QuotationsCost.vue?vue&type=template&id=2a9895ff& ***!
-  \*****************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "cnt1" } }, [
-      _vm._m(1),
-      _vm._v(" "),
-      _vm._m(2),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(3),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup2" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "product_all_outsou1_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("product_all_outsou1")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "product_all_outsou1",
-                  id: "product_all_outsou1",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(4),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "product_all_outsou2_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("product_all_outsou2")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "product_all_outsou2",
-                  id: "product_all_outsou2",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(5),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "product_all_outsou3_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("product_all_outsou3")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "product_all_outsou3",
-                  id: "product_all_outsou3",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(6),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _vm._m(7),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "mglrauto" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "setcal_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SettingBtn()
-                },
-              },
-            },
-            [_vm._v("設定")]
-          ),
-        ]),
-      ]),
-    ]),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "area1" } }, [
-      _vm.outsourcingview == true
-        ? _c(
-            "div",
-            [
-              _c("out-sourcing", {
-                attrs: { "input-textid": _vm.inputtextid },
-                on: {
-                  "oscancel-event": _vm.OScancel,
-                  "selectos-event": _vm.selectOS,
-                },
-              }),
-            ],
-            1
-          )
-        : _vm._e(),
-    ]),
-  ])
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "cnt_title1" } }, [
-      _c("h3", [_vm._v("見積作成")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "department01" } }, [
-      _c("div", { staticClass: "cate" }, [
-        _c("h4", { staticClass: "lspacing1" }, [_vm._v("発送")]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "area" }, [
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("市内"),
-              _c("input", {
-                staticClass: "form_style input_w3",
-                attrs: { type: "text", name: "send_city" },
-              }),
-              _vm._v("個口"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", { staticClass: "mgl20" }, [
-              _vm._v("道内"),
-              _c("input", {
-                staticClass: "form_style input_w3",
-                attrs: { type: "text", name: "send_in_dou" },
-              }),
-              _vm._v("個口"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", { staticClass: "mgl20" }, [
-              _vm._v("道外"),
-              _c("input", {
-                staticClass: "form_style input_w3",
-                attrs: { type: "text", name: "send_out_dou" },
-              }),
-              _vm._v("個×"),
-            ]),
-            _vm._v(" "),
-            _c("label", [
-              _vm._v("￥"),
-              _c("input", {
-                staticClass: "form_style input_w5",
-                attrs: { type: "text", name: "send_out_dou_yen" },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", { staticClass: "mgl20" }, [
-              _vm._v("一括配送"),
-              _c("input", {
-                staticClass: "form_style input_w5",
-                attrs: { type: "text", name: "send_all" },
-              }),
-            ]),
-          ]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mgt40", attrs: { id: "department01" } }, [
-      _c("div", { staticClass: "cate" }, [_c("h4", [_vm._v("付加費用")])]),
-      _vm._v(" "),
-      _c("div", { staticClass: "area" }, [
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _vm._v("購入先・バテント・部材・数量など"),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _c("input", {
-                staticClass: "form_style input_w40",
-                attrs: { type: "text", name: "addition_cost1" },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("購入費"),
-              _c("input", {
-                staticClass: "form_style input_w5",
-                attrs: { type: "text", name: "addition_cost1_buy" },
-              }),
-              _c("span", { staticClass: "txtcolor1" }, [_vm._v("加算")]),
-            ]),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _c("input", {
-                staticClass: "form_style input_w40",
-                attrs: { type: "text", name: "addition_cost2" },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("購入費"),
-              _c("input", {
-                staticClass: "form_style input_w5",
-                attrs: { type: "text", name: "addition_cost2_buy" },
-              }),
-              _c("span", { staticClass: "txtcolor1" }, [_vm._v("加算")]),
-            ]),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _c("input", {
-                staticClass: "form_style input_w40",
-                attrs: { type: "text", name: "addition_cost3" },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("購入費"),
-              _c("input", {
-                staticClass: "form_style input_w5",
-                attrs: { type: "text", name: "addition_cost3_buy" },
-              }),
-              _c("span", { staticClass: "txtcolor1" }, [_vm._v("加算")]),
-            ]),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _c("input", {
-                staticClass: "form_style input_w40",
-                attrs: { type: "text", name: "addition_cost4" },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("購入費"),
-              _c("input", {
-                staticClass: "form_style input_w5",
-                attrs: { type: "text", name: "addition_cost4_buy" },
-              }),
-              _c("span", { staticClass: "txtcolor1" }, [_vm._v("加算")]),
-            ]),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _c("input", {
-                staticClass: "form_style input_w40",
-                attrs: { type: "text", name: "addition_cost5" },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("購入費"),
-              _c("input", {
-                staticClass: "form_style input_w5",
-                attrs: { type: "text", name: "addition_cost5_buy" },
-              }),
-              _c("span", { staticClass: "txtcolor1" }, [_vm._v("加算")]),
-            ]),
-          ]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate2" }, [
-      _c("h4", [_vm._v("製品全体の外注")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup2" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "product_all_outsou1_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "product_all_outsou2_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "product_all_outsou3_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line mgt40" }, [
-      _c("div", { staticClass: "mglrauto", attrs: { id: "zukei" } }, [
-        _c("div", { staticClass: "yajirushi_1" }),
-      ]),
-    ])
-  },
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsDepartment.vue?vue&type=template&id=35396384&":
-/*!***********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/QuotationsDepartment.vue?vue&type=template&id=35396384& ***!
-  \***********************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "cnt1" } }, [
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(1),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "wkake_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "wkake_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick02("wkake", 1)
-                    },
-                  },
-                },
-                [_vm._v("Ｗ掛け")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: { type: "text", value: "0", name: "wkake", id: "wkake" },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "daenpin_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "daenpin_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("daenpin")
-                    },
-                  },
-                },
-                [_vm._v("楕円ピン")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "daenpin",
-                  id: "daenpin",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "ana2_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "ana2_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick02("ana2", 1)
-                    },
-                  },
-                },
-                [_vm._v("２穴")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: { type: "text", value: "0", name: "ana2", id: "ana2" },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "ana6_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "ana6_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick02("ana6", 1)
-                    },
-                  },
-                },
-                [_vm._v("６穴")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: { type: "text", value: "0", name: "ana6", id: "ana6" },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "donko_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "donko_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick02("donko", 1)
-                    },
-                  },
-                },
-                [_vm._v("ドンコ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: { type: "text", value: "0", name: "donko", id: "donko" },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "katanuki_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "katanuki_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick02("katanuki", 1)
-                    },
-                  },
-                },
-                [_vm._v("型ヌキ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "katanuki",
-                  id: "katanuki",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "katanuki_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("katanuki_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "katanuki_outsou",
-                  id: "katanuki_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(2),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "kasutori_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "kasutori_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick02("kasutori", 1)
-                    },
-                  },
-                },
-                [_vm._v("カス取")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "kasutori",
-                  id: "kasutori",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "kasutori_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("kasutori_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "kasutori_outsou",
-                  id: "kasutori_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(3),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "nisu_single_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "nisu_single_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("nisu_single", 2)
-                    },
-                  },
-                },
-                [_vm._v("ニス片面")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "nisu_single",
-                  id: "nisu_single",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "nisu_double_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "nisu_double_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick01("nisu_double", 2)
-                    },
-                  },
-                },
-                [_vm._v("ニス両面")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "nisu_double",
-                  id: "nisu_double",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(4),
-          ]),
-          _vm._v(" "),
-          _vm._m(5),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(6),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup2" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "form_all_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("form_all_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "form_all_outsou",
-                  id: "form_all_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(7),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _vm._m(8),
-      _vm._v(" "),
-      _c("div", { staticClass: "mgt40", attrs: { id: "department01" } }, [
-        _vm._m(9),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _vm._m(10),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "plate_making_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("plate_making_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "plate_making_outsou",
-                  id: "plate_making_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(11),
-          ]),
-          _vm._v(" "),
-          _vm._m(12),
-          _vm._v(" "),
-          _vm._m(13),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mgt40", attrs: { id: "department01" } }, [
-        _vm._m(14),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _vm._m(15),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "envelope_process_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "envelope_process_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("envelope_process")
-                    },
-                  },
-                },
-                [_vm._v("封筒加工")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "envelope_process",
-                  id: "envelope_process",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "tape_process_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "tape_process_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("tape_process")
-                    },
-                  },
-                },
-                [_vm._v("テープ加工")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "tape_process",
-                  id: "tape_process",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "peel_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "peel_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("peel")
-                    },
-                  },
-                },
-                [_vm._v("剥離糊")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: { type: "text", value: "0", name: "peel", id: "peel" },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "press_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "press_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("press")
-                    },
-                  },
-                },
-                [_vm._v("プレス")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: { type: "text", value: "0", name: "press", id: "press" },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "sheetcut_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "sheetcut_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("sheetcut")
-                    },
-                  },
-                },
-                [_vm._v("シートカット")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "sheetcut",
-                  id: "sheetcut",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _vm._m(16),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "department01" } }, [
-        _vm._m(17),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup2" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "collator_all_outsou_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("collator_all_outsou")
-                    },
-                  },
-                },
-                [_vm._v("外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "collator_all_outsou",
-                  id: "collator_all_outsou",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(18),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _vm._m(19),
-      _vm._v(" "),
-      _vm._m(20),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "mglrauto" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "setcal_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SettingBtn()
-                },
-              },
-            },
-            [_vm._v("設定")]
-          ),
-        ]),
-      ]),
-    ]),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "area1" } }, [
-      _vm.outsourcingview == true
-        ? _c(
-            "div",
-            [
-              _c("out-sourcing", {
-                attrs: { "input-textid": _vm.inputtextid },
-                on: {
-                  "oscancel-event": _vm.OScancel,
-                  "selectos-event": _vm.selectOS,
-                },
-              }),
-            ],
-            1
-          )
-        : _vm._e(),
-    ]),
-  ])
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "cnt_title1" } }, [
-      _c("h3", [_vm._v("見積作成")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", [_vm._v("フォーム部")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "katanuki_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "kasutori_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _vm._v("\n            ＴＳＲスキップ\n            "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "tsr_times" },
-        }),
-        _vm._v("回"),
-      ]),
-      _vm._v("\n            ×\n            "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "tsr_through" },
-        }),
-        _vm._v("通"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("色替"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "form_color_change" },
-          }),
-          _vm._v("回"),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("カーボン型"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "form_carbon_mold" },
-          }),
-          _vm._v("版"),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate2" }, [
-      _c("h4", [_vm._v("フォーム部の全部")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup2" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "form_all_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mgt40", attrs: { id: "department01" } }, [
-      _c("div", { staticClass: "cate" }, [_c("h4", [_vm._v("オフセット部")])]),
-      _vm._v(" "),
-      _c("div", { staticClass: "area" }, [
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("色替"),
-              _c("input", {
-                staticClass: "form_style input_w2",
-                attrs: { type: "text", name: "offset_color_change" },
-              }),
-              _vm._v("回"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("カーボン型"),
-              _c("input", {
-                staticClass: "form_style input_w2",
-                attrs: { type: "text", name: "offset_carbon_mold" },
-              }),
-              _vm._v("版"),
-            ]),
-          ]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", [_vm._v("組版・製版")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("版下\n            "),
-          _c(
-            "select",
-            { staticClass: "form_style", attrs: { name: "block_copy" } },
-            [
-              _c("option", { attrs: { value: "" } }),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "新版" } }, [_vm._v("新版")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "修正" } }, [_vm._v("修正")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "在版" } }, [_vm._v("在版")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "インコー" } }, [
-                _vm._v("インコー"),
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "編集（支給）" } }, [
-                _vm._v("編集（支給）"),
-              ]),
-            ]
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("種別\n            "),
-          _c(
-            "select",
-            { staticClass: "form_style", attrs: { name: "kinds" } },
-            [
-              _c("option", { attrs: { value: "" } }),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "一般" } }, [_vm._v("一般")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "フォーム" } }, [
-                _vm._v("フォーム"),
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "偽造防止" } }, [
-                _vm._v("偽造防止"),
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "名刺" } }, [_vm._v("名刺")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "封筒" } }, [_vm._v("封筒")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "デザイン" } }, [
-                _vm._v("デザイン"),
-              ]),
-            ]
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("難度\n            "),
-          _c(
-            "select",
-            { staticClass: "form_style", attrs: { name: "difficulty" } },
-            [
-              _c("option", { attrs: { value: "" } }),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "A" } }, [_vm._v("A")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "B" } }, [_vm._v("B")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "C" } }, [_vm._v("C")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "D" } }, [_vm._v("D")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "インコー" } }, [
-                _vm._v("インコー"),
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "修正無し" } }, [
-                _vm._v("修正無し"),
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "在版" } }, [_vm._v("在版")]),
-            ]
-          ),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "plate_making_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("ＣＴＰ"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "ctp" },
-          }),
-          _vm._v("版"),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", { staticClass: "mgl20" }, [
-          _vm._v("インクジェット\n            "),
-          _c(
-            "select",
-            { staticClass: "form_style", attrs: { name: "inkjet" } },
-            [
-              _c("option", { attrs: { value: "" } }),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "A1" } }, [_vm._v("A1")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "A2" } }, [_vm._v("A2")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "A3" } }, [_vm._v("A3")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "A4以下" } }, [_vm._v("A4以下")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "B3" } }, [_vm._v("B3")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "B4" } }, [_vm._v("B4")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "B5以下" } }, [_vm._v("B5以下")]),
-            ]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("label", [
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "inkjet_sheet" },
-          }),
-          _vm._v("枚"),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _vm._v("\n            オンデマンド\n            "),
-        _c("span", { staticClass: "mgl20" }, [_vm._v("色数...")]),
-        _vm._v(" "),
-        _c("label", [
-          _vm._v("表"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "ondemand_color_front" },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("label", [
-          _vm._v("裏"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "ondemand_color_back" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("span", { staticClass: "mgl20" }, [_vm._v("通し...")]),
-        _vm._v(" "),
-        _c("label", [
-          _vm._v("表"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "ondemand_through_front" },
-          }),
-          _vm._v("×10"),
-        ]),
-        _vm._v(" "),
-        _c("label", { staticClass: "mgl10" }, [
-          _vm._v("裏"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "ondemand_through_back" },
-          }),
-          _vm._v("×10"),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", [_vm._v("コレーター部")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("コレーター"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "collator" },
-          }),
-          _vm._v("台"),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", { staticClass: "mgl20" }, [
-          _vm._v("ベーベ"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "bebe" },
-          }),
-          _vm._v("台"),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("クラッシュNo."),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "collator_cno" },
-          }),
-          _vm._v("ヶ所"),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", { staticClass: "mgl20" }, [
-          _vm._v("穴"),
-          _c("input", {
-            staticClass: "form_style input_w2",
-            attrs: { type: "text", name: "collator_ana" },
-          }),
-          _vm._v("ヶ所"),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate2" }, [
-      _c("h4", [_vm._v("コレーター部の全部")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup2" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "collator_all_outsou_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mgt40", attrs: { id: "department01" } }, [
-      _c("div", { staticClass: "cate" }, [
-        _c("h4", [_vm._v("ネームライナー")]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "area" }, [
-        _c("div", { staticClass: "group" }, [
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", [
-              _vm._v("名刺"),
-              _c("input", {
-                staticClass: "form_style input_w2",
-                attrs: { type: "text", name: "nl_color" },
-              }),
-              _vm._v("色"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", { staticClass: "mgl20" }, [
-              _c(
-                "select",
-                { staticClass: "form_style", attrs: { name: "nl_hagaki" } },
-                [
-                  _c("option", { attrs: { value: "" } }),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "ハガキ単" } }, [
-                    _vm._v("ハガキ単"),
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "ハガキ単両" } }, [
-                    _vm._v("ハガキ単両"),
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "２つ折ハガキ" } }, [
-                    _vm._v("２つ折ハガキ"),
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "３つ折ハガキ" } }, [
-                    _vm._v("３つ折ハガキ"),
-                  ]),
-                ]
-              ),
-            ]),
-            _vm._v(" "),
-            _c("label", [
-              _c("input", {
-                staticClass: "form_style input_w2",
-                attrs: { type: "text", name: "nl_hagaki_color" },
-              }),
-              _vm._v("色"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", { staticClass: "mgl20" }, [
-              _vm._v("封筒"),
-              _c("input", {
-                staticClass: "form_style input_w2",
-                attrs: { type: "text", name: "nl_envelope_color" },
-              }),
-              _vm._v("色"),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "inputgroup" }, [
-            _c("label", { staticClass: "mgl20" }, [
-              _vm._v("No."),
-              _c("input", {
-                staticClass: "form_style input_w2",
-                attrs: { type: "text", name: "nl_number_part" },
-              }),
-              _vm._v("ヶ所"),
-            ]),
-          ]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line mgt40" }, [
-      _c("div", { staticClass: "mglrauto", attrs: { id: "zukei" } }, [
-        _c("div", { staticClass: "yajirushi_1" }),
-      ]),
-    ])
-  },
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsDoc.vue?vue&type=template&id=09116314&":
-/*!****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/QuotationsDoc.vue?vue&type=template&id=09116314& ***!
-  \****************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "cnt1" } }, [
-      _vm._m(1),
-      _vm._v(" "),
-      _vm._m(2),
-      _vm._v(" "),
-      _vm._m(3),
-      _vm._v(" "),
-      _vm._m(4),
-      _vm._v(" "),
-      _vm._m(5),
-      _vm._v(" "),
-      _vm._m(6),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "search_ovv_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OverviewClick()
-                },
-              },
-            },
-            [_vm._v("再印刷・番号")]
-          ),
-        ]),
-        _vm._v(" "),
-        _vm._m(7),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "search_cnt_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.ContentsClick()
-                },
-              },
-            },
-            [_vm._v("参照・番号")]
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c2 v_hidden",
-            attrs: { id: "doc_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "search_doc_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.ClearClick()
-                },
-              },
-            },
-            [_vm._v("クリア")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c2 v_hidden",
-            attrs: { id: "doc_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "search_doc_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SearchClick("doc", 0, "通常見積")
-                },
-              },
-            },
-            [_vm._v("通常見積")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c2 v_hidden",
-            attrs: { id: "mit_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "search_mit_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SearchClick("mit", 0, "単価見積")
-                },
-              },
-            },
-            [_vm._v("単価見積")]
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _vm._m(8),
-      _vm._v(" "),
-      _vm._m(9),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c2 v_hidden",
-            attrs: { id: "doc_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "search_doc_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SearchClick("doc", 0, "見積書")
-                },
-              },
-            },
-            [_vm._v("見積書を検索")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c2 v_hidden",
-            attrs: { id: "mit_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "search_mit_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SearchClick("mit", 0, "見積")
-                },
-              },
-            },
-            [_vm._v("見積を検索")]
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "cnt_search" } }, [
-        _c("form", { attrs: { id: "searchform" } }, [
-          _c("h4", [
-            _vm._v(_vm._s(_vm.sr_title)),
-            _c("span", {
-              staticClass: "v_hidden",
-              attrs: { id: "search_com" },
-            }),
-          ]),
-          _vm._v(" "),
-          _vm.searchview === "doc"
-            ? _c("div", { attrs: { id: "search_result" } }, [
-                _c("table", { attrs: { id: "quodoc" } }, [
-                  _vm._m(10),
-                  _vm._v(" "),
-                  _c(
-                    "tbody",
-                    _vm._l(45, function (ditem, drowIndex) {
-                      return _c("tr", { key: drowIndex }, [
-                        _c("td", { staticClass: "w2" }, [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "srbtn",
-                              attrs: { type: "button" },
-                              on: {
-                                click: function ($event) {
-                                  return _vm.MitGoBtn(
-                                    ditem["id"],
-                                    ditem["m_code"]
-                                  )
-                                },
+                  _vm._l(_vm.details, function (item, rowIndex) {
+                    return _c("tr", { key: rowIndex }, [
+                      _c("td", { staticClass: "nbr w2e" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "style2",
+                            attrs: { type: "button" },
+                            on: {
+                              click: function ($event) {
+                                return _vm.EditBtn(
+                                  item["id"],
+                                  item["product_code"],
+                                  _vm.details[rowIndex].product_name,
+                                  "fix",
+                                  rowIndex
+                                )
                               },
                             },
-                            [
-                              _vm._v(
-                                "\n                  見積\n                "
-                              ),
-                            ]
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [_vm._v("22060123")]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [
-                          _vm._v("2022年6月18日"),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [_vm._v("54321")]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [_vm._v("JR北海道")]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [_vm._v("通常")]),
-                        _vm._v(" "),
-                        _c("td", {}, [_vm._v("線路施設工事線区別日報")]),
-                      ])
-                    }),
-                    0
-                  ),
-                ]),
-              ])
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.searchview === "mit"
-            ? _c("div", { attrs: { id: "search_result" } }, [
-                _c("table", { attrs: { id: "quodoc" } }, [
-                  _vm._m(11),
+                          },
+                          [_vm._v("\n              編集\n              ")]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "nbr" }, [
+                        _vm._v(_vm._s(item["id"])),
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "w4e" }, [
+                        _vm._v(_vm._s(item["office"])),
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "w3e" }, [
+                        _vm._v(_vm._s(item["department"])),
+                      ]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["division"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["aaa"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["name"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["roma"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(item["remarks"]))]),
+                    ])
+                  }),
                   _vm._v(" "),
-                  _c(
-                    "tbody",
-                    _vm._l(68, function (mitem, mrowIndex) {
-                      return _c("tr", { key: mrowIndex }, [
-                        _c("td", { staticClass: "w2" }, [
-                          _c("label", { staticStyle: { display: "block" } }, [
-                            _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.mcradio,
-                                  expression: "mcradio",
-                                },
-                              ],
-                              attrs: { type: "radio", name: "m_codes" },
-                              domProps: {
-                                value: mrowIndex,
-                                checked: _vm._q(_vm.mcradio, mrowIndex),
-                              },
-                              on: {
-                                change: function ($event) {
-                                  _vm.mcradio = mrowIndex
-                                },
-                              },
-                            }),
-                          ]),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [
-                          _vm._v(_vm._s(mitem["m_code"])),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [
-                          _vm._v("2022年5月24日"),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [_vm._v("23456")]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [
-                          _vm._v("ロイズコーポレーション"),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", {}, [
-                          _vm._v("合同支援利用促進パンフレット　４色"),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [_vm._v("0P2000部")]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [_vm._v("1200000")]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [
-                          _vm._v("2022年05月31日"),
-                        ]),
-                      ])
+                  _c("tr", { staticClass: "border1" }, [
+                    _c(
+                      "td",
+                      { staticClass: "style1", attrs: { colspan: "2" } },
+                      [_vm._v(_vm._s(this.details.length) + " 件")]
+                    ),
+                    _vm._v(" "),
+                    _c("td", {
+                      staticClass: "style1",
+                      attrs: { colspan: "19" },
                     }),
-                    0
-                  ),
-                ]),
-              ])
-            : _vm._e(),
-        ]),
-      ]),
-    ]),
-    _vm._v(" "),
-    _vm.printview === true
-      ? _c(
-          "div",
-          { attrs: { id: "printzone" } },
-          [
-            _c("popup-print", {
-              attrs: {
-                "m-code": _vm.m_code,
-                "print-data": _vm.printdata,
-                "print-title": _vm.printtitle,
-              },
-              on: { "pricancel-event": _vm.Pricancel },
-            }),
-          ],
-          1
-        )
+                  ]),
+                ],
+                2
+              ),
+            ]),
+            _vm._v(" "),
+            _vm.details == ""
+              ? _c("div", {}, [_vm._v("該当するデータがありません")])
+              : _vm._e(),
+          ]),
+        ])
       : _vm._e(),
   ])
 }
@@ -40222,3032 +27128,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "cnt_title_search" } }, [
-      _c("h3", { staticClass: "print-none" }, [_vm._v("見積書印刷")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup3" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [_vm._v("発行日付")]),
-          _c("input", {
-            staticClass: "form_style input_w100p_m",
-            attrs: { type: "text", name: "" },
-          }),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup3" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [_vm._v("得意先名")]),
-          _c("input", {
-            staticClass: "form_style input_w100p_m",
-            attrs: { type: "text", name: "customer" },
-          }),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup3" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [_vm._v("納期")]),
-          _c("input", {
-            staticClass: "form_style input_w100p_m",
-            attrs: { type: "text", name: "" },
-          }),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup3" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [_vm._v("見積期限")]),
-          _c("input", {
-            staticClass: "form_style input_w100p_m",
-            attrs: { type: "text", name: "" },
-          }),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup3" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [_vm._v("支払条件")]),
-          _c("input", {
-            staticClass: "form_style input_w100p_m",
-            attrs: { type: "text", name: "" },
-          }),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup3" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [_vm._v("納入場所")]),
-          _c("input", {
-            staticClass: "form_style input_w100p_m",
-            attrs: { type: "text", name: "" },
-          }),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup3" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w100p_m",
-          attrs: { type: "text", name: "" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup3" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [_vm._v("見積番号")]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup3" }, [
-        _c("label", [
-          _c("input", {
-            staticClass: "form_style input_w100p_m",
-            attrs: { type: "text", name: "m_code" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup3" }, [
-        _c("label", [
-          _c("input", {
-            staticClass: "form_style input_w100p_m",
-            attrs: { type: "text", name: "product" },
-          }),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { staticClass: "w2" }),
-        _vm._v(" "),
-        _c("th", { staticClass: "nrap" }, [_vm._v("見積書番号")]),
-        _vm._v(" "),
-        _c("th", {}, [_vm._v("作成日")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "nrap" }, [_vm._v("得意先コード")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "nrap" }, [_vm._v("得意先名")]),
-        _vm._v(" "),
-        _c("th", {}, [_vm._v("形態")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "w1" }, [_vm._v("製品名")]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { staticClass: "w2" }),
-        _vm._v(" "),
-        _c("th", { staticClass: "nrap" }, [_vm._v("見積番号")]),
-        _vm._v(" "),
-        _c("th", {}, [_vm._v("作成日")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "nrap" }, [_vm._v("得意先コード")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "nrap" }, [_vm._v("得意先名")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "w1" }, [_vm._v("製品名")]),
-        _vm._v(" "),
-        _c("th", {}, [_vm._v("制作数")]),
-        _vm._v(" "),
-        _c("th", {}, [_vm._v("金額")]),
-        _vm._v(" "),
-        _c("th", {}, [_vm._v("受注日")]),
-      ]),
-    ])
-  },
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsParts.vue?vue&type=template&id=5f2e82c4&":
-/*!******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/QuotationsParts.vue?vue&type=template&id=5f2e82c4& ***!
-  \******************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { attrs: { id: "cnt_title2" } }, [
-      _c("h3", [_vm._v("パーツ設定 － " + _vm._s(_vm.pageNum) + "P目 －")]),
-    ]),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "cnt1" } }, [
-      _c("div", { staticClass: "line" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _vm._m(2),
-        _vm._v(" "),
-        _vm._m(3),
-        _vm._v(" "),
-        _vm._m(4),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1 v_hidden",
-            attrs: { id: "p_envelope_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "input_w5",
-              attrs: { type: "button", id: "p_envelope_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClick("p_envelope")
-                },
-              },
-            },
-            [_vm._v("封筒")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "input_w1",
-            attrs: {
-              type: "text",
-              value: "0",
-              name: "p_envelope",
-              id: "p_envelope",
-            },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1 v_hidden",
-            attrs: { id: "p_supply_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_supply_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClick("p_supply")
-                },
-              },
-            },
-            [_vm._v("支給受")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "input_w1",
-            attrs: {
-              type: "text",
-              value: "0",
-              name: "p_supply",
-              id: "p_supply",
-            },
-          }),
-        ]),
-        _vm._v(" "),
-        _vm._m(5),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1 v_hidden",
-            attrs: { id: "p_desensitization_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_desensitization_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClick("p_desensitization")
-                },
-              },
-            },
-            [_vm._v("減感")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "input_w1",
-            attrs: {
-              type: "text",
-              value: "0",
-              name: "p_desensitization",
-              id: "p_desensitization",
-            },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1 v_hidden",
-            attrs: { id: "p_carbon_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_carbon_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClick("p_carbon")
-                },
-              },
-            },
-            [_vm._v("カーボン")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "input_w1",
-            attrs: {
-              type: "text",
-              value: "0",
-              name: "p_carbon",
-              id: "p_carbon",
-            },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1 v_hidden",
-            attrs: { id: "p_white_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_white_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClick("p_white")
-                },
-              },
-            },
-            [_vm._v("ホワイト")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "input_w1",
-            attrs: { type: "text", value: "0", name: "p_white", id: "p_white" },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c1 v_hidden",
-            attrs: { id: "p_separate_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_separate_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OnButtonClick("p_separate")
-                },
-              },
-            },
-            [_vm._v("セパレート")]
-          ),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "input_w1",
-            attrs: {
-              type: "text",
-              value: "0",
-              name: "p_separate",
-              id: "p_separate",
-            },
-          }),
-        ]),
-        _vm._v(" "),
-        _vm._m(6),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mgt40", attrs: { id: "department01" } }, [
-        _vm._m(7),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _vm._m(8),
-            _vm._v(" "),
-            _vm._m(9),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_form_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_form_sewingmachine_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_form_sewingmachine_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_form_sewingmachine_ks",
-                  id: "p_form_sewingmachine_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(10),
-            _vm._v(" "),
-            _vm._m(11),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_form_jump_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_form_jump_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_form_jump_sewingmachine_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_form_jump_sewingmachine_ks",
-                  id: "p_form_jump_sewingmachine_ks",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _vm._m(12),
-            _vm._v(" "),
-            _vm._m(13),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_form_micro_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_form_micro_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_form_micro_sewingmachine_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_form_micro_sewingmachine_ks",
-                  id: "p_form_micro_sewingmachine_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(14),
-            _vm._v(" "),
-            _vm._m(15),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_form_jump_micro_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_form_jump_micro_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick(
-                        "p_form_jump_micro_sewingmachine_ks"
-                      )
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_form_jump_micro_sewingmachine_ks",
-                  id: "p_form_jump_micro_sewingmachine_ks",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _vm._m(16),
-            _vm._v(" "),
-            _vm._m(17),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_form_linein_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_form_linein_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_form_linein_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_form_linein_ks",
-                  id: "p_form_linein_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(18),
-            _vm._v(" "),
-            _vm._m(19),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_form_slitter_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_form_slitter_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_form_slitter_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_form_slitter_ks",
-                  id: "p_form_slitter_ks",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group flex_jc_sb" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _vm._m(20),
-              _vm._v(" "),
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_form_no_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_form_no_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_form_no_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_form_no_ks",
-                  id: "p_form_no_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(21),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _vm._m(22),
-              _vm._v(" "),
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "p_form_replace_color_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_form_replace_color_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_form_replace_color")
-                    },
-                  },
-                },
-                [_vm._v("カラー")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_form_replace_color",
-                  id: "p_form_replace_color",
-                },
-              }),
-            ]),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mgt40", attrs: { id: "department01" } }, [
-        _vm._m(23),
-        _vm._v(" "),
-        _c("div", { staticClass: "area flex_auto" }, [
-          _c("div", { staticClass: "group" }, [
-            _vm._m(24),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_offset_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_offset_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_offset_sewingmachine_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_offset_sewingmachine_ks",
-                  id: "p_offset_sewingmachine_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _vm._m(25),
-              _vm._v(" "),
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_offset_no_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_offset_no_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_offset_no_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_offset_no_ks",
-                  id: "p_offset_no_ks",
-                },
-              }),
-            ]),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mgt40", attrs: { id: "department01" } }, [
-        _vm._m(26),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _vm._m(27),
-            _vm._v(" "),
-            _vm._m(28),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_letterpress_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_letterpress_sewingmachine_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_sewingmachine_ks",
-                  id: "p_letterpress_sewingmachine_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(29),
-            _vm._v(" "),
-            _vm._m(30),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_jump_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_letterpress_jump_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick(
-                        "p_letterpress_jump_sewingmachine_ks"
-                      )
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_jump_sewingmachine_ks",
-                  id: "p_letterpress_jump_sewingmachine_ks",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _vm._m(31),
-            _vm._v(" "),
-            _vm._m(32),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_micro_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_letterpress_micro_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick(
-                        "p_letterpress_micro_sewingmachine_ks"
-                      )
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_micro_sewingmachine_ks",
-                  id: "p_letterpress_micro_sewingmachine_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(33),
-            _vm._v(" "),
-            _vm._m(34),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_jump_micro_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_letterpress_jump_micro_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick(
-                        "p_letterpress_jump_micro_sewingmachine_ks"
-                      )
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_jump_micro_sewingmachine_ks",
-                  id: "p_letterpress_jump_micro_sewingmachine_ks",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _vm._m(35),
-            _vm._v(" "),
-            _vm._m(36),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_linein_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_letterpress_linein_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_letterpress_linein_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_linein_ks",
-                  id: "p_letterpress_linein_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(37),
-            _vm._v(" "),
-            _vm._m(38),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_slitter_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_letterpress_slitter_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_letterpress_slitter_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_slitter_ks",
-                  id: "p_letterpress_slitter_ks",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group flex_jc_sb" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c1 v_hidden",
-                attrs: { id: "p_letterpress_diecut_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_letterpress_diecut_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_letterpress_diecut")
-                    },
-                  },
-                },
-                [_vm._v("型ヌキ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_diecut",
-                  id: "p_letterpress_diecut",
-                },
-              }),
-              _vm._v(" "),
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_diecut_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_letterpress_diecut_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_letterpress_diecut_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_diecut_ks",
-                  id: "p_letterpress_diecut_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _vm._m(39),
-              _vm._v(" "),
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_pcno_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_letterpress_pcno_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_letterpress_pcno_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_pcno_ks",
-                  id: "p_letterpress_pcno_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _vm._m(40),
-              _vm._v(" "),
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_letterpress_no_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_letterpress_no_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_letterpress_no_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_letterpress_no_ks",
-                  id: "p_letterpress_no_ks",
-                },
-              }),
-            ]),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mgt40", attrs: { id: "department01" } }, [
-        _vm._m(41),
-        _vm._v(" "),
-        _c("div", { staticClass: "area flex_auto" }, [
-          _c("div", { staticClass: "group flex_jc_sb" }, [
-            _vm._m(42),
-            _vm._v(" "),
-            _vm._m(43),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_info_ijp_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "p_info_ijp_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_info_ijp")
-                    },
-                  },
-                },
-                [_vm._v("フォーム ＩＪＰ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_info_ijp",
-                  id: "p_info_ijp",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(44),
-          ]),
-          _vm._v(" "),
-          _vm._m(45),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mgt40", attrs: { id: "department01" } }, [
-        _vm._m(46),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _vm._m(47),
-            _vm._v(" "),
-            _vm._m(48),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_diecutter_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_diecutter_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_diecutter_sewingmachine_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_diecutter_sewingmachine_ks",
-                  id: "p_diecutter_sewingmachine_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(49),
-            _vm._v(" "),
-            _vm._m(50),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_diecutter_jump_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_diecutter_jump_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick(
-                        "p_diecutter_jump_sewingmachine_ks"
-                      )
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_diecutter_jump_sewingmachine_ks",
-                  id: "p_diecutter_jump_sewingmachine_ks",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _vm._m(51),
-            _vm._v(" "),
-            _vm._m(52),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_diecutter_micro_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_diecutter_micro_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick(
-                        "p_diecutter_micro_sewingmachine_ks"
-                      )
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_diecutter_micro_sewingmachine_ks",
-                  id: "p_diecutter_micro_sewingmachine_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(53),
-            _vm._v(" "),
-            _vm._m(54),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_diecutter_jump_micro_sewingmachine_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: {
-                    type: "button",
-                    id: "p_diecutter_jump_micro_sewingmachine_ks_btn",
-                  },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick(
-                        "p_diecutter_jump_micro_sewingmachine_ks"
-                      )
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_diecutter_jump_micro_sewingmachine_ks",
-                  id: "p_diecutter_jump_micro_sewingmachine_ks",
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _vm._m(55),
-            _vm._v(" "),
-            _vm._m(56),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_diecutter_ana_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_ana_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_diecutter_ana_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_diecutter_ana_ks",
-                  id: "p_diecutter_ana_ks",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(57),
-            _vm._v(" "),
-            _vm._m(58),
-            _vm._v(" "),
-            _c("div", { staticClass: "inputgroup" }, [
-              _c("span", {
-                staticClass: "markzone mz_c6 v_hidden",
-                attrs: { id: "p_diecutter_cornercut_ks_mark" },
-              }),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "input_w5",
-                  attrs: { type: "button", id: "p_diecutter_cornercut_ks_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OnButtonClick("p_diecutter_cornercut_ks")
-                    },
-                  },
-                },
-                [_vm._v("基・セ")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "input_w1",
-                attrs: {
-                  type: "text",
-                  value: "0",
-                  name: "p_diecutter_cornercut_ks",
-                  id: "p_diecutter_cornercut_ks",
-                },
-              }),
-            ]),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mgt40", attrs: { id: "department01" } }, [
-        _vm._m(59),
-        _vm._v(" "),
-        _c("div", { staticClass: "area" }, [
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "outsource_paper_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("outsource_paper")
-                    },
-                  },
-                },
-                [_vm._v("紙だけの外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "outsource_paper",
-                  id: "outsource_paper",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(60),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "group" }, [
-            _c("div", { staticClass: "inputgroup" }, [
-              _c(
-                "button",
-                {
-                  attrs: { type: "button", id: "outsource_paper_all_btn" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.OutsourcingButton("outsource_paper_all")
-                    },
-                  },
-                },
-                [_vm._v("このP全部の外注先")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form_style input_w20",
-                attrs: {
-                  type: "text",
-                  value: "",
-                  name: "outsource_paper_all",
-                  id: "outsource_paper_all",
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _vm._m(61),
-          ]),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "line flex_jc_c partsbtn" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_cancel_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.cancelClickBtn()
-                },
-              },
-            },
-            [_vm._v("キャンセル")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_del_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.Pdel("p_num")
-                },
-              },
-            },
-            [_vm._v("このPを削除")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", { staticClass: "mz_tc1" }),
-          _c("input", {
-            staticClass: "form_style input_w5",
-            attrs: { type: "text", disabled: "" },
-            domProps: { value: _vm.pageNum + "P目" },
-          }),
-          _c("input", {
-            attrs: { type: "hidden", name: "pagenum" },
-            domProps: { value: _vm.pageNum },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", { staticClass: "mz_tc1" }),
-          _c("input", {
-            staticClass: "form_style input_w5",
-            attrs: { type: "text", name: "pagename", disabled: "" },
-            domProps: { value: _vm.pageName },
-          }),
-          _c("input", {
-            attrs: { type: "hidden", name: "pagename" },
-            domProps: { value: _vm.pageName },
-          }),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "p_set_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.Pset("p_num")
-                },
-              },
-            },
-            [_vm._v("このPを設定")]
-          ),
-        ]),
-      ]),
-    ]),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "area1" } }, [
-      _vm.outsourcingview == true
-        ? _c(
-            "div",
-            [
-              _c("out-sourcing", {
-                attrs: { "input-textid": _vm.inputtextid },
-                on: {
-                  "oscancel-event": _vm.OScancel,
-                  "selectos-event": _vm.selectOS,
-                },
-              }),
-            ],
-            1
-          )
-        : _vm._e(),
-    ]),
-  ])
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("span", { staticClass: "mz_tc1" }, [_vm._v("用紙コード")]),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "paper_code" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("span", { staticClass: "mz_tc1" }, [_vm._v("用紙名")]),
-        _c("input", {
-          staticClass: "form_style input_w10",
-          attrs: { type: "text", name: "paper_name", disabled: "" },
-        }),
-        _c("input", { attrs: { type: "hidden", name: "paper_name" } }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "mz_tc1" }, [_vm._v("サイズ")]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "size_w" },
-        }),
-      ]),
-      _vm._v("\n        ×\n        "),
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "size_h" },
-        }),
-      ]),
-      _vm._v(" "),
-      _c("input", {
-        staticClass: "form_style input_w2",
-        attrs: { type: "text", name: "size_top" },
-      }),
-      _vm._v("/"),
-      _c("input", {
-        staticClass: "form_style input_w2",
-        attrs: { type: "text", name: "size_bottom" },
-      }),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("span", { staticClass: "mz_tc1" }, [_vm._v("紙取")]),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "papertray" },
-        }),
-        _vm._v("切"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "mz_tc1" }, [_vm._v("面付け")]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "imposition_w" },
-        }),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "imposition_h" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "mz_tc1" }, [_vm._v("用紙代金")]),
-      _c("input", {
-        staticClass: "form_style input_w5",
-        attrs: { type: "text", name: "paper_price", disabled: "" },
-      }),
-      _c("input", { attrs: { type: "hidden", name: "paper_price" } }),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "mz_tc1" }, [_vm._v("色数")]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("表"),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "p_color_front" },
-        }),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("裏"),
-        _c("input", {
-          staticClass: "form_style input_w3",
-          attrs: { type: "text", name: "p_color_back" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", [_vm._v("フォーム部")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("ミシン")]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_sewingmachine_w" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_sewingmachine_h" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [
-        _vm._v("ジャンプミシン"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_jump_sewingmachine_w" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_jump_sewingmachine_h" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("マイクロミシン")]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_micro_sewingmachine_w" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_micro_sewingmachine_h" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [
-        _vm._v("ジャンプマイクロミシン"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_jump_micro_sewingmachine_w" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_jump_micro_sewingmachine_h" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("スジ入れ")]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_linein_w" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_linein_h" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [_vm._v("スリッター")]),
-      _vm._v(" "),
-      _c("label", [
-        _vm._v("横"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_slitter_w" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("縦"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_slitter_h" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", [
-      _vm._v("No."),
-      _c("input", {
-        staticClass: "form_style input_w2",
-        attrs: { type: "text", name: "p_form_no" },
-      }),
-      _vm._v("ヶ所"),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("コーナーカット"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_form_cornercut" },
-        }),
-        _vm._v("ヶ所"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", [
-      _vm._v("差替"),
-      _c("input", {
-        staticClass: "form_style input_w2",
-        attrs: { type: "text", name: "p_form_replace" },
-      }),
-      _vm._v("種"),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", [_vm._v("オフセット部")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("ミシン")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_offset_sewingmachine_w" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", { staticClass: "mgl40" }, [
-      _vm._v("No."),
-      _c("input", {
-        staticClass: "form_style input_w2",
-        attrs: { type: "text", name: "p_offset_no" },
-      }),
-      _vm._v("ヶ所"),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", { staticClass: "lspacing1" }, [_vm._v("活版")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("ミシン")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_letterpress_sewingmachine_hon" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_letterpress_sewingmachine_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [
-        _vm._v("ジャンプミシン"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_letterpress_jump_sewingmachine_hon" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_letterpress_jump_sewingmachine_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("マイクロミシン")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: {
-            type: "text",
-            name: "p_letterpress_micro_sewingmachine_hon",
-          },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: {
-            type: "text",
-            name: "p_letterpress_micro_sewingmachine_dai",
-          },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [
-        _vm._v("ジャンプマイクロミシン"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: {
-            type: "text",
-            name: "p_letterpress_jump_micro_sewingmachine_hon",
-          },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: {
-            type: "text",
-            name: "p_letterpress_jump_micro_sewingmachine_dai",
-          },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("スジ入れ")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_letterpress_linein_hon" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_letterpress_linein_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [_vm._v("スリッター")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_letterpress_slitter_hon" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_letterpress_slitter_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", [
-      _vm._v("親子No."),
-      _c("input", {
-        staticClass: "form_style input_w2",
-        attrs: { type: "text", name: "p_letterpress_pcno" },
-      }),
-      _vm._v("ヶ所"),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", [
-      _vm._v("No."),
-      _c("input", {
-        staticClass: "form_style input_w2",
-        attrs: { type: "text", name: "p_letterpress_no" },
-      }),
-      _vm._v("ヶ所"),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [_c("h4", [_vm._v("情報処理")])])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("東レ"),
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_info_toray" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", [_vm._v("ドット")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_info_dot_line" },
-        }),
-        _vm._v("ライン"),
-      ]),
-      _vm._v("\n            ×\n            "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_info_dot_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("基本料金\n            "),
-        _c(
-          "select",
-          { staticClass: "form_style", attrs: { name: "p_info_basic_fee" } },
-          [
-            _c("option", { attrs: { value: "" } }),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "10000" } }, [_vm._v("10000")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "15000" } }, [_vm._v("15000")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "20000" } }, [_vm._v("20000")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "25000" } }, [_vm._v("25000")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "30000" } }, [_vm._v("30000")]),
-          ]
-        ),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "group" }, [
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("宛名等出力件数"),
-          _c("input", {
-            staticClass: "form_style input_w5",
-            attrs: { type: "text", name: "p_info_output" },
-          }),
-          _vm._v("件"),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup" }, [
-        _c("label", [
-          _vm._v("パンチング"),
-          _c("input", {
-            staticClass: "form_style input_w5",
-            attrs: { type: "text", name: "p_info_punching" },
-          }),
-          _vm._v("件"),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", [_vm._v("ダイカッタ")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("ミシン")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_sewingmachine_hon" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_sewingmachine_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [
-        _vm._v("ジャンプミシン"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_jump_sewingmachine_hon" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_jump_sewingmachine_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("マイクロミシン")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_micro_sewingmachine_hon" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_micro_sewingmachine_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [
-        _vm._v("ジャンプマイクロミシン"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: {
-            type: "text",
-            name: "p_diecutter_jump_micro_sewingmachine_hon",
-          },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: {
-            type: "text",
-            name: "p_diecutter_jump_micro_sewingmachine_dai",
-          },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12" }, [_vm._v("穴")]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_ana_hon" },
-        }),
-        _vm._v("本"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_ana_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("span", { staticClass: "spanwidth_12 mgl40" }, [
-        _vm._v("コーナーカット"),
-      ]),
-      _vm._v(" "),
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_cornercut" },
-        }),
-        _vm._v("ヶ所"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _c("input", {
-          staticClass: "form_style input_w2",
-          attrs: { type: "text", name: "p_diecutter_cornercut_dai" },
-        }),
-        _vm._v("台"),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "cate" }, [
-      _c("h4", { staticClass: "lspacing1" }, [_vm._v("外注")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "outsource_paper_cost" },
-        }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("label", [
-        _vm._v("外注費"),
-        _c("input", {
-          staticClass: "form_style input_w5",
-          attrs: { type: "text", name: "outsource_paper_all_cost" },
-        }),
-      ]),
-    ])
-  },
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsSearch.vue?vue&type=template&id=029fc7da&":
-/*!*******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/QuotationsSearch.vue?vue&type=template&id=029fc7da& ***!
-  \*******************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { attrs: { id: "cnt1" } }, [
-      _c("div", { staticClass: "line" }, [
-        _vm._m(1),
-        _vm._v(" "),
-        _vm._m(2),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "search_ovv_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.OverviewClick()
-                },
-              },
-            },
-            [_vm._v("製品概要")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "search_cnt_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.ContentsClick()
-                },
-              },
-            },
-            [_vm._v("内容")]
-          ),
-        ]),
-        _vm._v(" "),
-        _vm._m(3),
-      ]),
-      _vm._v(" "),
-      _vm._m(4),
-      _vm._v(" "),
-      _vm._m(5),
-      _vm._v(" "),
-      _c("div", { staticClass: "line" }, [
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c2 v_hidden",
-            attrs: { id: "doc_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "search_doc_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SearchClick("doc", 0, "見積書")
-                },
-              },
-            },
-            [_vm._v("見積書を検索")]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "inputgroup" }, [
-          _c("span", {
-            staticClass: "markzone mz_c2 v_hidden",
-            attrs: { id: "mit_mark" },
-          }),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              attrs: { type: "button", id: "search_mit_btn" },
-              on: {
-                click: function ($event) {
-                  return _vm.SearchClick("mit", 0, "見積")
-                },
-              },
-            },
-            [_vm._v("見積を検索")]
-          ),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "cnt_search" } }, [
-        _c("form", { attrs: { id: "searchform" } }, [
-          _c("h4", [
-            _vm._v(_vm._s(_vm.sr_title)),
-            _c("span", {
-              staticClass: "v_hidden",
-              attrs: { id: "search_com" },
-            }),
-          ]),
-          _vm._v(" "),
-          _vm.searchview === "doc"
-            ? _c("div", { attrs: { id: "search_result" } }, [
-                _c("table", { attrs: { id: "quodoc" } }, [
-                  _vm._m(6),
-                  _vm._v(" "),
-                  _c(
-                    "tbody",
-                    _vm._l(45, function (ditem, drowIndex) {
-                      return _c("tr", { key: drowIndex }, [
-                        _c("td", { staticClass: "w2" }, [
-                          _c(
-                            "button",
-                            {
-                              staticClass: "srbtn",
-                              attrs: { type: "button" },
-                              on: {
-                                click: function ($event) {
-                                  return _vm.MitGoBtn(
-                                    ditem["id"],
-                                    ditem["m_code"]
-                                  )
-                                },
-                              },
-                            },
-                            [
-                              _vm._v(
-                                "\n                  見積\n                "
-                              ),
-                            ]
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [_vm._v("22060123")]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [
-                          _vm._v("2022年6月18日"),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [_vm._v("54321")]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [_vm._v("JR北海道")]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [_vm._v("通常")]),
-                        _vm._v(" "),
-                        _c("td", {}, [_vm._v("線路施設工事線区別日報")]),
-                      ])
-                    }),
-                    0
-                  ),
-                ]),
-              ])
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.searchview === "mit"
-            ? _c("div", { attrs: { id: "search_result" } }, [
-                _c("table", { attrs: { id: "quodoc" } }, [
-                  _vm._m(7),
-                  _vm._v(" "),
-                  _c(
-                    "tbody",
-                    _vm._l(68, function (mitem, mrowIndex) {
-                      return _c("tr", { key: mrowIndex }, [
-                        _c("td", { staticClass: "w2" }, [
-                          _c("label", { staticStyle: { display: "block" } }, [
-                            _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.mcradio,
-                                  expression: "mcradio",
-                                },
-                              ],
-                              attrs: { type: "radio", name: "m_codes" },
-                              domProps: {
-                                value: mrowIndex,
-                                checked: _vm._q(_vm.mcradio, mrowIndex),
-                              },
-                              on: {
-                                change: function ($event) {
-                                  _vm.mcradio = mrowIndex
-                                },
-                              },
-                            }),
-                          ]),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [
-                          _vm._v(_vm._s(mitem["m_code"])),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [
-                          _vm._v("2022年5月24日"),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [_vm._v("23456")]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [
-                          _vm._v("ロイズコーポレーション"),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", {}, [
-                          _vm._v("合同支援利用促進パンフレット　４色"),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [_vm._v("0P2000部")]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [_vm._v("1200000")]),
-                        _vm._v(" "),
-                        _c("td", { staticClass: "nrap" }, [
-                          _vm._v("2022年05月31日"),
-                        ]),
-                      ])
-                    }),
-                    0
-                  ),
-                ]),
-              ])
-            : _vm._e(),
-        ]),
-      ]),
-    ]),
-    _vm._v(" "),
-    _vm.printview === true
-      ? _c(
-          "div",
-          { attrs: { id: "printzone" } },
-          [
-            _c("popup-print", {
-              attrs: {
-                "m-code": _vm.m_code,
-                "print-data": _vm.printdata,
-                "print-title": _vm.printtitle,
-              },
-              on: { "pricancel-event": _vm.Pricancel },
-            }),
-          ],
-          1
-        )
-      : _vm._e(),
-  ])
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "cnt_title_search" } }, [
-      _c("h3", { staticClass: "print-none" }, [_vm._v("見積検索")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("button", [_vm._v("見積編集")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c(
-        "button",
-        { staticStyle: { "pointer-events": "none" }, attrs: { disabled: "" } },
-        [_vm._v("受注")]
-      ),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "inputgroup" }, [
-      _c("button", [_vm._v("クリア")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup3" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [_vm._v("見積番号")]),
-          _c("input", {
-            staticClass: "form_style input_w100p_m",
-            attrs: { type: "text", name: "m_code" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup3" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [_vm._v("得意先コード")]),
-          _c("input", {
-            staticClass: "form_style input_w100p_m",
-            attrs: { type: "text", name: "customer_code" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup3" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [_vm._v("得意先名")]),
-          _c("input", {
-            staticClass: "form_style input_w100p_m",
-            attrs: { type: "text", name: "customer" },
-          }),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "line" }, [
-      _c("div", { staticClass: "inputgroup3" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [
-            _vm._v("エンドユーザー"),
-          ]),
-          _c("input", {
-            staticClass: "form_style input_w100p_m",
-            attrs: { type: "text", name: "enduser" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup3" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [_vm._v("製品名")]),
-          _c("input", {
-            staticClass: "form_style input_w100p_m",
-            attrs: { type: "text", name: "product" },
-          }),
-        ]),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "inputgroup4" }, [
-        _c("label", [
-          _c("span", { staticClass: "spanwidth_8" }, [
-            _vm._v("作成年月（期間）"),
-          ]),
-          _c("span", { staticClass: "spanblock1" }, [
-            _c("input", {
-              staticClass: "form_style input_search_w1",
-              attrs: { type: "text", name: "date_start" },
-            }),
-            _vm._v("～"),
-            _c("input", {
-              staticClass: "form_style input_search_w1",
-              attrs: { type: "text", name: "date_end" },
-            }),
-          ]),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { staticClass: "w2" }),
-        _vm._v(" "),
-        _c("th", { staticClass: "nrap" }, [_vm._v("見積書番号")]),
-        _vm._v(" "),
-        _c("th", {}, [_vm._v("作成日")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "nrap" }, [_vm._v("得意先コード")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "nrap" }, [_vm._v("得意先名")]),
-        _vm._v(" "),
-        _c("th", {}, [_vm._v("形態")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "w1" }, [_vm._v("製品名")]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", { staticClass: "w2" }),
-        _vm._v(" "),
-        _c("th", { staticClass: "nrap" }, [_vm._v("見積番号")]),
-        _vm._v(" "),
-        _c("th", {}, [_vm._v("作成日")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "nrap" }, [_vm._v("得意先コード")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "nrap" }, [_vm._v("得意先名")]),
-        _vm._v(" "),
-        _c("th", { staticClass: "w1" }, [_vm._v("製品名")]),
-        _vm._v(" "),
-        _c("th", {}, [_vm._v("制作数")]),
-        _vm._v(" "),
-        _c("th", {}, [_vm._v("金額")]),
-        _vm._v(" "),
-        _c("th", {}, [_vm._v("受注日")]),
-      ]),
+    return _c("div", { attrs: { id: "top_cnt" } }, [
+      _c("h2", { staticClass: "title mgt20" }, [_vm._v("検索結果一覧")]),
     ])
   },
 ]
@@ -58745,19 +42627,8 @@ new Vue(
 //import Mmake from "./components/Mmake.vue"
 
 vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("home-component", __webpack_require__(/*! ./components/HomeComponent.vue */ "./resources/js/components/HomeComponent.vue")["default"]);
-vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("m-make", __webpack_require__(/*! ./components/Mmake.vue */ "./resources/js/components/Mmake.vue")["default"]);
-vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("quotations-top", __webpack_require__(/*! ./components/Quotations.vue */ "./resources/js/components/Quotations.vue")["default"]);
-vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("quotations-department", __webpack_require__(/*! ./components/QuotationsDepartment.vue */ "./resources/js/components/QuotationsDepartment.vue")["default"]);
-vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("quotations-binding", __webpack_require__(/*! ./components/QuotationsBinding.vue */ "./resources/js/components/QuotationsBinding.vue")["default"]);
-vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("quotations-cost", __webpack_require__(/*! ./components/QuotationsCost.vue */ "./resources/js/components/QuotationsCost.vue")["default"]);
-vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("quotations-parts", __webpack_require__(/*! ./components/QuotationsParts.vue */ "./resources/js/components/QuotationsParts.vue")["default"]);
-vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("mit-parts", __webpack_require__(/*! ./components/Parts.vue */ "./resources/js/components/Parts.vue")["default"]);
-vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("out-sourcing", __webpack_require__(/*! ./components/Outsourcing.vue */ "./resources/js/components/Outsourcing.vue")["default"]);
-vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("popup-print", __webpack_require__(/*! ./components/PopupPrint.vue */ "./resources/js/components/PopupPrint.vue")["default"]);
-vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("quotations-search", __webpack_require__(/*! ./components/QuotationsSearch.vue */ "./resources/js/components/QuotationsSearch.vue")["default"]);
-vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("quotations-doc", __webpack_require__(/*! ./components/QuotationsDoc.vue */ "./resources/js/components/QuotationsDoc.vue")["default"]);
-vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("backup-logs", __webpack_require__(/*! ./components/BackupLogs.vue */ "./resources/js/components/BackupLogs.vue")["default"]);
-vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("base-cnt", __webpack_require__(/*! ./components/Base.vue */ "./resources/js/components/Base.vue")["default"]);
+vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("Search", __webpack_require__(/*! ./components/Search.vue */ "./resources/js/components/Search.vue")["default"]);
+vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("Edit", __webpack_require__(/*! ./components/Edit.vue */ "./resources/js/components/Edit.vue")["default"]);
 /*
 var engHello =  {
     template: '<p>Hello {{ name }}!</p>',
@@ -58824,17 +42695,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/components/BackupLogs.vue":
-/*!************************************************!*\
-  !*** ./resources/js/components/BackupLogs.vue ***!
-  \************************************************/
+/***/ "./resources/js/components/Edit.vue":
+/*!******************************************!*\
+  !*** ./resources/js/components/Edit.vue ***!
+  \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _BackupLogs_vue_vue_type_template_id_d0340a88___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BackupLogs.vue?vue&type=template&id=d0340a88& */ "./resources/js/components/BackupLogs.vue?vue&type=template&id=d0340a88&");
-/* harmony import */ var _BackupLogs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BackupLogs.vue?vue&type=script&lang=js& */ "./resources/js/components/BackupLogs.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Edit_vue_vue_type_template_id_031ccff5___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Edit.vue?vue&type=template&id=031ccff5& */ "./resources/js/components/Edit.vue?vue&type=template&id=031ccff5&");
+/* harmony import */ var _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit.vue?vue&type=script&lang=js& */ "./resources/js/components/Edit.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -58844,9 +42715,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _BackupLogs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _BackupLogs_vue_vue_type_template_id_d0340a88___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _BackupLogs_vue_vue_type_template_id_d0340a88___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Edit_vue_vue_type_template_id_031ccff5___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Edit_vue_vue_type_template_id_031ccff5___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -58856,125 +42727,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/BackupLogs.vue"
+component.options.__file = "resources/js/components/Edit.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/components/BackupLogs.vue?vue&type=script&lang=js&":
-/*!*************************************************************************!*\
-  !*** ./resources/js/components/BackupLogs.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_BackupLogs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./BackupLogs.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BackupLogs.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_BackupLogs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/BackupLogs.vue?vue&type=template&id=d0340a88&":
-/*!*******************************************************************************!*\
-  !*** ./resources/js/components/BackupLogs.vue?vue&type=template&id=d0340a88& ***!
-  \*******************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BackupLogs_vue_vue_type_template_id_d0340a88___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./BackupLogs.vue?vue&type=template&id=d0340a88& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/BackupLogs.vue?vue&type=template&id=d0340a88&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BackupLogs_vue_vue_type_template_id_d0340a88___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BackupLogs_vue_vue_type_template_id_d0340a88___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/Base.vue":
-/*!******************************************!*\
-  !*** ./resources/js/components/Base.vue ***!
-  \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Base_vue_vue_type_template_id_3d03ad3c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Base.vue?vue&type=template&id=3d03ad3c& */ "./resources/js/components/Base.vue?vue&type=template&id=3d03ad3c&");
-/* harmony import */ var _Base_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Base.vue?vue&type=script&lang=js& */ "./resources/js/components/Base.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _Base_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Base.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/Base.vue?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _Base_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Base_vue_vue_type_template_id_3d03ad3c___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Base_vue_vue_type_template_id_3d03ad3c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/Base.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/Base.vue?vue&type=script&lang=js&":
+/***/ "./resources/js/components/Edit.vue?vue&type=script&lang=js&":
 /*!*******************************************************************!*\
-  !*** ./resources/js/components/Base.vue?vue&type=script&lang=js& ***!
+  !*** ./resources/js/components/Edit.vue?vue&type=script&lang=js& ***!
   \*******************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Base_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Base.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Base.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Base_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Edit.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/components/Base.vue?vue&type=style&index=0&lang=css&":
-/*!***************************************************************************!*\
-  !*** ./resources/js/components/Base.vue?vue&type=style&index=0&lang=css& ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Base_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Base.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Base.vue?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Base_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Base_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Base_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Base_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
-
-/***/ }),
-
-/***/ "./resources/js/components/Base.vue?vue&type=template&id=3d03ad3c&":
+/***/ "./resources/js/components/Edit.vue?vue&type=template&id=031ccff5&":
 /*!*************************************************************************!*\
-  !*** ./resources/js/components/Base.vue?vue&type=template&id=3d03ad3c& ***!
+  !*** ./resources/js/components/Edit.vue?vue&type=template&id=031ccff5& ***!
   \*************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Base_vue_vue_type_template_id_3d03ad3c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Base.vue?vue&type=template&id=3d03ad3c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Base.vue?vue&type=template&id=3d03ad3c&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Base_vue_vue_type_template_id_3d03ad3c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_031ccff5___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=template&id=031ccff5& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Edit.vue?vue&type=template&id=031ccff5&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_031ccff5___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Base_vue_vue_type_template_id_3d03ad3c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_031ccff5___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -59049,830 +42833,72 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/Mmake.vue":
-/*!*******************************************!*\
-  !*** ./resources/js/components/Mmake.vue ***!
-  \*******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Mmake_vue_vue_type_template_id_1437ca00___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Mmake.vue?vue&type=template&id=1437ca00& */ "./resources/js/components/Mmake.vue?vue&type=template&id=1437ca00&");
-/* harmony import */ var _Mmake_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Mmake.vue?vue&type=script&lang=js& */ "./resources/js/components/Mmake.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Mmake_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Mmake_vue_vue_type_template_id_1437ca00___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Mmake_vue_vue_type_template_id_1437ca00___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/Mmake.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/Mmake.vue?vue&type=script&lang=js&":
-/*!********************************************************************!*\
-  !*** ./resources/js/components/Mmake.vue?vue&type=script&lang=js& ***!
-  \********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Mmake_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Mmake.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Mmake.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Mmake_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/Mmake.vue?vue&type=template&id=1437ca00&":
-/*!**************************************************************************!*\
-  !*** ./resources/js/components/Mmake.vue?vue&type=template&id=1437ca00& ***!
-  \**************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Mmake_vue_vue_type_template_id_1437ca00___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Mmake.vue?vue&type=template&id=1437ca00& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Mmake.vue?vue&type=template&id=1437ca00&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Mmake_vue_vue_type_template_id_1437ca00___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Mmake_vue_vue_type_template_id_1437ca00___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/Outsourcing.vue":
-/*!*************************************************!*\
-  !*** ./resources/js/components/Outsourcing.vue ***!
-  \*************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Outsourcing_vue_vue_type_template_id_7e86434b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Outsourcing.vue?vue&type=template&id=7e86434b& */ "./resources/js/components/Outsourcing.vue?vue&type=template&id=7e86434b&");
-/* harmony import */ var _Outsourcing_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Outsourcing.vue?vue&type=script&lang=js& */ "./resources/js/components/Outsourcing.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Outsourcing_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Outsourcing_vue_vue_type_template_id_7e86434b___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Outsourcing_vue_vue_type_template_id_7e86434b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/Outsourcing.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/Outsourcing.vue?vue&type=script&lang=js&":
-/*!**************************************************************************!*\
-  !*** ./resources/js/components/Outsourcing.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Outsourcing_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Outsourcing.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Outsourcing.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Outsourcing_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/Outsourcing.vue?vue&type=template&id=7e86434b&":
-/*!********************************************************************************!*\
-  !*** ./resources/js/components/Outsourcing.vue?vue&type=template&id=7e86434b& ***!
-  \********************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Outsourcing_vue_vue_type_template_id_7e86434b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Outsourcing.vue?vue&type=template&id=7e86434b& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Outsourcing.vue?vue&type=template&id=7e86434b&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Outsourcing_vue_vue_type_template_id_7e86434b___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Outsourcing_vue_vue_type_template_id_7e86434b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/Parts.vue":
-/*!*******************************************!*\
-  !*** ./resources/js/components/Parts.vue ***!
-  \*******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Parts_vue_vue_type_template_id_678e2385___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Parts.vue?vue&type=template&id=678e2385& */ "./resources/js/components/Parts.vue?vue&type=template&id=678e2385&");
-/* harmony import */ var _Parts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Parts.vue?vue&type=script&lang=js& */ "./resources/js/components/Parts.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Parts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Parts_vue_vue_type_template_id_678e2385___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Parts_vue_vue_type_template_id_678e2385___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/Parts.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/Parts.vue?vue&type=script&lang=js&":
-/*!********************************************************************!*\
-  !*** ./resources/js/components/Parts.vue?vue&type=script&lang=js& ***!
-  \********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Parts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Parts.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Parts.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Parts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/Parts.vue?vue&type=template&id=678e2385&":
-/*!**************************************************************************!*\
-  !*** ./resources/js/components/Parts.vue?vue&type=template&id=678e2385& ***!
-  \**************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Parts_vue_vue_type_template_id_678e2385___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Parts.vue?vue&type=template&id=678e2385& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Parts.vue?vue&type=template&id=678e2385&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Parts_vue_vue_type_template_id_678e2385___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Parts_vue_vue_type_template_id_678e2385___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/PopupPrint.vue":
-/*!************************************************!*\
-  !*** ./resources/js/components/PopupPrint.vue ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _PopupPrint_vue_vue_type_template_id_1e2ff18c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PopupPrint.vue?vue&type=template&id=1e2ff18c& */ "./resources/js/components/PopupPrint.vue?vue&type=template&id=1e2ff18c&");
-/* harmony import */ var _PopupPrint_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PopupPrint.vue?vue&type=script&lang=js& */ "./resources/js/components/PopupPrint.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _PopupPrint_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PopupPrint.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/PopupPrint.vue?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _PopupPrint_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _PopupPrint_vue_vue_type_template_id_1e2ff18c___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _PopupPrint_vue_vue_type_template_id_1e2ff18c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/PopupPrint.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/PopupPrint.vue?vue&type=script&lang=js&":
-/*!*************************************************************************!*\
-  !*** ./resources/js/components/PopupPrint.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PopupPrint_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./PopupPrint.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/PopupPrint.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PopupPrint_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/PopupPrint.vue?vue&type=style&index=0&lang=css&":
-/*!*********************************************************************************!*\
-  !*** ./resources/js/components/PopupPrint.vue?vue&type=style&index=0&lang=css& ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_PopupPrint_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./PopupPrint.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/PopupPrint.vue?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_PopupPrint_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_PopupPrint_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_PopupPrint_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_PopupPrint_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
-
-/***/ }),
-
-/***/ "./resources/js/components/PopupPrint.vue?vue&type=template&id=1e2ff18c&":
-/*!*******************************************************************************!*\
-  !*** ./resources/js/components/PopupPrint.vue?vue&type=template&id=1e2ff18c& ***!
-  \*******************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PopupPrint_vue_vue_type_template_id_1e2ff18c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./PopupPrint.vue?vue&type=template&id=1e2ff18c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/PopupPrint.vue?vue&type=template&id=1e2ff18c&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PopupPrint_vue_vue_type_template_id_1e2ff18c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PopupPrint_vue_vue_type_template_id_1e2ff18c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/Quotations.vue":
-/*!************************************************!*\
-  !*** ./resources/js/components/Quotations.vue ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Quotations_vue_vue_type_template_id_1a483d92___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Quotations.vue?vue&type=template&id=1a483d92& */ "./resources/js/components/Quotations.vue?vue&type=template&id=1a483d92&");
-/* harmony import */ var _Quotations_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Quotations.vue?vue&type=script&lang=js& */ "./resources/js/components/Quotations.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Quotations_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Quotations_vue_vue_type_template_id_1a483d92___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Quotations_vue_vue_type_template_id_1a483d92___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/Quotations.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/Quotations.vue?vue&type=script&lang=js&":
-/*!*************************************************************************!*\
-  !*** ./resources/js/components/Quotations.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Quotations_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Quotations.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Quotations.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Quotations_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/Quotations.vue?vue&type=template&id=1a483d92&":
-/*!*******************************************************************************!*\
-  !*** ./resources/js/components/Quotations.vue?vue&type=template&id=1a483d92& ***!
-  \*******************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Quotations_vue_vue_type_template_id_1a483d92___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Quotations.vue?vue&type=template&id=1a483d92& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Quotations.vue?vue&type=template&id=1a483d92&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Quotations_vue_vue_type_template_id_1a483d92___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Quotations_vue_vue_type_template_id_1a483d92___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsBinding.vue":
-/*!*******************************************************!*\
-  !*** ./resources/js/components/QuotationsBinding.vue ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _QuotationsBinding_vue_vue_type_template_id_631d4643___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./QuotationsBinding.vue?vue&type=template&id=631d4643& */ "./resources/js/components/QuotationsBinding.vue?vue&type=template&id=631d4643&");
-/* harmony import */ var _QuotationsBinding_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./QuotationsBinding.vue?vue&type=script&lang=js& */ "./resources/js/components/QuotationsBinding.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _QuotationsBinding_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _QuotationsBinding_vue_vue_type_template_id_631d4643___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _QuotationsBinding_vue_vue_type_template_id_631d4643___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/QuotationsBinding.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsBinding.vue?vue&type=script&lang=js&":
-/*!********************************************************************************!*\
-  !*** ./resources/js/components/QuotationsBinding.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsBinding_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./QuotationsBinding.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsBinding.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsBinding_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsBinding.vue?vue&type=template&id=631d4643&":
-/*!**************************************************************************************!*\
-  !*** ./resources/js/components/QuotationsBinding.vue?vue&type=template&id=631d4643& ***!
-  \**************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsBinding_vue_vue_type_template_id_631d4643___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./QuotationsBinding.vue?vue&type=template&id=631d4643& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsBinding.vue?vue&type=template&id=631d4643&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsBinding_vue_vue_type_template_id_631d4643___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsBinding_vue_vue_type_template_id_631d4643___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsCost.vue":
-/*!****************************************************!*\
-  !*** ./resources/js/components/QuotationsCost.vue ***!
-  \****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _QuotationsCost_vue_vue_type_template_id_2a9895ff___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./QuotationsCost.vue?vue&type=template&id=2a9895ff& */ "./resources/js/components/QuotationsCost.vue?vue&type=template&id=2a9895ff&");
-/* harmony import */ var _QuotationsCost_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./QuotationsCost.vue?vue&type=script&lang=js& */ "./resources/js/components/QuotationsCost.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _QuotationsCost_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _QuotationsCost_vue_vue_type_template_id_2a9895ff___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _QuotationsCost_vue_vue_type_template_id_2a9895ff___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/QuotationsCost.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsCost.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************!*\
-  !*** ./resources/js/components/QuotationsCost.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsCost_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./QuotationsCost.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsCost.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsCost_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsCost.vue?vue&type=template&id=2a9895ff&":
-/*!***********************************************************************************!*\
-  !*** ./resources/js/components/QuotationsCost.vue?vue&type=template&id=2a9895ff& ***!
-  \***********************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsCost_vue_vue_type_template_id_2a9895ff___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./QuotationsCost.vue?vue&type=template&id=2a9895ff& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsCost.vue?vue&type=template&id=2a9895ff&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsCost_vue_vue_type_template_id_2a9895ff___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsCost_vue_vue_type_template_id_2a9895ff___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsDepartment.vue":
-/*!**********************************************************!*\
-  !*** ./resources/js/components/QuotationsDepartment.vue ***!
-  \**********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _QuotationsDepartment_vue_vue_type_template_id_35396384___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./QuotationsDepartment.vue?vue&type=template&id=35396384& */ "./resources/js/components/QuotationsDepartment.vue?vue&type=template&id=35396384&");
-/* harmony import */ var _QuotationsDepartment_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./QuotationsDepartment.vue?vue&type=script&lang=js& */ "./resources/js/components/QuotationsDepartment.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _QuotationsDepartment_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _QuotationsDepartment_vue_vue_type_template_id_35396384___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _QuotationsDepartment_vue_vue_type_template_id_35396384___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/QuotationsDepartment.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsDepartment.vue?vue&type=script&lang=js&":
-/*!***********************************************************************************!*\
-  !*** ./resources/js/components/QuotationsDepartment.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsDepartment_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./QuotationsDepartment.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsDepartment.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsDepartment_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsDepartment.vue?vue&type=template&id=35396384&":
-/*!*****************************************************************************************!*\
-  !*** ./resources/js/components/QuotationsDepartment.vue?vue&type=template&id=35396384& ***!
-  \*****************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsDepartment_vue_vue_type_template_id_35396384___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./QuotationsDepartment.vue?vue&type=template&id=35396384& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsDepartment.vue?vue&type=template&id=35396384&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsDepartment_vue_vue_type_template_id_35396384___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsDepartment_vue_vue_type_template_id_35396384___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsDoc.vue":
-/*!***************************************************!*\
-  !*** ./resources/js/components/QuotationsDoc.vue ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _QuotationsDoc_vue_vue_type_template_id_09116314___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./QuotationsDoc.vue?vue&type=template&id=09116314& */ "./resources/js/components/QuotationsDoc.vue?vue&type=template&id=09116314&");
-/* harmony import */ var _QuotationsDoc_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./QuotationsDoc.vue?vue&type=script&lang=js& */ "./resources/js/components/QuotationsDoc.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _QuotationsDoc_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _QuotationsDoc_vue_vue_type_template_id_09116314___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _QuotationsDoc_vue_vue_type_template_id_09116314___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/QuotationsDoc.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsDoc.vue?vue&type=script&lang=js&":
-/*!****************************************************************************!*\
-  !*** ./resources/js/components/QuotationsDoc.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsDoc_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./QuotationsDoc.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsDoc.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsDoc_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsDoc.vue?vue&type=template&id=09116314&":
-/*!**********************************************************************************!*\
-  !*** ./resources/js/components/QuotationsDoc.vue?vue&type=template&id=09116314& ***!
-  \**********************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsDoc_vue_vue_type_template_id_09116314___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./QuotationsDoc.vue?vue&type=template&id=09116314& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsDoc.vue?vue&type=template&id=09116314&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsDoc_vue_vue_type_template_id_09116314___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsDoc_vue_vue_type_template_id_09116314___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsParts.vue":
-/*!*****************************************************!*\
-  !*** ./resources/js/components/QuotationsParts.vue ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _QuotationsParts_vue_vue_type_template_id_5f2e82c4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./QuotationsParts.vue?vue&type=template&id=5f2e82c4& */ "./resources/js/components/QuotationsParts.vue?vue&type=template&id=5f2e82c4&");
-/* harmony import */ var _QuotationsParts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./QuotationsParts.vue?vue&type=script&lang=js& */ "./resources/js/components/QuotationsParts.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _QuotationsParts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _QuotationsParts_vue_vue_type_template_id_5f2e82c4___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _QuotationsParts_vue_vue_type_template_id_5f2e82c4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/QuotationsParts.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsParts.vue?vue&type=script&lang=js&":
-/*!******************************************************************************!*\
-  !*** ./resources/js/components/QuotationsParts.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsParts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./QuotationsParts.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsParts.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsParts_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsParts.vue?vue&type=template&id=5f2e82c4&":
-/*!************************************************************************************!*\
-  !*** ./resources/js/components/QuotationsParts.vue?vue&type=template&id=5f2e82c4& ***!
-  \************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsParts_vue_vue_type_template_id_5f2e82c4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./QuotationsParts.vue?vue&type=template&id=5f2e82c4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsParts.vue?vue&type=template&id=5f2e82c4&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsParts_vue_vue_type_template_id_5f2e82c4___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsParts_vue_vue_type_template_id_5f2e82c4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsSearch.vue":
-/*!******************************************************!*\
-  !*** ./resources/js/components/QuotationsSearch.vue ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _QuotationsSearch_vue_vue_type_template_id_029fc7da___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./QuotationsSearch.vue?vue&type=template&id=029fc7da& */ "./resources/js/components/QuotationsSearch.vue?vue&type=template&id=029fc7da&");
-/* harmony import */ var _QuotationsSearch_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./QuotationsSearch.vue?vue&type=script&lang=js& */ "./resources/js/components/QuotationsSearch.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _QuotationsSearch_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _QuotationsSearch_vue_vue_type_template_id_029fc7da___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _QuotationsSearch_vue_vue_type_template_id_029fc7da___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/QuotationsSearch.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsSearch.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************!*\
-  !*** ./resources/js/components/QuotationsSearch.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsSearch_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./QuotationsSearch.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsSearch.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsSearch_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/QuotationsSearch.vue?vue&type=template&id=029fc7da&":
-/*!*************************************************************************************!*\
-  !*** ./resources/js/components/QuotationsSearch.vue?vue&type=template&id=029fc7da& ***!
-  \*************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsSearch_vue_vue_type_template_id_029fc7da___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./QuotationsSearch.vue?vue&type=template&id=029fc7da& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/QuotationsSearch.vue?vue&type=template&id=029fc7da&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsSearch_vue_vue_type_template_id_029fc7da___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_QuotationsSearch_vue_vue_type_template_id_029fc7da___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/mixins/requestable.js":
+/***/ "./resources/js/components/Search.vue":
 /*!********************************************!*\
-  !*** ./resources/js/mixins/requestable.js ***!
+  !*** ./resources/js/components/Search.vue ***!
   \********************************************/
-/*! exports provided: requestable */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "requestable", function() { return requestable; });
-var requestable = {
-  data: function data() {
-    return {
-      messagedata: ""
-    };
-  },
-  methods: {
-    // -------------------------- public メソッド ------------------------
-    // post
-    postRequest: function postRequest(url, arrayparams) {
-      var self = this; // 連想配列はObject.keys(arrayparams).length
+/* harmony import */ var _Search_vue_vue_type_template_id_5026ffd3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Search.vue?vue&type=template&id=5026ffd3& */ "./resources/js/components/Search.vue?vue&type=template&id=5026ffd3&");
+/* harmony import */ var _Search_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Search.vue?vue&type=script&lang=js& */ "./resources/js/components/Search.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-      var len = Object.keys(arrayparams).length;
 
-      if (len != 0) {
-        return new Promise(function (resolve, reject) {
-          self.$axios.post(url, {
-            keyparams: arrayparams
-          }).then(function (response) {
-            resolve(response);
-          })["catch"](function (reason) {
-            reject(reason);
-          });
-        });
-      } else {
-        return new Promise(function (resolve, reject) {
-          self.$axios.post(url).then(function (response) {
-            resolve(response);
-          })["catch"](function (reason) {
-            reject(reason);
-          });
-        });
-      }
-    } // -------------------------- private メソッド ------------------------
 
-  }
-};
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Search_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Search_vue_vue_type_template_id_5026ffd3___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Search_vue_vue_type_template_id_5026ffd3___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Search.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Search.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/Search.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Search_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Search.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Search.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Search_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Search.vue?vue&type=template&id=5026ffd3&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/Search.vue?vue&type=template&id=5026ffd3& ***!
+  \***************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Search_vue_vue_type_template_id_5026ffd3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Search.vue?vue&type=template&id=5026ffd3& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Search.vue?vue&type=template&id=5026ffd3&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Search_vue_vue_type_template_id_5026ffd3___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Search_vue_vue_type_template_id_5026ffd3___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 

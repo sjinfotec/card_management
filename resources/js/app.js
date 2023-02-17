@@ -28,22 +28,8 @@ new Vue(
 //import HomeComponent from "./components/HomeComponent.vue"
 //import Mmake from "./components/Mmake.vue"
 Vue.component("home-component", require("./components/HomeComponent.vue").default);
-Vue.component("m-make", require("./components/Mmake.vue").default);
-Vue.component("quotations-top", require("./components/Quotations.vue").default);
-Vue.component("quotations-department", require("./components/QuotationsDepartment.vue").default);
-Vue.component("quotations-binding", require("./components/QuotationsBinding.vue").default);
-Vue.component("quotations-cost", require("./components/QuotationsCost.vue").default);
-Vue.component("quotations-parts", require("./components/QuotationsParts.vue").default);
-Vue.component("mit-parts", require("./components/Parts.vue").default);
-Vue.component("out-sourcing", require("./components/Outsourcing.vue").default);
-Vue.component("popup-print", require("./components/PopupPrint.vue").default);
-Vue.component("quotations-search", require("./components/QuotationsSearch.vue").default);
-Vue.component("quotations-doc", require("./components/QuotationsDoc.vue").default);
-
-Vue.component("backup-logs", require("./components/BackupLogs.vue").default);
-
-
-Vue.component("base-cnt", require("./components/Base.vue").default);
+Vue.component("Search", require("./components/Search.vue").default);
+Vue.component("Edit", require("./components/Edit.vue").default);
 
 /*
 var engHello =  {

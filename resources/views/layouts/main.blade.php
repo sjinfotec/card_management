@@ -55,7 +55,7 @@ $action_msg = ""; //動作メッセージ利用時はコメントアウト
                     </button>
                     <div id="logo">
                         <a class="" href="{{ url('/') }}">
-                            <!--<span><img class="logo_h" src="{{ asset('images/home-white.svg') }}"  alt="見積システム"></span>-->
+                            <span><img class="logo_h" src="{{ asset('images/meishi_4.png') }}"  alt=""></span>
                             <span>名刺管理入稿システム</span>
                         </a>
                     </div>

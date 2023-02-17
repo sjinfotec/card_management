@@ -25,7 +25,7 @@ Route::post('login', 'App\Http\Controllers\Auth\LoginController@login');
 Route::post('logout', 'App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 
 
-// 見積作成
+// 
 Route::get('/edit', [EditController::class,'index'])->middleware('auth');
 Route::get('/edit/make', [EditController::class,'make'])->middleware('auth');
 Route::get('/edit/fix', [EditController::class,'fix'])->middleware('auth');
