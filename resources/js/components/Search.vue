@@ -77,7 +77,7 @@
               <td class="w4e">{{ item['office'] }}</td>
               <td class="w3e">{{ item['department'] }}</td>
               <td class="">{{ item['division'] }}</td>
-              <td class="">{{ item['aaa'] }}</td>
+              <td class="">{{ item['director'] }}</td>
               <td class="">{{ item['name'] }}</td>
               <td class="">{{ item['roma'] }}</td>
               <td class="">{{ item['charge'] }}</td>
