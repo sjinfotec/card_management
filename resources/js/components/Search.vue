@@ -50,17 +50,10 @@
               <th class="">氏名</th>
               <th class="">ローマ字</th>
               <th class="">ふりがな</th>
-              <th class="">読み <button type="button" class="" @click="ForwardReverse('yomi',1)">▲</button><button type="button" class="" @click="ForwardReverse('yomi',2)">▼</button></th>
+              <th class="">読み <button type="button" class="" @click="ForwardReverse('reading',1)">▲</button><button type="button" class="" @click="ForwardReverse('reading',2)">▼</button></th>
               <th class="">携帯電話</th>
               <th class="">メールアドレス</th>
               <th class="">資格</th>
-              <!--
-              <th class="">〒</th>
-              <th class="">住所</th>
-              <th class="">TEL（直通）</th>
-              <th class="">TEL</th>
-              <th class="">FAX</th>
-              -->
               <th class="">画像ファイル</th>
               <th class="">備考</th>
             </tr>
@@ -80,19 +73,12 @@
               <td class="">{{ item['director'] }}</td>
               <td class="">{{ item['name'] }}</td>
               <td class="">{{ item['roma'] }}</td>
-              <td class="">{{ item['charge'] }}</td>
-              <td class="">{{ item['charge'] }}</td>
-              <td class="">{{ item['charge'] }}</td>
-              <td class="">{{ item['charge'] }}</td>
-              <td class="">{{ item['charge'] }}</td>
-              <td class="">{{ item['charge'] }}</td>
-              <!--
-              <td class="">{{ item['charge'] }}</td>
-              <td class="">{{ item['charge'] }}</td>
-              <td class="">{{ item['charge'] }}</td>
-              <td class="">{{ item['charge'] }}</td>
-              <td class="">{{ item['charge'] }}</td>
-              -->
+              <td class="">{{ item['kana'] }}</td>
+              <td class="">{{ item['reading'] }}</td>
+              <td class="">{{ item['mobile_phone'] }}</td>
+              <td class="">{{ item['email'] }}</td>
+              <td class="">{{ item['certification'] }}</td>
+              <td class="">{{ item['image'] }}</td>
               <td>{{ item['remarks'] }}</td>
               <!--<td class="style1"><div v-if="item['total'] !== null">{{ Number(item['total']) | numberFormat }}</div></td>-->
             </tr>

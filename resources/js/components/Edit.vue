@@ -1,6 +1,11 @@
 <template>
   <div>
 
+
+
+    <div>vue変数テスト htmlSelect：{{ htmlSelect }}</div>
+    <div>vue変数テスト selectMode：{{ selectMode }}</div>
+
     <div id="input_area_1" v-if="selectMode=='COMPLETE'">
       <div id="top_cnt">
         <h2 class="title mgt20">結果 / {{ acttitle }} 完了</h2>
@@ -81,11 +86,431 @@
 
 
 
+
+    <div id="input_area_1" v-if="selectMode=='NEW'">
+      <div id="top_cnt">
+        <h2>名刺 / 新規登録</h2>
+        <button type="button" class="customize" @click="viewBtn(2)">
+          管理者
+        </button>
+      </div>
+
+      <div class="" v-if="messagevalidatesNew.length">
+          <ul class="error-red color_red">
+            <li v-for="(messagevalidate,index) in messagevalidatesNew" v-bind:key="index">{{ messagevalidate }}</li>
+          </ul>
+      </div>
+
+
+
+
+
+
+      No. ID	id
+枚数	sheet
+会社	company
+営業所	office
+部署	department
+課	division
+役職	director
+氏名	name
+読み	reading
+携帯電話	mobile_phone
+メールアドレス	email
+資格1	certification1
+資格2	certification2
+資格3	certification3
+〒	post_code
+住所	address
+ＴＥＬ（直通）	direct_dial
+ＴＥＬ	tel
+FAX	fax
+ローマ字	roma
+ふりがな	kana
+備考	remarks
+画像ファイル	image
+
+
+
+
+      <div id="cnt1">
+        <div class="inputgroup w1">
+          <div class="cate gc2">枚数</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.sheet"
+              maxlength="20"
+              name="sheet"
+            />
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+      <div id="cnt1">
+        <div class="inputgroup w1">
+          <div class="cate gc2">会社</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.department"
+              maxlength="100"
+              name="department"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">営業所</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.department"
+              maxlength="50"
+              name="department"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">部署</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.department"
+              maxlength="50"
+              name="department"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">課</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.department"
+              maxlength="50"
+              name="department"
+            />
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+      <div id="cnt1">
+        <div class="inputgroup w1">
+          <div class="cate gc2">役職</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.sheet"
+              maxlength="50"
+              name="sheet"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">資格1</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.sheet"
+              maxlength="50"
+              name="sheet"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">資格2</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.sheet"
+              maxlength="50"
+              name="sheet"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">資格3</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.sheet"
+              maxlength="50"
+              name="sheet"
+            />
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+
+      <div id="cnt1">
+        <div class="inputgroup w1">
+          <div class="cate gc2">氏名</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.name"
+              maxlength="100"
+              name="name"
+            />
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+
+      <div id="cnt1">
+        <div class="inputgroup w1">
+          <div class="cate gc2">読み</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.reading"
+              maxlength="100"
+              name="reading"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">ローマ字</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.roma"
+              maxlength="100"
+              name="roma"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">ふりがな</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.kana"
+              maxlength="50"
+              name="kana"
+            />
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+      <div id="cnt1">
+        <div class="inputgroup w1">
+          <div class="cate gc2">携帯電話</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.mobile_phone"
+              maxlength="13"
+              name="mobile_phone"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">メールアドレス</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.email"
+              maxlength="128"
+              name="email"
+            />
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+      <div id="cnt1">
+        <div class="inputgroup w1">
+          <div class="cate gc2">郵便番号</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.post_code"
+              maxlength="7"
+              name="post_code"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">住所</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.address"
+              maxlength="256"
+              name="address"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">TEL（直通）</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.direct_dial"
+              maxlength="13"
+              name="direct_dial"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">TEL</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.tel"
+              maxlength="13"
+              name="tel"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">FAX</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="form.fax"
+              maxlength="13"
+              name="fax"
+            />
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+      <div id="cnt1">
+        <div class="inputgroup w1">
+          <div class="cate gc2">画像ファイル</div>
+          <div class="inputzone">
+            <input
+              type="file"
+              class="form_style bc2"
+              name="image"
+            />
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+      <div id="cnt1">
+        <div class="inputgroup w4">
+          <div class="cate gc2">備考</div>
+          <div class="inputzone">
+            <textarea class="form_style_t bc2" v-model="form.remarks" maxlength="191" name="remarks" rows="3"></textarea>
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+      <div id="cnt1" v-if="view_switch=='on'">
+        <div class="inputgroup w1">
+          <div class="cate">作成ユーザー</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style"
+              v-model="form.created_user"
+              maxlength="20"
+              name="created_user"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate">修正ユーザー</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style"
+              v-model="form.updated_user"
+              maxlength="20"
+              name="updated_user"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w2">
+          <div class="cate">作成日時</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style"
+              v-model="form.created_at"
+              maxlength="16"
+              name="created_at"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w2">
+          <div class="cate">修正日時</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style"
+              v-model="form.updated_at"
+              maxlength="16"
+              name="updated_at"
+            />
+          </div>
+        </div>
+
+        <div class="inputgroup w1">
+          <div class="cate">ステータス</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style"
+              v-model="form.status"
+              maxlength="20"
+              name="status"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate">削除フラグ</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style"
+              v-model="form.is_deleted"
+              maxlength="20"
+              name="is_deleted"
+            />
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+      <div id="button1">
+          <div class="btnstyle">
+            <button type="button" class="style1" @click="dataStore()">新規登録する</button>
+          </div>
+      </div>
+
+    </div><!--end selectMode=='NEW'-->
+
+
+
+
+
     <div id="input_area_1" v-if="selectMode=='EDT'">
 
       <div id="top_cnt">
-        <h2 v-if="btnMode==='update'">在庫 / 更新</h2>
-        <h2 v-if="btnMode==='fix'">在庫 / 修正</h2>
+        <h2 v-if="btnMode==='update'">名刺 / 更新</h2>
+        <h2 v-if="btnMode==='fix'">名刺 / 修正</h2>
         <button type="button" class="customize" @click="viewBtn(2)">
           追加情報
         </button>
@@ -409,7 +834,7 @@
           <thead>
             <tr>
 
-              <th class="gc2">日付</th>
+              <th class="gc2">日付これ</th>
               <th class="gc2">部署</th>
               <th class="gc2">担当</th>
               <th class="gc2">商品名</th>
@@ -608,23 +1033,31 @@ export default {
     authusers: {
       type: Array,
       default: []
-    
-    }
+    },
     */
+    htmlSelect: String,
+    selectMode: {
+      type: String,
+      default: 'EDT'
+    }
+
+
   },
   data() {
     return {
       details: [],
+      details2: [],
       informations: [],
       content: "",
       login_user_code: 0,
       login_user_role: 0,
       dialogVisible: false,
       messageshowsearch: false,
+      messagevalidatesNew: [],
       infomationmessage: [],
       message: "aaa",
       showMessage: true,
-      selectMode: "EDT",
+      btnMode: "",
       s_department: "",
       s_name: "",
       s_yomi: "",
@@ -728,8 +1161,8 @@ export default {
     Test(){
       console.log('テストコンソール出力')
     },
-            // 取得処理
-            getItem(sc) {
+    // 取得処理
+    getItem(sc) {
       this.inputClear();
       var arrayParams = { 
         charge : this.charge,

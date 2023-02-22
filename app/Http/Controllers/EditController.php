@@ -29,7 +29,15 @@ class EditController extends Controller
     public function make(Request $request)
     {
         $authusers = Auth::user();
-        return view('edit', compact('authusers')
+        $result['htmlselect'] = "NEWSSS";
+        $htmlselect = "NEWNEW";
+        $select_mode = "NEWxx";
+        return view('edit', compact(
+            'authusers',
+            'result',
+            'htmlselect',
+            'select_mode'
+            )
         );
     }
 
