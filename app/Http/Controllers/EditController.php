@@ -31,7 +31,7 @@ class EditController extends Controller
         $authusers = Auth::user();
         $result['htmlselect'] = "NEWSSS";
         $htmlselect = "NEWNEW";
-        $select_mode = "NEWxx";
+        $select_mode = "NEW";
         return view('edit', compact(
             'authusers',
             'result',
@@ -40,5 +40,22 @@ class EditController extends Controller
             )
         );
     }
+
+
+    public function fix(Request $request)
+    {
+        $authusers = Auth::user();
+        $result['htmlselect'] = "NEWSSS";
+        $htmlselect = "NEWNEW";
+        $select_mode = "EDT";
+        return view('edit', compact(
+            'authusers',
+            'result',
+            'htmlselect',
+            'select_mode'
+            )
+        );
+    }
+
 
 }

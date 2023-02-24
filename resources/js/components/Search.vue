@@ -24,7 +24,7 @@
           </button>
         </form>
         <form id="form1" name="form1">
-          <input type="text" class="form_style bc1 w10e" v-model="s_yomi" maxlength="30" name="s_yomi">
+          <input type="text" class="form_style bc1 w10e" v-model="s_reading" maxlength="30" name="s_reading">
           <button type="button" class="" @click="searchBtn()">
             読み 検索
           </button>
@@ -136,7 +136,7 @@ export default {
       selectMode: "LINEACTIVE",
       s_department: "",
       s_name: "",
-      s_yomi: "",
+      s_reading: "",
       totals: "",
 
 

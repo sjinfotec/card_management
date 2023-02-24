@@ -106,29 +106,6 @@
 
 
 
-      No. ID	id
-枚数	sheet
-会社	company
-営業所	office
-部署	department
-課	division
-役職	director
-氏名	name
-読み	reading
-携帯電話	mobile_phone
-メールアドレス	email
-資格1	certification1
-資格2	certification2
-資格3	certification3
-〒	post_code
-住所	address
-ＴＥＬ（直通）	direct_dial
-ＴＥＬ	tel
-FAX	fax
-ローマ字	roma
-ふりがな	kana
-備考	remarks
-画像ファイル	image
 
 
 
@@ -155,9 +132,9 @@ FAX	fax
             <input
               type="text"
               class="form_style bc2"
-              v-model="form.department"
+              v-model="form.company"
               maxlength="100"
-              name="department"
+              name="company"
             />
           </div>
         </div>
@@ -167,9 +144,9 @@ FAX	fax
             <input
               type="text"
               class="form_style bc2"
-              v-model="form.department"
+              v-model="form.office"
               maxlength="50"
-              name="department"
+              name="office"
             />
           </div>
         </div>
@@ -191,9 +168,9 @@ FAX	fax
             <input
               type="text"
               class="form_style bc2"
-              v-model="form.department"
+              v-model="form.division"
               maxlength="50"
-              name="department"
+              name="division"
             />
           </div>
         </div>
@@ -206,9 +183,9 @@ FAX	fax
             <input
               type="text"
               class="form_style bc2"
-              v-model="form.sheet"
+              v-model="form.director"
               maxlength="50"
-              name="sheet"
+              name="director"
             />
           </div>
         </div>
@@ -218,9 +195,9 @@ FAX	fax
             <input
               type="text"
               class="form_style bc2"
-              v-model="form.sheet"
+              v-model="form.certification1"
               maxlength="50"
-              name="sheet"
+              name="certification1"
             />
           </div>
         </div>
@@ -230,9 +207,9 @@ FAX	fax
             <input
               type="text"
               class="form_style bc2"
-              v-model="form.sheet"
+              v-model="form.certification2"
               maxlength="50"
-              name="sheet"
+              name="certification2"
             />
           </div>
         </div>
@@ -242,9 +219,9 @@ FAX	fax
             <input
               type="text"
               class="form_style bc2"
-              v-model="form.sheet"
+              v-model="form.certification3"
               maxlength="50"
-              name="sheet"
+              name="certification3"
             />
           </div>
         </div>
@@ -525,263 +502,379 @@ FAX	fax
         </div>
 
         <input type="hidden" v-model="details[index].id" name="id" />
+
         <div id="cnt1">
-          <div class="inputgroup w1">
-            <div class="cate gc2">日付</div>
-            <div class="inputzone">
-              <input
-                type="date"
-                class="form_style bc2"
-                v-model="details[index].mdate"
-                maxlength="12"
-                name="mdate"
-              />
-            </div>
-          </div>
-          <div class="inputgroup w1">
-            <div class="cate gc2">部署</div>
-            <div class="inputzone">
-              <input
-                type="text"
-                class="form_style bc2"
-                v-model="details[index].department"
-                maxlength="40"
-                name="department"
-              />
-            </div>
-          </div>
-          <div class="inputgroup w2">
-            <div class="cate gc2">担当</div>
-            <div class="inputzone">
-              <input
-                type="text"
-                class="form_style bc2"
-                v-model="details[index].charge"
-                maxlength="20"
-                name="charge"
-              />
-            </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">枚数</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].sheet"
+              maxlength="20"
+              name="sheet"
+            />
           </div>
         </div>
-        <div id="cnt1">
-          <div class="inputgroup w3">
-            <div class="cate gc2">商品名</div>
-            <div class="inputzone">
-              <input
-                type="text"
-                class="form_style bc2"
-                v-model="details[index].product_name"
-                maxlength="100"
-                name="product_name"
-                v-bind:disabled="isDisabled"
-              />
-            </div>
-          </div>
-          <div class="inputgroup w1">
-            <div class="cate gc2">分類</div>
-            <div class="inputzone">
-              <input
-                type="text"
-                class="form_style bc2"
-                v-model="details[index].product_number"
-                maxlength="100"
-                name="product_number"
-                v-bind:disabled="isDisabled"
-              />
-            </div>
+      </div><!--## end id="cnt1" ##-->
+
+      <div id="cnt1">
+        <div class="inputgroup w1">
+          <div class="cate gc2">会社</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].company"
+              maxlength="100"
+              name="company"
+            />
           </div>
         </div>
-        <div id="cnt1">
-          <div class="inputgroup w1">
-            <div class="cate gc2">単位</div>
-            <div class="inputzone">
-              <input
-                type="text"
-                class="form_style bc2"
-                v-model="details[index].unit"
-                maxlength="10"
-                name="unit"
-                v-bind:disabled="isDisabled"
-              />
-            </div>
-          </div>
-          <div class="inputgroup w1">
-            <div class="cate gc2">入庫数</div>
-            <div class="inputzone">
-              <input
-                type="number"
-                min="0"
-                class="form_style bc2"
-                v-model.number="details[index].receipt"
-                maxlength="11"
-                name="receipt"
-              />
-            </div>
-          </div>
-          <div class="inputgroup w1">
-            <div class="cate gc2">出庫数</div>
-            <div class="inputzone">
-              <input
-                type="number"
-                min="0"
-                class="form_style bc2"
-                v-model.number="details[index].delivery"
-                maxlength="11"
-                name="delivery"
-              />
-            </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">営業所</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].office"
+              maxlength="50"
+              name="office"
+            />
           </div>
         </div>
-        <div id="cnt1">
-          <div class="inputgroup w2">
-            <div class="cate gc2">発注先</div>
-            <div class="inputzone">
-              <input
-                type="text"
-                class="form_style bc2"
-                v-model="details[index].order_address"
-                maxlength="40"
-                name="order_address"
-                v-bind:disabled="isDisabled"
-              />
-            </div>
-          </div>
-          <div class="inputgroup w1">
-            <div class="cate gc2">単価</div>
-            <div class="inputzone">
-              <input
-                type="text"
-                class="form_style bc2"
-                v-model="details[index].unit_price"
-                maxlength="40"
-                name="unit_price"
-                v-bind:disabled="isDisabled"
-              />
-            </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">部署</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].department"
+              maxlength="50"
+              name="department"
+            />
           </div>
         </div>
-        <div id="cnt1">
-          <div class="inputgroup w4">
-            <div class="cate gc2">備考</div>
-            <div class="inputzone">
-              <textarea class="form_style_t bc2" v-model="details[index].remarks" maxlength="191" name="remarks" rows="3"></textarea>
-            </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">課</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].division"
+              maxlength="50"
+              name="division"
+            />
           </div>
         </div>
+      </div><!--## end id="cnt1" ##-->
+
+      <div id="cnt1">
+        <div class="inputgroup w1">
+          <div class="cate gc2">役職</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].director"
+              maxlength="50"
+              name="director"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">資格1</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].certification1"
+              maxlength="50"
+              name="certification1"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">資格2</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].certification2"
+              maxlength="50"
+              name="certification2"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">資格3</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].certification3"
+              maxlength="50"
+              name="certification3"
+            />
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+
+      <div id="cnt1">
+        <div class="inputgroup w1">
+          <div class="cate gc2">氏名</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].name"
+              maxlength="100"
+              name="name"
+            />
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+
+      <div id="cnt1">
+        <div class="inputgroup w1">
+          <div class="cate gc2">読み</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].reading"
+              maxlength="100"
+              name="reading"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">ローマ字</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].roma"
+              maxlength="100"
+              name="roma"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">ふりがな</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].kana"
+              maxlength="50"
+              name="kana"
+            />
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+      <div id="cnt1">
+        <div class="inputgroup w1">
+          <div class="cate gc2">携帯電話</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].mobile_phone"
+              maxlength="13"
+              name="mobile_phone"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">メールアドレス</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].email"
+              maxlength="128"
+              name="email"
+            />
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+      <div id="cnt1">
+        <div class="inputgroup w1">
+          <div class="cate gc2">郵便番号</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].post_code"
+              maxlength="7"
+              name="post_code"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">住所</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].address"
+              maxlength="256"
+              name="address"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">TEL（直通）</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].direct_dial"
+              maxlength="13"
+              name="direct_dial"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">TEL</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].tel"
+              maxlength="13"
+              name="tel"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate gc2">FAX</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style bc2"
+              v-model="details[index].fax"
+              maxlength="13"
+              name="fax"
+            />
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+      <div id="cnt1">
+        <div class="inputgroup w1">
+          <div class="cate gc2">画像ファイル</div>
+          <div class="inputzone">
+            <input
+              type="file"
+              class="form_style bc2"
+              name="image"
+            />
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+      <div id="cnt1">
+        <div class="inputgroup w4">
+          <div class="cate gc2">備考</div>
+          <div class="inputzone">
+            <textarea class="form_style_t bc2" v-model="details[index].remarks" maxlength="191" name="remarks" rows="3"></textarea>
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+      <div id="cnt1" v-if="view_switch=='on'">
+        <div class="inputgroup w1">
+          <div class="cate">作成ユーザー</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style"
+              v-model="details[index].created_user"
+              maxlength="20"
+              name="created_user"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate">修正ユーザー</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style"
+              v-model="details[index].updated_user"
+              maxlength="20"
+              name="updated_user"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w2">
+          <div class="cate">作成日時</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style"
+              v-model="details[index].created_at"
+              maxlength="16"
+              name="created_at"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w2">
+          <div class="cate">修正日時</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style"
+              v-model="details[index].updated_at"
+              maxlength="16"
+              name="updated_at"
+            />
+          </div>
+        </div>
+
+        <div class="inputgroup w1">
+          <div class="cate">ステータス</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style"
+              v-model="details[index].status"
+              maxlength="20"
+              name="status"
+            />
+          </div>
+        </div>
+        <div class="inputgroup w1">
+          <div class="cate">削除フラグ</div>
+          <div class="inputzone">
+            <input
+              type="text"
+              class="form_style"
+              v-model="details[index].is_deleted"
+              maxlength="20"
+              name="is_deleted"
+            />
+          </div>
+        </div>
+      </div><!--## end id="cnt1" ##-->
+
+
+
+
+
 
         <div id="cnt1" v-if="view_switch=='on'">
-          <div class="inputgroup">
-            <div class="cate">グループ</div>
-            <div class="inputzone">
-              <input
-                type="text"
-                class="form_style"
-                v-model="details[index].marks"
-                maxlength="10"
-                name="marks"
-              />
-              
-            </div>
-          </div>
-          <div class="inputgroup">
-            <div class="cate">作成ユーザー</div>
-            <div class="inputzone">
-              <input
-                type="hidden"
-                class="form_style"
-                v-model="details[index].created_user"
-                maxlength="20"
-                name="created_user"
-              />
-              <span>{{ details[index].created_user }}</span>
-            </div>
-          </div>
-          <div class="inputgroup">
-            <div class="cate">修正ユーザー</div>
-            <div class="inputzone">
-              <input
-                type="hidden"
-                class="form_style"
-                v-model="details[index].updated_user"
-                maxlength="20"
-                name="updated_user"
-              />
-              <span>{{ details[index].updated_user }}</span>
-            </div>
-          </div>
-          <div class="inputgroup">
-            <div class="cate">作成日時</div>
-            <div class="inputzone">
-              <input
-                type="hidden"
-                class="form_style"
-                v-model="details[index].created_at"
-                maxlength="16"
-                name="created_at"
-              />
-              <span>{{ details[index].created_at }}</span>
-            </div>
-          </div>
-          <div class="inputgroup">
-            <div class="cate">修正日時</div>
-            <div class="inputzone">
-              <input
-                type="hidden"
-                class="form_style"
-                v-model="details[index].updated_at"
-                maxlength="16"
-                name="updated_at"
-              />
-              <span>{{ details[index].updated_at }}</span>
-            </div>
-          </div>
-
-          <div class="inputgroup">
-            <div class="cate">商品CODE</div>
-            <div class="inputzone">
-              <input
-                type="hidden"
-                class="form_style"
-                v-model="details[index].product_code"
-                maxlength="11"
-                name="product_code"
-              />
-              <span>{{ details[index].product_code }}</span>
-            </div>
-          </div>
-          <div class="inputgroup">
-            <div class="cate">ステータス</div>
-            <div class="inputzone">
-              <input
-                type="text"
-                class="form_style"
-                v-model="details[index].status"
-                maxlength="20"
-                name="status"
-              />
-              
-            </div>
-          </div>
-          <div class="inputgroup">
-            <div class="cate">削除フラグ</div>
-            <div class="inputzone">
-              <input
-                type="hidden"
-                class="form_style"
-                v-model="details[index].is_deleted"
-                maxlength="20"
-                name="is_deleted"
-              />
-              <span>{{ details[index].is_deleted }}</span>
-            </div>
-          </div>
           <div id="button1">
             <button type="button" class="" @click="recordDel(index,'all')">この商品（履歴含む）を削除</button>
             <button type="button" class="" @click="recordDel(index,'one')">この登録（レコード）を削除</button>
           </div>
 
-        </div>
-        <div id="cnt1" v-if="view_switch=='on'">
         </div>
 
 
@@ -862,17 +955,12 @@ FAX	fax
               <td>{{ item['product_number'] }}</td>
               <td>{{ item['order_address'] }}</td>
               <td class="nbr">{{ item['unit'] }}</td>
-              <!--<td class="style1">{{ item['quantity'] }}</td>-->
               <td class="style1" v-bind:class="(item['receipt'] === 0) ? 'color3' : ''">{{ item['receipt'] }}</td>
               <td class="style1" v-bind:class="(item['delivery'] === 0) ? 'color3' : ''">{{ item['delivery'] }}</td>
               <td class="style1" v-bind:style="(item['now_inventory'] === 0) ? 'color:red' : ''">{{ Number(item.now_inventory) | numberFormat }}</td>
               <td class="style1">{{ Number(item.unit_price) | numberFormat }}</td>
               <td class="style1"><div v-if="item['total'] !== null">{{ Number(item['total']) | numberFormat }}</div></td>
-              <!--
-              <td class="style1">{{ item['nbox'] }}</td>
-              -->
               <td>{{ item['remarks'] }}</td>
-              <!--<td>{{ item['note'] }}</td>-->
               <!--<td>id={{ item['id'] }} edit_id={{ edit_id }}</td>-->
             </tr>
           </tbody>
@@ -1045,6 +1133,37 @@ export default {
   },
   data() {
     return {
+      form: {
+        id: "",
+        sheet: "",
+        company: "",
+        office: "",
+        department: "",
+        division: "",
+        director: "",
+        name: "",
+        reading: "",
+        mobile_phone: "",
+        email: "",
+        certification1: "",
+        certification2: "",
+        certification3: "",
+        post_code: "",
+        address: "",
+        direct_dial: "",
+        tel: "",
+        fax: "",
+        roma: "",
+        kana: "",
+        remarks: "",
+        image: "",
+        status: "",
+        created_user: "",
+        updated_user: "",
+        created_at: "",
+        updated_at: "",
+        is_deleted: ""
+      },
       details: [],
       details2: [],
       informations: [],
@@ -1058,11 +1177,11 @@ export default {
       message: "aaa",
       showMessage: true,
       btnMode: "",
+      view_switch: "off",
       s_department: "",
       s_name: "",
       s_yomi: "",
       totals: "",
-
 
     };
   },
