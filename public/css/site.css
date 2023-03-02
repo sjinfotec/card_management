@@ -342,10 +342,6 @@ header .header_login_info a {
 .txtcolor1  {color:#C0A;}
 .txtcolor2  {color:#C01800;}
 
-.mg_t20 {margin-top:20px;}
-.mg_t40 {margin-top:40px;}
-.mg_l10 {margin-left:10px;}
-.mg_l20 {margin-left:20px;}
 .w2e  {width: 2em;}
 .w3e  {width: 3em;}
 .w4e  {width: 4em;}
@@ -400,6 +396,67 @@ header .header_login_info a {
 
 
 
+
+
+.form_style {
+  font-size:1.6rem;
+  height:2.8rem;
+  /*width:calc(100% - 8px);*/
+  padding:0 4px;
+  margin:0 0px;
+  /*width:100%;*/
+  box-sizing: border-box;
+}
+ .form_style_t {
+  font-size:2rem;
+  /*height:6rem;*/
+  /*width:calc(100% - 8px);*/
+  padding:0 4px;
+  width:100%;
+  box-sizing: border-box;
+}
+.form_style_textarea {
+  font-size:2rem;
+  line-height:2.4rem;
+  /*height:6rem;*/
+  /*width:calc(100% - 12px);*/
+  padding:4px 6px;
+  width:41em;
+  box-sizing: border-box;
+}
+ .input_w1  {width:1em;}
+ .input_w2  {width:2em;}
+ .input_w3  {width:3em;}
+ .input_w5  {width:5em;}
+ .input_w7  {width:7em;}
+ .input_w10  {width:10em;}
+ .input_w20  {width:20em;}
+ .input_w30  {width:30em;}
+ .input_w40  {width:40em;}
+ .input_w100p  {width:100%;}
+ .inputzone span{
+  margin-left:0.5em;
+  margin-right:0.5em;
+}
+input[type="submit"] {
+  background-image: linear-gradient(0deg, #a7d9f5, #eaf6fd);
+  border: 1px solid #3c7fb1;
+  border-radius: 0.3em;
+  padding: 2px 10px;
+  letter-spacing: 1rem;
+  text-indent: 1rem;
+}
+input[type="submit"]:hover {
+  /* マウスが載ったとき */
+  background-image: linear-gradient(0deg, #68d3db, #e5f4fc);
+  border: 1px solid #2c628b;
+}
+input[type="submit"]:active {
+  /* クリックされたとき */
+  background-image: linear-gradient(180deg, #68d3db, #e5f4fc);
+  border: 1px solid skyblue;
+}
+
 #form1  {
   display:flex;
   align-items: center;
@@ -415,6 +472,10 @@ header .header_login_info a {
   box-sizing: border-box;
   margin-right:10px;
 }
+
+
+
+
 
 #btn_cnt1 {
   display:flex;
@@ -509,38 +570,6 @@ header .header_login_info a {
   padding:0 0 0 20px;
   border-left:20px solid rgba(35, 196, 175, 1);
   background: linear-gradient(to right,rgba(255,255,255,0) 100px, rgba(35, 196, 175, 1) 90%);
-}
-#cnt1 .inputgroup3 {
-  margin-top:1.4rem;
-  margin-left:0.5rem;
-  margin-right:0.5rem;
-  flex-grow: 1;
-}
-#cnt1 .inputgroup4 {
-  margin-top:1.4rem;
-  margin-left:0.5rem;
-  margin-right:0.5rem;
-  flex-grow:0;
-  
-}
-#cnt1 .care {
-  /*float:right;*/
-  font-size:1.2rem;
-}
-#cnt1 .caretxt {
-  /*float:right;*/
-  margin:5px 0 0 20px;
-  font-size:1.2rem;
-}
-
-
-.input_w100p_m  {width:calc(100% - 8em);}  /*spanの幅分をマイナス*/
-.input_search_w1  {width:9.3rem;} 
-#cnt1 .spanblock1  {
-  display:inline-block;
-  /*width:calc(100% - 8em);*/
-  width:251px;
-  /*background: #AAC;*/
 }
 
 #cnt_search {
@@ -749,7 +778,7 @@ header .header_login_info a {
 
 
 
-/*--------------------## 見積作成 ##----------------------------------------*/
+/*--------------------## 作成 ##----------------------------------------*/
 
 #cnt_title1 h3 {
   /*color:rgba(25, 157, 218, 0.9);*/
@@ -768,13 +797,18 @@ header .header_login_info a {
   background: linear-gradient(to right,rgba(255,255,255,0) 100px, rgba(35, 46, 196, 0.9) 90%);
 }
 .main_cnt {visibility: visible;}
-#cnt1 {padding:0 0 20px 0}
+#cnt1 {
+  display: flex;
+  flex-wrap: wrap;
+  /*padding:0 0 20px 0;*/
+}
 #cnt1 .line {
   display:flex;
   width:100%;
   flex-wrap:wrap;
 
 }
+
 #cnt1 .inputgroup {
   margin-top:1.4rem;
   margin-left:0.5rem;
@@ -787,6 +821,42 @@ header .header_login_info a {
   margin-right:0.5rem;
 
 }
+
+#cnt1 .inputgroup3 {
+  margin-top:1.4rem;
+  margin-left:0.5rem;
+  margin-right:0.5rem;
+  flex-grow: 1;
+}
+#cnt1 .inputgroup4 {
+  margin-top:1.4rem;
+  margin-left:0.5rem;
+  margin-right:0.5rem;
+  flex-grow:0;
+  
+}
+#cnt1 .care {
+  /*float:right;*/
+  font-size:1.2rem;
+}
+#cnt1 .caretxt {
+  /*float:right;*/
+  margin:5px 0 0 20px;
+  font-size:1.2rem;
+}
+
+
+.input_w100p_m  {width:calc(100% - 8em);}  /*spanの幅分をマイナス*/
+.input_search_w1  {width:9.3rem;} 
+#cnt1 .spanblock1  {
+  display:inline-block;
+  /*width:calc(100% - 8em);*/
+  width:251px;
+  /*background: #AAC;*/
+}
+
+
+
 #cnt1 .markzone {position: relative;}
 #cnt1 .markzone::before {
   content: "";
@@ -832,46 +902,76 @@ header .header_login_info a {
 }
 
 
- .form_style {
-  font-size:1.6rem;
-  height:2.8rem;
-  /*width:calc(100% - 8px);*/
-  padding:0 4px;
-  margin:0 4px;
-  /*width:100%;*/
-  box-sizing: border-box;
+
+
+
+/*--------------------## プレビュー ##----------------------------------------*/
+#preview_area1 .strapline  {
+  width: 91mm;
+  background:linear-gradient(to bottom, #bbd2f0 0%, #FFF 90%, lightblue 90%,  lightblue 100%); 
+
 }
- .form_style_t {
-  font-size:2rem;
-  /*height:6rem;*/
-  /*width:calc(100% - 8px);*/
-  padding:0 4px;
-  width:100%;
-  box-sizing: border-box;
+#preview_area1 .caution  {
+  font-size: 1.2rem;
+  text-indent: -1em;
+  margin-left: 1em;
 }
-.form_style_textarea {
-  font-size:2rem;
-  line-height:2.4rem;
-  /*height:6rem;*/
-  /*width:calc(100% - 12px);*/
-  padding:4px 6px;
-  width:41em;
-  box-sizing: border-box;
+#card_preview {
+  position: relative;
+  width: 91mm;
+  height: 55mm;
+  background: #FEC;
+  border: 1px solid #888888;
 }
- .input_w1  {width:1em;}
- .input_w2  {width:2em;}
- .input_w3  {width:3em;}
- .input_w5  {width:5em;}
- .input_w7  {width:7em;}
- .input_w10  {width:10em;}
- .input_w20  {width:20em;}
- .input_w30  {width:30em;}
- .input_w40  {width:40em;}
- .input_w100p  {width:100%;}
- .inputzone span{
-  margin-left:0.5em;
-  margin-right:0.5em;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #department01 {
 /*

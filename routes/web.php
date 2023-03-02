@@ -25,7 +25,7 @@ Route::post('login', 'App\Http\Controllers\Auth\LoginController@login');
 Route::post('logout', 'App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 
 
-// 
+// 新規作成・更新修正 
 Route::get('/edit', [EditController::class,'index'])->middleware('auth');
 Route::get('/edit/make', [EditController::class,'make'])->middleware('auth');
 Route::get('/edit/fix', [EditController::class,'fix'])->middleware('auth');
@@ -34,6 +34,7 @@ Route::post('/edit/getone', [EditController::class,'getDataOne'])->middleware('a
 Route::post('/edit/update', [EditController::class,'fix'])->middleware('auth');
 Route::post('/edit/insert', [EditController::class,'store'])->middleware('auth');
 
+// 検索
 Route::get('/search', [SearchController::class,'search'])->middleware('auth');
 Route::post('/search/get', [SearchController::class,'getDataSearch'])->middleware('auth');
 
@@ -47,4 +48,6 @@ Route::post('/print/get', [PrintController::class,'getSeaDetail'])->middleware('
 
 // 管理
 Route::get('/maintenance/backup', [BackupLogsController::class,'index'])->middleware('auth');
+Route::get('/pwmake', [AdminController::class,'pwmake'])->middleware('auth');
+Route::post('/pwmake', [AdminController::class,'pwmake'])->middleware('auth');
 

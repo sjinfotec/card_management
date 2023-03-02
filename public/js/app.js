@@ -2803,6 +2803,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //import moment from "moment";
 //import { dialogable } from "../mixins/dialogable.js";
 //import { checkable } from "../mixins/checkable.js";
@@ -2829,7 +2852,7 @@ __webpack_require__.r(__webpack_exports__);
       form: {
         id: "",
         sheet: "",
-        company: "",
+        company: "札幌トヨタ自動車株式会社",
         office: "",
         department: "",
         division: "",
@@ -2861,8 +2884,6 @@ __webpack_require__.r(__webpack_exports__);
       details2: [],
       informations: [],
       content: "",
-      login_user_code: 0,
-      login_user_role: 0,
       dialogVisible: false,
       messageshowsearch: false,
       messagevalidatesNew: [],
@@ -2882,6 +2903,32 @@ __webpack_require__.r(__webpack_exports__);
     //this.login_user_code = this.authusers["code"];
     //this.login_user_role = this.authusers["role"];
     this.Test();
+
+    if (this.details.length > 0 || this.selectMode == 'NEW') {
+      window.addEventListener("load", function () {
+        //const text3 = document.getElementById("text3");
+        //text3.addEventListener("change", {tagid: 3, handleEvent: changeText});
+        addEventListener("change", {
+          tagid: "company",
+          handleEvent: changeText
+        });
+        ival_office.addEventListener("change", {
+          tagid: "office",
+          handleEvent: changeText
+        });
+        ival_department.addEventListener("change", {
+          tagid: "department",
+          handleEvent: changeText
+        }); //addEventListener("change", {tagid: 5, handleEvent: changeText}); //どこか１つでも変更があれば
+      });
+    }
+
+    function changeText(e) {
+      //document.getElementById("span3").textContent = text3.value;
+      var TextV = document.getElementById("ival_" + this.tagid);
+      console.log('changeText, ' + TextV);
+      document.getElementById("tid_" + this.tagid).innerHTML = TextV.value;
+    }
   },
   filters: {
     numberFormat: function numberFormat(num) {
@@ -3581,6 +3628,97 @@ __webpack_require__.r(__webpack_exports__);
       this.details = [];
       this.searchItem2();
       this.selectMode = 'COMPLETE';
+    },
+    clickEvent: function clickEvent(fname, val1, val2, cf, com1, md, smd) {
+      var fm = document.getElementById(fname); //var tname = document.getElementsByName(val1);
+      //Submit値を操作
+      //fm.edit_id.value = val;
+      //fm.tname.value = val;
+      //tname[0].value = val;	//[0]を付けないとundefind
+      //alert('clickEvent 引数 = ' + fname + ' 、 ' + tn + ' 、 ' + val + ' 、 ' + cf);
+
+      if (cf == 'confirm') {
+        //var Jname = fm.name.value;
+        var Js_product_code = fm.s_product_code.value; //var result = window.confirm( com1 +'\\n\\n店舗名 : '+ Jname +'\\nコード : '+ Jname_code +'');
+        //var result = window.confirm(Jproduct_id + ' ' + com1 + 'します');
+
+        var result = val1;
+
+        if (result) {
+          //document.defineedit.edit_id.value = val;
+          //document.defineedit.submit();
+          fm.mode.value = md;
+          fm.action = '/process/search';
+          fm.submit();
+        } else {
+          console.log('キャンセルがクリックされました');
+        }
+      } else if (cf == 'goedit') {
+        //fm.work_code.value = 'DEL';
+        fm.mode.value = md;
+        fm.select_html.value = val2;
+        fm.action = '/process/search';
+        fm.submit();
+      } else if (cf == 'confirm_update') {
+        var Jwork_name = fm.work_name.value;
+        var Jdepartments_name = fm.departments_name.value; //var Js_product_code = fm.s_product_code.value;
+        //var result = window.confirm( com1 +'\\n\\n店舗名 : '+ Jname +'\\nコード : '+ Jname_code +'');
+
+        var result = window.confirm('部署名 : ' + Jdepartments_name + '\n工程 : ' + Jwork_name + '\n' + com1 + 'します');
+
+        if (result) {
+          //fm.mode.value = md;
+          fm.motion.value = val1;
+          fm.action = '/process/insert';
+          fm.submit();
+        } else {
+          console.log('キャンセルがクリックされました');
+        }
+      } else if (cf == 'select_workname') {
+        document.getElementById('work_name').value = val1;
+        var result = window.confirm('result : ' + val2 + '');
+        var text = [];
+        var obj = JSON.parse(val2);
+        obj.forEach(function (element, index3, array) {
+          //$('#resultwp').prepend('<button class="style5" type="button" >' + element.name + '</button>\n');
+          //text.push('<button class="style5" type="button" >' + element.name + '</button>\n');
+
+          /** 日付を文字列にフォーマットする */
+          var d = new Date(element.work_date);
+          var formatted = "".concat(d.getFullYear(), "-") + "".concat((d.getMonth() + 1).toString().padStart(2, '0'), "-") + "".concat(d.getDate().toString().padStart(2, '0')).replace(/\n|\r/g, '');
+          text.push(index3 + ':' + element.work_date + ' :' + formatted + '\n');
+          document.getElementById('work' + formatted).checked = true;
+        });
+        document.getElementById('resultstr').innerHTML = text.join(''); //document.getElementById('work2022-11-09').checked = true;
+      } else if (cf == 'status_up') {
+        var result = window.confirm('部署名 : ' + val1 + '\n' + com1 + 'します');
+
+        if (result) {
+          //fm.work_code.value = 'DEL';
+          fm.mode.value = md;
+          fm.status.value = val2;
+          fm.action = '/process/insert';
+          fm.submit();
+        } else {
+          console.log('キャンセルがクリックされました');
+        }
+      } else {
+        fm.submit();
+      }
+    },
+    EditBtn: function EditBtn(eid, pid, pname, smode, index) {
+      //var edit_id = eid;
+      //console.log("EditBtn in");
+      //console.log(edit_id);
+      this.selectMode = 'EDT';
+      this.btnMode = smode;
+      this.getItemOne(eid, pid, pname, smode);
+
+      if (smode == 'fix') {
+        this.isDisabled = false;
+      } else if (smode == 'update') {
+        this.isDisabled = true;
+      }
     },
     viewBtn: function viewBtn(go) {
       var amari = this.i % go; //console.log("viewBtn amari = " + amari);
@@ -25599,10 +25737,6 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", [_vm._v("vue変数テスト htmlSelect：" + _vm._s(_vm.htmlSelect))]),
-    _vm._v(" "),
-    _c("div", [_vm._v("vue変数テスト selectMode：" + _vm._s(_vm.selectMode))]),
-    _vm._v(" "),
     _vm.selectMode == "COMPLETE"
       ? _c("div", { attrs: { id: "input_area_1" } }, [
           _c("div", { attrs: { id: "top_cnt" } }, [
@@ -25841,7 +25975,7 @@ var render = function () {
     _vm.selectMode == "NEW"
       ? _c("div", { attrs: { id: "input_area_1" } }, [
           _c("div", { attrs: { id: "top_cnt" } }, [
-            _c("h2", [_vm._v("名刺 / 新規登録")]),
+            _c("h2", { staticClass: "title" }, [_vm._v("新規登録")]),
             _vm._v(" "),
             _c(
               "button",
@@ -25921,7 +26055,12 @@ var render = function () {
                     },
                   ],
                   staticClass: "form_style bc2",
-                  attrs: { type: "text", maxlength: "100", name: "company" },
+                  attrs: {
+                    id: "ival_company",
+                    type: "text",
+                    maxlength: "100",
+                    name: "company",
+                  },
                   domProps: { value: _vm.form.company },
                   on: {
                     input: function ($event) {
@@ -25949,7 +26088,12 @@ var render = function () {
                     },
                   ],
                   staticClass: "form_style bc2",
-                  attrs: { type: "text", maxlength: "50", name: "office" },
+                  attrs: {
+                    id: "ival_office",
+                    type: "text",
+                    maxlength: "50",
+                    name: "office",
+                  },
                   domProps: { value: _vm.form.office },
                   on: {
                     input: function ($event) {
@@ -25977,7 +26121,12 @@ var render = function () {
                     },
                   ],
                   staticClass: "form_style bc2",
-                  attrs: { type: "text", maxlength: "50", name: "department" },
+                  attrs: {
+                    id: "ival_department",
+                    type: "text",
+                    maxlength: "50",
+                    name: "department",
+                  },
                   domProps: { value: _vm.form.department },
                   on: {
                     input: function ($event) {
@@ -26700,6 +26849,8 @@ var render = function () {
               ])
             : _vm._e(),
           _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
           _c("div", { attrs: { id: "button1" } }, [
             _c("div", { staticClass: "btnstyle" }, [
               _c(
@@ -26726,12 +26877,10 @@ var render = function () {
           { attrs: { id: "input_area_1" } },
           [
             _c("div", { attrs: { id: "top_cnt" } }, [
-              _vm.btnMode === "update"
-                ? _c("h2", [_vm._v("名刺 / 更新")])
-                : _vm._e(),
+              _vm.btnMode === "update" ? _c("h2", [_vm._v("更新")]) : _vm._e(),
               _vm._v(" "),
               _vm.btnMode === "fix"
-                ? _c("h2", [_vm._v("名刺 / 修正")])
+                ? _c("h2", [_vm._v("編集・修正")])
                 : _vm._e(),
               _vm._v(" "),
               _c(
@@ -26840,6 +26989,7 @@ var render = function () {
                         ],
                         staticClass: "form_style bc2",
                         attrs: {
+                          id: "ival_company",
                           type: "text",
                           maxlength: "100",
                           name: "company",
@@ -26876,6 +27026,7 @@ var render = function () {
                         ],
                         staticClass: "form_style bc2",
                         attrs: {
+                          id: "ival_office",
                           type: "text",
                           maxlength: "50",
                           name: "office",
@@ -26912,6 +27063,7 @@ var render = function () {
                         ],
                         staticClass: "form_style bc2",
                         attrs: {
+                          id: "ival_department",
                           type: "text",
                           maxlength: "50",
                           name: "department",
@@ -27512,7 +27664,7 @@ var render = function () {
                   ]),
                 ]),
                 _vm._v(" "),
-                _vm._m(1, true),
+                _vm._m(2, true),
                 _vm._v(" "),
                 _c("div", { attrs: { id: "cnt1" } }, [
                   _c("div", { staticClass: "inputgroup w4" }, [
@@ -27939,7 +28091,7 @@ var render = function () {
             _vm._v(" "),
             _c("div", { attrs: { id: "tbl_1" } }, [
               _c("table", [
-                _vm._m(2),
+                _vm._m(3),
                 _vm._v(" "),
                 _c(
                   "tbody",
@@ -28040,7 +28192,7 @@ var render = function () {
     _vm._v(" "),
     _vm.selectMode == "LINEACTIVE"
       ? _c("div", [
-          _vm._m(3),
+          _vm._m(4),
           _vm._v(" "),
           _c(
             "div",
@@ -28375,11 +28527,38 @@ var staticRenderFns = [
         _c("div", { staticClass: "cate gc2" }, [_vm._v("画像ファイル")]),
         _vm._v(" "),
         _c("div", { staticClass: "inputzone" }, [
-          _c("input", {
-            staticClass: "form_style bc2",
-            attrs: { type: "file", name: "image" },
-          }),
+          _c("input", { attrs: { type: "file", name: "image" } }),
         ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "preview_area1" } }, [
+      _c("div", { staticClass: "strapline" }, [_vm._v("イメージプレビュー")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "caution" }, [
+        _vm._v("※この表示はイメージです。"),
+        _c("br"),
+        _vm._v(
+          "実際の印刷レイアウト・フォント・文字サイズ等は異なりますので、ご了承ください。"
+        ),
+      ]),
+      _vm._v(" "),
+      _c("div", { attrs: { id: "card_preview" } }, [
+        _c("span", {
+          staticClass: "tid_company",
+          attrs: { id: "tid_company" },
+        }),
+        _vm._v(" "),
+        _c("span", { staticClass: "tid_office", attrs: { id: "tid_office" } }),
+        _vm._v(" "),
+        _c("span", {
+          staticClass: "tid_department",
+          attrs: { id: "tid_department" },
+        }),
       ]),
     ])
   },

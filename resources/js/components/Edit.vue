@@ -2,10 +2,10 @@
   <div>
 
 
-
+    <!--
     <div>vue変数テスト htmlSelect：{{ htmlSelect }}</div>
     <div>vue変数テスト selectMode：{{ selectMode }}</div>
-
+    -->
     <div id="input_area_1" v-if="selectMode=='COMPLETE'">
       <div id="top_cnt">
         <h2 class="title mgt20">結果 / {{ acttitle }} 完了</h2>
@@ -89,7 +89,7 @@
 
     <div id="input_area_1" v-if="selectMode=='NEW'">
       <div id="top_cnt">
-        <h2>名刺 / 新規登録</h2>
+        <h2 class="title">新規登録</h2>
         <button type="button" class="customize" @click="viewBtn(2)">
           管理者
         </button>
@@ -100,15 +100,6 @@
             <li v-for="(messagevalidate,index) in messagevalidatesNew" v-bind:key="index">{{ messagevalidate }}</li>
           </ul>
       </div>
-
-
-
-
-
-
-
-
-
 
       <div id="cnt1">
         <div class="inputgroup w1">
@@ -130,6 +121,7 @@
           <div class="cate gc2">会社</div>
           <div class="inputzone">
             <input
+              id="ival_company"
               type="text"
               class="form_style bc2"
               v-model="form.company"
@@ -142,6 +134,7 @@
           <div class="cate gc2">営業所</div>
           <div class="inputzone">
             <input
+              id="ival_office"
               type="text"
               class="form_style bc2"
               v-model="form.office"
@@ -154,6 +147,7 @@
           <div class="cate gc2">部署</div>
           <div class="inputzone">
             <input
+              id="ival_department"
               type="text"
               class="form_style bc2"
               v-model="form.department"
@@ -379,7 +373,7 @@
           <div class="inputzone">
             <input
               type="file"
-              class="form_style bc2"
+              class=""
               name="image"
             />
           </div>
@@ -471,6 +465,20 @@
         </div>
       </div><!--## end id="cnt1" ##-->
 
+      <div id="preview_area1">
+        <div class="strapline">イメージプレビュー</div>
+        <div class="caution">※この表示はイメージです。<br>実際の印刷レイアウト・フォント・文字サイズ等は異なりますので、ご了承ください。</div>
+        <div id="card_preview">
+          <span id="tid_company" class="tid_company"></span>
+          <span id="tid_office" class="tid_office"></span>
+          <span id="tid_department" class="tid_department"></span>
+
+        </div>
+      </div>
+
+
+
+
       <div id="button1">
           <div class="btnstyle">
             <button type="button" class="style1" @click="dataStore()">新規登録する</button>
@@ -483,11 +491,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div id="input_area_1" v-if="selectMode=='EDT'">
 
       <div id="top_cnt">
-        <h2 v-if="btnMode==='update'">名刺 / 更新</h2>
-        <h2 v-if="btnMode==='fix'">名刺 / 修正</h2>
+        <h2 v-if="btnMode==='update'">更新</h2>
+        <h2 v-if="btnMode==='fix'">編集・修正</h2>
         <button type="button" class="customize" @click="viewBtn(2)">
           追加情報
         </button>
@@ -523,6 +544,7 @@
           <div class="cate gc2">会社</div>
           <div class="inputzone">
             <input
+              id="ival_company"
               type="text"
               class="form_style bc2"
               v-model="details[index].company"
@@ -535,6 +557,7 @@
           <div class="cate gc2">営業所</div>
           <div class="inputzone">
             <input
+              id="ival_office"
               type="text"
               class="form_style bc2"
               v-model="details[index].office"
@@ -547,6 +570,7 @@
           <div class="cate gc2">部署</div>
           <div class="inputzone">
             <input
+              id="ival_department"
               type="text"
               class="form_style bc2"
               v-model="details[index].department"
@@ -1100,7 +1124,6 @@
 
 
 
-
   </div>
 </template>
 
@@ -1136,7 +1159,7 @@ export default {
       form: {
         id: "",
         sheet: "",
-        company: "",
+        company: "札幌トヨタ自動車株式会社",
         office: "",
         department: "",
         division: "",
@@ -1168,8 +1191,6 @@ export default {
       details2: [],
       informations: [],
       content: "",
-      login_user_code: 0,
-      login_user_role: 0,
       dialogVisible: false,
       messageshowsearch: false,
       messagevalidatesNew: [],
@@ -1190,6 +1211,26 @@ export default {
     //this.login_user_code = this.authusers["code"];
     //this.login_user_role = this.authusers["role"];
     this.Test();
+
+    if(this.details.length > 0 || this.selectMode=='NEW' ) {
+      window.addEventListener("load",function(){
+        //const text3 = document.getElementById("text3");
+        //text3.addEventListener("change", {tagid: 3, handleEvent: changeText});
+        addEventListener("change", {tagid: "company", handleEvent: changeText});
+        ival_office.addEventListener("change", {tagid: "office", handleEvent: changeText});
+        ival_department.addEventListener("change", {tagid: "department", handleEvent: changeText});
+        //addEventListener("change", {tagid: 5, handleEvent: changeText}); //どこか１つでも変更があれば
+      });
+    }
+    function changeText(e) {
+      //document.getElementById("span3").textContent = text3.value;
+      var TextV = document.getElementById("ival_" + this.tagid)
+      console.log('changeText, ' + TextV);
+      document.getElementById("tid_" + this.tagid).innerHTML = TextV.value;
+    }
+
+
+
   },
   filters: {
     numberFormat: function(num){
@@ -1640,6 +1681,12 @@ export default {
     },
 
     // -------------------- 共通 ----------------------------
+
+
+
+
+
   }
 };
+
 </script>

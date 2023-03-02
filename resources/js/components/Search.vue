@@ -164,6 +164,120 @@ export default {
       this.searchItem2();
       this.selectMode = 'COMPLETE';
     },
+
+    clickEvent(fname,val1,val2,cf,com1,md,smd) {
+	var fm = document.getElementById(fname);
+	//var tname = document.getElementsByName(val1);
+	//Submit値を操作
+	//fm.edit_id.value = val;
+	//fm.tname.value = val;
+	//tname[0].value = val;	//[0]を付けないとundefind
+
+	//alert('clickEvent 引数 = ' + fname + ' 、 ' + tn + ' 、 ' + val + ' 、 ' + cf);
+
+		if(cf == 'confirm') {
+			//var Jname = fm.name.value;
+			var Js_product_code = fm.s_product_code.value;
+			//var result = window.confirm( com1 +'\\n\\n店舗名 : '+ Jname +'\\nコード : '+ Jname_code +'');
+			//var result = window.confirm(Jproduct_id + ' ' + com1 + 'します');
+			var result = val1;
+			if( result ) {
+				//document.defineedit.edit_id.value = val;
+				//document.defineedit.submit();
+				fm.mode.value = md;
+				fm.action = '/process/search';
+				fm.submit();
+			}
+			else {
+				console.log('キャンセルがクリックされました');
+			}
+		}
+		else if(cf == 'goedit') {
+				//fm.work_code.value = 'DEL';
+				fm.mode.value = md;
+				fm.select_html.value = val2;
+				fm.action = '/process/search';
+				fm.submit();
+		}
+		else if(cf == 'confirm_update') {
+			var Jwork_name = fm.work_name.value;
+			var Jdepartments_name = fm.departments_name.value;
+			//var Js_product_code = fm.s_product_code.value;
+			//var result = window.confirm( com1 +'\\n\\n店舗名 : '+ Jname +'\\nコード : '+ Jname_code +'');
+			var result = window.confirm('部署名 : ' + Jdepartments_name + '\n工程 : ' + Jwork_name + '\n' + com1 + 'します');
+			if( result ) {
+				//fm.mode.value = md;
+				fm.motion.value = val1;
+				fm.action = '/process/insert';
+				fm.submit();
+			}
+			else {
+				console.log('キャンセルがクリックされました');
+			}
+		}
+		else if(cf == 'select_workname') {
+			document.getElementById('work_name').value = val1;
+			var result = window.confirm('result : ' + val2 + '');
+			let text = [];
+			let obj = JSON.parse(val2);
+			obj.forEach(function(element, index3, array){
+				//$('#resultwp').prepend('<button class="style5" type="button" >' + element.name + '</button>\n');
+				//text.push('<button class="style5" type="button" >' + element.name + '</button>\n');
+
+				/** 日付を文字列にフォーマットする */
+				var d = new Date(element.work_date);
+				var formatted = 
+					`${d.getFullYear()}-` +
+					`${(d.getMonth()+1).toString().padStart(2, '0')}-` +
+					`${d.getDate().toString().padStart(2, '0')}`
+					.replace(/\n|\r/g, '');
+
+				text.push(
+				index3 + ':' + element.work_date + ' :' + formatted + '\n'
+				);
+				document.getElementById('work' + formatted).checked = true;
+
+
+			});
+			document.getElementById('resultstr').innerHTML = text.join('');
+
+			//document.getElementById('work2022-11-09').checked = true;
+
+		}
+		else if(cf == 'status_up') {
+			var result = window.confirm('部署名 : ' + val1 + '\n' + com1 + 'します');
+			if( result ) {
+				//fm.work_code.value = 'DEL';
+				fm.mode.value = md;
+				fm.status.value = val2;
+				fm.action = '/process/insert';
+				fm.submit();
+			}
+			else {
+				console.log('キャンセルがクリックされました');
+			}
+
+		}
+		else {
+			fm.submit();
+		}
+	},
+
+
+    EditBtn(eid,pid,pname,smode,index) {
+      //var edit_id = eid;
+      //console.log("EditBtn in");
+      //console.log(edit_id);
+      this.selectMode = 'EDT';
+      this.btnMode = smode;
+      this.getItemOne(eid,pid,pname,smode);
+      if(smode == 'fix') {
+        this.isDisabled = false;
+      }
+      else if(smode == 'update') {
+        this.isDisabled = true;
+      }
+    },
     viewBtn(go) {
     var amari = this.i % go;
     //console.log("viewBtn amari = " + amari);
