@@ -336,6 +336,8 @@ header .header_login_info a {
 .gc4b  {  background:linear-gradient(to bottom, #FFF 0%, #FFF 80%, #eecc55 80%,  #eecc55 100%);}
 .bc4  {  border:2px solid #eecc55;}
 .bcc4 {  border-color:#eecc55;}
+.gc5  {  background:linear-gradient(to bottom, #88d9ff 0%, #FFF 90%, lightblue 90%,  lightblue 100%);}
+.bc5  {  border:2px solid #88d9ff;}
 .stock_active {  background:linear-gradient(to bottom, #ffeecc 0%, #ffeecc 80%, #eecc55 80%,  #eecc55 100%);}
 .bold { font-weight: bold;}
 

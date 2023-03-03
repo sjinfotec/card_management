@@ -2826,6 +2826,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //import moment from "moment";
 //import { dialogable } from "../mixins/dialogable.js";
 //import { checkable } from "../mixins/checkable.js";
@@ -2853,7 +2870,9 @@ __webpack_require__.r(__webpack_exports__);
         id: "",
         sheet: "",
         company: "札幌トヨタ自動車株式会社",
+        company_code: "",
         office: "",
+        office_code: "",
         department: "",
         division: "",
         director: "",
@@ -26012,7 +26031,13 @@ var render = function () {
           _vm._v(" "),
           _c("div", { attrs: { id: "cnt1" } }, [
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("枚数")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("枚数")]),
+              _vm._v(" "),
+              _c(
+                "label",
+                { staticClass: "style_label gc5", attrs: { for: "sheet" } },
+                [_vm._v("枚数")]
+              ),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26024,8 +26049,13 @@ var render = function () {
                       expression: "form.sheet",
                     },
                   ],
-                  staticClass: "form_style bc2",
-                  attrs: { type: "text", maxlength: "20", name: "sheet" },
+                  staticClass: "form_style bc5",
+                  attrs: {
+                    id: "sheet",
+                    type: "text",
+                    maxlength: "20",
+                    name: "sheet",
+                  },
                   domProps: { value: _vm.form.sheet },
                   on: {
                     input: function ($event) {
@@ -26042,9 +26072,49 @@ var render = function () {
           _vm._v(" "),
           _c("div", { attrs: { id: "cnt1" } }, [
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("会社")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("会社")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.company_code,
+                        expression: "form.company_code",
+                      },
+                    ],
+                    staticClass: "form_style bc5",
+                    attrs: { name: "company_code", id: "company_code" },
+                    on: {
+                      change: function ($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function (o) {
+                            return o.selected
+                          })
+                          .map(function (o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.$set(
+                          _vm.form,
+                          "company_code",
+                          $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        )
+                      },
+                    },
+                  },
+                  [
+                    _c("option", { attrs: { value: "1" } }, [
+                      _vm._v("札幌トヨタ自動車株式会社"),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
                 _c("input", {
                   directives: [
                     {
@@ -26054,11 +26124,9 @@ var render = function () {
                       expression: "form.company",
                     },
                   ],
-                  staticClass: "form_style bc2",
                   attrs: {
                     id: "ival_company",
-                    type: "text",
-                    maxlength: "100",
+                    type: "hidden",
                     name: "company",
                   },
                   domProps: { value: _vm.form.company },
@@ -26075,9 +26143,49 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("営業所")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("営業所")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.office_code,
+                        expression: "form.office_code",
+                      },
+                    ],
+                    staticClass: "form_style bc5",
+                    attrs: { name: "office_code", id: "office_code" },
+                    on: {
+                      change: function ($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function (o) {
+                            return o.selected
+                          })
+                          .map(function (o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.$set(
+                          _vm.form,
+                          "office_code",
+                          $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        )
+                      },
+                    },
+                  },
+                  [
+                    _c("option", { attrs: { value: "" } }, [
+                      _vm._v("-- 営業所選択 --"),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
                 _c("input", {
                   directives: [
                     {
@@ -26087,13 +26195,7 @@ var render = function () {
                       expression: "form.office",
                     },
                   ],
-                  staticClass: "form_style bc2",
-                  attrs: {
-                    id: "ival_office",
-                    type: "text",
-                    maxlength: "50",
-                    name: "office",
-                  },
+                  attrs: { id: "ival_office", type: "hidden", name: "office" },
                   domProps: { value: _vm.form.office },
                   on: {
                     input: function ($event) {
@@ -26106,9 +26208,11 @@ var render = function () {
                 }),
               ]),
             ]),
-            _vm._v(" "),
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "cnt1" } }, [
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("部署")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("部署")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26120,7 +26224,7 @@ var render = function () {
                       expression: "form.department",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: {
                     id: "ival_department",
                     type: "text",
@@ -26141,7 +26245,7 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("課")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("課")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26153,7 +26257,7 @@ var render = function () {
                       expression: "form.division",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: { type: "text", maxlength: "50", name: "division" },
                   domProps: { value: _vm.form.division },
                   on: {
@@ -26171,7 +26275,7 @@ var render = function () {
           _vm._v(" "),
           _c("div", { attrs: { id: "cnt1" } }, [
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("役職")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("役職")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26183,7 +26287,7 @@ var render = function () {
                       expression: "form.director",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: { type: "text", maxlength: "50", name: "director" },
                   domProps: { value: _vm.form.director },
                   on: {
@@ -26199,7 +26303,7 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("資格1")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("資格1")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26211,7 +26315,7 @@ var render = function () {
                       expression: "form.certification1",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: {
                     type: "text",
                     maxlength: "50",
@@ -26231,7 +26335,7 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("資格2")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("資格2")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26243,7 +26347,7 @@ var render = function () {
                       expression: "form.certification2",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: {
                     type: "text",
                     maxlength: "50",
@@ -26263,7 +26367,7 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("資格3")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("資格3")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26275,7 +26379,7 @@ var render = function () {
                       expression: "form.certification3",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: {
                     type: "text",
                     maxlength: "50",
@@ -26297,7 +26401,7 @@ var render = function () {
           _vm._v(" "),
           _c("div", { attrs: { id: "cnt1" } }, [
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("氏名")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("氏名")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26309,7 +26413,7 @@ var render = function () {
                       expression: "form.name",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: { type: "text", maxlength: "100", name: "name" },
                   domProps: { value: _vm.form.name },
                   on: {
@@ -26327,7 +26431,7 @@ var render = function () {
           _vm._v(" "),
           _c("div", { attrs: { id: "cnt1" } }, [
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("読み")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("読み")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26339,7 +26443,7 @@ var render = function () {
                       expression: "form.reading",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: { type: "text", maxlength: "100", name: "reading" },
                   domProps: { value: _vm.form.reading },
                   on: {
@@ -26355,7 +26459,7 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("ローマ字")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("ローマ字")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26367,7 +26471,7 @@ var render = function () {
                       expression: "form.roma",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: { type: "text", maxlength: "100", name: "roma" },
                   domProps: { value: _vm.form.roma },
                   on: {
@@ -26383,7 +26487,7 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("ふりがな")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("ふりがな")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26395,7 +26499,7 @@ var render = function () {
                       expression: "form.kana",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: { type: "text", maxlength: "50", name: "kana" },
                   domProps: { value: _vm.form.kana },
                   on: {
@@ -26413,7 +26517,7 @@ var render = function () {
           _vm._v(" "),
           _c("div", { attrs: { id: "cnt1" } }, [
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("携帯電話")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("携帯電話")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26425,7 +26529,7 @@ var render = function () {
                       expression: "form.mobile_phone",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: {
                     type: "text",
                     maxlength: "13",
@@ -26445,7 +26549,7 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [
+              _c("div", { staticClass: "cate gc5" }, [
                 _vm._v("メールアドレス"),
               ]),
               _vm._v(" "),
@@ -26459,7 +26563,7 @@ var render = function () {
                       expression: "form.email",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: { type: "text", maxlength: "128", name: "email" },
                   domProps: { value: _vm.form.email },
                   on: {
@@ -26477,7 +26581,7 @@ var render = function () {
           _vm._v(" "),
           _c("div", { attrs: { id: "cnt1" } }, [
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("郵便番号")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("郵便番号")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26489,7 +26593,7 @@ var render = function () {
                       expression: "form.post_code",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: { type: "text", maxlength: "7", name: "post_code" },
                   domProps: { value: _vm.form.post_code },
                   on: {
@@ -26505,7 +26609,7 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("住所")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("住所")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26517,7 +26621,7 @@ var render = function () {
                       expression: "form.address",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: { type: "text", maxlength: "256", name: "address" },
                   domProps: { value: _vm.form.address },
                   on: {
@@ -26533,7 +26637,7 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("TEL（直通）")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("TEL（直通）")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26545,7 +26649,7 @@ var render = function () {
                       expression: "form.direct_dial",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: { type: "text", maxlength: "13", name: "direct_dial" },
                   domProps: { value: _vm.form.direct_dial },
                   on: {
@@ -26561,7 +26665,7 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("TEL")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("TEL")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26573,7 +26677,7 @@ var render = function () {
                       expression: "form.tel",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: { type: "text", maxlength: "13", name: "tel" },
                   domProps: { value: _vm.form.tel },
                   on: {
@@ -26589,7 +26693,7 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "inputgroup w1" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("FAX")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("FAX")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("input", {
@@ -26601,7 +26705,7 @@ var render = function () {
                       expression: "form.fax",
                     },
                   ],
-                  staticClass: "form_style bc2",
+                  staticClass: "form_style bc5",
                   attrs: { type: "text", maxlength: "13", name: "fax" },
                   domProps: { value: _vm.form.fax },
                   on: {
@@ -26621,7 +26725,7 @@ var render = function () {
           _vm._v(" "),
           _c("div", { attrs: { id: "cnt1" } }, [
             _c("div", { staticClass: "inputgroup w4" }, [
-              _c("div", { staticClass: "cate gc2" }, [_vm._v("備考")]),
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("備考")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
                 _c("textarea", {
@@ -26633,7 +26737,7 @@ var render = function () {
                       expression: "form.remarks",
                     },
                   ],
-                  staticClass: "form_style_t bc2",
+                  staticClass: "form_style_t bc5",
                   attrs: { maxlength: "191", name: "remarks", rows: "3" },
                   domProps: { value: _vm.form.remarks },
                   on: {
@@ -26941,7 +27045,7 @@ var render = function () {
                 _vm._v(" "),
                 _c("div", { attrs: { id: "cnt1" } }, [
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [_vm._v("枚数")]),
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("枚数")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "inputzone" }, [
                       _c("input", {
@@ -26953,7 +27057,7 @@ var render = function () {
                             expression: "details[index].sheet",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: { type: "text", maxlength: "20", name: "sheet" },
                         domProps: { value: _vm.details[index].sheet },
                         on: {
@@ -26975,7 +27079,7 @@ var render = function () {
                 _vm._v(" "),
                 _c("div", { attrs: { id: "cnt1" } }, [
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [_vm._v("会社")]),
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("会社")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "inputzone" }, [
                       _c("input", {
@@ -26987,7 +27091,7 @@ var render = function () {
                             expression: "details[index].company",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: {
                           id: "ival_company",
                           type: "text",
@@ -27012,7 +27116,7 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [_vm._v("営業所")]),
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("営業所")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "inputzone" }, [
                       _c("input", {
@@ -27024,7 +27128,7 @@ var render = function () {
                             expression: "details[index].office",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: {
                           id: "ival_office",
                           type: "text",
@@ -27049,7 +27153,7 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [_vm._v("部署")]),
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("部署")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "inputzone" }, [
                       _c("input", {
@@ -27061,7 +27165,7 @@ var render = function () {
                             expression: "details[index].department",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: {
                           id: "ival_department",
                           type: "text",
@@ -27086,7 +27190,7 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [_vm._v("課")]),
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("課")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "inputzone" }, [
                       _c("input", {
@@ -27098,7 +27202,7 @@ var render = function () {
                             expression: "details[index].division",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: {
                           type: "text",
                           maxlength: "50",
@@ -27124,7 +27228,7 @@ var render = function () {
                 _vm._v(" "),
                 _c("div", { attrs: { id: "cnt1" } }, [
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [_vm._v("役職")]),
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("役職")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "inputzone" }, [
                       _c("input", {
@@ -27136,7 +27240,7 @@ var render = function () {
                             expression: "details[index].director",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: {
                           type: "text",
                           maxlength: "50",
@@ -27160,7 +27264,7 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [_vm._v("資格1")]),
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("資格1")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "inputzone" }, [
                       _c("input", {
@@ -27172,7 +27276,7 @@ var render = function () {
                             expression: "details[index].certification1",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: {
                           type: "text",
                           maxlength: "50",
@@ -27196,7 +27300,7 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [_vm._v("資格2")]),
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("資格2")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "inputzone" }, [
                       _c("input", {
@@ -27208,7 +27312,7 @@ var render = function () {
                             expression: "details[index].certification2",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: {
                           type: "text",
                           maxlength: "50",
@@ -27232,7 +27336,7 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [_vm._v("資格3")]),
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("資格3")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "inputzone" }, [
                       _c("input", {
@@ -27244,7 +27348,7 @@ var render = function () {
                             expression: "details[index].certification3",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: {
                           type: "text",
                           maxlength: "50",
@@ -27270,7 +27374,7 @@ var render = function () {
                 _vm._v(" "),
                 _c("div", { attrs: { id: "cnt1" } }, [
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [_vm._v("氏名")]),
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("氏名")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "inputzone" }, [
                       _c("input", {
@@ -27282,7 +27386,7 @@ var render = function () {
                             expression: "details[index].name",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: { type: "text", maxlength: "100", name: "name" },
                         domProps: { value: _vm.details[index].name },
                         on: {
@@ -27304,7 +27408,7 @@ var render = function () {
                 _vm._v(" "),
                 _c("div", { attrs: { id: "cnt1" } }, [
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [_vm._v("読み")]),
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("読み")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "inputzone" }, [
                       _c("input", {
@@ -27316,7 +27420,7 @@ var render = function () {
                             expression: "details[index].reading",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: {
                           type: "text",
                           maxlength: "100",
@@ -27340,7 +27444,7 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [
+                    _c("div", { staticClass: "cate gc5" }, [
                       _vm._v("ローマ字"),
                     ]),
                     _vm._v(" "),
@@ -27354,7 +27458,7 @@ var render = function () {
                             expression: "details[index].roma",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: { type: "text", maxlength: "100", name: "roma" },
                         domProps: { value: _vm.details[index].roma },
                         on: {
@@ -27374,7 +27478,7 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [
+                    _c("div", { staticClass: "cate gc5" }, [
                       _vm._v("ふりがな"),
                     ]),
                     _vm._v(" "),
@@ -27388,7 +27492,7 @@ var render = function () {
                             expression: "details[index].kana",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: { type: "text", maxlength: "50", name: "kana" },
                         domProps: { value: _vm.details[index].kana },
                         on: {
@@ -27410,7 +27514,7 @@ var render = function () {
                 _vm._v(" "),
                 _c("div", { attrs: { id: "cnt1" } }, [
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [
+                    _c("div", { staticClass: "cate gc5" }, [
                       _vm._v("携帯電話"),
                     ]),
                     _vm._v(" "),
@@ -27424,7 +27528,7 @@ var render = function () {
                             expression: "details[index].mobile_phone",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: {
                           type: "text",
                           maxlength: "13",
@@ -27448,7 +27552,7 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [
+                    _c("div", { staticClass: "cate gc5" }, [
                       _vm._v("メールアドレス"),
                     ]),
                     _vm._v(" "),
@@ -27462,7 +27566,7 @@ var render = function () {
                             expression: "details[index].email",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: {
                           type: "text",
                           maxlength: "128",
@@ -27488,7 +27592,7 @@ var render = function () {
                 _vm._v(" "),
                 _c("div", { attrs: { id: "cnt1" } }, [
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [
+                    _c("div", { staticClass: "cate gc5" }, [
                       _vm._v("郵便番号"),
                     ]),
                     _vm._v(" "),
@@ -27502,7 +27606,7 @@ var render = function () {
                             expression: "details[index].post_code",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: {
                           type: "text",
                           maxlength: "7",
@@ -27526,7 +27630,7 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [_vm._v("住所")]),
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("住所")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "inputzone" }, [
                       _c("input", {
@@ -27538,7 +27642,7 @@ var render = function () {
                             expression: "details[index].address",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: {
                           type: "text",
                           maxlength: "256",
@@ -27562,7 +27666,7 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [
+                    _c("div", { staticClass: "cate gc5" }, [
                       _vm._v("TEL（直通）"),
                     ]),
                     _vm._v(" "),
@@ -27576,7 +27680,7 @@ var render = function () {
                             expression: "details[index].direct_dial",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: {
                           type: "text",
                           maxlength: "13",
@@ -27600,7 +27704,7 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [_vm._v("TEL")]),
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("TEL")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "inputzone" }, [
                       _c("input", {
@@ -27612,7 +27716,7 @@ var render = function () {
                             expression: "details[index].tel",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: { type: "text", maxlength: "13", name: "tel" },
                         domProps: { value: _vm.details[index].tel },
                         on: {
@@ -27632,7 +27736,7 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "inputgroup w1" }, [
-                    _c("div", { staticClass: "cate gc2" }, [_vm._v("FAX")]),
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("FAX")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "inputzone" }, [
                       _c("input", {
@@ -27644,7 +27748,7 @@ var render = function () {
                             expression: "details[index].fax",
                           },
                         ],
-                        staticClass: "form_style bc2",
+                        staticClass: "form_style bc5",
                         attrs: { type: "text", maxlength: "13", name: "fax" },
                         domProps: { value: _vm.details[index].fax },
                         on: {
@@ -27668,7 +27772,7 @@ var render = function () {
                 _vm._v(" "),
                 _c("div", { attrs: { id: "cnt1" } }, [
                   _c("div", { staticClass: "inputgroup w4" }, [
-                    _c("div", { staticClass: "cate gc2" }, [_vm._v("備考")]),
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("備考")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "inputzone" }, [
                       _c("textarea", {
@@ -27680,7 +27784,7 @@ var render = function () {
                             expression: "details[index].remarks",
                           },
                         ],
-                        staticClass: "form_style_t bc2",
+                        staticClass: "form_style_t bc5",
                         attrs: { maxlength: "191", name: "remarks", rows: "3" },
                         domProps: { value: _vm.details[index].remarks },
                         on: {
@@ -28524,7 +28628,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "cnt1" } }, [
       _c("div", { staticClass: "inputgroup w1" }, [
-        _c("div", { staticClass: "cate gc2" }, [_vm._v("画像ファイル")]),
+        _c("div", { staticClass: "cate gc5" }, [_vm._v("画像ファイル")]),
         _vm._v(" "),
         _c("div", { staticClass: "inputzone" }, [
           _c("input", { attrs: { type: "file", name: "image" } }),
@@ -28568,11 +28672,11 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "cnt1" } }, [
       _c("div", { staticClass: "inputgroup w1" }, [
-        _c("div", { staticClass: "cate gc2" }, [_vm._v("画像ファイル")]),
+        _c("div", { staticClass: "cate gc5" }, [_vm._v("画像ファイル")]),
         _vm._v(" "),
         _c("div", { staticClass: "inputzone" }, [
           _c("input", {
-            staticClass: "form_style bc2",
+            staticClass: "form_style bc5",
             attrs: { type: "file", name: "image" },
           }),
         ]),

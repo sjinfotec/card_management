@@ -103,11 +103,14 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">枚数</div>
+          <div class="cate gc5">枚数</div>
+          <label for="sheet" class="style_label gc5">枚数</label>
+          
           <div class="inputzone">
             <input
+              id="sheet"
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.sheet"
               maxlength="20"
               name="sheet"
@@ -118,38 +121,52 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">会社</div>
+          <div class="cate gc5">会社</div>
           <div class="inputzone">
+
+            <select name="company_code" id="company_code" class="form_style bc5" v-model="form.company_code">
+              <option value="1">札幌トヨタ自動車株式会社</option>
+            </select>
+
             <input
               id="ival_company"
-              type="text"
-              class="form_style bc2"
+              type="hidden"
+              class=""
               v-model="form.company"
-              maxlength="100"
               name="company"
             />
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">営業所</div>
+          <div class="cate gc5">営業所</div>
           <div class="inputzone">
+
+            <select name="office_code" id="office_code" class="form_style bc5" v-model="form.office_code">
+              <option value="">-- 営業所選択 --</option>
+            </select>
+
             <input
               id="ival_office"
-              type="text"
-              class="form_style bc2"
+              type="hidden"
+              class=""
               v-model="form.office"
-              maxlength="50"
               name="office"
             />
           </div>
         </div>
+      </div><!--## end id="cnt1" ##-->
+
+      
+
+
+      <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">部署</div>
+          <div class="cate gc5">部署</div>
           <div class="inputzone">
             <input
               id="ival_department"
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.department"
               maxlength="50"
               name="department"
@@ -157,11 +174,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">課</div>
+          <div class="cate gc5">課</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.division"
               maxlength="50"
               name="division"
@@ -172,11 +189,11 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">役職</div>
+          <div class="cate gc5">役職</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.director"
               maxlength="50"
               name="director"
@@ -184,11 +201,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">資格1</div>
+          <div class="cate gc5">資格1</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.certification1"
               maxlength="50"
               name="certification1"
@@ -196,11 +213,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">資格2</div>
+          <div class="cate gc5">資格2</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.certification2"
               maxlength="50"
               name="certification2"
@@ -208,11 +225,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">資格3</div>
+          <div class="cate gc5">資格3</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.certification3"
               maxlength="50"
               name="certification3"
@@ -224,11 +241,11 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">氏名</div>
+          <div class="cate gc5">氏名</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.name"
               maxlength="100"
               name="name"
@@ -240,11 +257,11 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">読み</div>
+          <div class="cate gc5">読み</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.reading"
               maxlength="100"
               name="reading"
@@ -252,11 +269,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">ローマ字</div>
+          <div class="cate gc5">ローマ字</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.roma"
               maxlength="100"
               name="roma"
@@ -264,11 +281,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">ふりがな</div>
+          <div class="cate gc5">ふりがな</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.kana"
               maxlength="50"
               name="kana"
@@ -279,11 +296,11 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">携帯電話</div>
+          <div class="cate gc5">携帯電話</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.mobile_phone"
               maxlength="13"
               name="mobile_phone"
@@ -291,11 +308,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">メールアドレス</div>
+          <div class="cate gc5">メールアドレス</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.email"
               maxlength="128"
               name="email"
@@ -306,11 +323,11 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">郵便番号</div>
+          <div class="cate gc5">郵便番号</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.post_code"
               maxlength="7"
               name="post_code"
@@ -318,11 +335,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">住所</div>
+          <div class="cate gc5">住所</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.address"
               maxlength="256"
               name="address"
@@ -330,11 +347,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">TEL（直通）</div>
+          <div class="cate gc5">TEL（直通）</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.direct_dial"
               maxlength="13"
               name="direct_dial"
@@ -342,11 +359,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">TEL</div>
+          <div class="cate gc5">TEL</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.tel"
               maxlength="13"
               name="tel"
@@ -354,11 +371,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">FAX</div>
+          <div class="cate gc5">FAX</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="form.fax"
               maxlength="13"
               name="fax"
@@ -369,7 +386,7 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">画像ファイル</div>
+          <div class="cate gc5">画像ファイル</div>
           <div class="inputzone">
             <input
               type="file"
@@ -382,9 +399,9 @@
 
       <div id="cnt1">
         <div class="inputgroup w4">
-          <div class="cate gc2">備考</div>
+          <div class="cate gc5">備考</div>
           <div class="inputzone">
-            <textarea class="form_style_t bc2" v-model="form.remarks" maxlength="191" name="remarks" rows="3"></textarea>
+            <textarea class="form_style_t bc5" v-model="form.remarks" maxlength="191" name="remarks" rows="3"></textarea>
           </div>
         </div>
       </div><!--## end id="cnt1" ##-->
@@ -526,11 +543,11 @@
 
         <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">枚数</div>
+          <div class="cate gc5">枚数</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].sheet"
               maxlength="20"
               name="sheet"
@@ -541,12 +558,12 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">会社</div>
+          <div class="cate gc5">会社</div>
           <div class="inputzone">
             <input
               id="ival_company"
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].company"
               maxlength="100"
               name="company"
@@ -554,12 +571,12 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">営業所</div>
+          <div class="cate gc5">営業所</div>
           <div class="inputzone">
             <input
               id="ival_office"
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].office"
               maxlength="50"
               name="office"
@@ -567,12 +584,12 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">部署</div>
+          <div class="cate gc5">部署</div>
           <div class="inputzone">
             <input
               id="ival_department"
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].department"
               maxlength="50"
               name="department"
@@ -580,11 +597,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">課</div>
+          <div class="cate gc5">課</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].division"
               maxlength="50"
               name="division"
@@ -595,11 +612,11 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">役職</div>
+          <div class="cate gc5">役職</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].director"
               maxlength="50"
               name="director"
@@ -607,11 +624,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">資格1</div>
+          <div class="cate gc5">資格1</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].certification1"
               maxlength="50"
               name="certification1"
@@ -619,11 +636,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">資格2</div>
+          <div class="cate gc5">資格2</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].certification2"
               maxlength="50"
               name="certification2"
@@ -631,11 +648,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">資格3</div>
+          <div class="cate gc5">資格3</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].certification3"
               maxlength="50"
               name="certification3"
@@ -647,11 +664,11 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">氏名</div>
+          <div class="cate gc5">氏名</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].name"
               maxlength="100"
               name="name"
@@ -663,11 +680,11 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">読み</div>
+          <div class="cate gc5">読み</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].reading"
               maxlength="100"
               name="reading"
@@ -675,11 +692,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">ローマ字</div>
+          <div class="cate gc5">ローマ字</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].roma"
               maxlength="100"
               name="roma"
@@ -687,11 +704,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">ふりがな</div>
+          <div class="cate gc5">ふりがな</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].kana"
               maxlength="50"
               name="kana"
@@ -702,11 +719,11 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">携帯電話</div>
+          <div class="cate gc5">携帯電話</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].mobile_phone"
               maxlength="13"
               name="mobile_phone"
@@ -714,11 +731,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">メールアドレス</div>
+          <div class="cate gc5">メールアドレス</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].email"
               maxlength="128"
               name="email"
@@ -729,11 +746,11 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">郵便番号</div>
+          <div class="cate gc5">郵便番号</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].post_code"
               maxlength="7"
               name="post_code"
@@ -741,11 +758,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">住所</div>
+          <div class="cate gc5">住所</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].address"
               maxlength="256"
               name="address"
@@ -753,11 +770,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">TEL（直通）</div>
+          <div class="cate gc5">TEL（直通）</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].direct_dial"
               maxlength="13"
               name="direct_dial"
@@ -765,11 +782,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">TEL</div>
+          <div class="cate gc5">TEL</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].tel"
               maxlength="13"
               name="tel"
@@ -777,11 +794,11 @@
           </div>
         </div>
         <div class="inputgroup w1">
-          <div class="cate gc2">FAX</div>
+          <div class="cate gc5">FAX</div>
           <div class="inputzone">
             <input
               type="text"
-              class="form_style bc2"
+              class="form_style bc5"
               v-model="details[index].fax"
               maxlength="13"
               name="fax"
@@ -792,11 +809,11 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc2">画像ファイル</div>
+          <div class="cate gc5">画像ファイル</div>
           <div class="inputzone">
             <input
               type="file"
-              class="form_style bc2"
+              class="form_style bc5"
               name="image"
             />
           </div>
@@ -805,9 +822,9 @@
 
       <div id="cnt1">
         <div class="inputgroup w4">
-          <div class="cate gc2">備考</div>
+          <div class="cate gc5">備考</div>
           <div class="inputzone">
-            <textarea class="form_style_t bc2" v-model="details[index].remarks" maxlength="191" name="remarks" rows="3"></textarea>
+            <textarea class="form_style_t bc5" v-model="details[index].remarks" maxlength="191" name="remarks" rows="3"></textarea>
           </div>
         </div>
       </div><!--## end id="cnt1" ##-->
@@ -1160,7 +1177,9 @@ export default {
         id: "",
         sheet: "",
         company: "札幌トヨタ自動車株式会社",
+        company_code: "",
         office: "",
+        office_code: "",
         department: "",
         division: "",
         director: "",
