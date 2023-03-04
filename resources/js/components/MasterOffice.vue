@@ -6,6 +6,128 @@
     <div>vue変数テスト htmlSelect：{{ htmlSelect }}</div>
     <div>vue変数テスト selectMode：{{ selectMode }}</div>
     -->
+
+    <div id="input_area_1" v-if="selectMode=='TOP'">
+      <div id="top_cnt">
+        <h2 class="title mgt20">一覧 / {{ acttitle }} </h2>
+        <!--
+        <button type="button" class="btn_gc1 textcolor2" onclick="window.print();">
+            印刷
+        </button>
+        -->
+      </div>
+
+      <div id="btn_cnt2">
+        <button type="button" class="" @click="backLine()">一覧へ</button>
+      </div>
+
+      <div class="print-none" v-if="actionmsgArr.length">
+          <ul class="error-red color_red">
+            <li v-for="(actionmsg,index) in actionmsgArr" v-bind:key="index">{{ actionmsg }}</li>
+          </ul>
+      </div>
+
+
+      <div id="tbl_1">
+        <table>
+          <thead>
+            <tr>
+              <th class="gc2">&nbsp;</th>
+              <th class="gc2">社名 <button type="button" class="" @click="ForwardReverse('office',1)">▲</button><button type="button" class="" @click="ForwardReverse('office',2)">▼</button></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(item,rowIndex) in mc_details" :key="rowIndex" v-bind:class="classObj1">
+              <td class="nbr w2e">
+                <div v-if="btnMode === 'off'"></div>
+                <div v-else></div>
+                <div v-if="item['status']=='newest'">
+                  <button type="button" class="style1" @click="EditBtn(item['id'], item['product_code'], details[rowIndex].product_name, 'update', rowIndex)">
+                  更新
+                  </button>
+                  <button type="button" class="style2" @click="EditBtn(item['id'], item['product_code'], details[rowIndex].product_name, 'fix', rowIndex)">
+                  編集
+                  </button>
+                </div>
+                <div v-else>
+                  <button type="button" class="style2" @click="EditBtn(item['id'], item['product_code'], details[rowIndex].product_name, 'fix', rowIndex)">
+                  編集
+                  </button>
+                </div>
+              </td>
+              <td class="nbr">{{ item['company'] }}</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div><!-- end tbl_1 -->
+
+
+
+
+
+      <div id="tbl_1">
+        <table>
+          <thead>
+            <tr>
+              <th class="gc2">&nbsp;</th>
+              <th class="gc2">社名</th>
+              <th class="gc2">営業所 <button type="button" class="" @click="ForwardReverse('office',1)">▲</button> <button type="button" class="" @click="ForwardReverse('office',2)">▼</button></th>
+              <th class="gc2">郵便番号</th>
+              <th class="gc2">住所</th>
+              <th class="gc2">TEL（直通）</th>
+              <th class="gc2">TEL</th>
+              <th class="gc2">FAX</th>
+              <th class="gc2">備考</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(item,rowIndex) in details" :key="rowIndex" v-bind:class="classObj1">
+              <td class="nbr w2e">
+                <div v-if="btnMode === 'off'"></div>
+                <div v-else></div>
+                <div v-if="item['status']=='newest'">
+                  <button type="button" class="style1" @click="EditBtn(item['id'], item['product_code'], details[rowIndex].product_name, 'update', rowIndex)">
+                  更新
+                  </button>
+                  <button type="button" class="style2" @click="EditBtn(item['id'], item['product_code'], details[rowIndex].product_name, 'fix', rowIndex)">
+                  修正
+                  </button>
+                </div>
+                <div v-else>
+                  <button type="button" class="style2" @click="EditBtn(item['id'], item['product_code'], details[rowIndex].product_name, 'fix', rowIndex)">
+                  修正
+                  </button>
+                </div>
+              </td>
+              <td class="nbr">{{ item['company'] }}</td>
+              <td class="nbr">{{ item['office'] }}</td>
+              <td class="">{{ item['post_code'] }}</td>
+              <td v-bind:class="(item['status'] == 'newest') ? 'bgcolor5' : ''">{{ item['address'] }}</td>
+              <td class="">{{ item['direct_dial'] }}</td>
+              <td class="">{{ item['tel'] }}</td>
+              <td class="">{{ item['fax'] }}</td>
+              <td class="style1">{{ item['remarks'] }}</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div><!-- end tbl_1 -->
+    </div><!--end v-if-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div id="input_area_1" v-if="selectMode=='COMPLETE'">
       <div id="top_cnt">
         <h2 class="title mgt20">結果 / {{ acttitle }} 完了</h2>
@@ -28,35 +150,19 @@
         <table>
           <thead>
             <tr>
-              <th class="gc2">日付</th>
-              <th class="gc2">部署</th>
-              <th class="gc2">担当</th>
-              <th class="gc2">商品名 <button type="button" class="" @click="ForwardReverse('product_name',1)">▲</button> <button type="button" class="" @click="ForwardReverse('product_name',2)">▼</button></th>
-              <th class="gc2">分類</th>
-              <th class="gc2">発注先</th>
-              <th class="gc2">単位</th>
-              <th class="gc2">入庫数</th>
-              <th class="gc2">出庫数</th>
-              <th class="gc2">現在在庫</th>
-              <th class="gc2">単価</th>
-              <th class="gc2">合計金額</th>
-              <th class="gc2">備考</th>
               <th class="gc2">&nbsp;</th>
+              <th class="gc2">社名</th>
+              <th class="gc2">営業所 <button type="button" class="" @click="ForwardReverse('office',1)">▲</button> <button type="button" class="" @click="ForwardReverse('office',2)">▼</button></th>
+              <th class="gc2">郵便番号</th>
+              <th class="gc2">住所</th>
+              <th class="gc2">TEL（直通）</th>
+              <th class="gc2">TEL</th>
+              <th class="gc2">FAX</th>
+              <th class="gc2">備考</th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="(item,rowIndex) in details" :key="rowIndex" v-bind:class="classObj1">
-              <td class="nbr">{{ item['mdate'] }}</td>
-              <td class="w4e">{{ item['department'] }}</td>
-              <td class="w3e">{{ item['charge'] }}</td>
-              <td v-bind:class="(item['status'] == 'newest') ? 'bgcolor5' : ''">{{ item['product_name'] }}</td>
-              <td>{{ item['product_number'] }}</td>
-              <td>{{ item['order_address'] }}</td>
-              <td class="nbr">{{ item['unit'] }}</td>
-              <!--<td class="style1">{{ item['quantity'] }}</td>-->
-              <td class="style1" v-bind:class="(item['receipt'] === 0) ? 'color3' : ''">{{ item['receipt'] }}</td>
-              <td class="style1" v-bind:class="(item['delivery'] === 0) ? 'color3' : ''">{{ item['delivery'] }}</td>
-              <td>{{ item['remarks'] }}</td>
               <td class="nbr w2e">
                 <div v-if="btnMode === 'off'"></div>
                 <div v-else></div>
@@ -74,6 +180,14 @@
                   </button>
                 </div>
               </td>
+              <td class="nbr">{{ item['company'] }}</td>
+              <td class="nbr">{{ item['office'] }}</td>
+              <td class="">{{ item['post_code'] }}</td>
+              <td v-bind:class="(item['status'] == 'newest') ? 'bgcolor5' : ''">{{ item['address'] }}</td>
+              <td class="">{{ item['direct_dial'] }}</td>
+              <td class="">{{ item['tel'] }}</td>
+              <td class="">{{ item['fax'] }}</td>
+              <td class="style1">{{ item['remarks'] }}</td>
             </tr>
 
           </tbody>
@@ -189,26 +303,14 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc5">役職1</div>
+          <div class="cate gc5">役職</div>
           <div class="inputzone">
             <input
               type="text"
               class="form_style bc5"
-              v-model="form.director1"
+              v-model="form.director"
               maxlength="50"
-              name="director1"
-            />
-          </div>
-        </div>
-        <div class="inputgroup w1">
-          <div class="cate gc5">役職2</div>
-          <div class="inputzone">
-            <input
-              type="text"
-              class="form_style bc5"
-              v-model="form.director2"
-              maxlength="50"
-              name="director2"
+              name="director"
             />
           </div>
         </div>
@@ -624,26 +726,14 @@
 
       <div id="cnt1">
         <div class="inputgroup w1">
-          <div class="cate gc5">役職1</div>
+          <div class="cate gc5">役職</div>
           <div class="inputzone">
             <input
               type="text"
               class="form_style bc5"
-              v-model="details[index].director1"
+              v-model="details[index].director"
               maxlength="50"
-              name="director1"
-            />
-          </div>
-        </div>
-        <div class="inputgroup w1">
-          <div class="cate gc5">役職2</div>
-          <div class="inputzone">
-            <input
-              type="text"
-              class="form_style bc5"
-              v-model="details[index].director2"
-              maxlength="50"
-              name="director2"
+              name="director"
             />
           </div>
         </div>
@@ -1174,7 +1264,7 @@
 //import { checkable } from "../mixins/checkable.js";
 //import { requestable } from "../mixins/requestable.js";
 export default {
-  name: 'Edit',
+  name: 'Master-Office',
   template: `
     <div>
     </div>
@@ -1206,8 +1296,7 @@ export default {
         office_code: "",
         department: "",
         division: "",
-        director1: "",
-        director2: "",
+        director: "",
         name: "",
         reading: "",
         mobile_phone: "",
@@ -1233,6 +1322,9 @@ export default {
       },
       details: [],
       details2: [],
+      mc_details: [],
+      actionmsgArr: [],
+      acttitle: "",
       informations: [],
       content: "",
       dialogVisible: false,

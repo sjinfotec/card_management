@@ -30,6 +30,15 @@ new Vue(
 Vue.component("home-component", require("./components/HomeComponent.vue").default);
 Vue.component("Search", require("./components/Search.vue").default);
 Vue.component("Edit", require("./components/Edit.vue").default);
+Vue.component("master-office", require("./components/MasterOffice.vue").default);
+
+/*
+tips
+ex. : Vue.component("master-office", require("./components/MasterOffice.vue").default);
+Vue.component("master-office",  この部分はハイフン繋ぎで名前をつける場合は全て小文字でなければならない
+ブレード側にも同様に合わせる <master-office
+NG : Master-Office  エラーになる
+*/
 
 /*
 var engHello =  {

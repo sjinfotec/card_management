@@ -2843,6 +2843,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //import moment from "moment";
 //import { dialogable } from "../mixins/dialogable.js";
 //import { checkable } from "../mixins/checkable.js";
@@ -2875,7 +2899,8 @@ __webpack_require__.r(__webpack_exports__);
         office_code: "",
         department: "",
         division: "",
-        director: "",
+        director1: "",
+        director2: "",
         name: "",
         reading: "",
         mobile_phone: "",
@@ -3473,6 +3498,1852 @@ __webpack_require__.r(__webpack_exports__);
     // ------------------------ サーバー処理 ----------------------------
     Test: function Test() {
       console.log('テストコンソール出力');
+    } // -------------------- 共通 ----------------------------
+
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/MasterOffice.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/MasterOffice.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//import moment from "moment";
+//import { dialogable } from "../mixins/dialogable.js";
+//import { checkable } from "../mixins/checkable.js";
+//import { requestable } from "../mixins/requestable.js";
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'Master-Office',
+  template: "\n    <div>\n    </div>\n  ",
+  //mixins: [dialogable, checkable, requestable],
+  props: {
+    /*
+    authusers: {
+      type: Array,
+      default: []
+    },
+    */
+    htmlSelect: String,
+    selectMode: {
+      type: String,
+      "default": 'EDT'
+    }
+  },
+  data: function data() {
+    return {
+      form: {
+        id: "",
+        sheet: "",
+        company: "札幌トヨタ自動車株式会社",
+        company_code: "",
+        office: "",
+        office_code: "",
+        department: "",
+        division: "",
+        director: "",
+        name: "",
+        reading: "",
+        mobile_phone: "",
+        email: "",
+        certification1: "",
+        certification2: "",
+        certification3: "",
+        post_code: "",
+        address: "",
+        direct_dial: "",
+        tel: "",
+        fax: "",
+        roma: "",
+        kana: "",
+        remarks: "",
+        image: "",
+        status: "",
+        created_user: "",
+        updated_user: "",
+        created_at: "",
+        updated_at: "",
+        is_deleted: ""
+      },
+      details: [],
+      details2: [],
+      mc_details: [],
+      actionmsgArr: [],
+      acttitle: "",
+      informations: [],
+      content: "",
+      dialogVisible: false,
+      messageshowsearch: false,
+      messagevalidatesNew: [],
+      infomationmessage: [],
+      message: "aaa",
+      showMessage: true,
+      btnMode: "",
+      view_switch: "off",
+      s_department: "",
+      s_name: "",
+      s_yomi: "",
+      totals: ""
+    };
+  },
+  // マウント時
+  mounted: function mounted() {
+    //this.login_user_code = this.authusers["code"];
+    //this.login_user_role = this.authusers["role"];
+    this.Test();
+
+    if (this.details.length > 0 || this.selectMode == 'NEW') {
+      window.addEventListener("load", function () {
+        //const text3 = document.getElementById("text3");
+        //text3.addEventListener("change", {tagid: 3, handleEvent: changeText});
+        addEventListener("change", {
+          tagid: "company",
+          handleEvent: changeText
+        });
+        ival_office.addEventListener("change", {
+          tagid: "office",
+          handleEvent: changeText
+        });
+        ival_department.addEventListener("change", {
+          tagid: "department",
+          handleEvent: changeText
+        }); //addEventListener("change", {tagid: 5, handleEvent: changeText}); //どこか１つでも変更があれば
+      });
+    }
+
+    function changeText(e) {
+      //document.getElementById("span3").textContent = text3.value;
+      var TextV = document.getElementById("ival_" + this.tagid);
+      console.log('changeText, ' + TextV);
+      document.getElementById("tid_" + this.tagid).innerHTML = TextV.value;
+    }
+  },
+  filters: {
+    numberFormat: function numberFormat(num) {
+      return num.toLocaleString();
+    }
+  },
+  methods: {
+    searchBtn: function searchBtn() {
+      this.details = [];
+      this.searchItem();
+      this.selectMode = 'COMPLETE';
+    },
+    searchBtn2: function searchBtn2() {
+      this.details = [];
+      this.searchItem2();
+      this.selectMode = 'COMPLETE';
+    },
+    viewBtn: function viewBtn(go) {
+      var amari = this.i % go; //console.log("viewBtn amari = " + amari);
+
+      if (amari == 0) {
+        //console.log("viewBtn amari 0");
+        this.view_switch = 'on';
+      } else {
+        this.view_switch = 'off';
+      }
+
+      this.i = this.i + 1; //console.log("viewBtn i = " + this.i);
+    },
+    backLine: function backLine() {
+      this.selectMode = "LINEACTIVE";
+      var sc = this.selectCnt;
+      this.getItem(sc);
+    },
+    resultLine: function resultLine() {
+      this.details = [];
+      this.searchItem();
+      this.selectMode = "COMPLETE";
+    },
+    ForwardReverse: function ForwardReverse(arraykey, q1) {
+      //console.log("ForwardReverse in  = " + q1);
+      //console.log("ForwardReverse in  = " + arraykey);
+      var sort_target = arraykey; //ソート対象を変数で設定
+      //if(q1 == 1) this.details.sort((a, b) => a[sort_target] - b[sort_target]);
+      //if(q1 == 2) this.details.sort((a, b) => b[sort_target] - a[sort_target]);
+      //this.details = this.details.sort((x, y) => x[sort_target].localeCompare(y[sort_target], 'ja'));
+      //this.details = this.details.sort((x, y) => x[sort_target].lastIndexOf(y[sort_target], 'ja'));
+      //console.log("ForwardReverse in details = " + this.details);
+
+      if (q1 == 1) {
+        this.details = this.details.sort(function (x, y) {
+          if (x[sort_target] === y[sort_target]) {
+            return 0;
+          } else if (x[sort_target] === null) {
+            return 1;
+          } else if (y[sort_target] === null) {
+            return -1;
+          } else {
+            return x[sort_target].localeCompare(y[sort_target], 'ja');
+          }
+        });
+      }
+
+      if (q1 == 2) {
+        this.details = this.details.sort(function (x, y) {
+          if (x[sort_target] === y[sort_target]) {
+            return 0;
+          } else if (x[sort_target] === null) {
+            return 1;
+          } else if (y[sort_target] === null) {
+            return -1;
+          } else {
+            return y[sort_target].localeCompare(x[sort_target], 'ja');
+          }
+        });
+      } //console.log(this.details);
+
+    },
+    // ------------------------ サーバー処理 ----------------------------
+    Test: function Test() {
+      console.log('テストコンソール出力');
+    },
+    // 取得処理
+    getItem: function getItem(sc) {
+      var _this = this;
+
+      this.inputClear();
+      var arrayParams = {
+        charge: this.charge,
+        product_name: this.product_name,
+        mdate: this.mdate,
+        orderfr: this.orderfr,
+        marks: sc,
+        is_deleted: 0
+      }; //console.log("getitem in arrayParams['mdate'] = " + arrayParams['mdate']);
+
+      this.postRequest("/material_management/get", arrayParams).then(function (response) {
+        //console.log(response);
+        _this.getThen(response);
+      })["catch"](function (reason) {
+        //console.log("getitem reason");
+        _this.serverCatch("取得");
+      });
+    },
+    // 取得処理(単)
+    getItemOne: function getItemOne(e, p, pn, md) {
+      var _this2 = this;
+
+      this.inputClear(); //console.log("getitem one in edit_id = " + e);
+      //console.log("getitem one in product_code = " + p);
+      //console.log("getitem one in p_name = " + pn);
+
+      this.edit_id = e;
+      this.product_code = p;
+      this.product_title = pn; //this.smode = md;
+      //console.log("getitem one in product_title = " + this.product_title);
+
+      var arrayParams = {
+        edit_id: e,
+        product_code: p
+      };
+      this.postRequest("/material_management/getone", arrayParams).then(function (response) {
+        _this2.getThen(response, md);
+
+        if (md === 'update') {
+          _this2.details[0].mdate = _this2.itsdate;
+          _this2.details[0].receipt = "";
+          _this2.details[0].delivery = "";
+        }
+      })["catch"](function (reason) {
+        //console.log("getitem reason");
+        _this2.serverCatch("取得");
+      });
+    },
+    // 検索処理
+    searchItem: function searchItem() {
+      var _this3 = this;
+
+      //console.log("searchItem in s_ = " + this.s_order_no);
+      //this.s_order_no = this.s_order_no;
+      this.classObj1 = "";
+      this.acttitle = "検索";
+      var motion_msg = "検索";
+      var messages = [];
+      var arrayParams = {
+        s_department: this.s_department,
+        s_charge: this.s_charge,
+        s_product_name: this.s_product_name,
+        s_product_number: this.s_product_number,
+        marks: this.selectCnt,
+        s_history: this.s_history
+      };
+      this.postRequest("/material_management/search", arrayParams).then(function (response) {
+        _this3.putThenSearch(response, motion_msg); //this.btnMode = "1";
+
+      })["catch"](function (reason) {
+        _this3.serverCatch("検索");
+      });
+    },
+    // 登録インサート処理
+    dataStore: function dataStore() {
+      var _this4 = this;
+
+      if (this.checkFormStore()) {
+        this.product_title = this.form.product_name;
+        this.classObj1 = "bgcolor3";
+        this.acttitle = "新規登録";
+        var messages = [];
+        var arrayParams = {
+          form: this.form,
+          marks: this.selectCnt
+        };
+        this.postRequest("/material_management/insert", arrayParams).then(function (response) {
+          _this4.putThenStore(response, "新規登録");
+        })["catch"](function (reason) {
+          _this4.serverCatch("登録");
+        });
+      }
+    },
+    // ゴミ箱処理
+    dataDel: function dataDel(index, k) {
+      var _this5 = this;
+
+      this.product_title = this.form.product_name;
+      this.classObj1 = "bgcolor4";
+      this.acttitle = "抹消へ移動";
+      var messages = [];
+      var arrayParams = {
+        details: this.details[index],
+        upkind: k
+      };
+      this.postRequest("/material_management/update", arrayParams).then(function (response) {
+        _this5.putThenDel(response, "抹消へ移動");
+      })["catch"](function (reason) {
+        _this5.serverCatch("抹消移動");
+      });
+    },
+    // レコード削除処理
+    recordDel: function recordDel(index, dk) {
+      var _this6 = this;
+
+      var messages = [];
+      messages.push("この登録を削除しますか？");
+      this.htmlMessageSwal(this.details[index].product_name, messages, "info", true, true).then(function (result) {
+        if (result) {
+          //this.storeData();
+          var arrayParams = {
+            details: _this6.details[index],
+            delkind: dk
+          };
+
+          _this6.postRequest("/material_management/delete", arrayParams).then(function (response) {
+            _this6.putThenRecordDel(response, "削除");
+          })["catch"](function (reason) {
+            _this6.serverCatch("削除");
+          });
+        }
+      });
+    },
+    // 編集変更処理
+    dataUpdate: function dataUpdate(index, k) {
+      var _this7 = this;
+
+      var messages = [];
+
+      if (k == 1) {
+        this.details[index].now_inventory = this.details[index].now_inventory + this.details[index].receipt - this.details[index].delivery;
+        this.details[index].total = this.details[index].now_inventory * this.details[index].unit_price;
+      }
+
+      var arrayParams = {
+        details: this.details[index],
+        upkind: k
+      };
+      var motion_msg = "";
+      if (k == 0) motion_msg = '修正';
+      if (k == 1) motion_msg = '在庫を更新';
+      if (k == 2) motion_msg = '新しい商品追加';
+      this.postRequest("/material_management/update", arrayParams).then(function (response) {
+        _this7.putThenHead(response, motion_msg, k);
+      })["catch"](function (reason) {
+        _this7.serverCatch(motion_msg);
+      });
+    },
+    // -------------------- 共通 ----------------------------
+    // 取得正常処理
+    getThen: function getThen(response, md) {
+      var res = response.data; //console.log('getthen in res = ' + res);
+
+      if (res.result) {
+        this.details = res.details;
+        this.details2 = res.details2;
+        this.count = this.details.length; //this.before_count = this.count;
+
+        if (res.totals) {
+          this.totals = res.totals[0].totals;
+        }
+
+        if (this.details.length > 0) {
+          this.form.id = this.details[0].id;
+          this.form.mdate = this.details[0].mdate;
+          this.form.department = this.details[0].department;
+          this.form.charge = this.details[0].charge;
+          this.form.product_name = this.details[0].product_name;
+          this.form.product_code = this.details[0].product_code;
+          this.form.product_number = this.details[0].product_number;
+          this.form.unit = this.details[0].unit;
+          this.form.quantity = this.details[0].quantity;
+          this.form.receipt = this.details[0].receipt;
+          this.form.delivery = this.details[0].delivery;
+          this.form.now_inventory = this.details[0].now_inventory;
+          this.form.nbox = this.details[0].nbox;
+          this.form.order_address = this.details[0].order_address;
+          this.form.unit_price = this.details[0].unit_price;
+          this.form.total = this.details[0].total;
+          this.form.remarks = this.details[0].remarks;
+          this.form.note = this.details[0].note;
+          this.form.status = this.details[0].status;
+          this.form.marks = this.details[0].marks;
+          this.form.created_user = this.details[0].created_user;
+          this.form.updated_user = this.details[0].updated_user;
+          this.form.created_at = this.details[0].created_at;
+          this.form.updated_at = this.details[0].updated_at;
+          this.form.is_deleted = this.details[0].is_deleted;
+        } else {}
+      } else {
+        if (res.messagedata.length > 0) {
+          this.htmlMessageSwal("エラー", res.messagedata, "error", true, false);
+        } else {
+          this.serverCatch("取得");
+        }
+      }
+    },
+    // 検索系正常処理
+    putThenSearch: function putThenSearch(response, eventtext) {
+      var messages = [];
+      var res = response.data; //if (res.result) {
+
+      if (res.details.length > 0) {
+        this.details = res.details; //this.classObj1 = (this.details[0].status == 'newest') ? 'bgcolor3' : '';
+
+        if (res.s_history) {
+          this.str_s_history = ' 履歴含む';
+        } else {
+          this.str_s_history = '';
+        }
+
+        console.log("putThenSearch in res.search_totals = " + res.search_totals[0].total_s);
+
+        if (res.search_totals) {
+          this.search_totals = res.search_totals[0].total_s;
+        }
+
+        this.product_title = res.s_department + ' ' + res.s_charge + ' ' + res.s_product_name + ' ' + res.s_product_number + ' ' + this.str_s_history; //console.log("putThenSearch in res.s_product_name = " + res.s_product_name);
+
+        this.$toasted.show(this.product_title + " " + eventtext + "しました");
+        this.actionmsgArr.push(this.product_title + " を検索しました。");
+      } else {
+        this.actionmsgArr.push(this.s_department + this.s_charge + this.s_product_name + this.s_product_number + " が見つかりませんでした。", "");
+
+        if (res.messagedata.length > 0) {
+          this.htmlMessageSwal("警告", res.messagedata, "warning", true, false);
+        } else {
+          this.serverCatch(eventtext);
+        }
+      }
+    },
+    // 更新系正常処理
+    putThenHead: function putThenHead(response, eventtext, k) {
+      var object_mode = {
+        0: 'fix',
+        1: 'update',
+        2: 'new'
+      };
+      console.log('key: ' + k + 'value: ' + object_mode[k]);
+      var messages = [];
+      var res = response.data;
+
+      if (res.result) {
+        if (res.id) {
+          //this.acttitle = "更新";
+          this.edit_id = res.id; //console.log("putThenHead in res.pid = " + res.product_code);
+
+          this.product_code = res.product_code;
+          this.product_title = res.product_name;
+        }
+
+        this.$toasted.show(this.product_title + "を" + eventtext + "しました");
+        this.getItemOne(this.edit_id, this.product_code, this.product_title, object_mode[k]);
+      } else {
+        if (res.messagedata.length > 0) {
+          this.htmlMessageSwal("警告", res.messagedata, "warning", true, false);
+        } else {
+          this.serverCatch(eventtext);
+        }
+      }
+    },
+    // 新規系正常処理
+    putThenStore: function putThenStore(response, eventtext) {
+      var messages = [];
+      var res = response.data;
+
+      if (res.result) {
+        this.re_id = res.id;
+        this.acttitle = "登録";
+        this.getItemOne(this.re_id, this.product_code, this.product_title);
+        this.$toasted.show(this.product_title + "を" + eventtext + "しました");
+        this.actionmsgArr.push(this.product_title + "を新規登録しました。", "");
+        this.selectMode = 'COMPLETE';
+      } else {
+        if (res.messagedata.length > 0) {
+          this.htmlMessageSwal("警告", res.messagedata, "warning", true, false);
+        } else {
+          this.serverCatch(eventtext);
+        }
+      }
+    },
+    // 削除系正常処理
+    putThenDel: function putThenDel(response, eventtext) {
+      var messages = [];
+      var res = response.data;
+
+      if (res.result) {
+        this.re_id = res.id;
+        this.acttitle = "移動";
+        this.getItemOne(this.re_id, this.product_code, this.product_title);
+        this.$toasted.show(this.product_title + "を" + eventtext + "しました");
+        this.actionmsgArr.push(this.product_title + " を抹消へ移動しました。", "");
+        this.btnMode = 'off';
+        this.selectMode = 'COMPLETE';
+      } else {
+        if (res.messagedata.length > 0) {
+          this.htmlMessageSwal("警告", res.messagedata, "warning", true, false);
+        } else {
+          this.serverCatch(eventtext);
+        }
+      }
+    },
+    // レコード削除正常処理
+    putThenRecordDel: function putThenRecordDel(response, eventtext) {
+      var messages = [];
+      var res = response.data;
+
+      if (res.result) {
+        this.re_id = res.id;
+        this.acttitle = "削除";
+        this.getItemOne(this.re_id, this.product_code, this.product_title);
+        this.$toasted.show(this.product_title + "を" + eventtext + "しました");
+        this.actionmsgArr.push(this.product_title + " を削除しました。");
+        this.selectMode = 'COMPLETE';
+      } else {
+        if (res.messagedata.length > 0) {
+          this.htmlMessageSwal("警告", res.messagedata, "warning", true, false);
+        } else {
+          this.serverCatch(eventtext);
+        }
+      }
+    },
+    // 異常処理
+    serverCatch: function serverCatch(eventtext) {
+      var messages = []; //messages.push("在庫管理" + eventtext + "に失敗しました");
+      //this.htmlMessageSwal("エラー", messages, "error", true, false);
+    },
+    inputClear: function inputClear() {
+      this.details = [];
+      this.form.id = "";
+      this.form.mdate = "";
+      this.form.department = "";
+      this.form.charge = "";
+      this.form.product_name = "";
+      this.form.product_code = "";
+      this.form.product_number = "";
+      this.form.unit = "";
+      this.form.quantity = "";
+      this.form.receipt = "";
+      this.form.delivery = "";
+      this.form.now_inventory = "";
+      this.form.nbox = "";
+      this.form.order_address = "";
+      this.form.unit_price = "";
+      this.form.total = "";
+      this.form.remarks = "";
+      this.form.note = "";
+      this.form.status = "";
+      this.form.marks = "";
+      this.form.created_user = "";
+      this.form.updated_user = "";
+      this.form.created_at = "";
+      this.form.updated_at = "";
+      this.form.is_deleted = "";
+    },
+    dateset: function dateset() {
+      var date_obj = new Date(); //console.log('todayset = ' + date_obj);
+
+      this.today_year = date_obj.getFullYear(); // 西暦年取得
+
+      this.today_month = date_obj.getMonth(); // 月取得
+
+      this.today_day = date_obj.getDate(); // 日取得
+      // 文字列として連結month_format
+
+      this.itsdate = ('0000' + this.today_year).slice(-4) + '-' + ('00' + (this.today_month + 1)).slice(-2) + '-' + ('00' + this.today_day).slice(-2);
     } // -------------------- 共通 ----------------------------
 
   }
@@ -26275,6 +28146,3398 @@ var render = function () {
           _vm._v(" "),
           _c("div", { attrs: { id: "cnt1" } }, [
             _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("役職1")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.director1,
+                      expression: "form.director1",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: { type: "text", maxlength: "50", name: "director1" },
+                  domProps: { value: _vm.form.director1 },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "director1", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("役職2")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.director2,
+                      expression: "form.director2",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: { type: "text", maxlength: "50", name: "director2" },
+                  domProps: { value: _vm.form.director2 },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "director2", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("資格1")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.certification1,
+                      expression: "form.certification1",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: {
+                    type: "text",
+                    maxlength: "50",
+                    name: "certification1",
+                  },
+                  domProps: { value: _vm.form.certification1 },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "certification1", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("資格2")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.certification2,
+                      expression: "form.certification2",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: {
+                    type: "text",
+                    maxlength: "50",
+                    name: "certification2",
+                  },
+                  domProps: { value: _vm.form.certification2 },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "certification2", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("資格3")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.certification3,
+                      expression: "form.certification3",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: {
+                    type: "text",
+                    maxlength: "50",
+                    name: "certification3",
+                  },
+                  domProps: { value: _vm.form.certification3 },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "certification3", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "cnt1" } }, [
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("氏名")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.name,
+                      expression: "form.name",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: { type: "text", maxlength: "100", name: "name" },
+                  domProps: { value: _vm.form.name },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "name", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "cnt1" } }, [
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("読み")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.reading,
+                      expression: "form.reading",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: { type: "text", maxlength: "100", name: "reading" },
+                  domProps: { value: _vm.form.reading },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "reading", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("ローマ字")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.roma,
+                      expression: "form.roma",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: { type: "text", maxlength: "100", name: "roma" },
+                  domProps: { value: _vm.form.roma },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "roma", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("ふりがな")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.kana,
+                      expression: "form.kana",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: { type: "text", maxlength: "50", name: "kana" },
+                  domProps: { value: _vm.form.kana },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "kana", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "cnt1" } }, [
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("携帯電話")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.mobile_phone,
+                      expression: "form.mobile_phone",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: {
+                    type: "text",
+                    maxlength: "13",
+                    name: "mobile_phone",
+                  },
+                  domProps: { value: _vm.form.mobile_phone },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "mobile_phone", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [
+                _vm._v("メールアドレス"),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.email,
+                      expression: "form.email",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: { type: "text", maxlength: "128", name: "email" },
+                  domProps: { value: _vm.form.email },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "email", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "cnt1" } }, [
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("郵便番号")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.post_code,
+                      expression: "form.post_code",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: { type: "text", maxlength: "7", name: "post_code" },
+                  domProps: { value: _vm.form.post_code },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "post_code", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("住所")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.address,
+                      expression: "form.address",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: { type: "text", maxlength: "256", name: "address" },
+                  domProps: { value: _vm.form.address },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "address", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("TEL（直通）")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.direct_dial,
+                      expression: "form.direct_dial",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: { type: "text", maxlength: "13", name: "direct_dial" },
+                  domProps: { value: _vm.form.direct_dial },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "direct_dial", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("TEL")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.tel,
+                      expression: "form.tel",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: { type: "text", maxlength: "13", name: "tel" },
+                  domProps: { value: _vm.form.tel },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "tel", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("FAX")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.fax,
+                      expression: "form.fax",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: { type: "text", maxlength: "13", name: "fax" },
+                  domProps: { value: _vm.form.fax },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "fax", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "cnt1" } }, [
+            _c("div", { staticClass: "inputgroup w4" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("備考")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("textarea", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.remarks,
+                      expression: "form.remarks",
+                    },
+                  ],
+                  staticClass: "form_style_t bc5",
+                  attrs: { maxlength: "191", name: "remarks", rows: "3" },
+                  domProps: { value: _vm.form.remarks },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "remarks", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _vm.view_switch == "on"
+            ? _c("div", { attrs: { id: "cnt1" } }, [
+                _c("div", { staticClass: "inputgroup w1" }, [
+                  _c("div", { staticClass: "cate" }, [_vm._v("作成ユーザー")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputzone" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.form.created_user,
+                          expression: "form.created_user",
+                        },
+                      ],
+                      staticClass: "form_style",
+                      attrs: {
+                        type: "text",
+                        maxlength: "20",
+                        name: "created_user",
+                      },
+                      domProps: { value: _vm.form.created_user },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.form,
+                            "created_user",
+                            $event.target.value
+                          )
+                        },
+                      },
+                    }),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "inputgroup w1" }, [
+                  _c("div", { staticClass: "cate" }, [_vm._v("修正ユーザー")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputzone" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.form.updated_user,
+                          expression: "form.updated_user",
+                        },
+                      ],
+                      staticClass: "form_style",
+                      attrs: {
+                        type: "text",
+                        maxlength: "20",
+                        name: "updated_user",
+                      },
+                      domProps: { value: _vm.form.updated_user },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.form,
+                            "updated_user",
+                            $event.target.value
+                          )
+                        },
+                      },
+                    }),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "inputgroup w2" }, [
+                  _c("div", { staticClass: "cate" }, [_vm._v("作成日時")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputzone" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.form.created_at,
+                          expression: "form.created_at",
+                        },
+                      ],
+                      staticClass: "form_style",
+                      attrs: {
+                        type: "text",
+                        maxlength: "16",
+                        name: "created_at",
+                      },
+                      domProps: { value: _vm.form.created_at },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.form, "created_at", $event.target.value)
+                        },
+                      },
+                    }),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "inputgroup w2" }, [
+                  _c("div", { staticClass: "cate" }, [_vm._v("修正日時")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputzone" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.form.updated_at,
+                          expression: "form.updated_at",
+                        },
+                      ],
+                      staticClass: "form_style",
+                      attrs: {
+                        type: "text",
+                        maxlength: "16",
+                        name: "updated_at",
+                      },
+                      domProps: { value: _vm.form.updated_at },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.form, "updated_at", $event.target.value)
+                        },
+                      },
+                    }),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "inputgroup w1" }, [
+                  _c("div", { staticClass: "cate" }, [_vm._v("ステータス")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputzone" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.form.status,
+                          expression: "form.status",
+                        },
+                      ],
+                      staticClass: "form_style",
+                      attrs: { type: "text", maxlength: "20", name: "status" },
+                      domProps: { value: _vm.form.status },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.form, "status", $event.target.value)
+                        },
+                      },
+                    }),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "inputgroup w1" }, [
+                  _c("div", { staticClass: "cate" }, [_vm._v("削除フラグ")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputzone" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.form.is_deleted,
+                          expression: "form.is_deleted",
+                        },
+                      ],
+                      staticClass: "form_style",
+                      attrs: {
+                        type: "text",
+                        maxlength: "20",
+                        name: "is_deleted",
+                      },
+                      domProps: { value: _vm.form.is_deleted },
+                      on: {
+                        input: function ($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.form, "is_deleted", $event.target.value)
+                        },
+                      },
+                    }),
+                  ]),
+                ]),
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "button1" } }, [
+            _c("div", { staticClass: "btnstyle" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "style1",
+                  attrs: { type: "button" },
+                  on: {
+                    click: function ($event) {
+                      return _vm.dataStore()
+                    },
+                  },
+                },
+                [_vm._v("新規登録する")]
+              ),
+            ]),
+          ]),
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.selectMode == "EDT"
+      ? _c(
+          "div",
+          { attrs: { id: "input_area_1" } },
+          [
+            _c("div", { attrs: { id: "top_cnt" } }, [
+              _vm.btnMode === "update" ? _c("h2", [_vm._v("更新")]) : _vm._e(),
+              _vm._v(" "),
+              _vm.btnMode === "fix"
+                ? _c("h2", [_vm._v("編集・修正")])
+                : _vm._e(),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "customize",
+                  attrs: { type: "button" },
+                  on: {
+                    click: function ($event) {
+                      return _vm.viewBtn(2)
+                    },
+                  },
+                },
+                [_vm._v("\n        追加情報\n      ")]
+              ),
+            ]),
+            _vm._v(" "),
+            _vm._l(_vm.details, function (item, index) {
+              return _c("div", { key: item.id }, [
+                _vm.messagevalidatesNew.length
+                  ? _c("div", {}, [
+                      _c(
+                        "ul",
+                        { staticClass: "error-red color_red" },
+                        _vm._l(
+                          _vm.messagevalidatesNew,
+                          function (messagevalidate, index) {
+                            return _c("li", { key: index }, [
+                              _vm._v(_vm._s(messagevalidate)),
+                            ])
+                          }
+                        ),
+                        0
+                      ),
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.details[index].id,
+                      expression: "details[index].id",
+                    },
+                  ],
+                  attrs: { type: "hidden", name: "id" },
+                  domProps: { value: _vm.details[index].id },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.details[index], "id", $event.target.value)
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "cnt1" } }, [
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("枚数")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].sheet,
+                            expression: "details[index].sheet",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: { type: "text", maxlength: "20", name: "sheet" },
+                        domProps: { value: _vm.details[index].sheet },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "sheet",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "cnt1" } }, [
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("会社")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].company,
+                            expression: "details[index].company",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: {
+                          id: "ival_company",
+                          type: "text",
+                          maxlength: "100",
+                          name: "company",
+                        },
+                        domProps: { value: _vm.details[index].company },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "company",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("営業所")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].office,
+                            expression: "details[index].office",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: {
+                          id: "ival_office",
+                          type: "text",
+                          maxlength: "50",
+                          name: "office",
+                        },
+                        domProps: { value: _vm.details[index].office },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "office",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("部署")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].department,
+                            expression: "details[index].department",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: {
+                          id: "ival_department",
+                          type: "text",
+                          maxlength: "50",
+                          name: "department",
+                        },
+                        domProps: { value: _vm.details[index].department },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "department",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("課")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].division,
+                            expression: "details[index].division",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: {
+                          type: "text",
+                          maxlength: "50",
+                          name: "division",
+                        },
+                        domProps: { value: _vm.details[index].division },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "division",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "cnt1" } }, [
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("役職1")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].director1,
+                            expression: "details[index].director1",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: {
+                          type: "text",
+                          maxlength: "50",
+                          name: "director1",
+                        },
+                        domProps: { value: _vm.details[index].director1 },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "director1",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("役職2")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].director2,
+                            expression: "details[index].director2",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: {
+                          type: "text",
+                          maxlength: "50",
+                          name: "director2",
+                        },
+                        domProps: { value: _vm.details[index].director2 },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "director2",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("資格1")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].certification1,
+                            expression: "details[index].certification1",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: {
+                          type: "text",
+                          maxlength: "50",
+                          name: "certification1",
+                        },
+                        domProps: { value: _vm.details[index].certification1 },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "certification1",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("資格2")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].certification2,
+                            expression: "details[index].certification2",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: {
+                          type: "text",
+                          maxlength: "50",
+                          name: "certification2",
+                        },
+                        domProps: { value: _vm.details[index].certification2 },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "certification2",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("資格3")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].certification3,
+                            expression: "details[index].certification3",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: {
+                          type: "text",
+                          maxlength: "50",
+                          name: "certification3",
+                        },
+                        domProps: { value: _vm.details[index].certification3 },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "certification3",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "cnt1" } }, [
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("氏名")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].name,
+                            expression: "details[index].name",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: { type: "text", maxlength: "100", name: "name" },
+                        domProps: { value: _vm.details[index].name },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "name",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "cnt1" } }, [
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("読み")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].reading,
+                            expression: "details[index].reading",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: {
+                          type: "text",
+                          maxlength: "100",
+                          name: "reading",
+                        },
+                        domProps: { value: _vm.details[index].reading },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "reading",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [
+                      _vm._v("ローマ字"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].roma,
+                            expression: "details[index].roma",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: { type: "text", maxlength: "100", name: "roma" },
+                        domProps: { value: _vm.details[index].roma },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "roma",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [
+                      _vm._v("ふりがな"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].kana,
+                            expression: "details[index].kana",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: { type: "text", maxlength: "50", name: "kana" },
+                        domProps: { value: _vm.details[index].kana },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "kana",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "cnt1" } }, [
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [
+                      _vm._v("携帯電話"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].mobile_phone,
+                            expression: "details[index].mobile_phone",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: {
+                          type: "text",
+                          maxlength: "13",
+                          name: "mobile_phone",
+                        },
+                        domProps: { value: _vm.details[index].mobile_phone },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "mobile_phone",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [
+                      _vm._v("メールアドレス"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].email,
+                            expression: "details[index].email",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: {
+                          type: "text",
+                          maxlength: "128",
+                          name: "email",
+                        },
+                        domProps: { value: _vm.details[index].email },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "email",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "cnt1" } }, [
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [
+                      _vm._v("郵便番号"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].post_code,
+                            expression: "details[index].post_code",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: {
+                          type: "text",
+                          maxlength: "7",
+                          name: "post_code",
+                        },
+                        domProps: { value: _vm.details[index].post_code },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "post_code",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("住所")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].address,
+                            expression: "details[index].address",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: {
+                          type: "text",
+                          maxlength: "256",
+                          name: "address",
+                        },
+                        domProps: { value: _vm.details[index].address },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "address",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [
+                      _vm._v("TEL（直通）"),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].direct_dial,
+                            expression: "details[index].direct_dial",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: {
+                          type: "text",
+                          maxlength: "13",
+                          name: "direct_dial",
+                        },
+                        domProps: { value: _vm.details[index].direct_dial },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "direct_dial",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("TEL")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].tel,
+                            expression: "details[index].tel",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: { type: "text", maxlength: "13", name: "tel" },
+                        domProps: { value: _vm.details[index].tel },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "tel",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "inputgroup w1" }, [
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("FAX")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].fax,
+                            expression: "details[index].fax",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: { type: "text", maxlength: "13", name: "fax" },
+                        domProps: { value: _vm.details[index].fax },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "fax",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _vm._m(2, true),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "cnt1" } }, [
+                  _c("div", { staticClass: "inputgroup w4" }, [
+                    _c("div", { staticClass: "cate gc5" }, [_vm._v("備考")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "inputzone" }, [
+                      _c("textarea", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.details[index].remarks,
+                            expression: "details[index].remarks",
+                          },
+                        ],
+                        staticClass: "form_style_t bc5",
+                        attrs: { maxlength: "191", name: "remarks", rows: "3" },
+                        domProps: { value: _vm.details[index].remarks },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.details[index],
+                              "remarks",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                    ]),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _vm.view_switch == "on"
+                  ? _c("div", { attrs: { id: "cnt1" } }, [
+                      _c("div", { staticClass: "inputgroup w1" }, [
+                        _c("div", { staticClass: "cate" }, [
+                          _vm._v("作成ユーザー"),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "inputzone" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.details[index].created_user,
+                                expression: "details[index].created_user",
+                              },
+                            ],
+                            staticClass: "form_style",
+                            attrs: {
+                              type: "text",
+                              maxlength: "20",
+                              name: "created_user",
+                            },
+                            domProps: {
+                              value: _vm.details[index].created_user,
+                            },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.details[index],
+                                  "created_user",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "inputgroup w1" }, [
+                        _c("div", { staticClass: "cate" }, [
+                          _vm._v("修正ユーザー"),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "inputzone" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.details[index].updated_user,
+                                expression: "details[index].updated_user",
+                              },
+                            ],
+                            staticClass: "form_style",
+                            attrs: {
+                              type: "text",
+                              maxlength: "20",
+                              name: "updated_user",
+                            },
+                            domProps: {
+                              value: _vm.details[index].updated_user,
+                            },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.details[index],
+                                  "updated_user",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "inputgroup w2" }, [
+                        _c("div", { staticClass: "cate" }, [
+                          _vm._v("作成日時"),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "inputzone" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.details[index].created_at,
+                                expression: "details[index].created_at",
+                              },
+                            ],
+                            staticClass: "form_style",
+                            attrs: {
+                              type: "text",
+                              maxlength: "16",
+                              name: "created_at",
+                            },
+                            domProps: { value: _vm.details[index].created_at },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.details[index],
+                                  "created_at",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "inputgroup w2" }, [
+                        _c("div", { staticClass: "cate" }, [
+                          _vm._v("修正日時"),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "inputzone" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.details[index].updated_at,
+                                expression: "details[index].updated_at",
+                              },
+                            ],
+                            staticClass: "form_style",
+                            attrs: {
+                              type: "text",
+                              maxlength: "16",
+                              name: "updated_at",
+                            },
+                            domProps: { value: _vm.details[index].updated_at },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.details[index],
+                                  "updated_at",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "inputgroup w1" }, [
+                        _c("div", { staticClass: "cate" }, [
+                          _vm._v("ステータス"),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "inputzone" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.details[index].status,
+                                expression: "details[index].status",
+                              },
+                            ],
+                            staticClass: "form_style",
+                            attrs: {
+                              type: "text",
+                              maxlength: "20",
+                              name: "status",
+                            },
+                            domProps: { value: _vm.details[index].status },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.details[index],
+                                  "status",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "inputgroup w1" }, [
+                        _c("div", { staticClass: "cate" }, [
+                          _vm._v("削除フラグ"),
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "inputzone" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.details[index].is_deleted,
+                                expression: "details[index].is_deleted",
+                              },
+                            ],
+                            staticClass: "form_style",
+                            attrs: {
+                              type: "text",
+                              maxlength: "20",
+                              name: "is_deleted",
+                            },
+                            domProps: { value: _vm.details[index].is_deleted },
+                            on: {
+                              input: function ($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.details[index],
+                                  "is_deleted",
+                                  $event.target.value
+                                )
+                              },
+                            },
+                          }),
+                        ]),
+                      ]),
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.view_switch == "on"
+                  ? _c("div", { attrs: { id: "cnt1" } }, [
+                      _c("div", { attrs: { id: "button1" } }, [
+                        _c(
+                          "button",
+                          {
+                            attrs: { type: "button" },
+                            on: {
+                              click: function ($event) {
+                                return _vm.recordDel(index, "all")
+                              },
+                            },
+                          },
+                          [_vm._v("この商品（履歴含む）を削除")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "button",
+                          {
+                            attrs: { type: "button" },
+                            on: {
+                              click: function ($event) {
+                                return _vm.recordDel(index, "one")
+                              },
+                            },
+                          },
+                          [_vm._v("この登録（レコード）を削除")]
+                        ),
+                      ]),
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "button1" } }, [
+                  _c("div", [
+                    _vm.btnMode === "update"
+                      ? _c("div", { staticClass: "btnstyle" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "style1",
+                              attrs: { type: "button" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.dataUpdate(index, 1)
+                                },
+                              },
+                            },
+                            [_vm._v("在庫の更新")]
+                          ),
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.btnMode === "fix"
+                      ? _c("div", { staticClass: "btnstyle" }, [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "style2",
+                              attrs: { type: "button" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.dataUpdate(index, 0)
+                                },
+                              },
+                            },
+                            [_vm._v("在庫の修正")]
+                          ),
+                        ])
+                      : _vm._e(),
+                  ]),
+                  _vm._v(" "),
+                  _c("div", [
+                    _c("div", { staticClass: "btnstyle" }, [
+                      _c(
+                        "button",
+                        {
+                          attrs: { type: "button" },
+                          on: {
+                            click: function ($event) {
+                              return _vm.backLine()
+                            },
+                          },
+                        },
+                        [_vm._v("一覧へ")]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "btnstyle" }, [
+                      _c(
+                        "button",
+                        {
+                          attrs: { type: "button" },
+                          on: {
+                            click: function ($event) {
+                              return _vm.resultLine()
+                            },
+                          },
+                        },
+                        [_vm._v("検索一覧へ")]
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _vm.btnMode === "fix"
+                      ? _c("div", { staticClass: "btnstyle" }, [
+                          _c(
+                            "button",
+                            {
+                              attrs: { type: "button" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.dataDel(index, 4)
+                                },
+                              },
+                            },
+                            [_vm._v("抹消")]
+                          ),
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.btnMode === "great"
+                      ? _c("div", { staticClass: "btnstyle" }, [
+                          _c(
+                            "button",
+                            {
+                              attrs: { type: "button" },
+                              on: {
+                                click: function ($event) {
+                                  return _vm.recordDel(index, "one")
+                                },
+                              },
+                            },
+                            [_vm._v("この登録を削除")]
+                          ),
+                        ])
+                      : _vm._e(),
+                  ]),
+                ]),
+              ])
+            }),
+            _vm._v(" "),
+            _vm._l(_vm.details, function (item2, index2) {
+              return _c("div", { key: index2, attrs: { id: "cnt2" } }, [
+                _c("div", [
+                  _c("h4", [
+                    _vm._v(_vm._s(_vm.product_title)),
+                    _c("span", { staticStyle: { "margin-left": "20px" } }, [
+                      _vm._v("履歴一覧"),
+                    ]),
+                  ]),
+                ]),
+              ])
+            }),
+            _vm._v(" "),
+            _c("div", { attrs: { id: "tbl_1" } }, [
+              _c("table", [
+                _vm._m(3),
+                _vm._v(" "),
+                _c(
+                  "tbody",
+                  _vm._l(_vm.details2, function (item, rowIndex) {
+                    return _c(
+                      "tr",
+                      {
+                        key: rowIndex,
+                        class: item["id"] == _vm.edit_id ? "bgcolor3" : "",
+                      },
+                      [
+                        _c("td", [_vm._v(_vm._s(item["mdate"]))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(item["department"]))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(item["charge"]))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(item["product_name"]))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(item["product_number"]))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(item["order_address"]))]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "nbr" }, [
+                          _vm._v(_vm._s(item["unit"])),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass: "style1",
+                            class: item["receipt"] === 0 ? "color3" : "",
+                          },
+                          [_vm._v(_vm._s(item["receipt"]))]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass: "style1",
+                            class: item["delivery"] === 0 ? "color3" : "",
+                          },
+                          [_vm._v(_vm._s(item["delivery"]))]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          {
+                            staticClass: "style1",
+                            style:
+                              item["now_inventory"] === 0 ? "color:red" : "",
+                          },
+                          [
+                            _vm._v(
+                              _vm._s(
+                                _vm._f("numberFormat")(
+                                  Number(item.now_inventory)
+                                )
+                              )
+                            ),
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "style1" }, [
+                          _vm._v(
+                            _vm._s(
+                              _vm._f("numberFormat")(Number(item.unit_price))
+                            )
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "style1" }, [
+                          item["total"] !== null
+                            ? _c("div", [
+                                _vm._v(
+                                  _vm._s(
+                                    _vm._f("numberFormat")(
+                                      Number(item["total"])
+                                    )
+                                  )
+                                ),
+                              ])
+                            : _vm._e(),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(item["remarks"]))]),
+                      ]
+                    )
+                  }),
+                  0
+                ),
+              ]),
+            ]),
+          ],
+          2
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.selectMode == "LINEACTIVE"
+      ? _c("div", [
+          _vm._m(4),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "print-none", attrs: { id: "topform_cnt" } },
+            [
+              _c("form", { attrs: { id: "form1", name: "form3" } }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.s_department,
+                      expression: "s_department",
+                    },
+                  ],
+                  staticClass: "form_style bc1 w10e",
+                  attrs: {
+                    type: "text",
+                    maxlength: "30",
+                    name: "s_department",
+                  },
+                  domProps: { value: _vm.s_department },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.s_department = $event.target.value
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    attrs: { type: "button" },
+                    on: {
+                      click: function ($event) {
+                        return _vm.searchBtn()
+                      },
+                    },
+                  },
+                  [_vm._v("\n          部署 検索\n        ")]
+                ),
+              ]),
+              _vm._v(" "),
+              _c("form", { attrs: { id: "form1", name: "form2" } }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.s_name,
+                      expression: "s_name",
+                    },
+                  ],
+                  staticClass: "form_style bc1 w10e",
+                  attrs: { type: "text", maxlength: "30", name: "s_name" },
+                  domProps: { value: _vm.s_name },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.s_name = $event.target.value
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    attrs: { type: "button" },
+                    on: {
+                      click: function ($event) {
+                        return _vm.searchBtn()
+                      },
+                    },
+                  },
+                  [_vm._v("\n          名前 検索\n        ")]
+                ),
+              ]),
+              _vm._v(" "),
+              _c("form", { attrs: { id: "form1", name: "form1" } }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.s_yomi,
+                      expression: "s_yomi",
+                    },
+                  ],
+                  staticClass: "form_style bc1 w10e",
+                  attrs: { type: "text", maxlength: "30", name: "s_yomi" },
+                  domProps: { value: _vm.s_yomi },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.s_yomi = $event.target.value
+                    },
+                  },
+                }),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    attrs: { type: "button" },
+                    on: {
+                      click: function ($event) {
+                        return _vm.searchBtn()
+                      },
+                    },
+                  },
+                  [_vm._v("\n          読み 検索\n        ")]
+                ),
+              ]),
+            ]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "mgt20", attrs: { id: "tbl_1" } }, [
+            _c("table", [
+              _c("thead", [
+                _c("tr", [
+                  _c("th", {}, [_vm._v(" ")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("No")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("営業所")]),
+                  _vm._v(" "),
+                  _c("th", {}, [
+                    _vm._v("部署 "),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("department", 1)
+                          },
+                        },
+                      },
+                      [_vm._v("▲")]
+                    ),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("department", 2)
+                          },
+                        },
+                      },
+                      [_vm._v("▼")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("th", {}, [
+                    _vm._v("課 "),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("division", 1)
+                          },
+                        },
+                      },
+                      [_vm._v("▲")]
+                    ),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("division", 2)
+                          },
+                        },
+                      },
+                      [_vm._v("▼")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("役職")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("氏名")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("ローマ字")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("ふりがな")]),
+                  _vm._v(" "),
+                  _c("th", {}, [
+                    _vm._v("読み "),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("yomi", 1)
+                          },
+                        },
+                      },
+                      [_vm._v("▲")]
+                    ),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("yomi", 2)
+                          },
+                        },
+                      },
+                      [_vm._v("▼")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("携帯電話")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("メールアドレス")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("資格")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("画像ファイル")]),
+                  _vm._v(" "),
+                  _c("th", {}, [_vm._v("備考")]),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                [
+                  _vm._l(_vm.details, function (item, rowIndex) {
+                    return _c("tr", { key: rowIndex }, [
+                      _c("td", { staticClass: "nbr w2e" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "style2",
+                            attrs: { type: "button" },
+                            on: {
+                              click: function ($event) {
+                                return _vm.EditBtn(
+                                  item["id"],
+                                  item["product_code"],
+                                  _vm.details[rowIndex].product_name,
+                                  "fix",
+                                  rowIndex
+                                )
+                              },
+                            },
+                          },
+                          [_vm._v("\n              編集\n              ")]
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "nbr" }, [
+                        _vm._v(_vm._s(item["id"])),
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "w4e" }, [
+                        _vm._v(_vm._s(item["office"])),
+                      ]),
+                      _vm._v(" "),
+                      _c("td", { staticClass: "w3e" }, [
+                        _vm._v(_vm._s(item["department"])),
+                      ]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["division"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["aaa"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["name"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["roma"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", {}, [_vm._v(_vm._s(item["charge"]))]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(item["remarks"]))]),
+                    ])
+                  }),
+                  _vm._v(" "),
+                  _c("tr", { staticClass: "border1" }, [
+                    _c(
+                      "td",
+                      { staticClass: "style1", attrs: { colspan: "2" } },
+                      [_vm._v(_vm._s(this.details.length) + " 件")]
+                    ),
+                    _vm._v(" "),
+                    _c("td", {
+                      staticClass: "style1",
+                      attrs: { colspan: "19" },
+                    }),
+                  ]),
+                ],
+                2
+              ),
+            ]),
+            _vm._v(" "),
+            _vm.details == ""
+              ? _c("div", {}, [_vm._v("該当するデータがありません")])
+              : _vm._e(),
+          ]),
+        ])
+      : _vm._e(),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "cnt1" } }, [
+      _c("div", { staticClass: "inputgroup w1" }, [
+        _c("div", { staticClass: "cate gc5" }, [_vm._v("画像ファイル")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "inputzone" }, [
+          _c("input", { attrs: { type: "file", name: "image" } }),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "preview_area1" } }, [
+      _c("div", { staticClass: "strapline" }, [_vm._v("イメージプレビュー")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "caution" }, [
+        _vm._v("※この表示はイメージです。"),
+        _c("br"),
+        _vm._v(
+          "実際の印刷レイアウト・フォント・文字サイズ等は異なりますので、ご了承ください。"
+        ),
+      ]),
+      _vm._v(" "),
+      _c("div", { attrs: { id: "card_preview" } }, [
+        _c("span", {
+          staticClass: "tid_company",
+          attrs: { id: "tid_company" },
+        }),
+        _vm._v(" "),
+        _c("span", { staticClass: "tid_office", attrs: { id: "tid_office" } }),
+        _vm._v(" "),
+        _c("span", {
+          staticClass: "tid_department",
+          attrs: { id: "tid_department" },
+        }),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "cnt1" } }, [
+      _c("div", { staticClass: "inputgroup w1" }, [
+        _c("div", { staticClass: "cate gc5" }, [_vm._v("画像ファイル")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "inputzone" }, [
+          _c("input", {
+            staticClass: "form_style bc5",
+            attrs: { type: "file", name: "image" },
+          }),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", { staticClass: "gc2" }, [_vm._v("日付これ")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("部署")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("担当")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("商品名")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("分類")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("発注先")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("単位")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("入庫数")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("出庫数")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("現在在庫")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("単価")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("合計金額")]),
+        _vm._v(" "),
+        _c("th", { staticClass: "gc2" }, [_vm._v("備考")]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "top_cnt" } }, [
+      _c("h2", { staticClass: "title mgt20" }, [_vm._v("検索結果一覧")]),
+    ])
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83&":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83& ***!
+  \****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [_c("p", [_vm._v("this file is HomeComponent.vue")])])
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/MasterOffice.vue?vue&type=template&id=c4982eae&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/MasterOffice.vue?vue&type=template&id=c4982eae& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm.selectMode == "TOP"
+      ? _c("div", { attrs: { id: "input_area_1" } }, [
+          _c("div", { attrs: { id: "top_cnt" } }, [
+            _c("h2", { staticClass: "title mgt20" }, [
+              _vm._v("一覧 / " + _vm._s(_vm.acttitle) + " "),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "btn_cnt2" } }, [
+            _c(
+              "button",
+              {
+                attrs: { type: "button" },
+                on: {
+                  click: function ($event) {
+                    return _vm.backLine()
+                  },
+                },
+              },
+              [_vm._v("一覧へ")]
+            ),
+          ]),
+          _vm._v(" "),
+          _vm.actionmsgArr.length
+            ? _c("div", { staticClass: "print-none" }, [
+                _c(
+                  "ul",
+                  { staticClass: "error-red color_red" },
+                  _vm._l(_vm.actionmsgArr, function (actionmsg, index) {
+                    return _c("li", { key: index }, [_vm._v(_vm._s(actionmsg))])
+                  }),
+                  0
+                ),
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "tbl_1" } }, [
+            _c("table", [
+              _c("thead", [
+                _c("tr", [
+                  _c("th", { staticClass: "gc2" }, [_vm._v(" ")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [
+                    _vm._v("社名 "),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("office", 1)
+                          },
+                        },
+                      },
+                      [_vm._v("▲")]
+                    ),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("office", 2)
+                          },
+                        },
+                      },
+                      [_vm._v("▼")]
+                    ),
+                  ]),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.mc_details, function (item, rowIndex) {
+                  return _c("tr", { key: rowIndex, class: _vm.classObj1 }, [
+                    _c("td", { staticClass: "nbr w2e" }, [
+                      _vm.btnMode === "off" ? _c("div") : _c("div"),
+                      _vm._v(" "),
+                      item["status"] == "newest"
+                        ? _c("div", [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "style1",
+                                attrs: { type: "button" },
+                                on: {
+                                  click: function ($event) {
+                                    return _vm.EditBtn(
+                                      item["id"],
+                                      item["product_code"],
+                                      _vm.details[rowIndex].product_name,
+                                      "update",
+                                      rowIndex
+                                    )
+                                  },
+                                },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                更新\n                "
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "button",
+                              {
+                                staticClass: "style2",
+                                attrs: { type: "button" },
+                                on: {
+                                  click: function ($event) {
+                                    return _vm.EditBtn(
+                                      item["id"],
+                                      item["product_code"],
+                                      _vm.details[rowIndex].product_name,
+                                      "fix",
+                                      rowIndex
+                                    )
+                                  },
+                                },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                編集\n                "
+                                ),
+                              ]
+                            ),
+                          ])
+                        : _c("div", [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "style2",
+                                attrs: { type: "button" },
+                                on: {
+                                  click: function ($event) {
+                                    return _vm.EditBtn(
+                                      item["id"],
+                                      item["product_code"],
+                                      _vm.details[rowIndex].product_name,
+                                      "fix",
+                                      rowIndex
+                                    )
+                                  },
+                                },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                編集\n                "
+                                ),
+                              ]
+                            ),
+                          ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "nbr" }, [
+                      _vm._v(_vm._s(item["company"])),
+                    ]),
+                  ])
+                }),
+                0
+              ),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "tbl_1" } }, [
+            _c("table", [
+              _c("thead", [
+                _c("tr", [
+                  _c("th", { staticClass: "gc2" }, [_vm._v(" ")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("社名")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [
+                    _vm._v("営業所 "),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("office", 1)
+                          },
+                        },
+                      },
+                      [_vm._v("▲")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("office", 2)
+                          },
+                        },
+                      },
+                      [_vm._v("▼")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("郵便番号")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("住所")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("TEL（直通）")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("TEL")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("FAX")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("備考")]),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.details, function (item, rowIndex) {
+                  return _c("tr", { key: rowIndex, class: _vm.classObj1 }, [
+                    _c("td", { staticClass: "nbr w2e" }, [
+                      _vm.btnMode === "off" ? _c("div") : _c("div"),
+                      _vm._v(" "),
+                      item["status"] == "newest"
+                        ? _c("div", [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "style1",
+                                attrs: { type: "button" },
+                                on: {
+                                  click: function ($event) {
+                                    return _vm.EditBtn(
+                                      item["id"],
+                                      item["product_code"],
+                                      _vm.details[rowIndex].product_name,
+                                      "update",
+                                      rowIndex
+                                    )
+                                  },
+                                },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                更新\n                "
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "button",
+                              {
+                                staticClass: "style2",
+                                attrs: { type: "button" },
+                                on: {
+                                  click: function ($event) {
+                                    return _vm.EditBtn(
+                                      item["id"],
+                                      item["product_code"],
+                                      _vm.details[rowIndex].product_name,
+                                      "fix",
+                                      rowIndex
+                                    )
+                                  },
+                                },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                修正\n                "
+                                ),
+                              ]
+                            ),
+                          ])
+                        : _c("div", [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "style2",
+                                attrs: { type: "button" },
+                                on: {
+                                  click: function ($event) {
+                                    return _vm.EditBtn(
+                                      item["id"],
+                                      item["product_code"],
+                                      _vm.details[rowIndex].product_name,
+                                      "fix",
+                                      rowIndex
+                                    )
+                                  },
+                                },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                修正\n                "
+                                ),
+                              ]
+                            ),
+                          ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "nbr" }, [
+                      _vm._v(_vm._s(item["company"])),
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "nbr" }, [
+                      _vm._v(_vm._s(item["office"])),
+                    ]),
+                    _vm._v(" "),
+                    _c("td", {}, [_vm._v(_vm._s(item["post_code"]))]),
+                    _vm._v(" "),
+                    _c(
+                      "td",
+                      { class: item["status"] == "newest" ? "bgcolor5" : "" },
+                      [_vm._v(_vm._s(item["address"]))]
+                    ),
+                    _vm._v(" "),
+                    _c("td", {}, [_vm._v(_vm._s(item["direct_dial"]))]),
+                    _vm._v(" "),
+                    _c("td", {}, [_vm._v(_vm._s(item["tel"]))]),
+                    _vm._v(" "),
+                    _c("td", {}, [_vm._v(_vm._s(item["fax"]))]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "style1" }, [
+                      _vm._v(_vm._s(item["remarks"])),
+                    ]),
+                  ])
+                }),
+                0
+              ),
+            ]),
+          ]),
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.selectMode == "COMPLETE"
+      ? _c("div", { attrs: { id: "input_area_1" } }, [
+          _c("div", { attrs: { id: "top_cnt" } }, [
+            _c("h2", { staticClass: "title mgt20" }, [
+              _vm._v("結果 / " + _vm._s(_vm.acttitle) + " 完了"),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "btn_cnt2" } }, [
+            _c(
+              "button",
+              {
+                attrs: { type: "button" },
+                on: {
+                  click: function ($event) {
+                    return _vm.backLine()
+                  },
+                },
+              },
+              [_vm._v("一覧へ")]
+            ),
+          ]),
+          _vm._v(" "),
+          _vm.actionmsgArr.length
+            ? _c("div", { staticClass: "print-none" }, [
+                _c(
+                  "ul",
+                  { staticClass: "error-red color_red" },
+                  _vm._l(_vm.actionmsgArr, function (actionmsg, index) {
+                    return _c("li", { key: index }, [_vm._v(_vm._s(actionmsg))])
+                  }),
+                  0
+                ),
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "tbl_1" } }, [
+            _c("table", [
+              _c("thead", [
+                _c("tr", [
+                  _c("th", { staticClass: "gc2" }, [_vm._v(" ")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("社名")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [
+                    _vm._v("営業所 "),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("office", 1)
+                          },
+                        },
+                      },
+                      [_vm._v("▲")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        attrs: { type: "button" },
+                        on: {
+                          click: function ($event) {
+                            return _vm.ForwardReverse("office", 2)
+                          },
+                        },
+                      },
+                      [_vm._v("▼")]
+                    ),
+                  ]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("郵便番号")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("住所")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("TEL（直通）")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("TEL")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("FAX")]),
+                  _vm._v(" "),
+                  _c("th", { staticClass: "gc2" }, [_vm._v("備考")]),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.details, function (item, rowIndex) {
+                  return _c("tr", { key: rowIndex, class: _vm.classObj1 }, [
+                    _c("td", { staticClass: "nbr w2e" }, [
+                      _vm.btnMode === "off" ? _c("div") : _c("div"),
+                      _vm._v(" "),
+                      item["status"] == "newest"
+                        ? _c("div", [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "style1",
+                                attrs: { type: "button" },
+                                on: {
+                                  click: function ($event) {
+                                    return _vm.EditBtn(
+                                      item["id"],
+                                      item["product_code"],
+                                      _vm.details[rowIndex].product_name,
+                                      "update",
+                                      rowIndex
+                                    )
+                                  },
+                                },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                更新\n                "
+                                ),
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "button",
+                              {
+                                staticClass: "style2",
+                                attrs: { type: "button" },
+                                on: {
+                                  click: function ($event) {
+                                    return _vm.EditBtn(
+                                      item["id"],
+                                      item["product_code"],
+                                      _vm.details[rowIndex].product_name,
+                                      "fix",
+                                      rowIndex
+                                    )
+                                  },
+                                },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                修正\n                "
+                                ),
+                              ]
+                            ),
+                          ])
+                        : _c("div", [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "style2",
+                                attrs: { type: "button" },
+                                on: {
+                                  click: function ($event) {
+                                    return _vm.EditBtn(
+                                      item["id"],
+                                      item["product_code"],
+                                      _vm.details[rowIndex].product_name,
+                                      "fix",
+                                      rowIndex
+                                    )
+                                  },
+                                },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                修正\n                "
+                                ),
+                              ]
+                            ),
+                          ]),
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "nbr" }, [
+                      _vm._v(_vm._s(item["company"])),
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "nbr" }, [
+                      _vm._v(_vm._s(item["office"])),
+                    ]),
+                    _vm._v(" "),
+                    _c("td", {}, [_vm._v(_vm._s(item["post_code"]))]),
+                    _vm._v(" "),
+                    _c(
+                      "td",
+                      { class: item["status"] == "newest" ? "bgcolor5" : "" },
+                      [_vm._v(_vm._s(item["address"]))]
+                    ),
+                    _vm._v(" "),
+                    _c("td", {}, [_vm._v(_vm._s(item["direct_dial"]))]),
+                    _vm._v(" "),
+                    _c("td", {}, [_vm._v(_vm._s(item["tel"]))]),
+                    _vm._v(" "),
+                    _c("td", {}, [_vm._v(_vm._s(item["fax"]))]),
+                    _vm._v(" "),
+                    _c("td", { staticClass: "style1" }, [
+                      _vm._v(_vm._s(item["remarks"])),
+                    ]),
+                  ])
+                }),
+                0
+              ),
+            ]),
+          ]),
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.selectMode == "NEW"
+      ? _c("div", { attrs: { id: "input_area_1" } }, [
+          _c("div", { attrs: { id: "top_cnt" } }, [
+            _c("h2", { staticClass: "title" }, [_vm._v("新規登録")]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "customize",
+                attrs: { type: "button" },
+                on: {
+                  click: function ($event) {
+                    return _vm.viewBtn(2)
+                  },
+                },
+              },
+              [_vm._v("\n        管理者\n      ")]
+            ),
+          ]),
+          _vm._v(" "),
+          _vm.messagevalidatesNew.length
+            ? _c("div", {}, [
+                _c(
+                  "ul",
+                  { staticClass: "error-red color_red" },
+                  _vm._l(
+                    _vm.messagevalidatesNew,
+                    function (messagevalidate, index) {
+                      return _c("li", { key: index }, [
+                        _vm._v(_vm._s(messagevalidate)),
+                      ])
+                    }
+                  ),
+                  0
+                ),
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "cnt1" } }, [
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("枚数")]),
+              _vm._v(" "),
+              _c(
+                "label",
+                { staticClass: "style_label gc5", attrs: { for: "sheet" } },
+                [_vm._v("枚数")]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.sheet,
+                      expression: "form.sheet",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: {
+                    id: "sheet",
+                    type: "text",
+                    maxlength: "20",
+                    name: "sheet",
+                  },
+                  domProps: { value: _vm.form.sheet },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "sheet", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "cnt1" } }, [
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("会社")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.company_code,
+                        expression: "form.company_code",
+                      },
+                    ],
+                    staticClass: "form_style bc5",
+                    attrs: { name: "company_code", id: "company_code" },
+                    on: {
+                      change: function ($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function (o) {
+                            return o.selected
+                          })
+                          .map(function (o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.$set(
+                          _vm.form,
+                          "company_code",
+                          $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        )
+                      },
+                    },
+                  },
+                  [
+                    _c("option", { attrs: { value: "1" } }, [
+                      _vm._v("札幌トヨタ自動車株式会社"),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.company,
+                      expression: "form.company",
+                    },
+                  ],
+                  attrs: {
+                    id: "ival_company",
+                    type: "hidden",
+                    name: "company",
+                  },
+                  domProps: { value: _vm.form.company },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "company", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("営業所")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.form.office_code,
+                        expression: "form.office_code",
+                      },
+                    ],
+                    staticClass: "form_style bc5",
+                    attrs: { name: "office_code", id: "office_code" },
+                    on: {
+                      change: function ($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function (o) {
+                            return o.selected
+                          })
+                          .map(function (o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.$set(
+                          _vm.form,
+                          "office_code",
+                          $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        )
+                      },
+                    },
+                  },
+                  [
+                    _c("option", { attrs: { value: "" } }, [
+                      _vm._v("-- 営業所選択 --"),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.office,
+                      expression: "form.office",
+                    },
+                  ],
+                  attrs: { id: "ival_office", type: "hidden", name: "office" },
+                  domProps: { value: _vm.form.office },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "office", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "cnt1" } }, [
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("部署")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.department,
+                      expression: "form.department",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: {
+                    id: "ival_department",
+                    type: "text",
+                    maxlength: "50",
+                    name: "department",
+                  },
+                  domProps: { value: _vm.form.department },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "department", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "inputgroup w1" }, [
+              _c("div", { staticClass: "cate gc5" }, [_vm._v("課")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "inputzone" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.division,
+                      expression: "form.division",
+                    },
+                  ],
+                  staticClass: "form_style bc5",
+                  attrs: { type: "text", maxlength: "50", name: "division" },
+                  domProps: { value: _vm.form.division },
+                  on: {
+                    input: function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.form, "division", $event.target.value)
+                    },
+                  },
+                }),
+              ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "cnt1" } }, [
+            _c("div", { staticClass: "inputgroup w1" }, [
               _c("div", { staticClass: "cate gc5" }, [_vm._v("役職")]),
               _vm._v(" "),
               _c("div", { staticClass: "inputzone" }, [
@@ -28724,37 +33987,6 @@ var staticRenderFns = [
     return _c("div", { attrs: { id: "top_cnt" } }, [
       _c("h2", { staticClass: "title mgt20" }, [_vm._v("検索結果一覧")]),
     ])
-  },
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83&":
-/*!****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HomeComponent.vue?vue&type=template&id=782dcf83& ***!
-  \****************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [_c("p", [_vm._v("this file is HomeComponent.vue")])])
   },
 ]
 render._withStripped = true
@@ -44612,6 +49844,15 @@ new Vue(
 vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("home-component", __webpack_require__(/*! ./components/HomeComponent.vue */ "./resources/js/components/HomeComponent.vue")["default"]);
 vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("Search", __webpack_require__(/*! ./components/Search.vue */ "./resources/js/components/Search.vue")["default"]);
 vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("Edit", __webpack_require__(/*! ./components/Edit.vue */ "./resources/js/components/Edit.vue")["default"]);
+vue_dist_vue_js__WEBPACK_IMPORTED_MODULE_0___default.a.component("master-office", __webpack_require__(/*! ./components/MasterOffice.vue */ "./resources/js/components/MasterOffice.vue")["default"]);
+/*
+tips
+ex. : Vue.component("master-office", require("./components/MasterOffice.vue").default);
+Vue.component("master-office",  この部分はハイフン繋ぎで名前をつける場合は全て小文字でなければならない
+ブレード側にも同様に合わせる <master-office
+NG : Master-Office  エラーになる
+*/
+
 /*
 var engHello =  {
     template: '<p>Hello {{ name }}!</p>',
@@ -44811,6 +50052,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeComponent_vue_vue_type_template_id_782dcf83___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/MasterOffice.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/components/MasterOffice.vue ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _MasterOffice_vue_vue_type_template_id_c4982eae___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MasterOffice.vue?vue&type=template&id=c4982eae& */ "./resources/js/components/MasterOffice.vue?vue&type=template&id=c4982eae&");
+/* harmony import */ var _MasterOffice_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MasterOffice.vue?vue&type=script&lang=js& */ "./resources/js/components/MasterOffice.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _MasterOffice_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _MasterOffice_vue_vue_type_template_id_c4982eae___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _MasterOffice_vue_vue_type_template_id_c4982eae___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/MasterOffice.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/MasterOffice.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/MasterOffice.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MasterOffice_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./MasterOffice.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/MasterOffice.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MasterOffice_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/MasterOffice.vue?vue&type=template&id=c4982eae&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/MasterOffice.vue?vue&type=template&id=c4982eae& ***!
+  \*********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MasterOffice_vue_vue_type_template_id_c4982eae___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./MasterOffice.vue?vue&type=template&id=c4982eae& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/MasterOffice.vue?vue&type=template&id=c4982eae&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MasterOffice_vue_vue_type_template_id_c4982eae___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MasterOffice_vue_vue_type_template_id_c4982eae___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

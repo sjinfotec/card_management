@@ -38,6 +38,14 @@ Route::post('/edit/insert', [EditController::class,'store'])->middleware('auth')
 Route::get('/search', [SearchController::class,'search'])->middleware('auth');
 Route::post('/search/get', [SearchController::class,'getDataSearch'])->middleware('auth');
 
+// マスター
+Route::get('/master_company', [MasterCompanyController::class,'index'])->middleware('auth');
+Route::post('/master_company/update', [MasterCompanyController::class,'fix'])->middleware('auth');
+Route::get('/master_office', [MasterOfficeController::class,'index'])->middleware('auth');
+Route::post('/master_office/update', [MasterOfficeController::class,'fix'])->middleware('auth');
+Route::post('/master_office/insert', [MasterOfficeController::class,'store'])->middleware('auth');
+
+
 
 
 // 印刷

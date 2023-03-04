@@ -23,7 +23,8 @@ class CreateCardTable extends Migration
             $table->char('office_code', 8)->nullable()->comment('営業所CODE');
             $table->string('department', 50)->nullable()->comment('部署');
             $table->string('division', 50)->nullable()->comment('課');
-            $table->string('director', 50)->nullable()->comment('役職');
+            $table->string('director1', 50)->nullable()->comment('役職1');
+            $table->string('director2', 50)->nullable()->comment('役職2');
             $table->string('name', 100)->nullable()->comment('氏名');
             $table->string('reading', 100)->nullable()->comment('読み');
             $table->string('mobile_phone', 13)->nullable()->comment('携帯電話');

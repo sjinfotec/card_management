@@ -4,7 +4,7 @@ $action_msg = "";
 $requesturi = $_SERVER['REQUEST_URI'];
 //$action_msg .= "REQUEST_URI = ".$requesturi."<br>\n";
 
-$uri_arr = Array('search' => '/search', 'make' => '/edit/make', 'fix' => '/edit/fix');
+$uri_arr = Array('search' => '/search', 'make' => '/edit/make', 'fix' => '/edit/fix', 'masteroffice' => '/master_office');
 
     foreach($uri_arr AS $key => $val) {
         if($requesturi == $val) {
@@ -31,6 +31,7 @@ $uri_arr = Array('search' => '/search', 'make' => '/edit/make', 'fix' => '/edit/
                                     <li class="gc1 {{ $cssarr['search'] }}"><a class="" href="{{ url('/search') }}">検索</a></li>
                                     <li class="gc1 {{ $cssarr['make'] }}"><a class="" href="{{ url('/edit/make') }}">名刺新規作成</a></li>
                                     <li class="gc1 {{ $cssarr['fix'] }}"><a class="" href="{{ url('/edit/fix') }}">名刺修正編集</a></li>
+                                    <li class="gc1 {{ $cssarr['masteroffice'] }}"><a class="" href="{{ url('/master_office') }}">マスター編集</a></li>
                                 </ul>
                         </div>
                         </nav>
