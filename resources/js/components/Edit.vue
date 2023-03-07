@@ -6,6 +6,13 @@
     <div>vue変数テスト htmlSelect：{{ htmlSelect }}</div>
     <div>vue変数テスト selectMode：{{ selectMode }}</div>
     -->
+    <div>vue変数テスト authName : {{ authName }}</div>
+    <div>vue変数テスト authCompanycode : {{ authCompanycode }}</div>
+    <div>vue変数テスト auths : {{ auths }}</div>
+    <div>vue変数テスト : {{ authusers["name"] }}</div>
+    <div v-for="(item,aurowIndex) in authusers" :key="aurowIndex">
+      <p>aurowIndex {{ aurowIndex }} : {{ item }}</p>
+    </div>
     <div id="input_area_1" v-if="selectMode=='COMPLETE'">
       <div id="top_cnt">
         <h2 class="title mgt20">結果 / {{ acttitle }} 完了</h2>
@@ -1180,19 +1187,23 @@ export default {
     </div>
   `,
   //mixins: [dialogable, checkable, requestable],
+  // type: Object,Array  ,default: () => []
   props: {
-    /*
+    
     authusers: {
-      type: Array,
-      default: []
+      type: Object,
     },
-    */
     htmlSelect: String,
     selectMode: {
       type: String,
       default: 'EDT'
+    },
+    authName: String,
+    authCompanycode: String,
+    auths: {
+      type: String,
+      
     }
-
 
   },
   data() {
@@ -1200,7 +1211,7 @@ export default {
       form: {
         id: "",
         sheet: "",
-        company: "札幌トヨタ自動車株式会社",
+        company: "mojimoji",
         company_code: "",
         office: "",
         office_code: "",

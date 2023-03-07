@@ -32,13 +32,13 @@ class EditController extends Controller
         $result['htmlselect'] = "";
         $htmlselect = "";
         $select_mode = "NEW";
-        return view('edit', compact(
-            'authusers',
-            'result',
-            'htmlselect',
-            'select_mode'
-            )
-        );
+        var_dump($authusers);
+        return view('edit', [
+                'authusers'=>$authusers,
+                'result'=>$result,
+                'htmlselect'=>$htmlselect,
+                'select_mode'=>$select_mode,
+            ]);
     }
 
 

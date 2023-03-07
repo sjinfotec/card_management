@@ -73,6 +73,8 @@ $action_msg = ""; //動作メッセージ利用時はコメントアウト
                             @endif
                         @else
                             <li>{{ Auth::user()->name }}</li>
+                            <li>{{ Auth::user()->company_code }}</li>
+                            <li>{{ Auth::user()->created_user }}</li>
                             <li>
                                 <div>
                                     <a href="{{ route('logout') }}"
