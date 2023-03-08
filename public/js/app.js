@@ -2874,6 +2874,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //import moment from "moment";
 //import { dialogable } from "../mixins/dialogable.js";
 //import { checkable } from "../mixins/checkable.js";
@@ -2885,7 +2899,11 @@ __webpack_require__.r(__webpack_exports__);
   // type: Object,Array  ,default: () => []
   props: {
     authusers: {
-      type: Object
+      type: Object,
+      require: false,
+      "default": {
+        company: 0
+      }
     },
     htmlSelect: String,
     selectMode: {
@@ -2895,7 +2913,7 @@ __webpack_require__.r(__webpack_exports__);
     authName: String,
     authCompanycode: String,
     auths: {
-      type: String
+      type: Object
     }
   },
   data: function data() {
@@ -2903,8 +2921,8 @@ __webpack_require__.r(__webpack_exports__);
       form: {
         id: "",
         sheet: "",
-        company: "mojimoji",
-        company_code: "",
+        company: this.authusers['name'],
+        company_code: this.authusers['company_code'],
         office: "",
         office_code: "",
         department: "",
@@ -27651,11 +27669,9 @@ var render = function () {
       _vm._v(" "),
       _c("div", [_vm._v("vue変数テスト : " + _vm._s(_vm.authusers["name"]))]),
       _vm._v(" "),
-      _vm._l(_vm.authusers, function (item, aurowIndex) {
-        return _c("div", { key: aurowIndex }, [
-          _c("p", [
-            _vm._v("aurowIndex " + _vm._s(aurowIndex) + " : " + _vm._s(item)),
-          ]),
+      _vm._l(_vm.authusers, function (item, authIndex) {
+        return _c("div", { key: authIndex }, [
+          _c("p", [_vm._v(_vm._s(authIndex) + " : " + _vm._s(item))]),
         ])
       }),
       _vm._v(" "),
@@ -27938,12 +27954,6 @@ var render = function () {
               _c("div", { staticClass: "inputgroup w1" }, [
                 _c("div", { staticClass: "cate gc5" }, [_vm._v("枚数")]),
                 _vm._v(" "),
-                _c(
-                  "label",
-                  { staticClass: "style_label gc5", attrs: { for: "sheet" } },
-                  [_vm._v("枚数")]
-                ),
-                _vm._v(" "),
                 _c("div", { staticClass: "inputzone" }, [
                   _c("input", {
                     directives: [
@@ -27979,72 +27989,158 @@ var render = function () {
               _c("div", { staticClass: "inputgroup w1" }, [
                 _c("div", { staticClass: "cate gc5" }, [_vm._v("会社")]),
                 _vm._v(" "),
-                _c("div", { staticClass: "inputzone" }, [
-                  _c(
-                    "select",
-                    {
-                      directives: [
+                this.authusers["company_code"] == "1"
+                  ? _c("div", { staticClass: "inputzone" }, [
+                      _c(
+                        "select",
                         {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.form.company_code,
-                          expression: "form.company_code",
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.form.company_code,
+                              expression: "form.company_code",
+                            },
+                          ],
+                          staticClass: "form_style bc5",
+                          attrs: { name: "company_code", id: "company_code" },
+                          on: {
+                            change: function ($event) {
+                              var $$selectedVal = Array.prototype.filter
+                                .call($event.target.options, function (o) {
+                                  return o.selected
+                                })
+                                .map(function (o) {
+                                  var val = "_value" in o ? o._value : o.value
+                                  return val
+                                })
+                              _vm.$set(
+                                _vm.form,
+                                "company_code",
+                                $event.target.multiple
+                                  ? $$selectedVal
+                                  : $$selectedVal[0]
+                              )
+                            },
+                          },
                         },
-                      ],
-                      staticClass: "form_style bc5",
-                      attrs: { name: "company_code", id: "company_code" },
-                      on: {
-                        change: function ($event) {
-                          var $$selectedVal = Array.prototype.filter
-                            .call($event.target.options, function (o) {
-                              return o.selected
-                            })
-                            .map(function (o) {
-                              var val = "_value" in o ? o._value : o.value
-                              return val
-                            })
-                          _vm.$set(
-                            _vm.form,
-                            "company_code",
-                            $event.target.multiple
-                              ? $$selectedVal
-                              : $$selectedVal[0]
-                          )
+                        [
+                          _c("option", { attrs: { value: "1" } }, [
+                            _vm._v("1.管理者"),
+                          ]),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "2" } }, [
+                            _vm._v("2.札幌トヨタ自動車株式会社"),
+                          ]),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "3" } }, [
+                            _vm._v("3."),
+                          ]),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "select",
+                        {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.form.company,
+                              expression: "form.company",
+                            },
+                          ],
+                          staticClass: "form_style bc5",
+                          attrs: { name: "company", id: "ival_company" },
+                          on: {
+                            change: function ($event) {
+                              var $$selectedVal = Array.prototype.filter
+                                .call($event.target.options, function (o) {
+                                  return o.selected
+                                })
+                                .map(function (o) {
+                                  var val = "_value" in o ? o._value : o.value
+                                  return val
+                                })
+                              _vm.$set(
+                                _vm.form,
+                                "company",
+                                $event.target.multiple
+                                  ? $$selectedVal
+                                  : $$selectedVal[0]
+                              )
+                            },
+                          },
                         },
-                      },
-                    },
-                    [
-                      _c("option", { attrs: { value: "1" } }, [
-                        _vm._v("札幌トヨタ自動車株式会社"),
-                      ]),
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.form.company,
-                        expression: "form.company",
-                      },
-                    ],
-                    attrs: {
-                      id: "ival_company",
-                      type: "hidden",
-                      name: "company",
-                    },
-                    domProps: { value: _vm.form.company },
-                    on: {
-                      input: function ($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.$set(_vm.form, "company", $event.target.value)
-                      },
-                    },
-                  }),
-                ]),
+                        [
+                          _c("option", { attrs: { value: "管理者" } }, [
+                            _vm._v("管理者"),
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "option",
+                            { attrs: { value: "札幌トヨタ自動車株式会社" } },
+                            [_vm._v("札幌トヨタ自動車株式会社")]
+                          ),
+                          _vm._v(" "),
+                          _c("option", { attrs: { value: "3" } }),
+                        ]
+                      ),
+                    ])
+                  : _c("div", { staticClass: "inputzone" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.form.company_code,
+                            expression: "form.company_code",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: { type: "hidden", name: "company_code" },
+                        domProps: { value: _vm.form.company_code },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.form,
+                              "company_code",
+                              $event.target.value
+                            )
+                          },
+                        },
+                      }),
+                      _vm._v(" "),
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.form.company,
+                            expression: "form.company",
+                          },
+                        ],
+                        staticClass: "form_style bc5",
+                        attrs: {
+                          id: "ival_company",
+                          type: "text",
+                          name: "company",
+                          readonly: "",
+                        },
+                        domProps: { value: _vm.form.company },
+                        on: {
+                          input: function ($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(_vm.form, "company", $event.target.value)
+                          },
+                        },
+                      }),
+                    ]),
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "inputgroup w1" }, [

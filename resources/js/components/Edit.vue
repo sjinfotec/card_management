@@ -10,8 +10,8 @@
     <div>vue変数テスト authCompanycode : {{ authCompanycode }}</div>
     <div>vue変数テスト auths : {{ auths }}</div>
     <div>vue変数テスト : {{ authusers["name"] }}</div>
-    <div v-for="(item,aurowIndex) in authusers" :key="aurowIndex">
-      <p>aurowIndex {{ aurowIndex }} : {{ item }}</p>
+    <div v-for="(item,authIndex) in authusers" :key="authIndex">
+      <p>{{ authIndex }} : {{ item }}</p>
     </div>
     <div id="input_area_1" v-if="selectMode=='COMPLETE'">
       <div id="top_cnt">
@@ -111,8 +111,7 @@
       <div id="cnt1">
         <div class="inputgroup w1">
           <div class="cate gc5">枚数</div>
-          <label for="sheet" class="style_label gc5">枚数</label>
-          
+          <!--<label for="sheet" class="style_label gc5">枚数</label>-->
           <div class="inputzone">
             <input
               id="sheet"
@@ -129,18 +128,33 @@
       <div id="cnt1">
         <div class="inputgroup w1">
           <div class="cate gc5">会社</div>
-          <div class="inputzone">
-
+          <div class="inputzone" v-if="this.authusers['company_code'] == '1'">
             <select name="company_code" id="company_code" class="form_style bc5" v-model="form.company_code">
-              <option value="1">札幌トヨタ自動車株式会社</option>
+              <option value="1" >1.管理者</option>
+              <option value="2" >2.札幌トヨタ自動車株式会社</option>
+              <option value="3" >3.</option>
             </select>
+            <select name="company" id="ival_company" class="form_style bc5" v-model="form.company">
+              <option value="管理者" >管理者</option>
+              <option value="札幌トヨタ自動車株式会社" >札幌トヨタ自動車株式会社</option>
+              <option value="3" ></option>
+            </select>
+          </div>
 
+          <div class="inputzone" v-else>
+            <input
+              type="hidden"
+              class="form_style bc5"
+              v-model="form.company_code"
+              name="company_code"
+            />
             <input
               id="ival_company"
-              type="hidden"
-              class=""
+              type="text"
+              class="form_style bc5"
               v-model="form.company"
               name="company"
+              readonly
             />
           </div>
         </div>
@@ -1192,6 +1206,8 @@ export default {
     
     authusers: {
       type: Object,
+      require: false,
+      default: { company: 0 }
     },
     htmlSelect: String,
     selectMode: {
@@ -1201,7 +1217,7 @@ export default {
     authName: String,
     authCompanycode: String,
     auths: {
-      type: String,
+      type: Object,
       
     }
 
@@ -1211,8 +1227,8 @@ export default {
       form: {
         id: "",
         sheet: "",
-        company: "mojimoji",
-        company_code: "",
+        company: this.authusers['name'],
+        company_code: this.authusers['company_code'],
         office: "",
         office_code: "",
         department: "",

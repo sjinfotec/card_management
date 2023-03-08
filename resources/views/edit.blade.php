@@ -7,7 +7,7 @@
 							<Edit
 auth-name='{{ Auth::user()->name }}'
 auth-companycode='{{ Auth::user()->company_code }}'
-auths='{{ Auth::user() }}'
+								v-bind:auths='{{ Auth::user() }}'
 								html-select='{{ $htmlselect }}'
 								select-mode='{{ $select_mode }}'
 								v-bind:authusers="{{ $authusers }}"
